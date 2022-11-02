@@ -1,70 +1,137 @@
+<html>
 <head>
-<head>
-<script type="text/javascript" src="scripts/article.js">
-function change(tag,val)
-{  
-    const nodes = document.getElementsByTagName(tag);
-    for (let i = 0; i < nodes.length; i++) {
-      nodes[i].style.display = val;
-    }
- }
-function ehchange(){
-        if(document.getElementsByTagName("h")[0].style.display=="none")
-            {change("h","block");change("e","none");}
-        else if(document.getElementsByTagName("e")[0].style.display=="none")
-            {change("e","block");change("h","none");}
-}
-</script>
-    <link rel="stylesheet" href="style/article.css" /> 
+<script type="text/javascript" src="scripts/article.js"></script>
+<link rel="stylesheet" href="style/article.css" /> 
 </head>
-    <body onload="change('h','none')">
-      <h1>Syntaxing | &nbspवाक्य रचना&nbsp|&nbsp वाक्य विन्यास 
-        <input type="button" value="shift" onclick="ehchange()"></h1> 
-    <p>
-
-        <e>
-            Hello there !!,&nbsp Here we are going to use a completely different syntaxing as   we    are using a programming language.
-            Every traditional language has different syntaxing which changes even when used for different purposes.
-            For example to write a letter we specify reciever adderess at top left then subject then salutation etc and in email we first specify the recipient,subject and other things and so on. 
-        </e>
-        <h><b>  
-            नमस्ते !!,&nbsp यहां हम एक पूरी तरह से अलग वाक्य विन्यास का उपयोग करने जा रहे हैं क्योंकि हम एक प्रोग्रामिंग भाषा का उपयोग कर रहे हैं।
-            हर पारंपरिक भाषा में अलग-अलग वाक्य रचना होती है जो अलग-अलग उद्देश्यों के लिए उपयोग किए जाने पर भी बदल जाती है।
-            उदाहरण के लिए ,एक पत्र लिखने हेतु  हम ऊपर दाई  ओर प्राप्तकर्ता का  पता लिखते हैं  फिर विषय , उसके बाद अभिवादन आदि ,और ऐसे ही ईमेल में हम पहले प्राप्तकर्ता, विषय और अन्य चीजें निर्दिष्ट करते हैं।</b>
-        </h>
-    </p>
-    <div><img src="images/email.png"><br></div>
-    <p> 
-        <e>
-            As we saw in the above image how we write an email, below is the syntaxing of a program in java and one4 language.(you can run th ecode inn our editor 
-            also you can edit the code and re-run it or change the language etc.)
-        </e>
-        <h>
-            जैसा कि हमने ऊपर के चित्र  में देखा कि हम  एक ईमेल कैसे लिखते हैं, नीचे हम देख  सकते है एक प्रोग्राम का सिंटैक्स है वन4(one4) भाषा में।
-        </h>
-    </p>
-  <!--  <div><img src="codes/print.code"><br></div>-->
-    <p>
-        <e>
-            Similarly most programming languages have their own syntaxing to write software programs.
-            Java,Python,C,VisualBasic,One4 and all other programming languages too have their own syntaxing.
-        </e>
-        <h>
-            इसी तरह एक प्रोग्रामिंग भाषा का सॉफ्टवेयर प्रोग्राम लिखने के लिए अपना सिंटैक्स होता है।
-            वन4(one4), जावा(Java), पायथन(Python), सी(C), विजुअल बेसिक(V.B.) अन्य सभी प्रोग्रामिंग
-            भाषाओं का अपना वाक्य विन्यास (syntax)होता है।
-        </h>
-    </p>
-    <p> 
-       <note>
+<body onload="load('h','none')">
+    <h1>Syntaxing | &nbspवाक्य रचना&nbsp|&nbsp वाक्य विन्यास <br>
+        <!--<input type="button" value="shift" onclick="ehchange()">-->
+        <select name="H/E" onchange="set(this.value)">
+            <option value="english">English</option>
+            <option value="hindi">हिन्दी(Hindi)</option>
+        </select>
+        <input type="button" value="next" onclick="nchapter()">
+        <input type="button" value="pervious" onclick="pchapter()">
+    </h1> 
+    <chapter> 
+        <p>
             <e>
-                Don't worry if you are not able to understand what's in there.We would later understand what's going in there.
+                Hello there !!,&nbsp Here we are going to use a completely different syntaxing as we are using a programming language.
+                Every traditional language has different syntaxing which changes even when used for different purposes.
             </e>
+            <h> 
+                नमस्ते !!&nbsp यहां हम एक पूरी तरह से अलग वाक्य विन्यास का उपयोग करने जा रहे हैं क्योंकि हम एक प्रोग्रामिंग भाषा का उपयोग कर रहे हैं।
+                हर पारंपरिक भाषा में अलग-अलग वाक्य रचना होती है जो अलग-अलग उद्देश्यों के लिए उपयोग किए जाने पर भी बदल जाती है।
+            </h>
+        </p>
+        <p>
+            <div class="example">
+            <e>     
+            <h3 class="h-note">Example:</h3>   
+                For example to write a letter we specify reciever adderess at top left then subject then salutation etc and in email we first specify the recipient,subject and other things and so on. 
+            </e>
+            <h> <h3 class="h-note">उदाहरण:</h3>    
+                उदाहरण के लिए ,एक पत्र लिखने हेतु  हम ऊपर दाई  ओर प्राप्तकर्ता का  पता लिखते हैं  फिर विषय , उसके बाद अभिवादन आदि ,और ऐसे ही ईमेल में हम पहले प्राप्तकर्ता, विषय और अन्य चीजें स्पष्ट करते हैं।
+            </h>
+                <div class="img-container"><img src="images/email.png"><br></div> 
+            </div>
+        </p><br>
+        <p> 
             <e>
+                As we saw in the above image how we write an email, below is the syntaxing of a program in java(above) and one4(below) language.(you can run the code in our editor 
+                also you can edit the code and re-run it or change the language etc.)
+            </e>
             <h>
-                अगर आप यह नहीं समझ पा रहे हैं कि इसमें क्या है तो चिंता न करें हम  आगे समझेंगे की यह कुआ हो रहा है |
-            </h>   
-    </note>
-    </p>
+                जैसा कि हमने ऊपर के चित्र में देखा कि हम एक ईमेल कैसे लिखते हैं, नीचे हम देख सकते है एक प्रोग्राम का सिंटैक्स है जावा(java)[ऊपर],वन4(one4)[नीचे] भाषा में।(आप हमारे संपादक(editor) में कोड चला सकते हैं या आप कोड को बदल सकते हैं और इसे फिर से चला सकते हैं या भाषा आदि बदल सकते हैं।)
+            </h>
+        </p>
+        <br>
+        <div class="example"><div class="img-container "><img height="30%" src="codes/print_java.png"><img height="30%" width="100%" src="codes/print_one4.png"></div>
+        </div>
+        <p> 
+           <div class="note">
+                <e>
+                    <h3 class="h-note">Note :</h3>               
+                    Don't worry if you are not able to understand what's in there.We would later understand what's going in there.
+                </e>
+                <h>
+                    <h3 class="h-note">ध्यान दे:</h3>
+                    अगर आप यह नहीं समझ पा रहे हैं कि इसमें क्या है तो चिंता न करें हम  आगे समझेंगे की यह कुआ हो रहा है |
+                </h>   
+            </div>
+        </p> 
+    </chapter>
+    <chapter>
+        <p>
+            <e>
+                Similarly most programming languages have their own syntaxing to write software programs.
+                Java,Python,C,VisualBasic,One4 and all other programming languages too have their own syntaxing.
+            </e>
+            <h>
+                इसी तरह एक प्रोग्रामिंग भाषा का सॉफ्टवेयर प्रोग्राम लिखने के लिए अपना सिंटैक्स होता है।
+                वन4(one4), जावा(Java), पायथन(Python), सी(C), विजुअल बेसिक(V.B.) अन्य सभी प्रोग्रामिंग
+                भाषाओं का अपना वाक्य विन्यास (syntax)होता है।
+            </h>
+        </p> 
+          <br>
+        <div class="example"><div class="img-container "><img height="30%" src="codes/print_java.png"><img height="30%" width="100%" src="codes/print_one4.png"></div>
+        </div>
+<!--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+other images of print in othe languges.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
+        <p> 
+           <div class="note">
+                <e>
+                    <h3 class="h-note">Note :</h3>               
+                    Here you need not worry about different syntaxing of so many different programming languages, as most of them have very slight changes in their syntaxing. 
+                </e>
+                <h>
+                    <h3 class="h-note">ध्यान दे:</h3>
+                      यहां आपको बहुत से अलग-अलग प्रोग्रामिंग भाषाओं के अलग-अलग वाक्य विचार (सिंटैक्सिंग|Syntaxing) के बारे में चिंता करने की ज़रूरत नहीं है, क्योंकि उनमें से अधिकांश के सिंटैक्सिंग में बहुत मामूली बदलाव होते हैं|
+                </h>   
+            </div>
+        </p> 
+        
+    </chapter>
+
+
 </body>
-</head>
+</html>

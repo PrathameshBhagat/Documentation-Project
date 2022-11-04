@@ -1,0 +1,126 @@
+<!-- change println  and print and प्रिन्ट प्रिन्टलन  in print.html and java/one4 and replace print program into one line code in all images . 
+-->
+<html>
+<head>
+<script type="text/javascript" src="scripts/article.js"></script>
+<link rel="stylesheet" href="style/article.css" /> 
+</head>
+<body onload="load('h','none')">
+    <h1>Print/Print Output | <br>
+        <!--<input type="button" value="shift" onclick="ehchange()">-->
+        <select name="H/E" onchange="set(this.value)">
+            <option value="english">English</option>
+            <option value="hindi">हिन्दी(Hindi)</option>
+        </select>
+        <input type="button" value="next" onclick="nchapter()">
+        <input type="button" value="pervious" onclick="pchapter()">
+    </h1> 
+    <chapter> 
+        <h2>&nbspPrint :</h2>
+        <p>
+            <e>
+                We learned from the previous topic that you can use the println() method to output values or print text in our programming language:
+            </e>
+            <h>
+               हमने पिछले अध्याय से सीखा है कि आप हमारी प्रोग्रामिंग भाषा में मूल्यों को लिख के दिखाने के लिए (आउटपुट या प्रिंट करने के लिए) println() विधि का उपयोग कर सकते हैं:
+            </h>
+        </p>
+        <div class="example"  codereplace >
+            <img height="30%" width="100%" src="codes/print_one4.png"></div>
+        </div>
+        <p>
+            <e>
+                We can add as many println() methods as you want. Note that it will add a new line for each method:
+            </e>
+            <h> 
+               आप जितनी चाहें उतनी println() विधियाँ जोड़ सकते हैं. ध्यान दें कि यह प्रत्येक विधि के लिए एक नई लाइन जोड़ देगा:
+            </h><br>
+        </p>
+        <div class="example"  codereplace >
+            <img height="30%" width="100%" src="codes/print_one4.png">
+            <img height="30%" width="100%" src="codes/print_one4.png">
+            <img height="30%" width="100%" src="codes/print_one4.png">
+        </div>
+        <h2> &nbspDouble Quotes|दो बोलियां/कोट्स/उद्धरण|  " "  </h2>
+        <p>
+            <e>
+               When you are working with text, it must be wrapped inside double quotations marks " ".<br>
+                If you forget the double quotes, an error occurs:
+            </e>
+            <h> 
+             जब आप (screen पर) लेखन या लिखने का कार्य कर रहे हों, तो इसे दोहरे उद्धरण " " चिह्नों के अंदर लपेटा जाना चाहिए. <br>यदि आप दोहरे उद्धरण भूल जाते हैं, तो एक त्रुटि/गलती/एरर(Error) उत्पन्न होती है:
+            </h><br>
+        </p>
+        <div class="example"  codereplace >
+            <img height="30%" width="100%" src="codes/print_one4.png">
+            <img height="30%" width="100%" src="codes/print_one4.png">
+            <img height="30%" width="100%" src="codes/print_one4.png">
+        </div>
+         <h2> &nbsp The Print() Method|
+                <!-- Replace-->
+            मुद्रण() विधि</h2>
+        <p>
+            <e>
+                There is also a print() method, which is similar to println().<br>The only difference is that it does not insert a new line at the end of the output:
+            </e>
+            <h> 
+             एक print() विधि भी है, जो println() के समान है।<br>दोंनो मे एकमात्र अंतर यह है कि यह आउटपुट के अंत में एक नई लाइन सम्मिलित नहीं करता है या जोड़ता नहीं है :
+            </h><br>
+        </p>
+        <div class="example"  codereplace >
+            <img height="30%" width="100%" src="codes/print_one4.png">
+        </div>
+        <p> 
+           <div class="note">
+                <e>
+                    <h3 class="h-note">Note :</h3>               
+                   Note that we add an extra space (after "Hello !" in the example above), for better readability.
+                </e>
+                <h>
+                    <h3 class="h-note">ध्यान दे:</h3>
+                  ध्यान दें कि हम बेहतर पठनीयता(पढ़ने की क्षमता) के लिए एक अतिरिक्त स्थान (ऊपर दिए गए उदाहरण में "hello !" के बाद) जोड़ते हैं|
+                </h>   
+            </div>
+        </p> 
+    </chapter>
+    <chapter>
+        <h2>&nbspPrint Numbers :</h2>
+        <p>
+            <e>
+                You can also use the println() method to print numbers.
+                However, unlike text, we don't put numbers inside double quotes:
+            </e>
+            <h>
+               आप संख्याओं को मुद्रित करने के लिए println() विधि का भी उपयोग कर सकते हैं।<br>
+                हालाँकि,सादाहरण लेखन के विपरीत, हम संख्याओं को दोहरे उद्धरणों या कोट्स " " के अंदर नहीं डालते हैं:
+            </h>
+        </p>
+        <div class="example"  codereplace >
+            <img height="30%" width="100%" src="codes/print_one4.png">
+        </div>
+        <p>
+            <e>
+                You can also perform mathematical calculations(add, substract etc.) inside the println() method:
+            </e>
+            <h>
+                आप println() विधि के अंदर गणितीय गणना (जोड़ना,घटना आदि) भी कर सकते हैं:
+            </h>
+        </p>
+        <div class="example"  codereplace >
+            <img height="30%" width="100%" src="codes/print_one4.png">
+        </div>
+        <p> 
+           <div class="note">
+                <e>
+                    <h3 class="h-note">Note :</h3>               
+                   The same can be done in print() method differnce  .
+                </e>
+                <h>
+                    <h3 class="h-note">ध्यान दे:</h3>
+                  ध्यान दें कि हम बेहतर पठनीयता(पढ़ने की क्षमता) के लिए एक अतिरिक्त स्थान (ऊपर दिए गए उदाहरण में "hello !" के बाद) जोड़ते हैं|
+                </h>   
+            </div>
+        </p> 
+    </chapter>
+</body>
+</html>

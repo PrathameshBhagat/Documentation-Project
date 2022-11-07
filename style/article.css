@@ -1,6 +1,6 @@
 html{
   font-family: Verdana,sans-serif;    
-  -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;text-size-adjust: 100%;
   padding: 1%;
 }
 body{margin: 0;}
@@ -16,12 +16,17 @@ p{margin: 2%;}
   padding: 10px;
   background-color:#ffffff;
 }
-h2{font-weight: 100;line}
+h2{font-weight: 100;}
 h{
-  font-weight:bolder;
+font-size: 120%;
 }
+h ul{font-size: 90%;padding-left:2% ; }
+li{padding:0 0 2% 1%;}
 .h-note{line-height: 0;}
-
+c{    font-size: 105%;font-weight: bold;
+      font-family: Consolas,Menlo,"courier new",monospace;color: crimson;
+        background-color: rgba(222,222,222,0.3);padding: 0 0.5%;
+  }
 h .h-note{
   font-size: 150%;
 }

@@ -27,6 +27,14 @@ function ehchange(){
 function set(v){if(v=="english"){change("e","block");change("h","none");}
 else {change("h","block");change("e","none");}
 }
+ function dot()
+{ var key=('which' in event) ? event.which : event.keyCode;
+   if(key=="190"){
+    if(document.getElementsByTagName("select")[0].selectedIndex==0)
+{document.getElementsByTagName("select")[0].selectedIndex=1;set("hindi");}
+    else {document.getElementsByTagName("select")[0].selectedIndex=0;set("english");}
+     }
+}
 function pchapter()
 {
     if(c>0)

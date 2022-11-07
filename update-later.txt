@@ -1,5 +1,12 @@
-change image to code in comment.html.
-change println  and print in pribnt.html and java/one4 and replace print program into one line code in first image and other images to codes in output.html
+change the variable word in hindi in variable.html in heading too
+change int float double boolean etc to hindi  
+change  word variables in hindiin whole page 
+change println in ch2 diaplay variables
+change int in hindi 
+change all images to codes .
+
+
+change println  and print in print.html and java/one4 and replace print program into one line code in first image and other images to codes in output.html
 
 update get started.html in all files for print program as in w3
 change output and print in hindi in all files in a lternative word.

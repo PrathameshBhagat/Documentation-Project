@@ -14,3 +14,4 @@ jobs:
         server: files.000webhost.com
         username: prathameshbhagat
         password: ${{ secrets.PASS }}
+        server-dir : public_html/Docs/

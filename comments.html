@@ -1,19 +1,17 @@
-<!--
--->
 <html>
 <head>
 <script type="text/javascript" src="scripts/article.js"></script>
 <link rel="stylesheet" href="style/article.css" /> 
 </head>
-<body onload="load('h','none')">
-    <h1>Comments| टिप्पणियाँ| कमेंट्स <br>
+<body onload="load()" next="variables.html" prev="output.html">
+    <h1>Comments| टिप्पणियाँ| कमेंट्स 
         <!--<input type="button" value="shift" onclick="ehchange()">-->
         <select name="H/E" onchange="set(this.value)">
             <option value="english">English</option>
             <option value="hindi">हिन्दी(Hindi)</option>
-        </select>
-        <input type="button" value="next" onclick="nchapter()">
+        </select><br>
         <input type="button" value="pervious" onclick="pchapter()">
+<a class="btn" onclick="nchapter()" href="#"><span>&nbsp;&rarr;</span>NEXT</a>
     </h1> 
     <chapter> 
         <h2>&nbsp Comments| टिप्पणियाँ:</h2>
@@ -47,8 +45,10 @@
             <h> <h3 class="h-note">उदाहरण:</h3>   
             यह उदाहरण संहिता/कोड की एक पंक्ति से पहले एक पंक्ति(रेखा) की टिप्पणी का उपयोग करता है।
             </h>
-            <div class="img-container"><img src="codes/print_one4.png"><br></div> 
-            </div>
+            <div class="code-container">
+        <div class="code TOE" id="editor">
+
+</div></div></div>
         </p>
 
         <p><br>
@@ -107,5 +107,11 @@
             </div>
         </p> 
     </chapter> 
+
+<script src="scripts/article.js"></script>
+<script src="scripts/ace.js"></script>
+<script src="scripts/cobalt.js"></script>
+<script src="scripts/mode-javaa.js"></script>
+<script>codeload();</script>
 </body>
 </html>

@@ -1,18 +1,39 @@
-*{margin:0;border-spacing:0;    }
-div{
-  overflow:scroll;
-  width:15vw;
-  resize:both;
-  border-width:0.5vw;
-  border-style: groove;
-}
-a{border: #00ff00;
-  margin: 0.5vw;
-  border-style: groove;
-  background:#ff0000
-}
+*{margin:0;border-spacing:0;}
 iframe{
-  height:100vh;
-  width: 80vw;border :1  ; 
+  height:90vh;
+  width:100vw;
   resize:horizontal;
 }
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  background-color: #ffffff;
+  overflow: scroll;
+  transition: 0.5s;
+}
+.sidenav a {
+  padding: 2% 2% 2% 12%;
+  text-decoration: none;
+  font-size: 25px;color: #00ffff;
+  display: block;
+  transition:background 3s;
+  border: #00ff00;
+  margin: 0 2vw 0  0.5vw;background-color: red;
+  border-style: groove;
+  border-radius:20vw;
+}
+.sidenav p{
+  color:#000000;font-size: 200%;
+}
+.sidenav p span:hover{cursor: pointer;}
+.sidenav a:hover {
+    color: #000000;background:linear-gradient(45deg,#00ffff,#cc33ff,#ff33cc,#0000b3,#00ff00,#00ffff,#ffff00,#ff00ff);
+    animation: a 5s linear  infinite ;
+    background-size: 400%;
+}
+@keyframes a {
+  0%{background-position:0 0;}
+50%{background-position:400% 0;}
+100%{background-position:0 0;}}

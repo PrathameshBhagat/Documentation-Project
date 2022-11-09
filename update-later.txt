@@ -6,10 +6,11 @@ change int in hindi
 change all images to codes .
 
 
-change println  and print in print.html and java/one4 and replace print program into one line code in first image and other images to codes in output.html
+change println  and print to in print.html accordingly,"carefully" and java/one4 and replace print program into one line code in first image and other images to codes in output.html
 
 update get started.html in all files for print program as in w3
 change output and print in hindi in all files in a lternative word.
 change the doc.html files looks
 handle next and previous select in all html to single in doc and inall html end.
 
+add to  article.js.load to add cdn ,mode-javaa internally via js

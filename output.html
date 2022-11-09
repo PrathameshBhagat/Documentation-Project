@@ -1,19 +1,20 @@
-<!-- change println  and print and प्रिन्ट प्रिन्टलन  in print.html and java/one4 and replace print program into one line code in all images . 
+<!-- change println  and print and प्रिन्ट प्रिन्टलन  in print.html and java/one4 and replace print program into one line code in all images
+change int and other words and in last note change print to println and vice versa.
 -->
 <html>
 <head>
 <script type="text/javascript" src="scripts/article.js"></script>
 <link rel="stylesheet" href="style/article.css" /> 
 </head>
-<body onload="load('h','none')" onkeydown="dot()">
-    <h1>Print/Print Output | <br>
+<body onload="load()" next="comments.html" prev="syntax.html">
+    <h1>Print/Print Output | 
         <!--<input type="button" value="shift" onclick="ehchange()">-->
         <select name="H/E" onchange="set(this.value)">
             <option value="english">English</option>
             <option value="hindi">हिन्दी(Hindi)</option>
-        </select>
-        <input type="button" value="next" onclick="nchapter()">
+        </select><br>
         <input type="button" value="pervious" onclick="pchapter()">
+<a class="btn"  onclick="nchapter()" href="#"><span>&nbsp;&rarr;</span>NEXT</a>
     </h1> 
     <chapter> 
         <h2>&nbspPrint :</h2>
@@ -25,9 +26,13 @@
                हमने पिछले अध्याय से सीखा है कि आप हमारी प्रोग्रामिंग भाषा में मूल्यों को लिख के दिखाने के लिए (आउटपुट या प्रिंट करने के लिए) <c>println()</c> विधि का उपयोग कर सकते हैं:
             </h>
         </p>
-        <div class="example"  codereplace >
-            <img height="30%" width="100%" src="codes/print_one4.png"></div>
-        </div>
+         <div class="code-container">
+      <div class="code TOE" id="editor">
+सार्वजनिक कक्षा  Main {
+    सार्वजनिक स्थिर रिक्त जरूरी (डोर  [] a){
+        तंत्र.बाहर.प्रिंट("Hello World");
+    }
+}</div></div> 
         <p>
             <e>
                 We can add as many <c>println()</c> methods as you want. Note that it will add a new line for each method:
@@ -35,12 +40,15 @@
             <h> 
                आप जितनी चाहें उतनी <c>println()</c> विधियाँ जोड़ सकते हैं. ध्यान दें कि यह प्रत्येक विधि के लिए एक नई लाइन जोड़ देगा:
             </h><br>
-        </p>
-        <div class="example"  codereplace >
-            <img height="30%" width="100%" src="codes/print_one4.png">
-            <img height="30%" width="100%" src="codes/print_one4.png">
-            <img height="30%" width="100%" src="codes/print_one4.png">
-        </div>
+        </p><div class="code-container">
+      <div class="code TOE" id="editor">
+सार्वजनिक कक्षा  Main {
+    सार्वजनिक स्थिर रिक्त जरूरी (डोर  [] a){
+        तंत्र.बाहर.प्रिंट("Hello World");
+        तंत्र.बाहर.प्रिंट("Iam learning a language");
+        तंत्र.बाहर.प्रिंट("This is awesome!");
+    }
+}</div></div> 
         <h2> &nbspDouble Quotes|दो बोलियां/कोट्स/उद्धरण|  <c>" "</c>  </h2>
         <p>
             <e>
@@ -49,13 +57,18 @@
             </e>
             <h> 
              जब आप (screen पर) लेखन या लिखने का कार्य कर रहे हों, तो इसे दोहरे उद्धरण <c>" "</c> चिह्नों के अंदर लपेटा जाना चाहिए. <br>यदि आप दोहरे उद्धरण भूल जाते हैं, तो एक त्रुटि/गलती/एरर(Error) उत्पन्न होती है:
-            </h><br>
+            </h>
         </p>
-        <div class="example"  codereplace >
-            <img height="30%" width="100%" src="codes/print_one4.png">
-            <img height="30%" width="100%" src="codes/print_one4.png">
-            <img height="30%" width="100%" src="codes/print_one4.png">
-        </div>
+        <e>This sentence will work :</e>
+        <h>ये काम नहीं करेगा :</h>
+        <div class="code-container"style="height :5%">
+        <div class="code TOE" id="editor"> 
+तंत्र.बाहर.प्रिंट("This will work!|ये काम करेगा");</div></div>
+        <e>This sentence will produce an ERROR :</e>
+        <h>ये काम नहीं करेगा और त्रुटि (Error) देगा :</h>
+        <div class="example" style="background-color:#ff1a1a;height :10%"><div class="code-container">
+        <div class="code TOE" id="editor">
+तंत्र.बाहर.प्रिंट(This sentence will produce an ERROR);</div></div></div>
          <h2> &nbsp The Print() Method|
                 <!-- Replace-->
             मुद्रण() विधि</h2>
@@ -67,9 +80,10 @@
              एक <c>print()</c> विधि भी है, जो <c>println()</c> के समान है।<br>दोंनो मे एकमात्र अंतर यह है कि यह आउटपुट के अंत में एक नई लाइन सम्मिलित नहीं करता है या जोड़ता नहीं है :
             </h><br>
         </p>
-        <div class="example"  codereplace >
-            <img height="30%" width="100%" src="codes/print_one4.png">
-        </div>
+        <div class="code-container"style="height :15%">
+        <div class="code TOE" id="editor">
+तंत्र.बाहर.प्रिंट("Hello World! ");
+तंत्र.बाहर.प्रिंट("I will print on the same line.");</div></div>
         <p> 
            <div class="note">
                 <e>
@@ -94,10 +108,11 @@
                आप संख्याओं को मुद्रित करने के लिए <c>println()</c> विधि का भी उपयोग कर सकते हैं।<br>
                 हालाँकि,सादाहरण लेखन के विपरीत, हम संख्याओं को दोहरे उद्धरणों या कोट्स <c>" "</c> के अंदर नहीं डालते हैं:
             </h>
-        </p>
-        <div class="example"  codereplace >
-            <img height="30%" width="100%" src="codes/print_one4.png">
-        </div>
+        </p><div class="code-container"style="height :15%">
+        <div class="code TOE" id="editor">
+तंत्र.बाहर.प्रिंट(8);
+तंत्र.बाहर.प्रिंट(798);
+तंत्र.बाहर.प्रिंट(50000);</div></div>
         <p>
             <e>
                 You can also perform mathematical calculations(add, substract etc.) inside the <c>println()</c> method:
@@ -106,22 +121,31 @@
                 आप <c>println()</c> विधि के अंदर गणितीय गणना (जोड़ना,घटना आदि) भी कर सकते हैं:
             </h>
         </p>
-        <div class="example"  codereplace >
-            <img height="30%" width="100%" src="codes/print_one4.png">
-        </div>
+        <div class="code-container">
+        <div class="code TOE" id="editor">
+तंत्र.बाहर.प्रिंट(8+4);
+तंत्र.बाहर.प्रिंट(15-6);
+तंत्र.बाहर.प्रिंट(5*6);
+तंत्र.बाहर.प्रिंट(36/6);
+तंत्र.बाहर.प्रिंट(50%3);</div></div>
         <p> 
            <div class="note">
                 <e>
                     <h3 class="h-note">Note :</h3>
-                    You can do the same operations/calculations in the <c>print()</c>  method differnce is that it won't add a new line but write it in same line.<br>
+                    You can do these operations/calculations in the <c>print()</c> and in <c>println()</c>  method difference is that it won add a new line but not write it in same line.<br>
                     Also you can add multiple <c>println()</c> and <c>print()</c> methords  one after other as we did before.
                 </e>
                 <h>
                     <h3 class="h-note">ध्यान दे:</h3>
-                    आप <c>print()</c> विधि में समान तरीके से गणना कर सकते हैं, अंतर यह है कि यह एक नई पंक्ति नहीं जोड़ेगा बल्कि इसे उसी पंक्ति में लिखेगा या कहे जोड देगा । इसके अलावा, आप एक के बाद एक कई <c>println()</c> और <c>print()</c> विधियों को जोड़ सकते हैं जैसा कि हमने पहले किया था।               
+                    आप <c>print()</c> और  <c>println()</c>  विधि में समान तरीके से गणना कर सकते हैं, अंतर यह है कि यह एक नई पंक्ति नहीं जोड़ेगा बल्कि इसे उसी पंक्ति में लिखेगा या कहे जोड देगा । इसके अलावा, आप एक के बाद एक कई <c>println()</c> और <c>print()</c> विधियों को जोड़ सकते हैं जैसा कि हमने पहले किया था।               
                 </h>   
             </div>
         </p> 
     </chapter>
+<script src="scripts/article.js"></script>
+<script src="scripts/ace.js"></script>
+<script src="scripts/cobalt.js"></script>
+<script src="scripts/mode-javaa.js"></script>
+<script>codeload();</script>
 </body>
 </html>

@@ -23,7 +23,7 @@ font-size: 120%;
 h ul{font-size: 90%;padding-left:2% ; }
 li{padding:0 0 2% 1%;}
 .h-note{line-height: 0;}
-c{    font-size: 105%;font-weight: bold;
+c{ font-size: 105%;font-weight: bold;
       font-family: Consolas,Menlo,"courier new",monospace;color: crimson;
         background-color: rgba(222,222,222,0.3);padding: 0 0.5%;
   }
@@ -35,7 +35,39 @@ h .h-note{
   background-color: #ffffcc;
 }
 .example{
-
   background-color: #E7E9EB;
   padding:2% 2% ;
 }
+.code{
+  position: absolute;
+  left: 0;
+  top: 0;
+   height: 100%;
+  width: 100%;
+  font-size: 125%;
+}
+.code-container {
+  height: 25%;
+  margin: 1% auto;
+  position: relative;background-color: #E7E9EB;
+  padding:2% 2% ;
+}
+.btn{
+position: relative;margin: 30px 0 0 0;padding:0.3% 1.5% 0.5% 5%;
+border-radius: 20vw;
+background: #33ff;
+color: #000000;text-decoration: none;
+transition: 0.5s;justify-content: center;align-items: center;
+}
+.btn:hover{padding-left: 1.5%;
+padding-right:5%;color: rgb(255,255, 0);
+}
+.btn span{position: absolute;
+height :90%;
+width: 25%;left: 2%;
+font-size: 80%;
+background: #04fe4d;
+border-radius: 50%;
+transition: left 0.5s ease-in-out;
+}
+.btn:hover span{left:calc(100% - 30%);color: #000000;}

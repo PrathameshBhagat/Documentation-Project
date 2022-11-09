@@ -1,1 +1,244 @@
-g
+<html>
+<head>
+<script type="text/javascript" src="scripts/article.js"></script>
+<link rel="stylesheet" href="style/article.css" /> 
+</head>
+<body onload="load()" prev="comments.html">
+    <h1>Variables |
+        <!--<input type="button" value="shift" onclick="ehchange()">-->
+        <select name="H/E" onchange="set(this.value)">
+            <option value="english">English</option>
+            <option value="hindi">हिन्दी(Hindi)</option>
+        </select> <br>
+        <input type="button" value="pervious" onclick="pchapter()">
+<a class="btn" onclick="nchapter()" href="#"><span>&nbsp;&rarr;</span>NEXT</a>
+    </h1> 
+    <chapter> 
+        <h2>&nbspVariables :</h2>
+        
+            <e>
+                Variables are containers for storing data values.There are different types of variables, for example:
+<ul>
+<li><c>डोर</c> - stores text, such as "Hello". String values are surrounded by double quotes
+<li><c>int</c> - stores integers (whole numbers), without decimals, such as 123 or -123
+<li><c>float</c> - stores floating point numbers, with decimals, such as 19.99 or -19.99
+<li><c>पात्र</c> - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes
+<li><c>boolean</c> - stores values with two states: true or false.
+</ul>
+            </e>
+            <h>
+                आकड़ों या डेटा मानों को संग्रहीत(store) करने के लिए कंटेनर या कहे एक धारक/डिब्बे का काम करता हैं। ये विभिन्न प्रकार के होते हैं, उदाहरण के लिए:
+                <ul>
+<li><c>डोर</c> - एक रेखा मे लिखे चीजों को संग्रहीत(store) करता है। स्ट्रिंग मान दोहरे उद्धरणों <b>" "</b>से घिरे हुए होते हैं। <br><b>जैसे :"hello"</b>
+<li><c>int</c> - दशमलव(डेसीमल) के बिना पूर्णांक(पूर्ण संख्या/Whole numbers) संग्रहीत(store) करता है। (decimal without whole numbers)<br><b>जैसे : 123 या -123</b></b>
+<li><c>float</c> - फ़्लोटिंग पॉइंट संख्याओं को दशमलव के साथ संग्रहीत(store) करता है ।(पूर्णांक के साथ दशमलव)<br> <b>जैसे : 19.99 या -19.99</b>
+<li><c>पात्र</c> - एक वर्ण(character) को संग्रहीत करता है । पात्र एक उद्धरणों ' ' से घिरे हुए होते है ।<br><b>जैसे 'a' या 'b'</b>
+<li><c>boolean</c> -ये केवल दो चीजे को संग्रहीत(store) करता है। <br><b>जैसे : सही या गलत</b>।
+</ul>
+            </h><hr>
+        <h2> &nbspDeclaring (Creating) Variables|Variable घोषित करना(या बनाना)</h2>
+        <p>
+            <e>
+              To create a variable, you must specify the type and assign it a value:
+            </e>
+            <h> 
+             variable बनाने के लिए, आपको प्रकार स्पष्ट करना होगा और इसे मूल्य(वैल्यू/value) या अंक देना करना होगा:
+            </h>
+        </p>
+        <div class="example"  codereplace >
+            <img height="30%" width="100%" src="codes/print_one4.png">
+        </div>
+         <p><br>
+            <e>
+             Where type is one of variable types discussed earlier (such as <c>int</c> or <c>डोर</c>),
+              and <em>variableName</em> is the name of the variable (such as <b>x</b> or <b>name</b>). 
+              The equal sign <c>=</c>is used to assign values to the variable.<br>
+              To create a variable that should store text, look at the following example:
+            </e>
+            <h> 
+            जहां प्रकार पहले चर्चा किए गए प्रकारों में से एक है (जैसे <c>ईंट</c> या <c>डोर</c>),
+            और <em>variablename</em> नाम variable का नाम है (जैसे <b>x</b> या <b>name</b>)। 
+            बराबर चिह्न <c>=</c> variable को मूल्य(value) प्रदान करने के लिए उपयोग किया जाता है।<br>
+            अगर हम टेक्स्ट(text) संग्रहीत(store) करने के लिए variable बनाना कहते है तो निम्न उदाहरण का प्रयोग कर सकते है :
+            </h><br>
+        </p>
+        <div class="example"  codereplace >
+            <img height="30%" width="100%" src="codes/print_one4.png">
+        </div>
+         <p>
+            <e>
+             You can also declare a variable without assigning the value, and assign the value later:
+            </e>
+            <h> 
+            आप मूल्य प्रदान किए बिना भी एक variable घोषित कर सकते हैं, और बाद में मूल्य प्रदान कर सकते हैं:
+            </h><br>
+        </p>
+        <div class="example"  codereplace >
+            <img height="30%" width="100%" src="codes/print_one4.png">
+        </div>
+        <p> 
+           <div class="note">
+                <e>    
+                   Note that if you assign a new value to an existing variable, it will overwrite the previous value:
+                </e>
+                <h>
+                  ध्यान दें कि यदि आप किसी मौजूदा variable को कोई नया मूल्य प्रदान करते हैं, तो यह पिछले मूल्य(value) प्रदान को अधिलेखित कर देगा(बदल देगा ):
+                </h>   
+            </div>
+        </p> 
+         <div class="example"  codereplace >
+            <img height="30%" width="100%" src="codes/print_one4.png">
+        </div><br><hr>
+        <h2> &nbspFinal Variables|  </h2>
+        <p>
+            <e>
+              If you don't want others (or yourself) to overwrite existing values, use the <c>अंतिम</c> keyword (this will declare the variable as "final" or "constant", which means unchangeable and read-only)
+            </e>
+            <h> 
+             यदि आप नहीं चाहते हैं कि कोई अन्य (या स्वयं आप) मौजूदा variable को अधिलेखित करें(या ना बदले), तो <c>अंतिम</c> का उपयोग करें (यह variable को "अंतिम" या "स्थिर" के रूप में घोषित करेगा, जिसका अर्थ है अपरिवर्तनीय और केवल पढ़ने के लिए है और इसे बदल नहीं जा सकता):
+            </h><br>
+        </p>
+        <div class="example"  codereplace >
+            <img height="30%" width="100%" src="codes/print_one4.png">
+        </div><br><hr>
+        <h2> &nbspOther Types|बाकी प्रकार के variables</h2>
+        <p>
+            <e>
+              A demonstration of how to declare variables of other types:
+            </e>
+            <h> 
+             अन्य प्रकार के variable को इस तरीके से धोषित करे:
+            </h><br>
+        </p>
+        <div class="example"  codereplace >
+            <img height="30%" width="100%" src="codes/print_one4.png">
+        </div>
+    </chapter>
+    <chapter>
+        <h2> &nbspDisplay Variables|Variable प्रदर्शित करे </h2>
+        <p>
+            <e>
+              The <c>println()</c> method is often used to display variables.<br>To combine both text and a variable, use the <c>+</c> character:
+            </e>
+            <h> 
+               <c>println()</c> विधि(methord) का उपयोग अक्सर variable प्रदर्शित या कहे प्रिन्ट करने के लिए किया जाता है।<br> टेक्स्ट और variable दोनों को संयोजित करने के लिए,(जोड़ने के लिए)<c>+</c> वर्ण का उपयोग करें:
+            </h><br>
+        </p>
+        <div class="example"  codereplace >
+            <img height="30%" width="100%" src="codes/print_one4.png">
+        </div>
+        <p>
+            <e>
+                You can also use the <c>+</c>character to add a variable to another variable:
+            </e>
+            <h>
+                आप किसी अन्य variable में एक दूसरा variable जोड़ने के लिए <c>+</c> का भी उपयोग कर सकते हैं:
+            </h>
+        </p>
+        <div class="example"  codereplace >
+            <img height="30%" width="100%" src="codes/print_one4.png">
+        </div><p>
+            <e>
+                For numeric values, the <c>+</c> character works as a mathematical operator (notice that we use int (integer) variables here):
+            </e>
+            <h>
+                संख्यात्मक मानों/मूल्यों(values) के लिए, <c>+</c> वर्ण गणितीय ऑपरेटर के रूप में काम करता है (ध्यान दें कि हम यहां <c>int</c>(पूर्णांक) चर का उपयोग करते हैं):
+            </h>
+        </p>
+        <div class="example"  codereplace >
+            <img height="30%" width="100%" src="codes/print_one4.png">
+        </div><br>
+            <e>
+                From the example above, you can expect:<ul><li>
+x stores the value 5<li>
+y stores the value 6<li>
+Then we use the println() method to display the value of x + y, which is 11</ul>
+            </e>
+            <h>
+                ऊपर दिए गए उदाहरण से, आप उम्मीद कर सकते हैं:<ul><li>
+x मान 5 संग्रहीत करता है<li>
+वाई मूल्य 6 संग्रहीत करता है<li>
+फिर हम x + y के मूल्य को प्रदर्शित करने के लिए <c>println()</c> विधि(method) का उपयोग करते हैं, जो 11 है|</ul>
+            </h>
+    </chapter>
+    <chapter>
+        <h2> &nbspDeclare Multiple Variables|अनेक Variables घोषित करे  </h2>
+        <p>
+            <e>
+              To declare more than one variable of the same type, you can use a comma-separated list:
+            </e>
+            <h> 
+               एक ही प्रकार के एक से अधिक variable घोषित करने के लिए, आप अल्पविराम <c>,</c>से अलग की गई सूची का उपयोग कर सकते हैं(comma-separated list):
+            </h><br>
+        </p>
+        <div class="example"  codereplace >
+            <img height="30%" width="100%" src="codes/print_one4.png">
+        </div><h2> &nbspOne Value to Multiple Variables|एकाधिक Variables के लिए एक मान/मूल्य(वैल्यू)</h2>
+        <p>
+            <e>
+              You can also assign the same value to multiple variables in one line:
+            </e>
+            <h> 
+               आप एक पंक्ति में एकाधिक variable के लिए एक ही मूल्य(value) भी प्रदान कर सकते हैं:
+            </h><br>
+        </p>
+        <div class="example"  codereplace >
+            <img height="30%" width="100%" src="codes/print_one4.png">
+        </div>
+    </chapter>
+    <chapter>
+        <h2>&nbspIdentifiers|पहचानकर्ता|variable के नाम </h2>
+        <p>
+            <e>
+            All variables must be identified with unique names.<br>These unique names are called <b>identifiers.</b>They can be short names (like x and y) or more descriptive names (age, sum, totalVolume).<br><br><b>Note</b>: It is recommended to use descriptive names in order to create understandable and maintainable code:
+            </e>
+            <h> 
+            सभी variable को अलग नामों(अद्वितीय नामो) से पहचाना जाना चाहिए। इन अद्वितीय नामों को <b>पहचानकर्ता(identifiers)</b> कहा जाता है। पहचानकर्ता छोटे नाम (जैसे x और y) या अधिक वर्णनात्मक नाम (age, sum, totalVolume) हो सकते हैं।<br><br><b> ध्यान दे</b>: समझने योग्य और रखरखाव योग्य कोड बनाने के लिए वर्णनात्मक नामों का उपयोग करना बहतर माना जाती है:
+            </h><br>
+        </p>
+        <div class="example"  codereplace >
+            <img height="30%" width="100%" src="codes/print_one4.png">
+        </div><br>
+        <e>The general rules for naming variables are:
+        <ul><li>
+Names can contain letters(a,b,c...z or A,B,C...Z) , digits, underscores, and dollar signs<li>
+Names must begin with a letter<li>
+Names can also begin with $ and _ <li>
+Names are case sensitive ("myVar" and "myvar" are different variables)<li>
+Reserved words (like Java keywords, such as int or boolean) cannot be used as variable names <li>
+Names should preferably  start with a lowercase letter and it can never contain whitespace</ul>
+        </e>
+        <h>variable के नाम लिए सामान्य नियम हैं:
+        <ul><li>
+नामों में अक्षर (केवल a,b,c...z और A,B,C...Z),अंक (केवल 1,2,3.. ), अंडरस्कोर<c>_</c> और डॉलर<c>$</c> के संकेत हो सकते हैं<li>
+नाम एक अक्षर से ही  शुरू होना चाहिए (केवल a,b,c...z और A,B,C...Z)<li>
+नाम किसी लोअरकेस अक्षर से प्रारंभ हो तो बेहतर होगा और इसमें कभी भी श्वेतस्थान(whitespace)<c> </c>  &nbsp नहीं हो सकता<li>
+नाम भी $ और _ के साथ शुरू कर सकते हैं <li>
+नाम केस(case) संवेदी हैं ("vaVar" और "vavar" अलग-अलग variables हैं)<li>
+आरक्षित शब्द(reserved keywords) जैसे Java के आरक्षित शब्द या PHP के आरक्षित शब्द या , उधारण के लिए <c>int</c>,<c>php</c>,<c>php</c> या <c>अगर</c> का उपयोग नाम के रूप में बिलकुल नहीं किया जा सकता है |</ul>
+        </h>
+        <p> 
+           <div class="note">
+                <e>
+                    <h3 class="h-note">Note :</h3>
+                    As of now we don't support variable names in hindi/devangri script 
+                    so you have to name variables in english only , hindi variable name(मेरावारियाबल) are not allowed and would throw error.
+                </e>
+                <h>
+                    <h3 class="h-note">ध्यान दे:</h3>
+                    अभी तक हम हिंदी/देवनागरी लिपि में variable नामों का समर्थन नहीं करते हैं 
+                    तो आपको केवल अंग्रेजी में चर का नाम देना होगा, हिंदी variable नाम(मेरावारियाबल) की अनुमति नहीं है और त्रुटि(Error) देगा।           
+                </h>   
+            </div>
+        </p> 
+        <div class="example"  codereplace >
+            <img height="30%" width="100%" src="codes/print_one4.png">
+        </div>
+    </chapter>
+<script src="scripts/article.js"></script>
+<script src="scripts/ace.js"></script>
+<script src="scripts/cobalt.js"></script>
+<script src="scripts/mode-javaa.js"></script>
+<script>codeload();</script> 
+</body>
+</html>

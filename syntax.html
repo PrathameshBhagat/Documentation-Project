@@ -3,15 +3,15 @@
 <script type="text/javascript" src="scripts/article.js"></script>
 <link rel="stylesheet" href="style/article.css" /> 
 </head>
-<body onload="load('h','none')">
-    <h1>Syntaxing | &nbspवाक्य रचना&nbsp|&nbsp वाक्य विन्यास <br>
+<body onload="load()" next="output.html" >
+    <h1>Syntaxing | &nbspवाक्य रचना&nbsp|&nbsp वाक्य विन्यास 
         <!--<input type="button" value="shift" onclick="ehchange()">-->
         <select name="H/E" onchange="set(this.value)">
             <option value="english">English</option>
             <option value="hindi">हिन्दी(Hindi)</option>
-        </select>
-        <input type="button" value="next" onclick="nchapter()">
+        </select><br>
         <input type="button" value="pervious" onclick="pchapter()">
+<a class="btn"onclick="nchapter()" href="#"><span>&nbsp;&rarr;</span>NEXT</a>
     </h1> 
     <chapter> 
         <p>
@@ -33,8 +33,8 @@
             <h> <h3 class="h-note">उदाहरण:</h3>    
                 उदाहरण के लिए ,एक पत्र लिखने हेतु  हम ऊपर दाई  ओर प्राप्तकर्ता का  पता लिखते हैं  फिर विषय , उसके बाद अभिवादन आदि ,और ऐसे ही ईमेल में हम पहले प्राप्तकर्ता, विषय और अन्य चीजें स्पष्ट करते हैं।
             </h>
-                <div class="img-container"><img src="images/email.png"><br></div> 
-            </div>
+<div class="img-container "><img height="50%" width="100%" src="images/email.png"></div>
+        </div>
         </p><br>
         <p> 
             <e>
@@ -46,8 +46,13 @@
             </h>
         </p>
         <br><!--codereplace-->
-        <div class="example" ><div class="img-container "><img height="30%" width="100%" src="codes/print_java.png"><img height="30%" width="100%" src="codes/print_one4.png"></div>
-        </div>
+        <div class="code-container">
+      <div class="code TOE" id="editor">
+सार्वजनिक कक्षा  Main {
+    सार्वजनिक स्थिर रिक्त जरूरी (डोर  [] a){
+        तंत्र.बाहर.प्रिंट("Hello World");
+    }
+}</div></div> 
         <p> 
            <div class="note">
                 <e>
@@ -74,13 +79,72 @@
             </h>
         </p> 
           <br>
-          <!--delete this container it is code-->
-        <div class="example"><div class="img-container "  ><img height="30%" src="codes/print_java.png"><img height="30%" width="100%" src="codes/print_one4.png"></div>
-        </div>
+          <!--delete this container it is code--><div class="code-container">
+      <div class="code" id="editor">// C code to print hello world
+
+#include &ltstdio.h&gt
+    int main() {
+   printf("hello, world!");
+   return 0;
+}
+
+
+//JavaScript code to print hello world
+
+console.log('hello world');
+
+
+
+//Perl code to print hello world
+#!/usr/bin/perl
+# Modules used
+use strict;
+use warnings;
+# Print function
+print("hello world\n");
+
+//Python code to print hello world
+
+print("hello world")
+</div></div>        
 <!--
 
 
-other images of print in othe languges.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+other images of print in other languges.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 -->
@@ -88,17 +152,20 @@ other images of print in othe languges.
            <div class="note">
                 <e>
                     <h3 class="h-note">Note :</h3>               
-                    Here you need not worry about different syntaxing of so many different programming languages, as most of them have very slight changes in their syntaxing. 
+                    Here you need not worry about different syntaxing of so many different programming languages, as it would be very easy for you to learn a other languages once you learn any one language .<br>Also many of them have very slight changes in their syntaxing.(The above languages are the one which do not share simialar syntaxing so no need worry ).
                 </e>
                 <h>
                     <h3 class="h-note">ध्यान दे:</h3>
-                      यहां आपको बहुत से अलग-अलग प्रोग्रामिंग भाषाओं के अलग-अलग वाक्य विचार (सिंटैक्सिंग|Syntaxing) के बारे में चिंता करने की ज़रूरत नहीं है, क्योंकि उनमें से अधिकांश के सिंटैक्सिंग में बहुत मामूली बदलाव होते हैं|
+                      यहां आपको इतनी सारी अलग-अलग प्रोग्रामिंग भाषाओं के अलग-अलग वाक्यविन्यास(syntaxing) के बारे में चिंता करने की आवश्यकता नहीं है, क्योंकि किसी एक भाषा को सीखने के बाद आपके लिए अन्य भाषाओं को सीखना बहुत आसान होगा।<br> इसके अलावा उनमें से अधिकांश के वाक्यविन्यास(syntaxing) में बहुत मामूली बदलाव होते हैं। (उपरोक्त भाषाएं वह हैं जो समान वाक्यविन्यास(syntaxing) साझा नहीं करती हैं इसलिए तनाव लेने की कोई आवश्यकता नहीं है)।
                 </h>   
             </div>
         </p> 
         
     </chapter>
-
-
+<script src="scripts/article.js"></script>
+<script src="scripts/ace.js"></script>
+<script src="scripts/cobalt.js"></script>
+<script src="scripts/mode-javaa.js"></script>
+<script>codeload();</script>
 </body>
 </html>

@@ -1,3 +1,12 @@
+change variable in vcariable .html and datatype.html
+add ईंट फ्लोट बाइट छोटा लंबा बड़ा इ ल ब to decode.php
+change char,character,object,Arrays,interfaces  to hindi replace all in datat..html 
+
+add datatype file type casting operators booleans
+previous check ing for only files nor=t chapter
+add datatypesin decode .php from datatype.html
+
+
 change the variable word in hindi in variable.html in heading too
 change int float double boolean etc to hindi  
 change  word variables in hindiin whole page 
@@ -6,6 +15,7 @@ change int in hindi
 change all images to codes .
 
 
+ 
 change println  and print to in print.html accordingly,"carefully" and java/one4 and replace print program into one line code in first image and other images to codes in output.html
 
 update get started.html in all files for print program as in w3

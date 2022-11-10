@@ -31,12 +31,7 @@ function change(tag,val)
     }
 }
 //check and change language depricated other available only use in index.html can update
-function ehchange(){ 
-        if(document.getElementsByTagName("h")[0].style.display=="none")
-            {change("h","block");change("e","none");}
-        else if(document.getElementsByTagName("e")[0].style.display=="none")
-            {change("e","block");change("h","none");}
-}
+
 function codeload()//load editor
 {
 const cd = document.getElementsByClassName("code");
@@ -107,8 +102,8 @@ function help(){
         'To go to next chapter press (N) key \n'+
         'To go to previous chapter press (P) key on key board\n'+
         'To go to editor change /Docs to  /edit on search bar\n '+
-        'Press (H) for this help list\n\n'+
-        'भाषा बदलने के लिए डॉट (.) coding की जगह के बाहर दबाए\n'+
-        'अगले पाठ पर जाने के लिए (N)दबाए\n'+
-        'पिछले पाठ पर जाने के लिए (P)दबाए\n'+
-        'editor पर जाने के लिए ऊपर (..../Docs/)को (..../edit/)मे बदले');}
+        'Press (H) for this help list\n\n\n\n'+
+        'भाषा बदलने के लिए डॉट (.) coding की जगह के बाहर दबाए'+
+        'अगले पाठ पर जाने के लिए (N)दबाए '+
+        'पिछले पाठ पर जाने के लिए (P)दबाए '+
+        'editor पर जाने के लिए ऊपर (..../Docs)  (..../edit) ');}

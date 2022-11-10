@@ -1,7 +1,9 @@
 <html>
 <head>
-    <link rel="stylesheet" href="style/doc.css" />
-    <body id="container"onload="{help();document.getElementsByTagName('a')[0].click();change('h','none');}" onkeydown="dot()">
+<link rel="stylesheet" href="style/doc.css" />
+<script src="scripts/article.js"></script>
+</head>
+<body id="container"onload="{help();document.getElementsByTagName('a')[0].click();change('h','none');}" onkeydown="dot()">
         <span style="font-size:150%;cursor:pointer" onclick="openNav()">&nbsp;&#9776; </span> 
         &nbsp; &nbsp;  Press (H) for help/list of commands|मदत के लिए (H) दबाए 
     <div id="Sidenav" class="sidenav">
@@ -13,13 +15,12 @@
         <a href="output.html" target="f">Output</a><br>
         <a href="comments.html" target="f"> Comments</a><br>
         <a href="variables.html" target="f">Variables</a><br>
-        <a href="sys.html"target="f">Data-Types</a><br>
+        <a href="datatype.html"target="f">Data-Types</a><br>
         <a href="sys.html"target="f">Type-casting</a><br>
         <a href="sys.html"target="f">Operators</a><br>
         <a href="switch.html" target="f">Booleans</a><br> 
         <a href="sys.html"target="f">String</a><br>
-        <a href="sys.html"target="f">Math</a><br>
-        
+        <a href="sys.html"target="f">Math</a><br>        
         <a href="switch.html" target="f">If...else</a><br>
         <a href="output.html" target="f">Switch</a><br>
         <a href="output.html" target="f">for</a><br>
@@ -28,6 +29,5 @@
         <a href="exp2.html" target="f">Arrays</a><br>       
     </div>
 <iframe name="f"></iframe>
-<script src="scripts/article.js">
 </script>
 </body></html>

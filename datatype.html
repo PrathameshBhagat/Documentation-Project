@@ -1,0 +1,263 @@
+<html>
+<head>
+<script type="text/javascript" src="scripts/article.js"></script>
+<link rel="stylesheet" href="style/article.css" /> 
+</head>
+<body onload="load()" next="typecasting.html" prev="variables.html">
+    <h1> Data Types|  आंकड़ों के प्रकार| डेटा के प्रकार 
+        <!--<input type="button" value="shift" onclick="ehchange()">-->
+        <select name="H/E" onchange="set(this.value)">
+            <option value="english">English</option>
+            <option value="hindi">हिन्दी(Hindi)</option>
+        </select><br>
+        <input type="button" value="pervious" onclick="pchapter()">
+<a class="btn" onclick="nchapter()" href="#"><span>&nbsp;&rarr;</span>NEXT</a>
+    </h1> 
+    <chapter> 
+        <h2>&nbsp Data Types| डेटा के प्रकार :</h2>
+        <p>
+            <e>
+                As we saw in the previous chapter, a variable must be a specified by a data type:
+            </e>
+            <h>
+               जैसा कि पिछले अध्याय में हमने देखा की ,एक variable एक निर्दिष्ट डेटा प्रकार होना चाहिए:
+            </h>
+        </p>
+        <div class="code-container">
+        <div class="code TOE" id="editor">
+
+</div></div>
+            <e>
+                Data types are divided into two groups:<br>
+                <ul><li><b>Primitive data types</b> -consist of<c>बाइट</c>,<c>छोटा</c>,<c>इंट</c>,<c>लंबा</c>,<c>फ्लोट</c>,<c>बड़ा</c>,<c>बूलियन</c>and <c>char</c><br>
+                <li><b>Non-primitive data types</b> -these include <c>डोर</c>, <c>Arrays</c> and <c> कक्षा</c> (we will learn more about these in a later chapter)</ul>
+            </e>
+            <h> 
+                डेटा प्रकारों को दो समूहों में विभाजित किया गया है:<br>
+                <ul>
+                <li><b>आदिम(पुराने/आसान) डेटा प्रकार(primitive)</b> -<c>बाइट</c>,<c>छोटा</c>,<c>इंट</c>,<c>लंबा</c>,<c>फ्लोट</c>,<c>बड़ा</c>,<c>बूलियन</c> और <c>char</c> शामिल हैं<br >
+                <li><b>गैर-आदिम डेटा प्रकार(non-primitive)</b> - जैसे <c>डोर</c>,<c>Arrays</c> , और <c> कक्षा</c>(हम बाद के अध्याय में इनके बारे में अधिक जानेंगे)</ul>
+                    </h><hr>
+        <h2>&nbspPrimitive Data Types|आदिम(पुराने/आसान) डेटा प्रकार :</h2>
+        <p>
+            <e>
+                A primitive data type specifies the size,type of variable values, and it has no additional methods.<br>There are 8 primitive data types:
+            </e>
+            <h>
+               एक आदिम डेटा प्रकार चर मानों के आकार और प्रकार को निर्दिष्ट करता है, और इसमें कोई अतिरिक्त विधि नहीं हैं।<br>  आदिम डेटा 8 प्रकार के हैं:
+            </h>
+        </p>
+        <table border="2%" align="center">
+            <tr>
+                <th><e>Data Type</e><h>डेटा प्रकार</h></th>
+                <th><e>Size</e><h> आकार&nbsp;</h></th>
+                <th><e>Description</e><h>वर्णन</h></th>
+            </tr>
+            <tr>
+                <td><c>बाइट</td><td><e>1 byte</e><h>1 बाइट</h></td>
+                <td><e>Stores whole numbers from -128 to 127</e><h> -128 से 127 तक पूर्ण संख्या धारण(store) करता है</h></td>
+            </tr>
+            <tr>
+                <td><c>छोटा</c></td><td><e>2 bytes</e><h>2 बाइट</h></td>
+                <td><e>Stores whole numbers from  -32,768 to 32,767</e><h> -32,768 to 32,767 तक पूर्ण संख्या धारण(store) करता है</h></td>
+            </tr>
+            <tr>
+                <td><c>इंट</c></td><td><e>4 bytes</e><h>4 बाइट</h></td>
+                <td><e>Stores whole numbers from -2147483648 to 2147483647</e><h>-2147483648 to 2147483647 तक पूर्ण संख्या धारण(store) करता है</h></td>
+            </tr>
+            <tr>
+                <td><c>लंबा</c></td><td><e>8 bytes</e><h>8 बाइट</h></td>
+                <td><e>Stores whole numbers from -9223372036854775808 to 9223372036854775807</e><h> -9223372036854775808 to 9223372036854775807 तक पूर्ण संख्या धारण(store) करता है</h></td>
+            </tr>
+            <tr>
+                <td><c>फ्लोट</c></td><td><e>4 bytes</e><h>4 बाइट</h></td>
+                <td><e>Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits</e><h>दशमलव संख्याएँ संग्रहीत/धारण(store) करता है. 6 से 7 दशमलव अंकों को संग्रहीत करने के लिए पर्याप्त</h></td>
+            </tr>
+            <tr>
+                <td><c>बड़ा</c></td><td><e>8 bytes</e><h>8 बाइट</h></td>
+                <td><e>Stores fractional numbers. Sufficient for storing 15 decimal digits</e><h>दशमलव संख्याएँ संग्रहीत/धारण(store) करता है. 15 दशमलव अंकों को संग्रहीत करने के लिए पर्याप्त</h></td>
+            </tr>
+            <tr>
+                <td><c>बूलियन</c></td><td><e>1 bit</e><h>1 बिट</h></td>
+                <td><e>Stores true or false values</e><h>सही या गलत मान संग्रहीत करता है</h></td>
+            </tr>
+            <tr>
+                <td><c>char</c></td><td><e>2 bytes</e><h>2 बाइट</h></td>
+                <td><e>Stores a single character/letter or ASCII values</e><h>एक अक्षर संग्रहीत करता है</h></td>
+            </tr>
+        </table>
+    </chapter> 
+    
+    <chapter>
+        <h2>&nbspPrimitive Data Types|आदिम(पुराने/आसान) डेटा प्रकार:</h2>
+        <p>
+            <e>
+                Primitive number types are categorised into two groups:<br><b>Integer types</b> stores whole numbers, positive or negative (E.g: 123 or -456), with no decimals. Valid types are <c>बाइट</c>,<c>छोटा</c>,<c>इंट</c> and<c>लंबा</c>. Which type you should use, depends on the numeric value.<br>
+                <b>Floating point types</b> represents numbers with a fractional part, containing one or more decimals. There are two types: <c>फ्लोट</c> and <c>बड़ा</c>.
+            </e>
+            <h>
+               आदिम संख्या प्रकारों को दो समूहों/गुटों में बाटा गया है:<br>
+                <b>पूर्णांक</b> प्रकार दशमलव के बिना पूर्ण संख्याओं, धनात्मक या ऋणात्मक (जैसे 123 या -456) को संग्रहीत करते हैं। मान्य प्रकार <c>बाइट</c>,<c>छोटा</c>,<c>इंट</c> and<c>लंबा</c> होते हैं। आपको किस प्रकार का उपयोग करना चाहिए, संख्यात्मक मान पर निर्भर करता है।
+                <b>फ़्लोटिंग पॉइंट</b> प्रकार एक आंशिक(दशमलव) भाग के साथ संख्याओं का प्रतिनिधित्व करते हैं, जिसमें एक या अधिक दशमलव होते हैं।  दो प्रकार के होते हैं: <c>फ्लोट</c> और <c>बड़ा</c>।
+            </h>
+        </p><hr><hr>
+          <p>
+            <h2>बाइट</h2>
+            <e>
+                The <c>बाइट</c> data type can store whole numbers from -128 to 127.<br>It is used instead of <c>इंट</c> or other integer types to save memory and when you  know that the value will be within -128 and 127:
+            </e>
+            <h>
+                <c>बाइट</c> डेटा प्रकार संपूर्ण संख्याओं(whole no.s) को -128 से 127 तक संग्रहीत/धारण  कर सकता है।<br> इसका उपयोग कंप्युटर की स्मृति को सहेजने के लिए <c>इंट</c> या अन्य पूर्णांक प्रकारों के बजाय किया जा सकता है जब आप निश्चित हों कि मान -128 और 127 के भीतर होगा:
+                </h>
+        </p>
+<div class="code-container">
+<div class="code TOE" id="editor">
+</div></div>
+        <p>
+            <h2>छोटा</h2>
+            <e>
+                The <c>छोटा</c> data type store's whole numbers from -32768 to 32767:
+            </e>
+            <h>
+                <c>छोटा</c> डेटा प्रकार पूर्ण संख्याओं को -32768 से 32767 तक संग्रहीत/धारण कर सकता है:
+            </h>
+        </p>
+<div class="code-container">
+<div class="code TOE" id="editor"></div></div>
+        <p>
+            <h2>इंट</h2>
+            <e>
+                The <c>इंट</c> data type store's whole numbers from -2147483648 to 2147483647. In general,the int data type is the preferred data type to create variables with a numeric value.:
+            </e>
+            <h>
+                <c>इंट</c> डेटा प्रकार संपूर्ण संख्याएँ -2147483648 से 2147483647 तक धारण करता है . सामान्य तौर पर, इंट डेटा प्रकार संख्यात्मक मान के साथ variable बनाने के लिए पसंदीदा डेटा प्रकार है।:
+            </h>
+        </p>
+<div class="code-container">
+<div class="code TOE" id="editor"></div></div>
+        <p>
+            <h2>लंबा</h2>
+            <e>
+                <c>लंबा</c> ,This data type store's whole numbers from -9223372036854775808 to 9223372036854775807.It is used when इंट is not large enough to store the value. Note that you should end the value with an "ल":
+            </e>
+            <h>
+                <c>लंबा</c>इस डेटा प्रकार संपूर्ण संख्या -9223372036854775808 से 9223372036854775807 तक धारण करता है .इसका उपयोग तब की जाती है जब <c> इंट</c> मान(value) को संग्रहीत करने के लिए पर्याप्त बड़ा नहीं होता है। ध्यान दें कि आपको "ल" के साथ मान समाप्त करना होता है :
+            </h>
+        </p>
+<div class="code-container">
+<div class="code TOE" id="editor"></div></div><br><hr><hr>
+
+        <h2>Fractional types|आंशिक प्रकार</h2>  
+        </p>  
+            <e>We should use a fractional type/floating point type whenever we need a number with a decimal, such as 93.99 or 3.1424  .The <c>फ्लोट</c> and <c>बड़ा</c> data types can store fractional numbers.<br> Note that you should end the value with an <c>"ल"</c> for <c>फ्लोट</c> and <c>"ब"</c> for  <c>बड़ा</c>:
+            </e>  
+            <h>
+            जब भी हमें दशमलव के साथ किसी संख्या की आवश्यकता होती है, जैसे कि 93.99 या 3.1424, तो हमें एक आंशिक प्रकार /फ़्लोटिंग पॉइंट प्रकार का उपयोग करना चाहिए। <c>फ्लोट</c> और <c>बड़ा</c> डेटा प्रकार आंशिक/दशमलव संख्याओं को धारण कर सकते हैं।<br> ध्यान दें कि आपको <c>फ्लोट</c> के लिए <c>"ल"</c> और  <c>बड़ा</c>  के लिए <c>"ब"</c> के साथ मान समाप्त करना चाहिए:
+            </h>
+        </p>
+        
+<div class="code-container">
+<div class="code TOE" id="editor"></div></div>
+<div class="code-container">
+<div class="code TOE" id="editor"></div></div>
+        <p> 
+           <div class="note">
+                <e>
+                    <h3 class="h-note">Note :</h3>               
+                <i><b><c>फ्लोट</c> or <c>बड़ा</c>?</b></i><br>
+                    The precision of a fraction indicates number of digits the value it can have after the decimal point<c>.</c> . The precision of <c>फ्लोट</c>  is only six or seven decimal digits, while <c>बड़ा</c> variables have a precision of nearly 15 digits.So it is safer to use double for most calculations (but it uses lot of memory space as compared to others).
+                </e>
+                <h>
+                    <h3 class="h-note">ध्यान दे:</h3>
+                    <i><b><c>फ्लोट</c> या <c>बड़ा</c>?</b></i><br>
+                    एक भिन्न/आंशिक संख्या की परिशुद्धता दशमलव बिंदु के बाद होने वाले मान(value)के अंकों की संख्या को दर्शाती है।<c>फ्लोट</c> की सटीकता केवल 6 या 7 दशमलव अंक है, जबकि <c>बड़ा</c> में लगभग 15 अंकों की सटीकता है। इसलिए अधिकांश गणनाओं के लिए <c>बड़ा</c> का उपयोग करना सुरक्षित है (लेकिन यह दूसरों की तुलना में बहुत अधिक मेमोरी स्पेस का उपयोग करता है)
+                </h>   
+            </div>
+        </p>
+        <h2>Scientific Numbers|वैज्ञानिकी संख्या</h2>  
+        </p>  
+            <e>A fractional number can also be a scientific number with an "e" or "इ" to indicate the power of 10:
+            </e>  
+            <h>
+            एक आंशिक संख्या 10 की शक्ति(power of 10/exponent of 10) को दर्शित करने के लिए "e" या "इ" के साथ एक वैज्ञानिक संख्या भी हो सकती है
+            </h>
+        </p>
+<div class="code-container">
+<div class="code TOE" id="editor"></div></div>
+<div class="code-container">
+<div class="code TOE" id="editor"></div></div>
+    </chapter>
+    <chapter>
+        <h2>Boolean Types|बूलियन प्रकार </h2>   
+        <p>
+            <e>Many times in programming, we will need a data type that can only have one of two values, such as:<ul><li>YES / NO<li>TRUE / FALSE</ul>.For this we have a <c>बूलियन</c> data type, which only take's one of the values true or false:
+            </e>  
+            <h>
+            प्रोग्रामिंग में कई बार, हमें एक डेटा प्रकार की आवश्यकता होगी जिसमें केवल दो मानों(values) में से एक हो सकता है, जैसे:<ul><li> हाँ /नहीं <li>बंद/शुरू </ul><br> इसके लिए हमारे पास एक <c>बूलियन</c> डेटा प्रकार है, जो केवल सही या गलत मानों में से एक लेता है:
+            </h>
+        </p>
+<div class="code-container">
+<div class="code TOE" id="editor"></div></div>
+    </chapter>
+    <chapter>
+        <h2>Characters|Characters </h2>   
+        <p>
+            <e>The <c>char</c> data type is used to store a single character or a letter. The <c>char</c> data type must be surrounded by single quotes<c>' '</c>, like <c>'A'</c> or  <c>'c'</c>
+            </e>  
+            <h>
+            <c>char</c> डेटा प्रकार का उपयोग किसी एकल वर्ण या अक्षर को संग्रहीत(धारण) करने के लिए किया जाता है। <c>चार</c> डेटा प्रकार को एकल उद्धरणों<c>' '</c> से घिरा होना चाहिए, जैसे <c>'अ'</c> या <c>'ब'
+            </h>
+        </p>
+<div class="code-container">
+<div class="code TOE" id="editor"></div></div><hr><hr>
+        <h2>String | डोर </h2>   
+        <p>
+            <e>The <c>डोर</c>data type store's a sequence of characters(text)or <c>char</c> elements. <c>डोर</c>data type values must be surrounded by double quotes<c>" "</c>:
+            </e>  
+            <h>
+            <c>डोर</c>डेटा प्रकार  वर्णों या <c>वर्ण</c> का संग्रह है या कहे <c>char</c> तत्वों का एक अनुक्रम है। <c>डोर</c>डेटा प्रकार मान(values) दोहरे उद्धरणों<c>" "</c> से घिरे होने चाहिए:
+            </h>
+        </p>
+        <p> 
+           <div class="note">
+                <e>
+                    <h3 class="h-note">Note :</h3>
+                    A <c>डोर</c> type is actually a non-primitive data type, because it refers to an object. The <c>डोर</c> object has methods that are used to perform certain operations on it.<b> Don't worry if you don't understand the term "object" just yet</b>. We will learn more about <c>डोर</c> and objects in a later chapter.
+                </e>
+                <h>
+                    <h3 class="h-note">ध्यान दे:</h3>
+                    एक <c>डोर</c> प्रकार वास्तव में एक गैर-आदिम डेटा प्रकार है, क्योंकि यह किसी ऑब्जेक्ट को संदर्भित करता है। <c>डोर</c> ऑब्जेक्ट में ऐसी विधियाँ हैं जिनका उपयोग उस पर कुछ काम करने के लिए किया जाता है। <b> चिंता न करें यदि आप अभी तक "ऑब्जेक्ट" शब्द को नहीं समझते हैं</b>। हम बाद के अध्याय में <c>डोर</c> और वस्तुओं के बारे में अधिक जानेंगे।
+                </h>   
+            </div>
+        </p>
+    </chapter>
+    <chapter>
+    <h2>Non-Primitive Data Type|</b>आदिम(पुराने/आसान) डेटा प्रकार</b></h2>   
+        <e>     
+            Non-primitive data types are also called reference types as they refer to "objects".<br>The main difference between a <b>primitive</b> and a <b>non-primitive</b> data type is as follows:<ul><li>
+            Primitive types are predefined (already defined). Non-primitive types are created by the programmer and not defined already (except for <c>डोर</c>).<li>
+            Non-primitive types can be used to call methods to perform certain operations, while primitive types cannot.<li>
+            A primitive type always has some value, but non-primitive types can be null.<li>
+            The size of a primitive type depends on the data type,incase of non-primitive types they all have the same size.<li>
+            Examples of non-primitive types are Strings, Arrays,<c>कक्षा </c>, Interface, etc.<br>We will learn more about these in a later chapter.
+            </e>  
+            <h>
+            गैर-आदिम(पुराने) डेटा प्रकार"ऑब्जेक्ट्स" को संदर्भित करते हैं। <br>एक <b>आदिम</b> और <b>एक गैर-आदिम</b> डेटा प्रकार के बीच मुख्य अंतर निम्नानुसार है:<ul><li>
+            आदिम प्रकार पूर्वनिर्धारित हैं (पहले से परिभाषित)। गैर-आदिम प्रकार प्रोग्रामर द्वारा बनाए जाते हैं जो पहले से परिभाषित नहीं होते हैं (<c>डोर</c> को छोड़कर)। <li>
+            गैर-आदिम प्रकारों का उपयोग कुछ संचालन या काम करने के लिए उनकी विधियों को बुलाया जा सकता है, जबकि आदिम प्रकार नहीं कर सकते हैं। <li>
+            एक आदिम प्रकार का हमेशा कुछ मूल्य(वैल्यू) होता है, लेकिन गैर-आदिम प्रकार शून्य हो सकते हैं। <li>
+            एक आदिम प्रकार का आकार उसके प्रकार पर निर्भर करता है,गैर-आदिम प्रकारों के मामले में उन सभी का आकार समान होता है।<li>
+            गैर-आदिम प्रकारों के उदाहरण <c>डोर</c>,Arrays, <c>कक्षा</c>, Interface आदि हैं।<br> हम बाद के अध्याय में इनके बारे में अधिक जानेंगे।
+            </h>
+        </p>
+    </chapter>
+    
+    
+
+<script src="scripts/article.js"></script>
+<script src="scripts/ace.js"></script>
+<script src="scripts/cobalt.js"></script>
+<script src="scripts/mode-javaa.js"></script>
+<script>codeload();</script>
+</body>
+</html>

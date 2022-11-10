@@ -14,9 +14,9 @@ iframe{
   transition: 0.5s;
 }
 .sidenav a {
-  padding: 2% 2% 2% 12%;
+  padding: 2% 2% 2% 5%;
   text-decoration: none;
-  font-size: 25px;color: #00ffff;
+  font-size: 2vw;color: #00ffff;
   display: block;
   transition:background 3s;
   border: #00ff00;
@@ -27,7 +27,7 @@ iframe{
 .sidenav p{
   color:#000000;font-size: 200%;
 }
-.sidenav p span:hover{cursor: pointer;}
+.sidenav p span:hover,{cursor: pointer;}
 .sidenav a:hover {
     color: #000000;background:linear-gradient(45deg,#00ffff,#cc33ff,#ff33cc,#0000b3,#00ff00,#00ffff,#ffff00,#ff00ff);
     animation: a 5s linear  infinite ;

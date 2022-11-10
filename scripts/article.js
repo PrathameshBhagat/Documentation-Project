@@ -30,7 +30,8 @@ function change(tag,val)
       nodes[i].style.display = val;
     }
 }
-function ehchange(){//check and change language 
+//check and change language depricated other available only use in index.html can update
+function ehchange(){ 
         if(document.getElementsByTagName("h")[0].style.display=="none")
             {change("h","block");change("e","none");}
         else if(document.getElementsByTagName("e")[0].style.display=="none")
@@ -56,14 +57,21 @@ function set(v){
 function dot()//on click of button change language/chapter
 { 
     var key=('which' in event) ? event.which : event.keyCode;
-    if(key=="190"){
-        if(document.getElementsByTagName("select")[0].selectedIndex==0){
-            document.getElementsByTagName("select")[0].selectedIndex=1;set("hindi");}
-        else {
-            document.getElementsByTagName("select")[0].selectedIndex=0;set("english");}
+    if(key=="190"){console.log(document.contains(document.getElementsByTagName("select")[0]));
+        if(document.contains(document.getElementsByTagName("select")[0]))
+            if(document.getElementsByTagName("select")[0].selectedIndex==0){
+                document.getElementsByTagName("select")[0].selectedIndex=1;set("hindi");}
+            else {
+                document.getElementsByTagName("select")[0].selectedIndex=0;set("english");}
+        else
+            if(document.getElementsByTagName("h")[0].style.display=="none")
+                {change("h","block");change("e","none");}
+            else if(document.getElementsByTagName("e")[0].style.display=="none")
+                {change("e","block");change("h","none");}
      }
      else if(key=="78")nchapter();
      else if(key=="80")pchapter();
+     else if(key=="72")help();
 }
 function pchapter()//previous chapter
 {
@@ -94,6 +102,13 @@ function openNav()
     {document.getElementById("Sidenav").style.width = "20%";}
 function closeNav()
     {document.getElementById("Sidenav").style.width = "0";}
-
-
-
+function help(){
+    alert('Hit dot(.) out of coding space to change text language(eng/hindi)\n'+
+        'To go to next chapter press (N) key \n'+
+        'To go to previous chapter press (P) key on key board\n'+
+        'To go to editor change /Docs to  /edit on search bar\n '+
+        'Press (H) for this help list\n\n'+
+        'भाषा बदलने के लिए डॉट (.) coding की जगह के बाहर दबाए\n'+
+        'अगले पाठ पर जाने के लिए (N)दबाए\n'+
+        'पिछले पाठ पर जाने के लिए (P)दबाए\n'+
+        'editor पर जाने के लिए ऊपर (..../Docs/)को (..../edit/)मे बदले');}

@@ -5,7 +5,6 @@
 </head>
 <body onload="load()" next="operators.html" prev="datatype.html">
     <h1>Type Casting|पार्कर ढालना|प्रकार बदलना 
-            <!--<input type="button" value="shift" onclick="ehchange()">-->
         <select name="H/E" onchange="set(this.value)">
             <option value="english">English</option>
             <option value="hindi">हिन्दी(Hindi)</option>
@@ -17,11 +16,11 @@
         
         <h2>&nbspType Casting|पार्कर ढालना|प्रकार बदलना:</h2>
             <e>
-                Type casting occurs when you assign a value of one of primitive data type to another data type.<br>There are two types of casting:<ul><li><b>Widening Casting</b>(done automatically) - converting a smaller type to a larger type size<br><c>बाइट</c>-><c>छोटा</c>-><c>char</c>-><c>इंट</c>-><c>लंबा</c>-><c>फ्लोट</c>-><c>बड़ा</c><li><b>Narrowing Casting</b> (manually) - converting a larger type to a smaller size type<br><c>बड़ा</c> -><c>फ्लोट</c> -> <c>लंबा</c>-><c>इंट</c>-> <c>char</c> -> <c>छोटा</c> -> <c>बाइट</c></ul>
+                Type casting occurs when you assign a value of one of primitive data type to another data type.<br>There are two types of casting:<ul><li><b>Widening Casting</b>(done automatically) - converting a smaller type to a larger type size<br><c>बाइट</c>-><c>छोटा</c>-><c>वर्ण </c>-><c>इंट</c>-><c>लंबा</c>-><c>फ्लोट</c>-><c>बड़ा</c><li><b>Narrowing Casting</b> (manually) - converting a larger type to a smaller size type<br><c>बड़ा</c> -><c>फ्लोट</c> -> <c>लंबा</c>-><c>इंट</c>-> <c>वर्ण </c> -> <c>छोटा</c> -> <c>बाइट</c></ul>
             </e>
             <h>
                पार्कर ढालना तब होता है जब आप किसी अन्य डेटा प्रकार के लिए आदिम डेटा प्रकार में से एक का मान(value) प्रदान करते हैं। <br>ढालना दो प्रकार की होती है:
-               <ul><li><b>चौढाते या बढ़ते हुए ढालना</b>  - एक छोटे प्रकार को बड़े प्रकार के आकार प्रदान स्वचालित रूप से किया जाएगा <br><c>बाइट</c>-><c>छोटा</c>-><c>char</c>-><c>इंट</c>-><c>लंबा</c>-><c>फ्लोट</c>-><c>बड़ा नैरोइंग</c><br>(स्वचालित रूप से किया जाएगा )<li><b>संकुचन करते हुए ढालना</b>- एक बड़े प्रकार को छोटे आकार के प्रकार में परिवर्तित करना<br><c>बड़ा</c> -><c>फ्लोट</c> -> <c>लंबा</c>-><c>इंट</c>-> <c>char</c> -> <c>छोटा</c> -> <c>बाइट</c><br>(आप को करना होगा)</ul>
+               <ul><li><b>चौढाते या बढ़ते हुए ढालना</b>  - एक छोटे प्रकार को बड़े प्रकार के आकार प्रदान स्वचालित रूप से किया जाएगा <br><c>बाइट</c>-><c>छोटा</c>-><c>वर्ण </c>-><c>इंट</c>-><c>लंबा</c>-><c>फ्लोट</c>-><c>बड़ा नैरोइंग</c><br>(स्वचालित रूप से किया जाएगा )<li><b>संकुचन करते हुए ढालना</b>- एक बड़े प्रकार को छोटे आकार के प्रकार में परिवर्तित करना<br><c>बड़ा</c> -><c>फ्लोट</c> -> <c>लंबा</c>-><c>इंट</c>-> <c>वर्ण </c> -> <c>छोटा</c> -> <c>बाइट</c><br>(आप को करना होगा)</ul>
             </h>
         </p><hr>
  
@@ -33,22 +32,25 @@
             <h> 
                 यह स्वचालित रूप से किया जाता है जब हम एक छोटे आकार के प्रकार को बड़े आकार के प्रकार में पास करते हैं:
             </h><br>
-        </p>
-<div class="code-container">
-<div class="code TOE" id="editor"></div></div>
-    <h2> &nbspNarrowing Casting|संकुचन करते हुए ढालना</h2>
-        <p>
-            <e>
-               This must be done manually by placing the type of data in parentheses<c>( )</c> before the value:
-            </e>
-            <h> 
-                यह मान(वैल्यू) से पहले कोष्ठक <c>( )</c> में डेटा के प्रकार को रखकर व्यक्तिगत रूप से किया जाना चाहिए:
-            </h><br>
-        </p>
-<div class="code-container">
-<div class="code TOE" id="editor"></div></div>
-
-
+        </p><div class="code-container"><div class="code TOE" id="editor">
+        इंट Num = 5;
+        फ्लोट othernum=Num;
+        तंत्र.बाहर.प्रिंट(Num);//5 
+        तंत्र.बाहर.प्रिंट(othernum);//</div></div>
+        <h2> &nbspNarrowing Casting|संकुचन करते हुए ढालना</h2>
+            <p>
+                <e>
+                   This must be done manually by placing the type of data in parentheses<c>( )</c> before the value:
+                </e>
+                <h> 
+                    यह मान(वैल्यू) से पहले कोष्ठक <c>( )</c> में डेटा के प्रकार को रखकर व्यक्तिगत रूप से किया जाना चाहिए:
+                </h><br>
+            </p><div class="code-container"><div class="code TOE" id="editor">
+        फ्लोट Num=40.1465फ;
+        इंट othernum =(इंट)Num;//manual casting फ्लोट to इंट
+        तंत्र.बाहर.प्रिंट(Num);//40.1465
+        तंत्र.बाहर.प्रिंट(othernum);//40</div></div>
+    </chapter>
 
 <script src="scripts/article.js"></script>
 <script src="scripts/ace.js"></script>

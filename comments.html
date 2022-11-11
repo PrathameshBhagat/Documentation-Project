@@ -5,7 +5,6 @@
 </head>
 <body onload="load()" next="variables.html" prev="output.html">
     <h1>Comments| टिप्पणियाँ| कमेंट्स 
-        <!--<input type="button" value="shift" onclick="ehchange()">-->
         <select name="H/E" onchange="set(this.value)">
             <option value="english">English</option>
             <option value="hindi">हिन्दी(Hindi)</option>
@@ -22,9 +21,7 @@
             <h>
                संहिता(कोड/code) को समझाने और इसे और अधिक पढ़ने लायक बनाने के लिए टिप्पणियों(कमेंट्स) का उपयोग किया जा सकता है। इसका उपयोग वैकल्पिक(ऑल्टर्नेट) संहिता(कोड/code) का परीक्षण करते समय निष्पादन को रोकने के लिए भी किया जा सकता है।
             </h>
-        </p>
-        </div>
- 
+        </p> 
         <h2> &nbspSingle-line Comments|एक पंक्ति टिप्पणियाँ|एक रेखा(लाइन) मे टिप्पणियाँ </h2>
         <p>
             <e>
@@ -45,9 +42,8 @@
             <h> <h3 class="h-note">उदाहरण:</h3>   
             यह उदाहरण संहिता/कोड की एक पंक्ति से पहले एक पंक्ति(रेखा) की टिप्पणी का उपयोग करता है।
             </h>
-            <div class="code-container">
-        <div class="code TOE" id="editor">
-
+<div class="code-container"><div class="code TOE" id="editor">//ये एक टिप्पणी है  This is a comment
+तंत्र.बाहर.प्रिंट("Hello");
 </div></div></div>
         </p>
 
@@ -68,8 +64,10 @@
             <h> <h3 class="h-note">उदाहरण:</h3>   
               
             </h><br > 
-            <div class="img-container"><img src="codes/print_one4.png"><br></div> 
-            </div>
+            <div class="code-container"><div class="code TOE" id="editor">
+तंत्र.बाहर.प्रिंट("Hello"); //ये एक टिप्पणी है , This is a comment
+</div></div></div> 
+          
         </p>
         <h2> &nbspMulti-line Comments|बहु पंक्ति टिप्पणियाँ </h2>
         <p>
@@ -89,9 +87,15 @@
             <h> <h3 class="h-note">उदाहरण:</h3> 
                 यह उदाहरण संहिता/कोड की व्याख्या करने के लिए एक बहु-पंक्ति टिप्पणी (एक टिप्पणी ब्लॉक) का उपयोग करता है : 
             </h><br > 
-            <div class="img-container"><img src="codes/print_one4.png"><br></div> 
-            </div>
-        </p>
+            <div class="code-container">
+                <div class="code TOE" id="editor">
+/* The code below will
+print the word Hello 
+this is a comment block
+*/          
+तंत्र.बाहर.प्रिंट("Hello"); 
+</div></div></div> 
+        </p>        
         <p> 
            <div class="note">
                 <e>

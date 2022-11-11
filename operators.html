@@ -1,0 +1,183 @@
+<html>
+<head>
+<script type="text/javascript" src="scripts/article.js"></script>
+<link rel="stylesheet" href="style/article.css" /> 
+</head>
+<body onload="load()" next="boolean.html" prev="typecasting.html">
+    <h1>Operators|संचालक|प्रवर्तक
+        <select name="H/E" onchange="set(this.value)">
+            <option value="english">English</option>
+            <option value="hindi">हिन्दी(Hindi)</option>
+        </select><br>
+        <input type="button" value="pervious" onclick="pchapter()">
+<a class="btn" onclick="nchapter()" href="#"><span>&nbsp;&rarr;</span>NEXT</a>
+    </h1> 
+    <chapter> 
+        <h2>&nbspOperators|संचालक|प्रवर्तक :</h2>
+        <p>
+            <e>
+                Operators are used to do operations on variables and their values.<br>In the following example , we use the <c>+</c> operator to add two values:
+            </e>
+            <h>
+               संचालक/प्रवर्तक का उपयोग variable और उनके मूल्यों(वैल्यूस) पर संचालन करने के लिए किया जाता है। <br>निम्नलिखित उदाहरण में, हम दो मान जोड़ने के लिए <c>+</c>संचालक का उपयोग करते हैं:
+            </h>
+        </p><div class="code-container" style="height:5%"><div class="code TOE" id="editor">इंट x=120+55;</div></div>
+        <p>
+            <e>
+                Even though <c>+</c> operator is mostly used to add together two values, like seen above, we can also  use it to add together a variable and a value, or a variable and other variable:
+            </e>
+            <h>
+               भले ही <c>+</c> का उपयोग ज्यादातर दो मानों(अंकों) को एक साथ जोड़ने के लिए किया जाता है, जैसा ऊपर देखा गया है, हम इसका उपयोग एक variable और एक मूल्य, या एक variable और अन्य variable को एक साथ जोड़ने के लिए भी कर सकते हैं:
+            </h>
+        </p>
+        <div class="code-container"><div class="code TOE" id="editor">
+इंट x=120+50;//170
+इंट y=x+40;//210
+इंट z=x+y;//380</div></div>
+        <e>
+            The operators are divided into the following groups:<ul><li>Arithmetic operator's<li>Assignment operator's<li>Comparison operator's<li>Logical operator's<li>Bitwise operator's</ul>
+        </e>
+        <h>
+            संचालको को निम्नलिखित समूहों में विभाजित किया गया है :<ul><li> अंकगणितीय संचालक <li>प्रदनकर्ता/असाइनमेंट संचालक<li>तुलना  संचालक<li>तार्किक संचालक<li>बिटवाइज(0/1) संचालक</ul>
+        </h>
+        <hr>
+        <h2> &nbspArithmetic Operators|अंकगणितीय संचालक </h2>
+        <p>
+            <e>
+               These operators are used to do common mathematical operations/calculations.
+            </e>
+            <h> 
+                इन संचालकों का उपयोग सामान्य गणितीय संचालन/गणना करने के लिए किया जाता है।
+            </h><br>
+        </p>
+        <table border="2%" align="center">
+            <tr>
+                <th><e>Operator</e><h>संचालक</h></th>
+                <th><e>Name</e><h>नाम</h></th>
+                <th><e>Description</e><h>वर्णन</h></th>
+                <th><e>Example</e><h>उधारण</h></th>
+            </tr>
+            <tr>
+                <td><c>+</c></td><td><e>Addition</e><h>योग/संयोग</h></td><td><e>Adds two values</e><h>दो मानों(वैल्यूस) को साथ जोड़ता है</h></td><td>x+y</td>
+            </tr>
+            <tr>
+                <td><c>-</c></td><td><e>Subtraction</e><h>योग/संयोग</h></td><td><e>Subtracts one value from another</e><h>दो मानों(वैल्यूस) को साथ जोड़ता है</h></td><td>x-y</td>
+            </tr>
+            <tr>
+                <td><c>*</c></td><td><e>Multiplication</e><h>योग/संयोग</h></td><td><e>Multiplies two values</e><h>दो मानों(वैल्यूस) का गुणा करता है</h></td><td>x*y</td>
+            </tr>
+            <tr>
+                <td><c>/</c></td><td><e>Division</e><h>योग/संयोग</h></td><td><e>Divides a value by other</e><h>दो मानों(वैल्यूस)  को विभाजित करता है</h></td><td>x/y</td>
+            </tr>
+            <tr>
+                <td><c>%</c></td><td><e>Modulus</e><h>योग/संयोग</h></td><td><e>Returns a division's remainder</e><h>एक विभाजन का शेष लौटाता है</h></td><td>x%y</td>
+            </tr>
+            <tr>
+                <td><c>++</c></td><td><e>Increment</e><h>योग/संयोग</h></td><td><e>Increases the value of a variable by 1</e><h>मान को 1 से बढ़ाता है</h></td><td>++x</td>
+            </tr>
+            <tr>
+                <td><c>--</c></td><td><e>Decrement</e><h>योग/संयोग</h></td><td><e>Decreases the value of a variable by 1</e><h>मान को 1 से घटाता है</h></td><td>--x</td>
+            </tr>
+        </table>
+        <h2> &nbspAssignment Operators|प्रदनकर्ता/असाइनमेंट संचालक </h2>
+        <p>
+            <e>
+               Assignment operator's job is to assign values to variables.<br>In the folowing example, we used the <b>assignment</b>operator (=) to assign the value 10 to a variable called <b>x</b>:
+            </e>
+            <h> 
+               प्रदनकर्ता संचालक  का काम variable को मान(वैल्यू)प्रदान करना है। <br>उदाहरण में, हमने <b>x</b> नामक variable को 10 की संख्या प्रदान करने के लिए <b>प्रदनकर्ता </b>संचालक (=) का उपयोग किया है:
+            </h><br>
+        </p><div class="code-container" style="height: 5%;"><div class="code TOE" id="editor">
+इंट x=10;</div></div>
+        <table border="2%" align="center">
+            <tr>
+                <th><e>Operator</e><h>संचालक</h></th>
+                <th><e>Example</e><h>उधारण</h></th>
+                <th><e>Same As</e><h>इसके जैसा</h></th></tr>
+            <tr><td><c>=</c></td><td>x=6</td><td>x=6</td></tr>
+            <tr><td><c>+=</c></td><td>x+=4</td><td>x=x+4</td></tr>
+            <tr><td><c>-=</c></td><td>x-=4</td><td>x=x-4</td></tr>
+            <tr><td><c>*=</c></td><td>x*=4</td><td>x=x*4</td></tr>
+            <tr><td><c>/=</c></td><td>x/=4</td><td>x=x/4</td></tr>
+            <tr><td><c>%=</c></td><td>x%=4</td><td>x=x%4</td></tr>
+            <tr><td><c>&=</c></td><td>x&=4</td><td>x=x&4</td></tr>
+            <tr><td><c>|=</c></td><td>x|=4</td><td>x=x|4</td></tr>
+            <tr><td><c>^=</c></td><td>x^=4</td><td>x=x^4</td></tr>
+            <tr><td><c>>>=</c></td><td>x>>=4</td><td>x=x>>4</td></tr>
+            <tr><td><c><<=</c></td><td>x<<=4</td><td>x=x<<4</td></tr>
+        </table>
+        <h2> &nbspComparison Operators|तुलना संचालक</h2>
+        <p>
+            <e>
+               These are used to compare two values. It is important in programming, because this enables us to find answers and make decisions.<br>The returned value of a comparison is either true or false. These values are called Boolean values, and we will learn more about them later.<br>In the below example, we used  greater than operator (>) to find  if 15 is greater than 10:
+            </e>
+            <h> 
+               इनका उपयोग दो मानों की तुलना करने के लिए किया जाता है। प्रोग्रामिंग में यह महत्वपूर्ण है, क्योंकि यह हमें उत्तर खोजने और निर्णय लेने में सक्षम बनाता है।<br>तुलना का लौटाया गया मान या तो सही है या गलत है। इन मूल्यों को बूलियन मान कहा जाता है, और हम बाद में उनके बारे में अधिक जानेंगे।<br>नीचे दिए गए उदाहरण में, हमने (>) संचालका का उपयोग यह पता लगाने के लिए किया कि क्या 15, 10 से अधिक है:
+            </h><br>
+        </p><div class="example"><e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h><div class="code-container" style="height: 15%;"><div class="code TOE" id="editor">
+इंट x=15;
+इंट y=10;
+तंत्र.बाहर.प्रिंट(x>y);
+</div></div></div><br>
+        <table border="2%" align="center">
+            <tr>
+                <th><e>Operator</e><h>संचालक</h></th>
+                <th><e>Name</e><h>नाम</h></th>
+                <th><e>Example</e><h>उधारण</h></th>
+            </tr>
+            <tr>
+                <td><c>==</c></td><td><e>Equal to</e><h>बराबर है</h></td><td>x==y</td>
+            </tr>
+            <tr>
+                <td><c>!=</c></td><td><e>Not equal</e><h>बराबर नहीं है</h><td>x!=y</td>
+            </tr>
+            <tr>
+                <td><c>></c></td><td><e>Greater than</e><h>इससे बड़ा</h></td><td>x&gt;y</td>
+            </tr>
+            <tr>
+                <td><c><</c></td><td><e>Less than</e><h>इससे छोटा</h></td><td>x&lt;y</td>
+            </tr>
+            <tr>
+                <td><c>>=</c></td><td><e>Greater than or equal to</e><h>इससे बड़ा या बराबर</h><td>x&gt;=y</td>
+            </tr>
+            <tr>
+                <td><c><=</c></td><td><e>Less than or equal to</e><h>काम है या बराबर</h></td><td>x&lt;=y</td>
+            </tr>
+        </table><hr>
+        <h2> &nbspLogical Operators|तार्किक संचालक</h2>
+        <p>
+            <e>
+               These are used to  determine the logic between variables or values:
+            </e>
+            <h> 
+               इनका उपयोग चर या मानों के बीच तर्क निर्धारित करने के लिए किया जाता है:
+            </h><br>
+        </p>
+        <table border="2%"align="center">
+            <tr>
+                <th><e>Operator</e><h>संचालक</h></th>
+                <th><e>Name</e><h>नाम</h></th>
+                <th><e>Description</e><h>वर्णन</h></th>
+                <th><e>Example</e><h>उधारण</h></th>
+            </tr>
+            <tr>
+                <td><c>&&</c></td><td><e>Logical AND</e><h>योग/संयोग</h></td><td><e>Returns true or<c>सच</c> if both statements are true (or<c>सच</c>)</e><h>यदि कथनों में दोनों सत्य है तो सत्य(<c>सच</c>) देता है</h></td><td>x < 3 && x < 7</td>
+            </tr>
+            <tr>
+                <td><c>||</c></td><td><e>Logical OR</e><h>योग/संयोग</h></td><td><e>Returns true (or<c>सच</c>) if one of the statements is true</e><h>यदि कथनों में से एक सत्य है तो सत्य(<c>सच</c>) देता है</h></td><td>x < 4 || x < 2 </td>
+            </tr>
+            <tr>
+                <td><c>!</c></td><td><e>Logical NOT</e><h>योग/संयोग</h></td><td><e>Reverse the result, returns false if the result is true</e><h>यदि कथनों में सत्य है तो झूठ देगा और झूठ है तो सच(<c>सच</c>)देगा </h></td><td>!(x < 4 || x < 2)</td>
+            </tr>
+        </table>
+
+    </chapter> 
+
+<script src="scripts/article.js"></script>
+<script src="scripts/ace.js"></script>
+<script src="scripts/cobalt.js"></script>
+<script src="scripts/mode-javaa.js"></script>
+<script>codeload();</script>
+</body>
+</html>

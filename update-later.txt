@@ -6,15 +6,14 @@ add datatype file type casting operators booleans
 previous check ing for only files nor=t chapter
 add datatypesin decode .php from datatype.html
 
+ do somethig of sach and jhuth as java does not accepts  neither prints them 
 
 change the variable word in hindi in variable.html in heading too
-change int float double boolean etc to hindi  
-change  word variables in hindiin whole page 
-change println in ch2 diaplay variables
+change int float double boolean,--आंशिक-- सच ,सही,झूठ ,गलत  etc to hindi  
+change  word variables in hindi in whole page 
+change println in ch2 diaplay variables and in coding area
 change int in hindi 
 change all images to codes .
-
-
  
 change println  and print to in print.html accordingly,"carefully" and java/one4 and replace print program into one line code in first image and other images to codes in output.html
 

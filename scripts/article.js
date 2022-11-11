@@ -52,7 +52,7 @@ function set(v){
 function dot()//on click of button change language/chapter
 { 
     var key=('which' in event) ? event.which : event.keyCode;
-    if(key=="190"){console.log(document.contains(document.getElementsByTagName("select")[0]));
+    if(key=="190"){
         if(document.contains(document.getElementsByTagName("select")[0]))
             if(document.getElementsByTagName("select")[0].selectedIndex==0){
                 document.getElementsByTagName("select")[0].selectedIndex=1;set("hindi");}

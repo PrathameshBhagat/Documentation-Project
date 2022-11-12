@@ -15,7 +15,7 @@ function load() {
         cdarea[i].addEventListener("mouseout", aevent);
     }
     //display first chapter and save active chapter index in c
-    document.getElementsByTagName("chapter")[0].style.display="block";
+    document.getElementsByTagName("chapter")[0].style.display="block";    
 };
 var c=0;
 //function to add event to change la.......nguage on . press 
@@ -49,7 +49,7 @@ function set(v){
     else 
         {change("h","block");change("e","none");}
 }
-function dot()//on click of button change language/chapter
+function dot(s)//on click of button change language/chapter
 { 
     var key=('which' in event) ? event.which : event.keyCode;
     if(key=="190"){
@@ -67,6 +67,13 @@ function dot()//on click of button change language/chapter
      else if(key=="78")nchapter();
      else if(key=="80")pchapter();
      else if(key=="72")help();
+     else if (s=="buton")
+        {
+            if(document.getElementsByTagName("h")[0].style.display=="none")
+                {change("h","block");change("e","none");}
+            else if(document.getElementsByTagName("e")[0].style.display=="none")
+                {change("e","block");change("h","none");}
+        }
 }
 function pchapter()//previous chapter
 {
@@ -93,16 +100,22 @@ function nchapter()//next chapter
         document.getElementsByTagName("chapter")[c].style.display="none";
         c=c+1;}
 }
-function openNav()
-    {document.getElementById("Sidenav").style.width = "20%";}
+function openNav(){
+    document.getElementById("Sidenav").style.width = "20%";
+    document.getElementById("open").style.display="none";
+    document.getElementById("close").style.display="inline-block";
+    document.getElementById("change").style.display="inline-block";}
 function closeNav()
-    {document.getElementById("Sidenav").style.width = "0";}
+    {document.getElementById("Sidenav").style.width = "0";
+    document.getElementById("open").style.display="inline-block";
+    document.getElementById("close").style.display="none";
+    document.getElementById("change").style.display="none";}
 function help(){
     alert('Hit dot(.) out of coding space to change text language(eng/hindi)\n'+
         'To go to next chapter press (N) key \n'+
         'To go to previous chapter press (P) key on key board\n'+
         'To go to editor change /Docs to  /edit on search bar\n '+
-        'Press (H) for this help list\n\n\n\n'+
+        'Press (H) for this help list\n\n'+
         'भाषा बदलने के लिए डॉट (.) coding की जगह के बाहर दबाए'+
         'अगले पाठ पर जाने के लिए (N)दबाए '+
         'पिछले पाठ पर जाने के लिए (P)दबाए '+

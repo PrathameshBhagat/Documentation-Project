@@ -1,0 +1,216 @@
+<html>
+<head>
+<script type="text/javascript" src="scripts/article.js"></script>
+<link rel="stylesheet" href="style/article.css" /> 
+</head>
+<body onload="load()" next="variables.html" prev="output.html">
+    <h1>If.. else |अगर..या 
+        <select name="H/E" onchange="set(this.value)">
+            <option value="english">English</option>
+            <option value="hindi">हिन्दी(Hindi)</option>
+        </select><br>
+        <input type="button" value="pervious" onclick="pchapter()">
+<a class="btn" onclick="nchapter()" href="#"><span>&nbsp;&rarr;</span>NEXT</a>
+    </h1> 
+    <chapter> 
+        <h2>&nbspConditions and If Statements|शर्तें और अगर....या कथन:</h2>
+            <e>
+                The usual logical conditions from mathematics mostly used in programming are:<ul><li>Less than: a < b<li>Less than or equal to: a <= b<li>Greater than: a > b<li>Greater than: a > b<li>Equal to a == b<li>Not Equal to: a != b</ul>We can use the following conditions to carry out different actions for different decisions.We have the following conditional statements to use above conditions :<ul><li>Use <c>अगर</c> to specify a block of code to be executed, if the specified condition is true<li>Use <c>या</c> so as to specify a block of code to be executed, if the same condition(in if) is false<li>Use <c>या अगर</c> to specify a new condition to test, if the first condition is false<li>Use <c>बदलो</c>(switch) to specify many alternative blocks of code to be executed</ul>
+            </e>
+            <h>
+               प्रोग्रामिंग में ज्यादा तर उपयोग किए जाने वाले गणित से सामान्य तार्किक स्थितियां हैं:<ul><li>कम है: a < b<li>से कम या बराबर: a < b <li>से अधिक है : a > b<li>से अधिक या बराबर है : a >= b<li>a के बराबर == b<li>बराबर नहीं:a != b</ul>हम विभिन्न निर्णयों के लिए विभिन्न कार्यों को करने के लिए निम्नलिखित स्थितियों का उपयोग कर सकते हैं।<br> उपरोक्त शर्तों का उपयोग करने के लिए हमारे पास निम्नलिखित सशर्त कथन हैं : <ul><li>निष्पादित(execute) किए जाने वाले कोड के एक ब्लॉक को निर्दिष्ट करने के लिए <c>अगर</c> का उपयोग करें या<li>निष्पादित किए जाने वाले कोड के ब्लॉक को निर्दिष्ट करने के लिए <c>या</c> का उपयोग करें, यदि वही स्थिति गलत है। <li>यदि पहली स्थिति गलत है, तो परीक्षण करने के लिए एक नई स्थिति निर्दिष्ट करने के लिए <c>या अगर </c>का उपयोग करें<li>निष्पादित किए जाने वाले कोड के कई वैकल्पिक ब्लॉक निर्दिष्ट करने के लिए <c>बदलो</c> का उपयोग करे</ul>
+            </h>
+        <hr>
+        <h2> &nbspIf |अगर</h2>
+        <p>
+            <e>
+               Use the <c>अगर</c> statement to specify a block of code to be executed if a condition comes or computes out to be true.
+            </e>
+            <h> 
+                यदि कोई शर्त आती है या सत्य होने की गणना करती है तो निष्पादित(execute) किए जाने वाले कोड के ब्लॉक को निर्दिष्ट/स्पष्ट(specify) करने के लिए <c>अगर</c> कथन का उपयोग करें।
+            </h><br>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Syntax:</h3></e>
+            <h> <h3 class="h-note">वाक्य विन्यास(syntax):</h3></h>
+<div class="code-container"><div class="code TOE" id="editor">
+अगर (/*condition*/){
+    //code to be executed if the given condition is true  
+}</div></div></div>
+        </p>
+        <p>
+            <e>
+               In the following example , we test two values to check if 21 is greater than 11 . If the condition is true, then print some text:
+            </e>
+            <h> 
+                निम्नलिखित उदाहरण में, हम यह जांचने के लिए दो मानों का परीक्षण करते हैं कि क्या 21 , 11 से अधिक है? यदि स्थिति सही है, तो कुछ प्रिन्ट  करें:
+            </h><br><br>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h><h3 class="h-note">उदाहरण:</h3></h>
+            <div class="code-container" style="height:5%"><div class="code TOE" id="editor">
+अगर (21 > 11) {
+  तंत्र.बाहर.प्रिंट("20 is greater than 18");
+}</div></div></div> <br>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3>We not only this but can also test variables</e>
+            <h><h3 class="h-note">उदाहरण:</h3>हम variable का परीक्षण भी कर सकते हैं:</h>
+            <div class="code-container" style="height:15%"><div class="code TOE" id="editor">
+इंट x = 21;
+इंट y = 11;
+अगर (x > y) {
+  तंत्र.बाहर.प्रिंट("x is greater than y");
+}</div></div></div> 
+        </p>
+        <p>
+            <e>
+               In the foreseen example we used two variables, x and y, to check if  x is greater than y (using the <c>></c> operator). As x is 21, and y is 11, and we know that 21 is greater than 11, we print to the screen that "x is greater than y".
+            </e>
+            <h> 
+                उदाहरण में हमने दो variable, x और y का उपयोग यह जांचने के लिए किया कि x , y से अधिक है या नहीं (<c>></c> ऑपरेटर का उपयोग करके)। जैसे कि x 21 है, और y 11 है, और हम जानते हैं कि 21 , 11 से अधिक है, हम स्क्रीन पर प्रिंट करते हैं कि "एक्स वाई से अधिक है"।
+            </h><br><br>
+        </p><br><hr>
+        <h2> &nbspThe <c>या</c> Statement |<c>या</c>कथन</h2>
+        <p>
+            <e>
+               Use the <c>या</c> statement to specify a block of code to be executed if the given condition is false or is incorrect .
+            </e>
+            <h> 
+                यदि दी गई शर्त गलत है, तो निष्पादित(execute) किए जाने वाले कोड के ब्लॉक को निर्दिष्ट/स्पष्ट  करने के लिए <c> या</c> कथन का उपयोग करें
+            </h><br>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Syntax:</h3></e>
+            <h> <h3 class="h-note">वाक्य विन्यास(syntax):</h3></h>
+<div class="code-container"><div class="code TOE" id="editor">
+अगर (/*condition*/){
+    // the code to be executed if the given condition is true  
+}
+या {
+  //the block of code to be executed if the condition is false
+}</div></div></div>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h><h3 class="h-note">उदाहरण:</h3></h>
+            <div class="code-container" ><div class="code TOE" id="editor">
+इंट time = 21 ;
+अगर(time < 11 ) {
+  तंत्र.बाहर.प्रिंट("Good day.");
+} 
+या {
+  तंत्र.बाहर.प्रिंट("Good evening.");
+}
+// Outputs "Good evening."</div></div></div> 
+        </p>
+        <p>
+            <e>
+               <b>Example explained</b>In the example , time (21) is greater than 11, so the condition is false. Because of this, we move on to the <c>या</c>condition and print on the screen "Good evening". If the time was less than 11, the program would print "Good day".
+            </e>
+            <h> <b>उदाहरण का मतलब</b>
+                उदाहरण में, time(21) 11 से अधिक है, इसलिए स्थिति झूठी है। इस वजह से, हम <c>या</c>स्थिति पर जाते हैं और  "Good evening" स्क्रीन पर प्रिंट करते हैं। यदि समय 11 से कम होता था, तो तंत्र "Good day" प्रिंट करेगा।
+            </h><br>
+        </p><hr>
+        <h2> &nbspThe <c>या अगर</c> Statement |<c>या अगर</c>कथन</h2>
+        <p>
+            <e>
+               Use the <c>या अगर</c> statement to specify a block of code to be executed if the  first given condition is false or is incorrect .
+            </e>
+            <h> 
+                यदि पहली दी गई शर्त गलत है, तो निष्पादित(execute) किए जाने वाले कोड के ब्लॉक को निर्दिष्ट/ स्पष्ट करने के लिए <c>या अगर</c> कथन का उपयोग करें।
+            </h><br>
+        </p>
+        <p>
+        <div class="example">
+            <e><h3 class="h-note">Syntax:</h3></e><h> <h3 class="h-note">वाक्य विन्यास(syntax):</h3></h>
+<div class="code-container"><div class="code TOE" id="editor">
+अगर (/*condition1 */){
+    // the code to be executed if the given condition1 is true  
+}
+या अगर (/*condition2 */){{
+  //the block of code to be executed if the condition1 comes out false and condition2 is true 
+}या {
+//the block of code to be executed if the condition1 comes out false and condition2 is also comes out false  
+}
+</div></div></div>
+        </p><br>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h><h3 class="h-note">उदाहरण:</h3></h>
+            <div class="code-container" ><div class="code TOE" id="editor">
+इंट time = 21 ;
+अगर(time < 10 ) {
+  तंत्र.बाहर.प्रिंट("Good morning.");
+} 
+या अगर(time < 20 ){
+  तंत्र.बाहर.प्रिंट("Good day.");
+}
+या {
+  तंत्र.बाहर.प्रिंट("Good evening.");
+} 
+// Outputs "Good evening."</div></div></div> 
+        </p>
+        <p>
+            <e>
+               <b>Example explained</b> : In the example, time (21) is greater than 10, so the first condition is false. The next condition i.e. in the या अगर statement, is also false, so we move on to the last या condition since condition1 and condition2 is both false - and hence print to the screen "Good evening".<br>But if the time was 14, our program would print "Good day."
+            </e>
+            <h> 
+                <b>उदाहरण के बारे में </b>: उदाहरण में, समय (21) 10 से अधिक है, इसलिए पहली स्थिति झूठी है। अगली शर्त अर्थात <c>या अगर</c> कथन में,वो भी गलत है, इसलिए हम अंतिम <c>या</c> के अंदर की शर्त पर आगे बढ़ते हैं क्योंकि condition1 और condition2 दोनों झूठी हैं - और इसलिए स्क्रीन पर प्रिंट करें "Good evening"। <br>लेकिन अगर समय 14 था, तो हमारा कार्यक्रम "Good day" प्रिंट करेगा।
+            </h><br>
+        </p>
+    </chapter>
+    <chapter>
+        <h2> &nbspThe Short Hand<c>या अगर</c> |छोटा <c>या अगर</c>कथन</h2>
+        <p>
+            <e>
+               There is also a short way to do <c>या अगर</c> ,it consists of three operands.<br>It is used to replace multiple lines (or blocks) of code with a single line, and is commonly used to replace simple <c>या अगर</c>statements (if the expressions are small):
+            </e>
+            <h> 
+                <c>या अगर</c> इस्तेमाल करने का एक छोटा तरीका भी है , इसमें तीन वस्तुए होती हैं। <br>इसका उपयोग संहिता /कोड की कई रेखाओं(या ब्लॉक) को एक पंक्ति के साथ बदलने के लिए किया जाता है, और आमतौर पर सरल <c>या अगर</c>कथनों को बदलने के लिए उपयोग किया जाता है (यदि अभिव्यक्ति छोटी है):
+            </h>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Syntax:</h3></e>
+            <h> <h3 class="h-note">वाक्य विन्यास(syntax):</h3></h>
+<div class="code-container" style="height: 5%"><div class="code TOE" id="editor">
+//variable = (condition) ? expressionTrue :  expressionFalse;
+//variable = (शर्त) ? अभिव्यक्तिसत्य : अभिव्यक्तिगलत;</div></div></div>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3>Instead of writing</e>
+            <h><h3 class="h-note">उदाहरण:</h3>ये लिखने के बजाय</h>
+            <div class="code-container" ><div class="code TOE" id="editor">
+इंट time = 21 ;
+अगर(time < 10 ) {
+  तंत्र.बाहर.प्रिंट("Good day.");
+} 
+या {
+  तंत्र.बाहर.प्रिंट("Good evening.");
+} </div></div><br>
+                <e>We can simply write:</e>
+                <h>आप बस लिख सकते हैं:</h>
+<div class="code-container" ><div class="code TOE" id="editor">
+इंट time = 21 ;
+डोर result = (time < 10) ? "Good day." : "Good evening.";
+तंत्र.बाहर.प्रिंट(result);
+</div> 
+        </p>
+
+    </chapter>
+
+<script src="scripts/article.js"></script>
+<script src="scripts/ace.js"></script>
+<script src="scripts/cobalt.js"></script>
+<script src="scripts/mode-javaa.js"></script>
+<script>codeload();</script>
+</body>
+</html>

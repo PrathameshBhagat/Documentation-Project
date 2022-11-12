@@ -1,0 +1,149 @@
+<html>
+<head>
+<script type="text/javascript" src="scripts/article.js"></script>
+<link rel="stylesheet" href="style/article.css" /> 
+</head>
+<body onload="load()" next="variables.html" prev="output.html">
+    <h1>Switch | बदले | बदलों 
+        <select name="H/E" onchange="set(this.value)">
+            <option value="english">English</option>
+            <option value="hindi">हिन्दी(Hindi)</option>
+        </select><br>
+        <input type="button" value="pervious" onclick="pchapter()">
+<a class="btn" onclick="nchapter()" href="#"><span>&nbsp;&rarr;</span>NEXT</a>
+    </h1> 
+    <chapter> 
+        <h2>&nbspSwitch | बदले | बदलों:</h2>
+        <p>
+            <e>
+                In place of writing many <c>अगर....या</c>statements, we can use the <c>बदले</c> statement.<br>The <c>बदले</c> statement selects one(or some) of many provided code blocks to be executed:
+            </e>
+            <h>
+                कई <c>अगर .... या</c> लिखने के स्थान पर , हम <c>बदले</c> कथन का उपयोग कर सकते हैं। <br><c>बदले </c>कथन निष्पादित(execute) किए जाने वाले कई दिए गए कोड ब्लॉकों में से एक (या कुछ) का चयन करता है:
+            </h>
+        </p>
+		<p>
+            <div class="example">
+            <e><h3 class="h-note">Syntax:</h3></e>
+            <h><h3 class="h-note">वाक्यविन्यास:</h3></h>
+<div class="code-container"><div class="code TOE" id="editor">
+बदले (expression) {
+  यदि x:
+    // code block
+    भंग;
+  यदि y:
+    // code block
+    भंग;
+  साधारण:
+    // code block
+}
+</div></div></div>
+        </p>
+            <e>
+               The <c>बदले</c>expression is evaluated/calculated once.<br>The value of that expression is then compared with the values of each given case after <c>यदि</c> keyword .<br>If a match is found, the respective block of code is executed.<br>(The <c>भंग</c> and <c>साधारण </c> keywords are optional, and are to be described later)<br><BR>The following example uses the week's day number to find the week's day name: 
+
+            </e>
+            <h> 
+                <c>बदले</c>अभिव्यक्ति का मूल्यांकन/गणना एक बार की जाती है। <br>उस अभिव्यक्ति के मान(value) की तुलना <c>यदि</c> के बाद दिए गए प्रत्येक मामले के मूल्यों से की जाती है। <br>यदि कोई मिलान पाया जाता है, तो कोड के संबंधित ब्लॉक को निष्पादित(execute) किया जाता है। <br>(विराम और <c>साधारण</c> वैकल्पिक हैं, और बाद में वर्णित किए जाने हैं) <br><br>निम्न उदाहरण सप्ताह के दिन का नाम ढूँढने के लिए सप्ताह के दिन संख्या का उपयोग करता है:
+            </h><br>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h><h3 class="h-note">उदाहरण:</h3></h>
+            <div class="code-container"><div class="code TOE" id="editor">
+इंट day = 4;
+बदले (day) {
+  यदि  1:
+    तंत्र.बाहर.प्रिंट("Monday");
+    भंग;
+  यदि  2:
+    तंत्र.बाहर.प्रिंट("Tuesday");
+    भंग;
+  यदि 3:
+    तंत्र.बाहर.प्रिंट("Wednesday");
+    भंग;
+  यदि 4:
+    तंत्र.बाहर.प्रिंट("Thursday");
+    भंग;
+  यदि 5:
+    तंत्र.बाहर.प्रिंट("Friday");
+    भंग;
+  यदि 6:
+    तंत्र.बाहर.प्रिंट("Saturday");
+    भंग;
+  यदि 7:
+    तंत्र.बाहर.प्रिंट("Sunday");
+    भंग;
+}
+// Outputs "Thursday" (day 4)
+</div></div></div> 
+        </p><br><hr>
+        <h2> &nbspThe <c>भंग</c> Keyword| <c>भंग</c> कथन</h2>
+        <p>
+            <e>
+               When system reaches a <c>भंग</c> keyword, it breaks out of the <c>बदले</c> block.<br> And this will stop the execution of more code and case testing given in the block.<br>If a match is found, and the job is done, it's time for a break or a <c>भंग</c>. No need for more testing.
+            </e>
+            <h> 
+                जब सिस्टम एक <c>भंग</c> तक पहुंचता है, तो यह <c>बदले</c> ब्लॉक से बाहर निकल जाता है। <br> और इससे ब्लॉक में दिए गए अधिक कोड और केस टेस्टिंग का निष्पादन(execution) बंद हो जाएगा। <br>यदि कोई मेल पाया जाता है, और काम पूरा हो जाता है, तो यह ब्रेक या <c>भंग</c>करने का समय है<c></c>। अधिक परीक्षण की आवश्यकता नहीं है।
+            </h><br>
+        </p>
+	<p> 
+           <div class="note">
+                <e><h3 class="h-note">Note :</h3>               
+                A break (<c>भंग</c>) can save a lot of execution time as  it "ignores" the execution of all the remaining code in the switch(<c>बदले</c>) block.
+                </e>
+                <h><h3 class="h-note">ध्यान दे:</h3>
+                एक ब्रेक (<c>भंग</c>) बहुत सारे निष्पादन को लगने वाले समय को बचा सकता है क्योंकि यह <c>बदले</c> ब्लॉक में शेष सभी कोड के निष्पादन को "अनदेखा" करता देता है।
+                </h>   
+            </div>
+        </p><br><hr>
+        <h2> &nbspThe <c>साधरण</c>(default) Keyword| <c>साधरण</c> कथन</h2>
+        <p>
+            <e>
+               <c>साधरण</c> specifies some code which is to run if there is no case match in the <c>बदले</c> block.
+            </e>
+            <h> 
+                <c>साधरण</c> कुछ कोड निर्दिष्ट(execute) करता है जो <c>बदले</c> ब्लॉक में कोई केस मैच नहीं होने पर चलाना जाना है ,या कहे जिसे <c>साधरण</c> तौर पर चलना है |
+            </h><br>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h> 
+            <div class="code-container">
+                <div class="code TOE" id="editor">
+इंट  day = 4;
+बदले  (day) {
+  यदि 6:
+    तंत्र.बाहर.प्रिंट("Today is Saturday");
+    break;
+  यदि 7:
+    तंत्र.बाहर.प्रिंट("Today is Sunday");
+    break;
+  साधारण:
+    तंत्र.बाहर.प्रिंट("Looking forward to the Weekend");
+}
+// Outputs "Looking forward to the Weekend" 
+</div></div></div> 
+        </p>        
+        <p> 
+           <div class="note">
+                <e>
+                    <h3 class="h-note">Note :</h3>               
+                Note that , if the default(<c>साधरण</c>) statement is used as last statement in a switch(<c>बदले</c>) block, it does not need a <c>भंग</c>.
+                </e>
+                <h>
+                    <h3 class="h-note">ध्यान दे:</h3>
+                    ध्यान दें कि, यदि <c>साधरण</c> कथन का उपयोग <c>बदले</c> ब्लॉक में अंतिम कथन के रूप में किया जाता है, तो इसे <c>भंग</c> की आवश्यकता नहीं है।
+                </h>   
+            </div>
+        </p> 
+    </chapter> 
+<script src="scripts/article.js"></script>
+<script src="scripts/ace.js"></script>
+<script src="scripts/cobalt.js"></script>
+<script src="scripts/mode-javaa.js"></script>
+<script>codeload();</script>
+</body>
+</html>

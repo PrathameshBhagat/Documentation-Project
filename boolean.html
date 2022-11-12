@@ -1,0 +1,121 @@
+<html>
+<head>
+<script type="text/javascript" src="scripts/article.js"></script>
+<link rel="stylesheet" href="style/article.css" /> 
+</head>
+<body onload="load()"  prev="operators.html" next="string.html">
+    <h1>Boolean | बूलियन  
+        <select name="H/E" onchange="set(this.value)">
+            <option value="english">English</option>
+            <option value="hindi">हिन्दी(Hindi)</option>
+        </select><br>
+        <input type="button" value="pervious" onclick="pchapter()">
+<a class="btn" onclick="nchapter()" href="#"><span>&nbsp;&rarr;</span>NEXT</a>
+    </h1> 
+    <chapter> 
+        <h2>&nbsp Comments| टिप्पणियाँ:</h2>
+        <p>
+            <e>
+                Comments are the ones that can be used to explain code, and also to make it more readable. It can also be used to prevent execution of the code when testing alternative code.
+            </e>
+            <h>
+               संहिता(कोड/code) को समझाने और इसे और अधिक पढ़ने लायक बनाने के लिए टिप्पणियों(कमेंट्स) का उपयोग किया जा सकता है। इसका उपयोग वैकल्पिक(ऑल्टर्नेट) संहिता(कोड/code) का परीक्षण करते समय निष्पादन को रोकने के लिए भी किया जा सकता है।
+            </h>
+        </p> 
+        <h2> &nbspSingle-line Comments|एक पंक्ति टिप्पणियाँ|एक रेखा(लाइन) मे टिप्पणियाँ </h2>
+        <p>
+            <e>
+               Single-line comments start's with special characters i.e two forward slashes <c>//</c>.<br>
+               Any text lying between <c>//</c> and the end of line is ignored by compiler(and will not be executed).
+            </e>
+            <h> 
+                एक पंक्ति टिप्पणियाँ(एक रेखा/लाइन टिप्पणियाँ) दो फ़ॉरवर्ड स्लैश <c>//</c> से शुरू होती हैं।<br>
+                <c>//</c> और पंक्ति(लाइन) के अंत के बीच के किसी भी हिस्से को कंपाइलर(या कहे कंप्युटर) द्वारा अनदेखा किया जाता है।(निष्पादित किया जाएगा/पढ़ा नहीं जाएगा)
+            </h><br>
+        </p>
+        <p>
+            <div class="example">
+            <e>     
+            <h3 class="h-note">Example:</h3>   
+                Given example uses a single-line comment before a line of code:
+            </e>
+            <h> <h3 class="h-note">उदाहरण:</h3>   
+            यह उदाहरण संहिता/कोड की एक पंक्ति से पहले एक पंक्ति(रेखा) की टिप्पणी का उपयोग करता है।
+            </h>
+<div class="code-container"><div class="code TOE" id="editor">//ये एक टिप्पणी है  This is a comment
+तंत्र.बाहर.प्रिंट("Hello");
+</div></div></div>
+        </p>
+
+        <p><br>
+            <e>
+               This example uses a single-line comment after the end of a line of code:
+            </e>
+            <h> 
+                यह उदाहरण संहिता/कोड की एक पंक्ति के अंत में एक पंक्ति(रेखा) की टिप्पणी का उपयोग करता है। 
+            </h><br><br>
+        </p>
+        <p>
+            <div class="example">
+            <e>     
+            <h3 class="h-note">Example:</h3>   
+            
+            </e>
+            <h> <h3 class="h-note">उदाहरण:</h3>   
+              
+            </h><br > 
+            <div class="code-container"><div class="code TOE" id="editor">
+तंत्र.बाहर.प्रिंट("Hello"); //ये एक टिप्पणी है , This is a comment
+</div></div></div> 
+          
+        </p>
+        <h2> &nbspMulti-line Comments|बहु पंक्ति टिप्पणियाँ </h2>
+        <p>
+            <e>
+               Multi-line comments start with a backslash and a * i.e.<c>/*</c> and ends with <c>*/</c>.<br>Any text appearing between <c>/*</c> and <c>*/</c> will be ignored by compiler and is not read/compiled.
+            </e>
+            <h> 
+                बहु-पंक्ति/रेखा टिप्पणियाँ <c>/*</c> से शुरू होती हैं और <c>*/</c> पर समाप्त होती हैं।<br>/* और */ के बीच किसी भी पाठ को संकलक(कम्पाइलर या कहे कंप्युटर) द्वारा अनदेखा कर दिया जाएगा।
+            </h><br>
+        </p>
+        <p>
+            <div class="example">
+            <e>     
+            <h3 class="h-note">Example:</h3>
+                Following example uses a multi-line comment i.e. a comment block (to explain the code)
+            </e>
+            <h> <h3 class="h-note">उदाहरण:</h3> 
+                यह उदाहरण संहिता/कोड की व्याख्या करने के लिए एक बहु-पंक्ति टिप्पणी (एक टिप्पणी ब्लॉक) का उपयोग करता है : 
+            </h><br > 
+            <div class="code-container">
+                <div class="code TOE" id="editor">
+/* The code below will
+print the word Hello 
+this is a comment block
+*/          
+तंत्र.बाहर.प्रिंट("Hello"); 
+</div></div></div> 
+        </p>        
+        <p> 
+           <div class="note">
+                <e>
+                    <h3 class="h-note">Note :</h3>               
+                <i><b>Single or multi-line comments?</b></i><br>
+                    It is up to you which you want to use.Genrally , we use <c>//</c> for short/smaller comments, and <c>/* */</c> for longer/larger.
+                </e>
+                <h>स 
+                    <h3 class="h-note">ध्यान दे:</h3>
+                    <i><b>एक या बहु-पंक्ति टिप्पणियाँ?</b></i><br>
+                    यह आप पर निर्भर है कि आप किसका उपयोग करना चाहते हैं। आम तौर पर, हम छोटी टिप्पणियों के लिए // का उपयोग करते हैं, और /* */ लंबे समय के लिए।
+                </h>   
+            </div>
+        </p> 
+    </chapter> 
+
+<script src="scripts/article.js"></script>
+<script src="scripts/ace.js"></script>
+<script src="scripts/cobalt.js"></script>
+<script src="scripts/mode-javaa.js"></script>
+<script>codeload();</script>
+</body>
+</html>

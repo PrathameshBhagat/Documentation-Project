@@ -1,0 +1,132 @@
+<html>
+<head>
+<script type="text/javascript" src="scripts/article.js"></script>
+<link rel="stylesheet" href="style/article.css" /> 
+</head>
+<body onload="load()" prev="for.html" next="break.html" >
+    <h1> While Loop|<c>जब</c> लूप | <c>जब-तक</c> कथन  
+        <select name="H/E" onchange="set(this.value)">
+            <option value="english">English</option>
+            <option value="hindi">हिन्दी(Hindi)</option>
+        </select><br>
+        <input type="button" value="pervious" onclick="pchapter()">
+<a class="btn" onclick="nchapter()" href="#"><span>&nbsp;&rarr;</span>NEXT</a>
+    </h1> 
+    <chapter> 
+        <h2>&nbsp Loops|लूपस |घुमावदार वक्र:</h2>
+        <p>
+            <e>
+               Loops are ones which can execute a block of code as long as a specified or given condition is reached.<br>These are very handy because they save time,help reduce errors, and they make code much more readable.
+            </e>
+            <h>
+               घुमावदार वक्र/लूप वे हैं जो कोड के एक ब्लॉक को निष्पादित(execute) कर सकते हैं जब तक कि एक निर्दिष्ट या दी गई स्थिति तक पहुंच न जाए। <br>ये बहुत आसान होते हैं क्योंकि वे समय बचाते हैं, त्रुटियों को कम करने में मदद करते हैं, और वे कोड को अधिक पठनीय बनाते हैं।
+            </h>
+        </p> <hr>
+        <h2> &nbspWhile Loop|<c>जब</c> कथन</h2>
+        <p>
+            <e>
+               This loops through a block of code as long as a specified/given condition is true(outputs true):
+            </e>
+            <h> 
+                यह कोड के एक ब्लॉक के माध्यम से लूप करता है(बार बार निष्पादित/execute करता है) जब तक कि निर्दिष्ट/दी गई स्थिति सत्य है(सत्य साबित होती है):
+            </h><br>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Syntax:</h3></e>
+            <h> <h3 class="h-note">वाक्य विन्यास(syntax):</h3></h>
+<div class="code-container"><div class="code TOE" id="editor">
+जब-तक(/*condition*/){
+    //code to be executed if the given condition is true  
+}
+</div></div></div>
+        </p>
+        <p><br>
+            <e>
+               In the following example , the given code in the loop will run, over and over again, as far as a given variable (i) is less than 5:
+            </e>
+            <h> 
+                निम्नलिखित उदाहरण में, लूप के आंदर  दिया गया कोड बार-बार चलेगा, जहां तक दिया गया चर (i) 5 से कम है:
+            </h><br><br>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h><br > 
+            <div class="code-container"><div class="code TOE" id="editor">
+इंट i = 0;
+जब-तक(i < 5){
+    तंत्र.बाहर.प्रिंट(i);  
+     i++;
+}</div></div></div> 
+            </p>
+          <p> 
+           <div class="note">
+                <e><h3 class="h-note">Note :</h3>
+                !!Do not forget to increase the variable in the condition, otherwise the loop will never end and will continue consuming resourses infinitely if not terminated by an external program !!
+                </e>
+                <h><h3 class="h-note">ध्यान दे:</h3>
+                !! variable को बढ़ाने मे चूक ना करे , अन्यथा लूप कभी खत्म नहीं होगा और सिस्टम के उपकरणों का उपभोग करना जारी रखेगा !!
+                </h>   
+            </div>
+        </p><br><hr>
+        </p>
+        <h2> &nbspThe <c>करो..जब-तक</c>(do/while) Loop|<c>करो..जब-तक</c> कथन</h2>
+        <p>
+            <e>
+              The <c>करो..जब-तक</c> loop is a variant of the <c>जब-तक</c>loop.It loop will execute the given code block once, before checking if the condition is true or computes to be true, after this it will repeat the loop for as far as the condition is true.
+            </e>
+            <h> 
+                <c>करो..जब-तक</c> लूप <c>जब-तक</c>लूप का एक संस्करण है। यह लूप दिए गए कोड ब्लॉक को एक बार निष्पादित(execute) करेगा, यह जांचने से पहले कि क्या स्थिति सही है या सत्य होने की गणना करता है, इसके बाद यह लूप को दोहराएगा जहां तक स्थिति सच है।
+            </h><br>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Syntax:</h3></e>
+            <h> <h3 class="h-note">वाक्य विन्यास(syntax):</h3></h>
+<div class="code-container"><div class="code TOE" id="editor">
+करो{
+    //code to be executed if the given condition is true  
+}
+जब-तक(/*condition*/)
+</div></div></div>
+        </p>
+        <p>
+            <div class="example">
+            <e>     
+            <h3 class="h-note">Example:</h3>
+                This example uses a <c>करो..जब-तक</c> loop. The loop will always get executed at least once, even if the condition is computed to be false, as the code block is executed before the given condition is tested:
+            </e>
+            <h> <h3 class="h-note">उदाहरण:</h3> 
+                यह उदाहरण एक <c>करें.. जब-तक</c> का उपयोग करता है  ।यह लूप हमेशा कम से कम एक बार निष्पादित(execute) किया जाएगा, भले ही स्थिति की गणना झूठी/गलत होने के लिए की जाती है, क्योंकि दिए गए स्थिति का परीक्षण करने से पहले कोड ब्लॉक निष्पादित(execute) किया जाता है:
+            </h><br > 
+            <div class="code-container">
+                <div class="code TOE" id="editor">
+करो{
+तंत्र.बाहर.प्रिंट(i);
+i++;
+}
+जब-तक(i < 5)
+</div></div></div> 
+        </p>        
+        <p> 
+           <div class="note">
+                <e><h3 class="h-note">Note :</h3>
+                !!Do not forget to increase the variable in the condition, otherwise the loop will never end and will continue consuming resourses infinitely if not terminated by an external program !!.
+                <br><b>Also note that we can use <c>जब</c> in place of <c>जब-तक</c> and <c>करो..जब</c>in place of <c>करो..जब-तक</c> to make the code readable and short</b>
+                </e>
+                <h><h3 class="h-note">ध्यान दे:</h3>
+                !! variable को बढ़ाने मे चूक ना करे , अन्यथा लूप कभी खत्म नहीं होगा और सिस्टम के उपकरणों का उपभोग करना जारी रखेगा !!
+                <b>यह भी ध्यान दें कि हम <c>जब-तक</c>के स्थान पर <c>जब</c> और <c>करो..जब-तक</c> के स्थान पर <c>करो..जब</c> का उपयोग कर सकते हैं कोड को पठनीय और छोटा बनाने के लिए </b>
+                </h>   
+            </div>
+        </p> 
+    </chapter> 
+
+<script src="scripts/article.js"></script>
+<script src="scripts/ace.js"></script>
+<script src="scripts/cobalt.js"></script>
+<script src="scripts/mode-javaa.js"></script>
+<script>codeload();</script>
+</body>
+</html>

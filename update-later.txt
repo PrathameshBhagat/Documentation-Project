@@ -2,6 +2,9 @@ change variable in vcariable .html and datatype.html
 add ईंट फ्लोट बाइट छोटा लंबा बड़ा इ ल ब to decode.php
 change char,character,object,Arrays,interfaces  to hindi replace all in datat..html 
 
+add break continue math methords for while default in decode.php
+
+
 add datatype file type casting operators booleans
 previous check ing for only files nor=t chapter
 add datatypesin decode .php from datatype.html

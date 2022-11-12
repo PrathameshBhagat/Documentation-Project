@@ -1,0 +1,112 @@
+<html>
+<head>
+<script type="text/javascript" src="scripts/article.js"></script>
+<link rel="stylesheet" href="style/article.css" /> 
+</head>
+<body onload="load()"  prev="output.html" next="variables.html">
+    <h1>Break and Continue|<c>भंग</c>और <c>जारी </c>कथन  
+        <select name="H/E" onchange="set(this.value)">
+            <option value="english">English</option>
+            <option value="hindi">हिन्दी(Hindi)</option>
+        </select><br>
+        <input type="button" value="pervious" onclick="pchapter()">
+<a class="btn" onclick="nchapter()" href="#"><span>&nbsp;&rarr;</span>NEXT</a>
+    </h1> 
+    <chapter> 
+    <h2>&nbsp Break|<c>भंग</c>:</h2>
+        <p>
+            <e>
+                We have already seen the <c>भंग</c> statement used in an earlier chapter. It was used to "jump out" of a <c>बदले</c>(switch) statement.<br>The <c>भंग</c>(break) statement can also be used to jump out of a loop.
+            </e>
+            <h>
+               हम पहले के अध्याय में उपयोग किए गए <c>भंग</c> कथन को पहले ही देख चुके हैं। इसका उपयोग <c>बदले</c> कथन के "बाहर कूदने" के लिए किया गया था। <br>लूप से बाहर कूदने के लिए भी<c> भंग</c> (ब्रेक) कथन का उपयोग किया जा सकता है।
+            </h>
+        </p> 
+        <p>
+            <div class="example">
+            <e><h3 class="h-note"><c>भंग</c>Example:</h3>   
+                Given example stops the loop when i is equal to 4:
+            </e>
+            <h> <h3 class="h-note"><c>भंग</c>उदाहरण:</h3></h>
+<div class="code-container"><div class="code TOE" id="editor">केलिए(इंट i = 0; i < 10; i++) {
+  अगर (i == 4) {
+    भंग;
+  }
+  तंत्र.बाहर.प्रिंट(i);
+}
+</div></div></div>
+        </p>
+        <h2>&nbspContinue|<c> जारी</c> :</h2>
+        <p>
+            <e>
+               The <c>जारी</c>(continue) statement breaks one iteration(inside the loop), if a specified/provided condition occurs it continues with the next iteration in the loop.
+            </e>
+            <h>
+               <c>जारी</c> (जारी) कथन एक पुनरावृत्ति (लूप के अंदर) को तोड़ता है, यदि कोई निर्दिष्ट/प्रदान की गई स्थिति आती है तो यह लूप में अगले पुनरावृत्ति के साथ जारी रहती है।(केवल एक पुनरावृत्ति को रोक देगा पर आगे लूप को जारी रखेगा)। 
+            </h>
+        </p> 
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3>   
+            </e><h><h3 class="h-note">उदाहरण:</h3>
+            </h>
+<div class="code-container"><div class="code TOE" id="editor">
+
+केलिए(इंट i = 0; i < 10; i++) {
+  अगर (i == 4) {
+    जारी;
+  }
+  तंत्र.बाहर.प्रिंट(i);
+}
+</div></div></div>
+        </p>
+        <h2>&nbspBreak<c>भंग</c> and Continue<c>जारी</c> in While<c>जब</c>|<c>भंग</c>और<c>जारी</c> , <c>जब</c>मे :</h2>
+        <p>
+            <e>
+               We can also use <c>भंग </c>(break) and<c> जारी</c>(continue) in while loops:
+            </e>
+            <h>
+               हम <c>जब </c>लूप के दौरान <c>भंग </c> और<c> जारी</c>का भी उपयोग कर सकते हैं:। 
+            </h>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note"><c>भंग </c>Example:</h3>   
+            </e><h><h3 class="h-note"><c>भंग </c>उदाहरण:</h3>
+            </h>
+<div class="code-container"><div class="code TOE" id="editor">
+इंट i = 0;
+जब-तक(i < 5){
+    तंत्र.बाहर.प्रिंट(i);  
+    i++;
+    अगर (i == 4) {
+    भंग;
+  }
+}
+</div></div></div>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note"><c>जारी </c>Example:</h3>   
+            </e><h><h3 class="h-note"><c>जारी </c>उदाहरण:</h3>
+            </h>
+<div class="code-container"><div class="code TOE" id="editor">
+इंट i = 0;
+जब-तक(i < 5){
+    तंत्र.बाहर.प्रिंट(i);  
+    i++;
+    अगर (i == 4) {
+    जारी;
+  }
+}
+</div></div></div>
+        </p>
+    </chapter> 
+
+<script src="scripts/article.js"></script>
+<script src="scripts/ace.js"></script>
+<script src="scripts/cobalt.js"></script>
+<script src="scripts/mode-javaa.js"></script>
+<script>codeload();</script>
+</body>
+</html>

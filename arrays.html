@@ -1,0 +1,234 @@
+<html>
+<head>
+<script type="text/javascript" src="scripts/article.js"></script>
+<link rel="stylesheet" href="style/article.css" /> 
+</head>
+<body onload="load()"  prev="break.html" next="syntax.html">
+    <h1>Arrays|त्रम|सरणियाँ|व्यूह(रचना)
+        <select name="H/E" onchange="set(this.value)">
+            <option value="english">English</option>
+            <option value="hindi">हिन्दी(Hindi)</option>
+        </select><br>
+        <input type="button" value="pervious" onclick="pchapter()">
+<a class="btn" onclick="nchapter()" href="#"><span>&nbsp;&rarr;</span>NEXT</a>
+    </h1> 
+    <chapter> 
+        <h2>&nbspArrays|त्रम|सरणियाँ|व्यूह(रचना):</h2>
+        <p>
+            <e>
+                Arrays store multiple values in a single variable, instead of declaring manny separate variables for each value.<br>To declare an array, define the variable type with <b>square brackets</b><c>[ ]</c>:
+            </e>
+            <h>
+               सरणी/त्रम प्रत्येक मान(value) के लिए बहुत से अलग चर(variable) घोषित करने के बजाय, एक एकल चर(variable)  में कई मानों(values) को संग्रहीत करते हैं। <br>एक सरणी/त्रम घोषित करने के लिए, <b>वर्ग कोष्ठक</b><c>[]</c> के साथ चर(variables) प्रकार को परिभाषित करें<c>[]</c>:
+            </h>
+        </p>  
+<div class="code-container" style="height:5%"><div class="code TOE" id="editor">
+डोर[] car ; 
+</div></div></div>
+        <p>
+            <e>
+               We have now declared a variable which holds an array of <c>डोर</c>(strings). To insert values in it, we can place the values in a comma-separated list, inside curly braces(brackets)<c>{}</c>:
+            </e>
+            <h> 
+                अब हमने एक चर(variable) घोषित किया है जिसमें <c>डोर</c> (स्ट्रिंग्स) की एक सरणी(त्रम) है। इसमें मान(value) प्रदान करने के लिए, हम मूल्यों(values) को एक अल्पविराम-पृथक सूची में, घुंघराले/घुमावदार ब्रेसेस(ब्रैकेट) <c>{}</c> के अंदर रख सकते हैं:
+            </h><br>
+        </p>
+<div class="code-container"style="height:5%"><div class="code TOE" id="editor">
+डोर[] bikes  = {"ktm", "Kavasaki-ninja ", "susuki", "Honda"};
+</div></div></div><br>
+        <p>
+            <div class="example">
+            <e>     
+            <h3 class="h-note">Example:</h3>   
+            So as to create an array of integers,we could write:
+            </e>
+            <h> <h3 class="h-note">उदाहरण:</h3>   
+            पूर्णांकों की एक सरणी/त्रम बनाने के लिए, हम लिख सकते हैं:
+            </h>
+<div class="code-container"><div class="code TOE" id="editor">
+ डोर[] bikes  = {100,200,300,400,500 };
+</div></div></div>
+        </p>
+        <h2>&nbspAccess the Elements of an Array|एक सरणी/त्रम के तत्वों तक पहुँचें:</h2>
+        <p>
+            <e>
+                We can access an array's elements by referring to their  index numbers .<br>The following statement accesses the value of the first element in the cars array :
+            </e>
+            <h>
+               हम उनकी अनुक्रमणिका संख्याओं का उल्लेख करके सरणी के तत्वों तक पहुँच सकते हैं। <br>निम्नलिखित कथन कार सरणी में पहले तत्व के मूल्य तक पहुँचता है:
+            </h>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h><h3 class="h-note">उदाहरण:</h3></h><br> 
+            <div class="code-container"style="height: 5%;"><div class="code TOE" id="editor">
+डोर [] bikes ={"Ktm", "Kavasaki-Ninja ", "susuki", "Honda"};
+तंत्र.बाहर.प्रिंट(bikes[0] ); // Outputs Ktm
+</div></div></div> 
+        </p>
+        <p> 
+           <div class="note">
+                <e>
+                    <h3 class="h-note">Note :</h3>               
+                    All Array indexes start with 0: [0] is the first element. [1] is the second element,and so on .
+                </e>
+                <h>
+                    <h3 class="h-note">ध्यान दे:</h3>
+                    सभी सरणी/त्रम इंडेक्स 0 से शुरू होते हैं: [0] पहला तत्व है। [1] दूसरा तत्व है, और इसी तरह आगे ।
+                </h>   
+            </div>
+        </p><br><hr> 
+        <h2> &nbspChange an Array Element|एक सरणी/त्रम तत्व बदलें </h2>
+        <p>
+            <div class="example">
+            <e>     
+            <h3 class="h-note">Example:</h3>
+                 To change the value of a specific element in an array , refer to the respective index number:
+            </e>
+            <h> <h3 class="h-note">उदाहरण:</h3> 
+                सरणी/त्रम में किसी विशिष्ट तत्व का मान(value) बदलने के लिए, संबंधित अनुक्रमणिका संख्या देखें:
+            </h><br > 
+            <div class="code-container" style="height:5%"><div class="code TOE" id="editor">
+bikes[0] = "Splender";
+</div></div><br><br>
+<div class="code-container"><div class="code TOE" id="editor">
+डोर [] bikes ={"Ktm", "Kavasaki-Ninja ", "susuki", "Honda"};
+bikes[0] = "Splender";
+तंत्र.बाहर.प्रिंट(bikes[0] );// Now outputs Splender instead of Ktm
+</div></div>
+</div> 
+        </p><h2> &nbspArray Length|एक सरणी/त्रम की लंबाई </h2>
+        <p>
+            <div class="example">
+            <e>     
+            <h3 class="h-note">Example:</h3>
+                 To find out how many elements are there in an array ,we can use the <c>लंबाई</c> property:
+            </e>
+            <h> <h3 class="h-note">उदाहरण:</h3> 
+                यह पता लगाने के लिए कि सरणी में कितने तत्व हैं, हम <c>लंबाई</c> गुण का उपयोग कर सकते हैं:
+            </h><br > 
+<div class="code-container"><div class="code TOE" id="editor">
+डोर [] bikes ={"Ktm", "Kavasaki-Ninja ", "susuki", "Honda"};
+तंत्र.बाहर.प्रिंट(bikes.लंबाई);// outputs 4
+</div></div>
+</div></p>
+    </chapter>
+    <chapter>
+        <h2>&nbspLoop Through an Array|एक सरणी/त्रम से लूप</h2>
+        <p>
+            <e>
+               We can loop through the array elements with the <c>केलिए</c>loop, and use the <c>लंबाई</c> property to specify how many times the loop should run.<br>The following example outputs all elements in the bikes array:
+            </e>
+            <h>
+               हम <c>केलिए</c> लूप के साथ सरणी/त्रम तत्वों के माध्यम से लूप कर सकते</c>हैं, और यह निर्दिष्ट करने के लिए <c>लंबाई</c> गुण का उपयोग कर सकते हैं कि लूप को कितनी बार चलना चाहिए। <br>निम्न उदाहरण bikes सरणी/त्रम में सभी तत्वों को आउटपुट करता है:
+            </h>
+        </p>
+        <p>
+            <div class="example">
+            <e> <h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h><br > 
+<div class="code-container"><div class="code TOE" id="editor">
+डोर [] bikes ={"Ktm", "Kavasaki-Ninja ", "susuki", "Honda"};
+केलिए(इंट i = 0; i < bikes.लंबाई ; i++) {
+  तंत्र.बाहर.प्रिंट(bikes[i]);
+}
+</div></div></div></p><br><hr>
+        <h2>&nbspLoop Through an Array with For-Each|प्रत्येक<c>के लिए</c> एक सरणी/त्रम  से लूप :</h2>
+        <p>
+            <e>
+               We also have a प्रत्येक<c>के लिए</c>("for-each") loop, which is used exclusively in order to loop through the elements in an array:
+            </e>
+            <h>
+               हमारे पास एक प्रत्येक<c>के लिए</c> ("for-each") लूप भी है, जिसका उपयोग विशेष रूप से एक सरणी/त्रम में तत्वों से लूप करने के लिए किया जाता है:
+            </h>
+        </p>
+        <p>
+            <div class="example">
+            <e> <h3 class="h-note">Syntax:</h3></e>
+            <h> <h3 class="h-note">वाक्यविन्यास:</h3></h><br> 
+<div class="code-container" style="height:15%"><div class="code TOE" id="editor">
+केलिए (प्रकार variable : arrayname) {
+  ...
+}
+</div></div></div></p>
+        <p>
+            <div class="example">
+            <e> <h3 class="h-note">Example:</h3>This example outputs all elements in the bikes array, using a प्रत्येक<c>के लिए</c> ("for-each") loop:</e>
+            <h> <h3 class="h-note">उधारण:</h3>यह उदाहरण  bikes सरणी/त्रम  में सभी तत्वों को आउटपुट करता है, एक प्रत्येक<c>के लिए</c> ("for-each") लूप का उपयोग करके </h><br> 
+<div class="code-container"><div class="code TOE" id="editor">
+डोर [] bikes ={"Ktm", "Kavasaki-Ninja ", "susuki", "Honda"};
+केलिए(इंट i : bikes) {
+  तंत्र.बाहर.प्रिंट(i);
+}
+</div></div></div></p>
+        <p>
+            <e>
+                The above  example can be read as : for each <c>डोर</c> element (called i - as in index) in bikes, print out the value of i.<br>If we compare the <c>केलिए</c>(for loop) and प्रत्येक<c>के लिए</c>(for-each) loop, we will see that the प्रत्येक<c>के लिए</c>(for-each) method is easier to write/code, it does not require a counter (using the <c>लंबाई</c> property), and is more readable. </e>
+            <h>
+                उपरोक्त उदाहरण को इस प्रकार पढ़ा जा सकता है:bikes में प्रत्येक <c>डोर</c> तत्व (जिसे i - index में कहा जाता है) के लिए, i के मान(value) को प्रिंट करें।<br> यदि हम तुलना करते हैं, तो हम देखेंगे कि प्रत्येक<c>के लिए</c>  विधि लिखना आसान है, इसके लिए काउंटर (<c>लंबाई</c> संपत्ति का उपयोग करने) की आवश्यकता नहीं है, और ये अधिक पठनीय है। </h><br> 
+        </p>
+    </chapter>
+    <chapter>
+        <h2>&nbspMultidimensional Arrays|बहुआयामी सरणी/त्रम :</h2>
+        <p>
+            <e>
+                Multidimensional array is actually an array of arrays.<br>So to create a two-dimensional array, add each array within its own set of curly braces<c>{{},{},{}}</c>:
+            </e>
+            <h>
+              बहुआयामी सरणी/त्रम वास्तव में सरणियों की एक सरणी है। <br>तो एक द्वि-आयामी सरणी/त्रम बनाने के लिए, प्रत्येक सरणी/त्रम को घुंघराले/घुमावदार कोष्ठक(curly brackets) के अपने सेट के भीतर जोड़ें :<c>{{},{},{}} </c>
+            </h>
+        </p>
+        <p>
+            <div class="example">
+            <e> <h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उधारण:</h3></h><br> 
+            <div class="code-container" style="height:5%"><div class="code TOE" id="editor">
+इंट [][] Numbers = { {1, 2, 3, 4}, {5, 6, 7} };</div></div></div>
+        </p>
+        <p>
+            <e>
+                Numbers is now an array with itself  holding two arrays as its elements.<br>To access the elements of the Numbers array,we specify two indexes: one for the array, and other for the elements inside that array. Following  example accesses the third element (index-2) in the second array (index-1) of Numbers:
+            </e>
+            <h>
+               Numbers अब अपने तत्वों के रूप में दो सरणियों/त्रमों  को धारण करने वाली  एक सरणी/त्रम है। <br>Numbers सरणी/त्रम के तत्वों तक पहुंचने के लिए, हम दो अनुक्रमणिका प्रदान करते हैं: एक सरणी(त्रम) के लिए, और दूसरा उस सरणी(त्रम) के अंदर तत्वों के लिए। निम्नलिखित उदाहरण संख्याओं के दूसरे सरणी (अनुक्रमणिका-1) में तीसरे तत्व (अनुक्रमणिका-2) तक पहुँचता है:
+            </h>
+        </p>
+         <p>
+            <div class="example">
+            <e> <h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उधारण:</h3></h><br> 
+            <div class="code-container"><div class="code TOE" id="editor">
+इंट [][] Numbers = { {1, 2, 3, 4}, {5, 6, 7} };
+इंट  x = Numbers[1][2];
+तंत्र.बाहर.प्रिंट(i);
+</div></div></div>
+        </p>
+        <p>
+            <e>
+                We can also use a <c>केलिए</c>(for) loop inside another <c>केलिए</c>(for) loop so as to get the elements of our two-dimensional array (we again have to point to the two indexes):
+            </e>
+            <h>
+              हम अपने दो-आयामी सरणी/त्रम के तत्वों को प्राप्त करने के लिए एक <c>केलिए</c>(for) लूप का उपयोग कर सकते हैं (हमें फिर से दो इंडेक्स को इंगित करना होगा):<c></c>
+            </h><br><br>
+ <div class="example">
+            <e> <h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उधारण:</h3></h><br> 
+            <div class="code-container"><div class="code TOE" id="editor">
+इंट [][] Numbers = { {100,200,300,400},{500,600,700} };
+     केलिए(इंट i = 0; i < Numbers.लंबाई; ++i) {
+        केलिए(इंट j  = 0; j < Numbers[i].लंबाई ; j++) {
+            तंत्र.बाहर.प्रिंट(Numbers[i][j]);
+        }
+    }
+</div></div></div>
+        </p>
+    </chapter>
+
+<script src="scripts/article.js"></script>
+<script src="scripts/ace.js"></script>
+<script src="scripts/cobalt.js"></script>
+<script src="scripts/mode-javaa.js"></script>
+<script>codeload();</script>
+</body>
+</html>

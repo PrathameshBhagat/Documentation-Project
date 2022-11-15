@@ -13,105 +13,208 @@
 <a class="btn" onclick="nchapter()" href="#"><span>&nbsp;&rarr;</span>NEXT</a>
     </h1> 
     <chapter> 
-        <h2>&nbsp Comments| टिप्पणियाँ:</h2>
+        <h2>&nbspString | डोर :</h2>
         <p>
             <e>
-                Comments are the ones that can be used to explain code, and also to make it more readable. It can also be used to prevent execution of the code when testing alternative code.
+                These are used for storing text in them .<br>A <c>डोर</c> contains a collection of characters surrounded by double quotes <c>" "</c> :
             </e>
             <h>
-               संहिता(कोड/code) को समझाने और इसे और अधिक पढ़ने लायक बनाने के लिए टिप्पणियों(कमेंट्स) का उपयोग किया जा सकता है। इसका उपयोग वैकल्पिक(ऑल्टर्नेट) संहिता(कोड/code) का परीक्षण करते समय निष्पादन को रोकने के लिए भी किया जा सकता है।
+                इनका उपयोग पाठ/लेखन(text) को संग्रहीत करने के लिए किया जाता है। <br>एक <c>डोर</c> में दोहरे उद्धरणों<c> " "</c> से घिरे वर्णों का एक संग्रह होता है :
             </h>
-        </p> 
-        <h2> &nbspSingle-line Comments|एक पंक्ति टिप्पणियाँ|एक रेखा(लाइन) मे टिप्पणियाँ </h2>
-        <p>
-            <e>
-               Single-line comments start's with special characters i.e two forward slashes <c>//</c>.<br>
-               Any text lying between <c>//</c> and the end of line is ignored by compiler(and will not be executed).
-            </e>
-            <h> 
-                एक पंक्ति टिप्पणियाँ(एक रेखा/लाइन टिप्पणियाँ) दो फ़ॉरवर्ड स्लैश <c>//</c> से शुरू होती हैं।<br>
-                <c>//</c> और पंक्ति(लाइन) के अंत के बीच के किसी भी हिस्से को कंपाइलर(या कहे कंप्युटर) द्वारा अनदेखा किया जाता है।(निष्पादित किया जाएगा/पढ़ा नहीं जाएगा)
-            </h><br>
         </p>
         <p>
             <div class="example">
             <e>     
             <h3 class="h-note">Example:</h3>   
-                Given example uses a single-line comment before a line of code:
+                Given example creates a variable of type <c>डोर</c> and assigns it a value:
             </e>
             <h> <h3 class="h-note">उदाहरण:</h3>   
-            यह उदाहरण संहिता/कोड की एक पंक्ति से पहले एक पंक्ति(रेखा) की टिप्पणी का उपयोग करता है।
+            दिया गया उदाहरण <c>डोर</c> प्रकार का एक variable बनाता है और इसे एक value प्रदान करता है:
             </h>
-<div class="code-container"><div class="code TOE" id="editor">//ये एक टिप्पणी है  This is a comment
-तंत्र.बाहर.प्रिंट("Hello");
+<div class="code-container" style="height:5%" ><div class="code TOE" id="editor">
+डोर text ="Hello";
 </div></div></div>
-        </p>
-
-        <p><br>
-            <e>
-               This example uses a single-line comment after the end of a line of code:
-            </e>
-            <h> 
-                यह उदाहरण संहिता/कोड की एक पंक्ति के अंत में एक पंक्ति(रेखा) की टिप्पणी का उपयोग करता है। 
-            </h><br><br>
-        </p>
-        <p>
-            <div class="example">
-            <e>     
-            <h3 class="h-note">Example:</h3>   
-            
-            </e>
-            <h> <h3 class="h-note">उदाहरण:</h3>   
-              
-            </h><br > 
-            <div class="code-container"><div class="code TOE" id="editor">
-तंत्र.बाहर.प्रिंट("Hello"); //ये एक टिप्पणी है , This is a comment
-</div></div></div> 
-          
-        </p>
-        <h2> &nbspMulti-line Comments|बहु पंक्ति टिप्पणियाँ </h2>
+        </p><hr> 
+        <h2> &nbspString Length|<c>डोर.लंबाई</c>|डोर की लंबाई</h2>
         <p>
             <e>
-               Multi-line comments start with a backslash and a * i.e.<c>/*</c> and ends with <c>*/</c>.<br>Any text appearing between <c>/*</c> and <c>*/</c> will be ignored by compiler and is not read/compiled.
+               A <c>डोर</c> is actually an object, which contain methods(विधि) that can perform certain operations on strings.For instance , the length of a string can be obtained with the <c>.लंबाई()</c> method:
             </e>
             <h> 
-                बहु-पंक्ति/रेखा टिप्पणियाँ <c>/*</c> से शुरू होती हैं और <c>*/</c> पर समाप्त होती हैं।<br>/* और */ के बीच किसी भी पाठ को संकलक(कम्पाइलर या कहे कंप्युटर) द्वारा अनदेखा कर दिया जाएगा।
+                एक <c>डोर</c> वास्तव में एक वस्तु है, जिसमें विधियां (विधि) होती हैं जो तारों पर कुछ ऑपरेशन कर सकती हैं। , मान लें कि स्ट्रिंग की लंबाई <c>.लंबाई()</c> विधि के साथ प्राप्त की जा सकती है:
             </h><br>
         </p>
         <p>
             <div class="example">
-            <e>     
-            <h3 class="h-note">Example:</h3>
-                Following example uses a multi-line comment i.e. a comment block (to explain the code)
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h>
+<div class="code-container" style="height:5%"><div class="code TOE" id="editor">
+डोर txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+तंत्र.बाहर.प्रिंट("The length of the txt string is: " + txt.लंबाई());
+</div></div></div>
+        </p><hr>    
+        <h2> &nbspMore String Methods|बाकी <c>डोर</c> विधियाँ</h2>
+        <p>
+            <e>
+               There are many string methods available, for example toUpperCase() and toLowerCase():
             </e>
-            <h> <h3 class="h-note">उदाहरण:</h3> 
-                यह उदाहरण संहिता/कोड की व्याख्या करने के लिए एक बहु-पंक्ति टिप्पणी (एक टिप्पणी ब्लॉक) का उपयोग करता है : 
-            </h><br > 
+            <h> 
+                कई स्ट्रिंग विधियां उपलब्ध हैं, उदाहरण के लिए <c>अपरकेस()</c> और <c>लोअरकेस()</c>:
+            </h><br>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h><br > 
             <div class="code-container">
                 <div class="code TOE" id="editor">
-/* The code below will
-print the word Hello 
-this is a comment block
-*/          
-तंत्र.बाहर.प्रिंट("Hello"); 
+डोर txt = "Hello World";
+तंत्र.बाहर.प्रिंट(txt.अपरकेस());   // Outputs "HELLO WORLD"
+तंत्र.बाहर.प्रिंट(txt.लोअरकेस());//hello world
 </div></div></div> 
-        </p>        
+        </p><hr>
+        <h2> &nbspFinding a Character in a String| <c>डोर</c> में वर्ण ढूँढना</h2>
+        <p>
+            <e>
+               The <c>अनुक्रम()</c> method outputs the index (the position) of the first occurrence of a given text in a string(<c>डोर</c>) [including whitespace]:
+            </e>
+            <h> 
+                <c>अनुक्रम()</c> विधि <c>डोर</c> में किसी दिए गए पाठ(text) की पहली मौजूदगी का अनुक्रमणिका (अनुक्रमांक) प्रदान करती है:[व्हाइटस्पेस सहित] 
+            </h><br>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h><br > 
+            <div class="code-container">
+                <div class="code TOE" id="editor">
+डोर txt = "Please locate where 'locate' occurs!";
+तंत्र.बाहर.प्रिंट(txt.indexOf("locate")); //7 
+</div></div></div> 
+        </p>     
+
         <p> 
-           <div class="note">
+            <div class="note">
                 <e>
-                    <h3 class="h-note">Note :</h3>               
-                <i><b>Single or multi-line comments?</b></i><br>
-                    It is up to you which you want to use.Genrally , we use <c>//</c> for short/smaller comments, and <c>/* */</c> for longer/larger.
+                    <h3 class="h-note">Note :</h3> 
+                Here the compiler counts positions starting from zero.<br>0 is the first position/index in a string(<c>डोर</c>), 1 is the second, 2 is the third.                
                 </e>
-                <h>स 
-                    <h3 class="h-note">ध्यान दे:</h3>
-                    <i><b>एक या बहु-पंक्ति टिप्पणियाँ?</b></i><br>
-                    यह आप पर निर्भर है कि आप किसका उपयोग करना चाहते हैं। आम तौर पर, हम छोटी टिप्पणियों के लिए // का उपयोग करते हैं, और /* */ लंबे समय के लिए।
+                <h><h3 class="h-note">ध्यान दे:</h3>
+                यहां कंपाइलर/कंप्युटर शून्य से स्थितियों/क्रमों की गणना करता है।<br>0 एक स्ट्रिंग (<c>डोर</c>) में पहला स्थान/सूचकांक है, 1 दूसरा है,फिर 2 तीसरा है। 
                 </h>   
             </div>
         </p> 
     </chapter> 
-
+    <chapter>
+        <h2>&nbspString Concatenation| <c>डोर</c> संयोजन|<c>डोर</c> जोड़ना :</h2>
+        <p>
+            <e>
+                The <c>+</c> operator is used between <c>डोर</c> elements (strings) to combine them. This is termed as concatenation:
+            </e>
+            <h>
+                <c>+</c> चिन्ह  का उपयोग <c>डोर</c> तत्वों (स्ट्रिंग्स) के बीच उन्हें संयोजित करने(एक साथ जोड़ने) के लिए किया जाता है। इसे संयोजन कहा जाता है:
+            </h>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h><h3 class="h-note">उदाहरण:</h3></h>
+<div class="code-container" style="height:15%" ><div class="code TOE" id="editor">
+डोर firstName = "John";
+डोर lastName = "Doe";
+तंत्र.बाहर.प्रिंट(firstName + " " + lastName);</div></div></div>
+        </p>
+        <p> 
+            <div class="note">
+                <e>
+                    <h3 class="h-note">Note :</h3> 
+                Here ,we have added an empty text element (" ") to create a space between firstName and lastName when we print them.              
+                </e>
+                <h><h3 class="h-note">ध्यान दे:</h3>
+                यहां, हमने एक खाली तत्व (" ") जोड़ा है ताकि जब हम उन्हें प्रिंट करते हैं तो पहले firstName और lastName नाम के बीच एक रिक्त स्थान बनाया जा सके। 
+                </h>   
+            </div>
+        </p><br><hr><br>
+        <h2>&nbspAdding Numbers and Strings|<c>डोर</c> और अंकों जोड़ना :</h2>
+        <p> 
+            <div class="note" style="background-color:#ffbbbb">
+                <e>
+                    <h3 class="h-note">Note :</h3> 
+                WARNING!<br>We use the <c>+</c> operator for both addition and concatenation.<br>Numbers are added. Strings are concatenated(joined one after other).             
+                </e>
+                <h><h3 class="h-note">ध्यान दे:</h3>
+                चेतावनी! <br>हम जोड़ने और संयोजन दोनों के लिए <c>+</c> ऑपरेटर का उपयोग करते हैं। <br>संख्याएँ जोड़ी/मिलाई जाती हैं। स्ट्रिंग्स को संकुचित किया जाता है (एक के बाद दूसरे को जोड़ा/लिखा जाता हैं)।
+                </h>   
+            </div>
+        </p>
+        <p>
+            <e>
+                If we add two numbers, the result will also be a number:
+            </e>
+            <h>
+                यदि हम दो संख्याओं को जोड़ते हैं, तो परिणाम भी एक संख्या होगी:
+            </h>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h><h3 class="h-note">उदाहरण:</h3></h>
+<div class="code-container" style="height:15%" ><div class="code TOE" id="editor">
+इंट x = 100 ;
+इंट y = 200 ;
+इंट z = x + y;//z -> 30 a number</div></div></div>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3>If we add two strings, the result obtained will be a string concatenation:</e>
+            <h><h3 class="h-note">उदाहरण:</h3>यदि हम दो <c>डोर</c> जोड़ते हैं, तो प्राप्त परिणाम एक <c>डोर</c> संयोजन होगा और एक बड़ी <c>डोर</c> प्राप्त होगी </h>
+<div class="code-container" style="height:15%" ><div class="code TOE" id="editor">
+डोर x = "100";
+डोर y = "200";
+डोर z = x + y;//z = "100200" not 300 </div></div></div>
+        </p><br><br><hr><br>
+        <h2>&nbspSpecial Characters |विशेष वर्ण :</h2>
+        <p> 
+            <e>
+                As <c>डोर</c> (strings) must be written within quotes, compiler will misunderstand this <c>डोर</c> (strings), and generate an error:             
+                </e>
+                <h>
+                जैसा कि <c>डोर</c>को  उद्धरणों(<c>" "</c>) के भीतर लिखा जाना चाहिए, कंप्युटर/कंपाइलर/तंत्र  इस <c>डोर</c> (स्ट्रिंग्स) को गलत समझेगा, और एक त्रुटि उत्पन्न करेगा।
+                </h>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h><h3 class="h-note">उदाहरण:</h3></h>
+<div class="code-container" style="height:5%;background-color:#ffbbbb" ><div class="code TOE" id="editor">
+डोर  txt = "We are the so-called "Vikings" from the north.";;
+</div></div></div>
+        </p>
+        <p>
+            <e>
+               The solution so as to avoid this problem, is to make use of the <b>backslash escape character</b>.<br>The backslash (<c>\</c>) escape character changes special characters into string characters:
+            </e>
+            <h> 
+                इस समस्या से बचने के लिए समाधान, <b> प्रतिक्षेप पलायन वर्ण (बैकस्लैश एस्केप character)</b> का उपयोग करना है। <br><c>\</c> वर्ण विशेष वर्णों को <c>डोर</c>के वर्णों में परिवर्तित करता है
+            </h><br>
+        </p>
+        <table border="2%" align="center">
+            <tr>
+                <th><e>Escape character</e><h>संचालक</h></th>
+                <th><e>Result</e><h>नाम</h></th>
+                <th><e>Description</e><h>वर्णन</h></th>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;<c>\'</c></td><td>&nbsp;&nbsp; ' &nbsp;&nbsp;</td><td><e>Single quote</e><h>एकल उद्धरण</h></td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;<c>\"</c></td><td>&nbsp;&nbsp; " &nbsp;&nbsp;</td><td><e>Double quote</e><h>दोहरे उद्धरण</h></td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;<c>\\</c></td><td>&nbsp;&nbsp; \ &nbsp;&nbsp;</td><td><e>Backslash</e><h>पलटाव/बक्कसलाश</h></td>
+            </tr>
+        </table>
+    </chapter>
 <script src="scripts/article.js"></script>
 <script src="scripts/ace.js"></script>
 <script src="scripts/cobalt.js"></script>

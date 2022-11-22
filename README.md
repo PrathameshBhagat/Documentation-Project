@@ -18,3 +18,7 @@ The  documentation of the language live is available at
 
 # Open Source
 This is completely open source project and even small updates are appreciated so feel free to enhance this repository .
+# Credits
+The Documentation including the online compiler uses open source , javascript based web editor named ace editor, [official site](https://ace.c9.io).
+
+{in this repository the contributers are 2 as the documetation uses ace editor for showcasing the demo code}

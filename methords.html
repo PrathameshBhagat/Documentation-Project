@@ -1,0 +1,135 @@
+<html>
+<head>
+<script type="text/javascript" src="scripts/article.js"></script>
+<link rel="stylesheet" href="style/article.css" /> 
+</head>
+<body onload="load()"  prev="output.html" next="variables.html">
+    <h1>Methords| विधीआँ 
+        <select name="H/E" onchange="set(this.value)">
+            <option value="english">English</option>
+            <option value="hindi">हिन्दी(Hindi)</option>
+        </select><br>
+        <input type="button" value="pervious" onclick="pchapter()">
+<a class="btn" onclick="nchapter()" href="#"><span>&nbsp;&rarr;</span>NEXT</a>
+    </h1> 
+    <chapter> 
+        <h2>&nbsp Methords|विधियाँ:</h2>
+        <p>
+            <e>
+                A <b>method</b>(विधि) is a block of code which only runs when it is called.<br>We can pass various data values(called parameters) into a method.<br>In programming methords(also know as <b>functions</b>) are used to perform certain actions/tasks .<br>Methords are used to reuse code i.e define the code once, and use it many times.
+                </e>
+            <h>
+               एक <b>विधि</b> कोड का एक ब्लॉक/संवर्ग है जो केवल तभी चलता है जब इसे कहा जाता है।<br>हम एक विधि में विभिन्न डेटा मान (पैरामीटर कहा जाता है) पास कर सकते हैं।<br>प्रोग्रामिंग मेथर्ड्स में (जिसे < के रूप में भी जाना जाता है) b>फ़ंक्शंस</b>) का उपयोग कुछ कार्यों/कार्यों को करने के लिए किया जाता है।<br>तरीकों का उपयोग कोड का पुन: उपयोग करने के लिए किया जाता है यानी कोड को एक बार परिभाषित करें, और इसे कई बार उपयोग करें।
+            </h>
+        </p> 
+        <h2> &nbsp Create a Method|एक विधि बनाएँ </h2>
+        <p>
+            <e>
+               A method(विधि) must be declared within a <c>कक्षा</c>(class).A method is defined with the name of the method, followed by parentheses <c>()</c>.we have some pre-defined methods, such as तंत्र.बाहर.प्रिंट(), but we can also create our own methods to perform certain tasks/actions :
+            </e>
+            <h> 
+                एक विधि  को (class) के भीतर घोषित किया जाना चाहिए। एक विधि को उसके के नाम से परिभाषित किया जाता है, इसके बाद कोष्ठक <c>()</c> होते हैं। हमारे पास कुछ पूर्व-परिभाषित विधियाँ हैं , जैसे कि तंत्र.बाहर.प्रिंट(), लेकिन हम कुछ कार्यों को करने के लिए अपनी नई विधि भी बना सकते हैं:
+            </h><br>
+        </p>
+        <p>
+            <div class="example">
+            <e>     
+            <h3 class="h-note">Example:</h3>   
+                Creating a method named मेरीविधि inside मुख्य class:
+            </e> 
+            <h> <h3 class="h-note">उदाहरण:</h3>   
+            मुख्य <c>समूह</c> या <c>कक्षा</c>(class) के अंदर  मेरीविधि नामित एक विधि बनाना:
+            </h>
+<div class="code-container"><div class="code TOE" id="editor">
+सार्वजनिक समूह मुख्य {
+    स्थिर रिक्त मेरीविधि(){
+        //संहित/कोड जो  निष्पादित किया जाना है
+        //code to be executed    
+    }
+}
+</div></div></div>
+        </p>    
+            <e>
+               <b>Example Explained:</b><ul><li>मेरीविधि() is the name of the method(विधि) </li><li><c>स्थिर</c> means that the method belongs to the मुख्य which is a <c>समूह</c>(class) and not an object of मुख्य . We will learn more about objects and how to access methods through objects later in this tutorial.</li><li><c>रिक्त</c> means that this method(विधि) does not have a return value.We will learn more about return values later in this chapter.
+            </e>
+            <h> 
+                <b>उदाहरण समझे :</b><ul><li>मेरीविधि(), विधि का नाम है</li><li><c>स्थिर</c> का अर्थ है कि विधि "मुख्य" विधि से संबंधित है जो एक <c>समूह</c>(class) है और "मुख्य" का हिस्सा/वस्तु (object) नहीं है। हम बाद में हिस्सा/वस्तु (object) के बारे में और उनके माध्यम से उनकी विधियों तक पहुंचने के तरीके के बारे में अधिक जानेंगे।</li><li><c>रक्त</c> का अर्थ है कि इस विधि (विधि) का वापसी मूल्य नहीं है। हम आगे  इस अध्याय में बाद में वापसी मूल्यों के बारे में अधिक सीखेंगे।
+            </h><br><br>
+        </p>
+        <h2> &nbspCall a Method|एक विधि को बुलाएं </h2>
+        <p>
+            <e>
+               To call a method(विधि), write the <b>method's(विधि's)</b> name followed by two parentheses <c>()</c> and a semicolon<c>;</c><br>In the following example,मेरीविधि() is used to print a text (the action), when मेरीविधि() is called:
+            </e>
+            <h> 
+                किसी विधि(method) को बुलाने/कॉल करने के लिए, <b> विधि(मेथड)</b> का नाम लिखें और उसके बाद दो कोष्ठक <c>()</c> और एक अर्ध विराम(सेमीकोलन)<c>;</c> <br>निम्नलिखित उदाहरण में, "मेरीवथी()" का उपयोग पाठ (text) को प्रिंट करने के लिए किया जाता है, जब "मैरीवथी()" लिखा जाता है:
+            </h><br>
+        </p>
+        <p>
+            <div class="example">
+            <e>     
+            <h3 class="h-note">Example:</h3>   
+                Inside मुख्य, call the मेरीविधि() method:
+            </e> 
+            <h> <h3 class="h-note">उदाहरण:</h3>   
+            मुख्य के अंदर, मेरीविधि() विधि को बुलाए (कॉल करें):
+            </h>
+<div class="code-container"><div class="code TOE" id="editor">
+सार्वजनिक समूह मुख्य {
+    स्थिर रिक्त मेरीविधि(){
+        तंत्र.बाहर.प्रिंट("मुझे बस आभी कंप्युटर/कम्पाइलर द्वारा लिखा गया ");
+    }
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर [] अ){
+       मेरीविधि();
+    }
+}
+//ये उत्पादित करेगा:मुझे बस आभी कंप्युटर/कम्पाइलर द्वारा लिखा गया 
+</div></div></div>
+        </p><br><br>
+        <p>
+            <div class="example">
+            <e>     
+            <h3 class="h-note">Example:</h3>
+                A method {विधि} can also be called multiple times:
+            </e>
+            <h> <h3 class="h-note">उदाहरण:</h3> 
+                एक विधि को कई बार भी  बुलाया/कॉल किया जा सकता है: 
+            </h><br > 
+            <div class="code-container">
+                <div class="code TOE" id="editor">
+सार्वजनिक समूह मुख्य {
+    स्थिर रिक्त मेरीविधि(){
+        तंत्र.बाहर.प्रिंट("मुझे बस आभी लिखा गया ");
+    }
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर [] अ){
+       मेरीविधि();
+       मेरीविधि();
+       मेरीविधि();
+    }
+}
+//मुझे बस आभी लिखा गया
+//मुझे बस आभी लिखा गया
+//मुझे बस आभी लिखा गया
+</div></div></div> 
+        </p>        
+        <p> 
+           <div class="note">
+                <e>
+                    <h3 class="h-note">Note :</h3>   
+                    In the next chapter,"Method Parameters", we will learn how to pass data/parameters into a method.          
+                </e>
+                <h>स 
+                    <h3 class="h-note">ध्यान दे:</h3>
+                    अगले अध्याय "मेथड पैरामीटर्स" में हम सीखेंगे कि किसी विधि में डेटा/पैरामीटर्स को कैसे पास किया जाता है।
+                </h>   
+            </div>
+        </p> 
+    </chapter> 
+
+<script src="scripts/article.js"></script>
+<script src="scripts/ace.js"></script>
+<script src="scripts/cobalt.js"></script>
+<script src="scripts/mode-javaa.js"></script>
+<script>codeload();</script>
+</body>
+</html>

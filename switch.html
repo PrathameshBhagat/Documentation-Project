@@ -34,17 +34,17 @@
   यदि y:
     // code block
     भंग;
-  साधारण:
+  आम:
     // code block
 }
 </div></div></div>
         </p>
             <e>
-               The <c>बदले</c>expression is evaluated/calculated once.<br>The value of that expression is then compared with the values of each given case after <c>यदि</c> keyword .<br>If a match is found, the respective block of code is executed.<br>(The <c>भंग</c> and <c>साधारण </c> keywords are optional, and are to be described later)<br><BR>The following example uses the week's day number to find the week's day name: 
+               The <c>बदले</c>expression is evaluated/calculated once.<br>The value of that expression is then compared with the values of each given case after <c>यदि</c> keyword .<br>If a match is found, the respective block of code is executed.<br>(The <c>भंग</c> and <c>आम </c> keywords are optional, and are to be described later)<br><BR>The following example uses the week's day number to find the week's day name: 
 
             </e>
             <h> 
-                <c>बदले</c>अभिव्यक्ति का मूल्यांकन/गणना एक बार की जाती है। <br>उस अभिव्यक्ति के मान(value) की तुलना <c>यदि</c> के बाद दिए गए प्रत्येक मामले के मूल्यों से की जाती है। <br>यदि कोई मिलान पाया जाता है, तो कोड के संबंधित ब्लॉक को निष्पादित(execute) किया जाता है। <br>(विराम और <c>साधारण</c> वैकल्पिक हैं, और बाद में वर्णित किए जाने हैं) <br><br>निम्न उदाहरण सप्ताह के दिन का नाम ढूँढने के लिए सप्ताह के दिन संख्या का उपयोग करता है:
+                <c>बदले</c>अभिव्यक्ति का मूल्यांकन/गणना एक बार की जाती है। <br>उस अभिव्यक्ति के मान(value) की तुलना <c>यदि</c> के बाद दिए गए प्रत्येक मामले के मूल्यों से की जाती है। <br>यदि कोई मिलान पाया जाता है, तो कोड के संबंधित ब्लॉक को निष्पादित(execute) किया जाता है। <br>(विराम और <c>आम</c> वैकल्पिक हैं, और बाद में वर्णित किए जाने हैं) <br><br>निम्न उदाहरण सप्ताह के दिन का नाम ढूँढने केलिए सप्ताह के दिन संख्या का उपयोग करता है:
             </h><br>
         </p>
         <p>
@@ -52,7 +52,7 @@
             <e><h3 class="h-note">Example:</h3></e>
             <h><h3 class="h-note">उदाहरण:</h3></h>
             <div class="code-container"><div class="code TOE" id="editor">
-इंट day = 4;
+अंक day = 4;
 बदले (day) {
   यदि  1:
     तंत्र.बाहर.प्रिंट("Monday");
@@ -98,13 +98,13 @@
                 </h>   
             </div>
         </p><br><hr>
-        <h2> &nbspThe <c>साधरण</c>(default) Keyword| <c>साधरण</c> कथन</h2>
+        <h2> &nbspThe <c>आम</c>(default) Keyword| <c>आम</c> कथन</h2>
         <p>
             <e>
-               <c>साधरण</c> specifies some code which is to run if there is no case match in the <c>बदले</c> block.
+               <c>आम</c> specifies some code which is to run if there is no case match in the <c>बदले</c> block.
             </e>
             <h> 
-                <c>साधरण</c> कुछ कोड निर्दिष्ट(execute) करता है जो <c>बदले</c> ब्लॉक में कोई केस मैच नहीं होने पर चलाना जाना है ,या कहे जिसे <c>साधरण</c> तौर पर चलना है |
+                <c>आम</c> कुछ कोड निर्दिष्ट(execute) करता है जो <c>बदले</c> ब्लॉक में कोई केस मैच नहीं होने पर चलाना जाना है ,या कहे जिसे <c>आम</c> तौर पर चलना है |
             </h><br>
         </p>
         <p>
@@ -113,7 +113,7 @@
             <h> <h3 class="h-note">उदाहरण:</h3></h> 
             <div class="code-container">
                 <div class="code TOE" id="editor">
-इंट  day = 4;
+अंक  day = 4;
 बदले  (day) {
   यदि 6:
     तंत्र.बाहर.प्रिंट("Today is Saturday");
@@ -121,7 +121,7 @@
   यदि 7:
     तंत्र.बाहर.प्रिंट("Today is Sunday");
     break;
-  साधारण:
+  आम:
     तंत्र.बाहर.प्रिंट("Looking forward to the Weekend");
 }
 // Outputs "Looking forward to the Weekend" 
@@ -131,11 +131,11 @@
            <div class="note">
                 <e>
                     <h3 class="h-note">Note :</h3>               
-                Note that , if the default(<c>साधरण</c>) statement is used as last statement in a switch(<c>बदले</c>) block, it does not need a <c>भंग</c>.
+                Note that , if the default(<c>आम</c>) statement is used as last statement in a switch(<c>बदले</c>) block, it does not need a <c>भंग</c>.
                 </e>
                 <h>
                     <h3 class="h-note">ध्यान दे:</h3>
-                    ध्यान दें कि, यदि <c>साधरण</c> कथन का उपयोग <c>बदले</c> ब्लॉक में अंतिम कथन के रूप में किया जाता है, तो इसे <c>भंग</c> की आवश्यकता नहीं है।
+                    ध्यान दें कि, यदि <c>आम</c> कथन का उपयोग <c>बदले</c> ब्लॉक में अंतिम कथन के रूप में किया जाता है, तो इसे <c>भंग</c> की आवश्यकता नहीं है।
                 </h>   
             </div>
         </p> 

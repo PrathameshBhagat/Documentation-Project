@@ -116,7 +116,7 @@ function help(){
         'To go to previous chapter press (P) key on key board\n'+
         'To go to editor change /Docs to  /edit on search bar\n '+
         'Press (H) for this help list\n\n'+
-        'भाषा बदलने के लिए डॉट (.) coding की जगह के बाहर दबाए'+
-        'अगले पाठ पर जाने के लिए (N)दबाए '+
-        'पिछले पाठ पर जाने के लिए (P)दबाए '+
-        'editor पर जाने के लिए ऊपर (..../Docs)  (..../edit) ');}
+        'भाषा बदलने केलिए डॉट (.) coding की जगह के बाहर दबाए'+
+        'अगले पाठ पर जाने केलिए (N)दबाए '+
+        'पिछले पाठ पर जाने केलिए (P)दबाए '+
+        'editor पर जाने केलिए ऊपर (..../Docs)  (..../edit) ');}

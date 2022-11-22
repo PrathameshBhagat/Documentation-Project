@@ -7,6 +7,10 @@ We have our language in simple hindi so new developers need not get into remembe
 # Features
 The language has all features of a traditional programming language starting form looping, standard String and Math methord’s to OOP concepts like classes, inheritance and concepts like threads and processes, file handling, networking, user defined data structures including traditional data-structures like trees, graphs and much more.{The language is very similar to java so if you know java shifting would be very easy}
 
+# Site
+The  documentation of the language live is available at 
+[docs](https://prathameshbhagat.000webhostapp.com/Docs/)
+
 # Additional Features 
 Already got familiar with a traditional programming language, no worries ,specific files would be available at the official site for respective languages using which you would be able to embed the code directly and you would be able to shift between your traditional programming language and our language with ease. 
 
@@ -19,9 +23,6 @@ Also the language uses a refrence compiler so the refrenced compiler's language 
 
 Soon .jar file would be provided through which you would be able to add code of our language in your java projects easily and support of other languages like Python ,C ,C# would be provided later.   
 
-# Site
-The  documentation of the language live is available at 
-[docs](https://prathameshbhagat.000webhostapp.com/Docs/)
 
 # Open Source
 This is completely open source project and even small updates are appreciated so feel free to enhance this repository .

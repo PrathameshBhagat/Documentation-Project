@@ -10,7 +10,9 @@ The language has all features of a traditional programming language starting for
 # Additional Features 
 Already got familiar with a traditional programming language, no worries ,specific files would be available at the official site for respective languages using which you would be able to embed the code directly and you would be able to shift between your traditional programming language and our language with ease. 
 
-Currently the online web-based compiler in [here](https://crptrest.000webhostapp.com/) supports our language and java so you can embed java anywhere and our language. E.g. `int a=0;अंक अ =0;` would work completely fine int belongs to java and अंक to our language.
+Currently the online web-based compiler in [here](https://crptrest.000webhostapp.com/) supports our language and java so you can embed java anywhere and our language.
+
+E.g. `int a=0;अंक अ =0;` would work completely fine int belongs to java and अंक to our language.
 
 Also the language uses a refrence compiler so the refrenced compiler's language features would be natively supported.
 

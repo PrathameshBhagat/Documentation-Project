@@ -103,20 +103,27 @@ function nchapter()//next chapter
 function openNav(){
     document.getElementById("Sidenav").style.width = "20%";
     document.getElementById("open").style.display="none";
-    document.getElementById("close").style.display="inline-block";
-    document.getElementById("change").style.display="inline-block";}
+    document.getElementById("help").style.display="none";
+    document.getElementById("close").style.display="";
+    document.getElementById("change").style.display="";}
 function closeNav()
     {document.getElementById("Sidenav").style.width = "0";
-    document.getElementById("open").style.display="inline-block";
+    document.getElementById("open").style.display="";
+    document.getElementById("help").style.display="";
     document.getElementById("close").style.display="none";
     document.getElementById("change").style.display="none";}
+function headNav(h){
+    if(h.nextSibling.style.display=="none"){h.nextSibling.style.display="block";h.firstElementChild.innerHTML="&darr;";}
+    else {h.nextSibling.style.display="none";h.firstElementChild.innerHTML="&rarr;";}}
 function help(){
-    alert('Hit dot(.) out of coding space to change text language(eng/hindi)\n'+
+    alert('Onscreen: You can Press ☰ to get list of all Topics \n'+
+        'And ♺ to change topic\'s language\n'+
+        'Onkeyboard:\nHit dot(.) out of coding space to change text language(eng/hindi)\n'+
         'To go to next chapter press (N) key \n'+
         'To go to previous chapter press (P) key on key board\n'+
-        'To go to editor change /Docs to  /edit on search bar\n '+
-        'Press (H) for this help list\n\n'+
-        'भाषा बदलने केलिए डॉट (.) coding की जगह के बाहर दबाए'+
-        'अगले पाठ पर जाने केलिए (N)दबाए '+
-        'पिछले पाठ पर जाने केलिए (P)दबाए '+
-        'editor पर जाने केलिए ऊपर (..../Docs)  (..../edit) ');}
+        'To go to editor change /docs to  /edit on search bar\n '+
+        'Press (H) for this help list\n'+
+        'भाषा बदलने केलिए डॉट (.) coding की जगह के बाहर दबाए\n'+
+        'अगले पाठ पर जाने केलिए (N)दबाए \n'+
+        'पिछले पाठ पर जाने केलिए (P)दबाए \n'+
+        'code editor पर जाने केलिए ऊपर (..../docs)  (..../edit) ');}

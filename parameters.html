@@ -1,0 +1,167 @@
+<html>
+<head>
+<script type="text/javascript" src="scripts/article.js"></script>
+<link rel="stylesheet" href="style/article.css" /> 
+</head>
+<body onload="load()"  prev="output.html" next="variables.html">
+    <h1>Method Parameters| विधियों के मापदंड/मानदंड   
+        <select name="H/E" onchange="set(this.value)">
+            <option value="english">English</option>
+            <option value="hindi">हिन्दी(Hindi)</option>
+        </select><br>
+        <input type="button" value="pervious" onclick="pchapter()">
+<a class="btn" onclick="nchapter()" href="#"><span>&nbsp;&rarr;</span>NEXT</a>
+    </h1> 
+    <chapter> 
+        <h2>&nbsp;Parameters and Arguments| विधियों के मापदंड/मानदंड और उनके तर्क(दलीले)</h2>
+        <p>
+            <e>
+                Information can be passed to methods(विधि) as parameter(मापदंड/मानदंड). Parameters(मापदंड/मानदंड) act as variables inside the method.<br>Parameters(मानदंड) are specified just after the method name, inside the parentheses <c>()</c>. We can add as many parameters(मानदंड) as we want, just separate them with a comma <c>,</c> .<br>The below example has a method that takes a <c>डोर</c>(String) called नाम as parameter(मानदंड). When a method is called, we pass along a first name, which is used inside the method to print the full name:
+            </e>
+            <h>
+               जानकारी , विधियों  को पैरामीटर (मापदंड/मानदंड) के रूप में प्रदान की जा सकती है। मापदंड/मानदंड विधि के अंदर वेरिएबल के रूप में कार्य करते हैं।<br>मानदंड विधि के नाम के ठीक बाद कोष्ठक <c>()</c> के अंदर लिखे जाते हैं। हम जितने चाहें उतने मानदंड(पैरामीटर) जोड़ सकते हैं, बस उन्हें "कॉमा" <c>,</c> से अलग करें।<br>नीचे दिए गए उदाहरण में एक विधि है जो एक <c>डोर</c> ,"नाम" को मानदंड(पैरामीटर) के रूप में लेती है| जब किसी विधि को बुलाया(कॉल किया) जाता है, तो हम पहले नाम प्रदान करते हैं, जिसका उपयोग विधि के अंदर पूरा नाम प्रिंट करने के लिए किया जाता है:
+            </h>
+        </p> 
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3> </e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h>
+<div class="code-container"><div class="code TOE" id="editor">सार्वजनिक कक्षा Main{
+    स्थिर रिक्त मेरीविधि(डोर नाम){
+        तंत्र.बाहर.प्रिंट( नाम + " मनोहर | ");
+    }
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] मान){
+    मेरीविधि("राम");//राम मनोहर |
+    मेरीविधि("गीता");// गीता मनोहर | 
+    मेरीविधि("जय");//जय मनोहर |
+    }
+}</div></div></div>
+        </p>
+        <p> 
+           <div class="note">
+                <e>
+                    <h3 class="h-note">Note :</h3>               
+                    When a <b>मानदंड(parameter)</b> is passed to the विधि (method), it is called a तर्क(argument). So, from the example above: नाम is a <b>मानदंड(parameter)</b>, while राम , गीता and जय are <b>तर्क(arguments)</b>.
+                </e>
+                <h>
+                    <h3 class="h-note">ध्यान दे:</h3>
+                    जब एक <b>मानदंड(पैरामीटर)</b> को विधि (पद्धति) में प्रदान/पास किया जाता है, तो इसे तर्क(argument) कहा जाता है। इसलिए, ऊपर दिए गए उदाहरण से: "नाम" <b>मानदंड(पैरामीटर)</b> है, जबकि राम, गीता और जय <b>तर्क(arguments)</b> हैं।
+                </h>
+            </div>
+        </p>
+        <h2> &nbspMultiple Parameters|एकाधिक मानदंड</h2>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3> </e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h>
+<div class="code-container"><div class="code TOE" id="editor">सार्वजनिक कक्षा Main{
+    स्थिर रिक्त मेरीविधि(डोर नाम, अंक उम्र ){
+        तंत्र.बाहर.प्रिंट( नाम + " मनोहर की उम्र " + उम्र +"  है |\n");
+    }
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] मान){
+    मेरीविधि("राम",10);//राम मनोहर |
+    मेरीविधि("गीता",15);// गीता मनोहर | 
+    मेरीविधि("जय",25);//जय मनोहर |
+     //हम नई रेखा केलिए \n का प्रयोग कर सकते है 
+     //जैसे मेरीविधि मे किया गया है |
+    }
+}</div></div></div>
+        </p>
+        <p> 
+           <div class="note">
+                <e>
+                    <h3 class="h-note">Note :</h3>               
+                    Note when we are working with multiple parameters(मानदंड), the विधि(method) call must have the same number of arguments(तर्क) as there are parameters(मानदंड), and the arguments(तर्क) must be passed in the same order.
+                </e>
+                <h>
+                    <h3 class="h-note">ध्यान दे:</h3>
+                    ध्यान दें जब हम कई मानदंड(पैरामीटर्स) के साथ काम कर रहे हों, तो विधि(मेथड) कॉल में मानदंड(parameters) के समान तर्कों(arguments) की संख्या होनी चाहिए, और तर्कों(arguments) को उसी क्रम में पारित किया जाना चाहिए।
+                </h>
+            </div>
+        </p><br><hr><br>
+        <h2> &nbspReturn Values|वापसी मान </h2>
+        <p>
+            <e>
+               The <c>रिक्त</c> (void) keyword, used in the examples above, represents  that the विधि(method) should not return a value. If we want the विधि(method) to return a value, we can use a आदिम (primitive) data type (such as <c>अंक</c> , <c>बाइट</c> , etc.) instead of <c>रिक्त</c>(void), and use the <c>वापस</c> (return) keyword inside the विधि(method):
+            </e>
+            <h> 
+                <c>रिक्त</c>(void) शब्द, ऊपर दिए गए उदाहरणों में इस्तेमाल किया गया है, यह दर्शाता है कि विधि(method) को मान(value) नहीं लौटाना चाहिए। यदि हम चाहते हैं कि विधि(method) एक मान लौटाए, तो हम <c>रिक्त</c> (void) के बजाय आदिम (primitive) डेटा प्रकार (जैसे <c>अंक</c> , <c>बाइट</c>, आदि) का उपयोग कर सकते हैं, और विधि के अंदर <c>वापस</c> (वापसी) शब्द (keyword) का उपयोग करना होगा :
+            </h><br>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h>
+<div class="code-container"><div class="code TOE" id="editor">सार्वजनिक कक्षा Main{
+    स्थिर अंक मेरीविधि( अंक अ ){
+        वापस 5+अ ;
+    }
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] मान){
+    तंत्र.बाहर.प्रिंट(मेरीविधि(10));
+    }
+}//15 (5 + 10) का उत्पादन करेगा 
+</div></div></div>
+        </p><br><hr><br>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3>Following code returns the sum of a method's two parameters</e>
+            <h> <h3 class="h-note">उदाहरण:</h3>निम्नलिखित विधि के दो मानदंडों(पैरामीटर) का योग/जोड़ देता है</h>
+<div class="code-container"><div class="code TOE" id="editor">सार्वजनिक कक्षा Main{
+    स्थिर अंक मेरीविधि( अंक अ,अंक ब){
+        वापस अ+ब;
+    }
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] मान){
+    तंत्र.बाहर.प्रिंट(मेरीविधि(7,3));
+    }
+}//10(7 + 3) का उत्पादन करेगा</div></div></div>
+        </p><br><hr><br>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3>We can also store the result in a variable (recommended, as becomes easier to read and maintain):</e>
+            <h> <h3 class="h-note">उदाहरण:</h3>हम परिणाम को एक वेरीअबल में भी संग्रहीत कर सकते हैं (ये ज़्यादा बेहतर होगा,क्योंकि इस से इसे पढ़ना और बनाए रखना आसान हो जाता है)</h>
+<div class="code-container"><div class="code TOE" id="editor">सार्वजनिक कक्षा Main{
+    स्थिर अंक मेरीविधि( अंक अ,अंक ब){
+      वापस अ+ब;
+    }
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] मान){
+    अंक क =मेरीविधि(7,3);
+    तंत्र.बाहर.प्रिंट(क);
+    }
+}//10(7 + 3) का उत्पादन करेगा</div></div></div><br><hr><br>
+        </p><h2> &nbspA Method with <c>अगर..या</c>|वापसी मान </h2>
+        <p>
+            <e>
+               It is common to use <c>अगर..या</c> , <c>जब</c> , <c>केलिए</c> and other statements inside methods.Following example uses <c>अगर..या</c> statements inside methods:
+            </e>
+            <h> 
+                विधियों के अनंदर <c>अगर..या</c> , <c>जब</c> , <c>केलिए</c> और अन्य कथनों का प्रयोग सामान्य है।  विधि के अंदर <c>अगर..या</c> कथन:
+            </h><br>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h>
+<div class="code-container"><div class="code TOE" id="editor">सार्वजनिक कक्षा Main{
+    // एक उम्रजांच विधि बनाए एक उम्र नामक अंक वेरीअबल के साथ 
+    स्थिर रिक्त उम्रजांच( अंक उम्र ){
+        अगर (उम्र <18){
+            तंत्र.बाहर.प्रिंट("पहुंच अमान्य - माफ करे आप की उम्र पर्याप्त नहीं है ");
+        } या {
+        तंत्र.बाहर.प्रिंट("पहुंच मान्य - आपकी उम्र पर्याप्त है ");
+        }
+    }
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] मान){
+        उम्रजांच(19);
+    }
+}//पहुंच मान्य - आपकी उम्र पर्याप्त है का उत्पादन करेगा</div></div></div>
+        </p>      
+         
+    </chapter> 
+
+<script src="scripts/article.js"></script>
+<script src="scripts/ace.js"></script>
+<script src="scripts/cobalt.js"></script>
+<script src="scripts/mode-javaa.js"></script>
+<script>codeload();</script>
+</body>
+</html>

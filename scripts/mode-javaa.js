@@ -545,18 +545,32 @@ define("ace/mode/doc_comment_highlight_rules", ["require", "exports", "module", 
                 regex: "(?:true|false)\\b"
             },/*{   
                 token: "constant.language.boolean",
-                regex: "(?:सच|बाप)"
+                regex: "(?:सच|)"
             }
             ,
-            */{  
-                token: "keyword",
-                regex: "(?:तंत्र|बाहर|कक्षा|सार्वजनिक|स्थिर|"+
-                "रिक्त|जरूरी|डोर|आम|समूह|"+
-                "प्रिन्ट|प्रिंट|"+
-                "अगर|वरना|बदलो|बदल|हैतो|केलिए|जबतक|करो|"+
-                "है तो|केलिए|जब तक"
-                +")"
-            }, {
+            */
+             {  
+                token: "storage.type",
+                regex: "(?:अगर|या|"+
+                "केलिए|जब-तक|जबतक|जब|करो|बदले|बदलो|यदि|"+
+                "जारी|भंग|आम|करो)"
+            },
+            {  
+                token: "variable.language",
+                regex: "(?:अंक|बाइट|"+
+                "छोटा|लंबा|फ्लोट|बड़ा|वर्ण|डोर|बूलियन)"
+            },
+            {  
+                token: "keyword.other",
+                regex: "(?:तंत्र|बाहर|कक्षा|सार्वजनिक|सार्वजनीक|स्थिर|"+
+                "रिक्त|जरूरी|आम|समूह|वापस"+
+                "प्रिंट)"
+            },{
+                token: "constant.numeric",
+                regex:"(?:ल|ब|फ)"
+                            },
+
+             {
                 regex: "(open(?:\\s+))?module(?=\\s*\\w)",
                 token: "keyword",
                 next: [{

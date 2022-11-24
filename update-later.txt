@@ -25,3 +25,5 @@ change output and print in hindi in all files in a lternative word.
 handle next and previous select in all html to single in doc and inall html end.
 
 add to  article.js.load to add cdn ,mode-javaa internally via js
+Add to decode.php  
+/// return vapas

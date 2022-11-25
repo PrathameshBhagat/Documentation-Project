@@ -1,0 +1,187 @@
+<html>
+<head>
+<script type="text/javascript" src="scripts/article.js"></script>
+<link rel="stylesheet" href="style/article.css" /> 
+</head>
+<body onload="load()"  prev="parameters.html" next="syntax.html">
+    <h1> Method Overloading|विधि अतिभारना 
+        <select name="H/E" onchange="set(this.value)">
+            <option value="english">English</option>
+            <option value="hindi">हिन्दी(Hindi)</option>
+        </select><br>
+        <input type="button" value="pervious" onclick="pchapter()">
+<a class="btn" onclick="nchapter()" href="#"><span>&nbsp;&rarr;</span>NEXT</a>
+    </h1> 
+    <chapter> 
+        <h2>&nbsp Method Overloading|विधि अतिभारना :</h2>
+        <p>
+            <e>
+                With method विधि-अतिभार(overloading), multiple विधि's(methods) can have the same name with different मानदंड(parameters):
+            </e>
+            <h>
+               विधि-अतिभार(overloading) के साथ, कई विधियों में अलग-अलग मानदंड(parameters) के साथ एक ही नाम हो सकता है::
+            </h>
+        </p> 
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h><h3 class="h-note">उदाहरण:</h3> </h>
+<div class="code-container" style="height:15%"><div class="code TOE" id="editor">
+ अंक मेरीविधि(अंक अ)
+फ्लोट मेरीविधि(फ्लोट ) 
+बड़ा  मेरीविधि(बड़ा अ ,बड़ा क)</div></div></div>
+        </p>
+        <p>
+            <e>
+               Consider the example below, it has two methods that add numbers of different types:
+            </e>
+            <h> 
+                नीचे दिए गए उदाहरण देखे , इसमे दो विधियाँ हैं जो विभिन्न प्रकार की संख्याओं को जोड़ती हैं:
+            </h><br>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h><h3 class="h-note">उदाहरण:</h3> </h>
+<div class="code-container"><div class="code TOE" id="editor">सार्वजनिक कक्षा Main{
+    // एक उम्रजांच विधि बनाए एक उम्र नामक अंक वेरीअबल के साथ 
+    स्थिर अंक आंकीकजोड़विधि(अंक क  ,अंक का ) {
+       वापस  क + का ;
+    }
+
+    स्थिर बड़ा  बड़ीजोड़विधि(बड़ा क ,बड़ा का ) {
+        वापस   क + का ;
+    }
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] ड)
+    {   
+    अंक अ = आंकीकजोड़विधि(80 , 20);
+    बड़ा  अं = बड़ीजोड़विधि(3.6,6.4 );
+    तंत्र.बाहर.प्रिंट("अंक: "+अ );
+     तंत्र.बाहर.प्रिंट(" बड़ा: "+अं );
+    }
+}//अंक: 100 बड़ा: 10.0: का उत्पादन करेगा</div></div></div>
+        </p><br><hr><br>
+        <p>
+            <e>
+               In place of defining two विधि(method)'s that should do the same thing, it is better to अतिभारे(overload) one.<br>In the following  example , we अतिभारे(overload) the "जोड़विधि" method to work for both <c>अंक</c> and <c>बड़ा</c>:
+            </e>
+            <h> 
+                दो विधि को परिभाषित करने के स्थान पर एक विधि को अतिभारना (overloading) बेहतर है।<br>निम्नलिखित उदाहरण में, हम "जोड़विधि" विधि को अतिभारते है , और अब "जोड़विधि" दोनों के लिए काम करती  हैं <c>अंक</c> और <c>बड़ा</c> दोनों प्रकार की संख्यों के लिए :
+            </h><br>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h><h3 class="h-note">उदाहरण:</h3> </h>
+<div class="code-container"><div class="code TOE" id="editor">सार्वजनिक कक्षा Main{
+    // एक उम्रजांच विधि बनाए एक उम्र नामक अंक वेरीअबल के साथ 
+    स्थिर अंक जोड़विधि(अंक क  ,अंक का ) {
+       वापस  क + का ;
+    }
+
+    स्थिर बड़ा जोड़विधि(बड़ा क ,बड़ा का ) {
+        वापस   क + का ;
+    }
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] ड)
+    {   
+    अंक अ = जोड़विधि(80 , 20);
+    बड़ा  अं = जोड़विधि(3.6,6.4 );
+    तंत्र.बाहर.प्रिंट("अंक: "+अ );
+     तंत्र.बाहर.प्रिंट(" बड़ा: "+अं );
+    }
+}//अंक: 100 बड़ा: 10.0: का उत्पादन करेगा</div></div></div>
+        </p><br><hr><br>
+        <p> 
+           <div class="note">
+                <e>
+                    <h3 class="h-note">Note :</h3>               
+                Multiple विधि(method)'s can have the same name as long as the number and/or type of मानदंड(parameters) are different.
+                </e>
+                <h>स 
+                    <h3 class="h-note">ध्यान दे:</h3>
+                अनेक विधियों का एक ही नाम हो सकता है जब तक संख्या और/या मानदंडों(parameters) के प्रकार अलग-अलग हों।
+                </h>   
+            </div>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h><h3 class="h-note">उदाहरण:</h3></h>
+<div class="code-container"><div class="code TOE" id="editor">सार्वजनिक कक्षा Main{
+    // एक उम्रजांच विधि बनाए एक उम्र नामक अंक वेरीअबल के साथ 
+    स्थिर अंक जोड़विधि(अंक क  ,अंक का ) {
+       वापस  क + का ;
+    }
+    स्थिर अंक जोड़विधि(अंक क  ,अंक का ,अंक की) {
+       वापस  क + का +की ;
+    }
+    स्थिर बड़ा जोड़विधि(बड़ा  क ,बड़ा का ) {
+        वापस   क + का ;
+    }
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] ड)
+    {   
+    अंक अ = जोड़विधि(80 , 20);//पहली जोडविधि 
+    अंक अं = जोड़विधि(80 , 20 ,50 );//दूसरी जोडविधि 
+    बड़ा अः = जोड़विधि(3.6,6.4 );//तीसरी जोडविधि 
+    तंत्र.बाहर.प्रिंट("अंक: "+अ);
+    तंत्र.बाहर.प्रिंट(" तीन अंक: "+अं);
+    तंत्र.बाहर.प्रिंट(" बड़ा : "+अः);
+    }
+}//अंक: 100 तीन अंक: 150 बड़ा : 10.0 :: का उत्पादन करेगा</div></div></div>
+        </p><br><hr><br>
+        <e>
+            You can also create multiple methods with the same name in the same way.<br>But keep in mind that:<ul><li>If any two (or more) methods have the same number of parameters,  then of all the parameters in the first method at least one of the parameters must have a type different than the other method's parameters (such as the first and second "जोडविधि" in the example below) or a should be in a different order than other (such as the second and third "जोडविधि" in the example below).</li ><li>If the type of parameters of any two (or more) methods are not different, then the number of parameters of those methods must be different from each other (such as the first and fourth "जोडविधि" in the example below) </li>These two rules are to followed always . If a mistake is found, an error will be generated. <br>You can have any number of विधि(methord)'s  मापदंड(parameters) the condition is just to follow the above two rules to avoid ambiguity among which विधि(methord) is called/refrenced.</ul>
+            </e>
+            <h>
+            आप इसी प्रकार एक ही नाम की अनेक विधियाँ बना सकते है |<br>मगर  ध्यान रखे की:<ul><li>यदि किसी भी दो(या ज़्यादा) विधियों मे मानदंडों की संख्या बराबर है तो पहली विधि के मानदंडों मे से कम से कम एक मानदंड का प्रकार दूसरी विधि के मानदंडों से अलग होना चाहिए(जैसे नीचे दिए उधारण मे पहली और दूसरी "जोडविधि") या उनका क्रम अलग होना चाहिए (जैसे नीचे दिए उधारण मे दूसरी और तीसरी "जोडविधि")|</li><li>यदि किसी दो(या ज़्यादा) विधियों के मानदंडों का प्रकार अलग ना हो तो उन विधियों के मानदंडों की संख्या एक दूसरे से अलग होनी चाहिए (जैसे नीचे दिए उधारण मे पहली और चौथी "जोडविधि") या मानदंडों क क्रम अलग होना चाहिए (जैसे नीचे दिए उधारण मे दूसरी और तीसरी "जोडविधि")|</li>इन दोनों नियमों का सदैव पालन करना होता है । यदि कोई गलती पाई जाती है, तो एक त्रुटि उत्पन्न होगी । <br>आपके पास विधि(methord) के मापदंडों की कोई भी संख्या हो सकती है, शर्त सिर्फ उपरोक्त दो नियमों का पालन करने के लिए है ताकि अस्पष्टता से बचा जा सके की किस विधि को संदर्भित किया जा रहा है।</ul>
+                </h>   
+           
+        <p><br>
+        <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h><h3 class="h-note">उदाहरण:</h3></h>
+<div class="code-container" style="height:30%"><div class="code TOE" id="editor">सार्वजनिक कक्षा Main{
+    // एक उम्रजांच विधि बनाए एक उम्र नामक अंक वेरीअबल के साथ 
+    स्थिर अंक जोड़विधि(अंक क  ,अंक का ) {
+       वापस  क + का ;
+    }
+    स्थिर अंक जोड़विधि(अंक  क ,बड़ा का ) {
+        वापस   क + (अंक)का ;
+        //ऊपर लिखे वाक्य मे "का"(बड़ा)को  "का"(अंक)
+        //मे बदला गया है आप "क"(अंक) को "क"(बड़ा)
+        //मे भी बदल सकते थे/है  
+    }
+    स्थिर बड़ा जोड़विधि(बड़ा  क ,अंक  का) {
+        वापस   क + का ;
+        /* ऊपर लिखे वाक्य मे "क"(बड़ा)को "क"(अंक)  
+        मे बदला गया है आप "का"(अंक) को "का"(बड़ा)
+        मे भी बदल सकते थे/है 
+        क्यूकी यहाँ दोनों "क","का" एक (बड़ा) संख्या है 
+        "जोड़विधि" वापस (बड़ा) सांख्या ही प्रदान करेगी    */
+    }
+    स्थिर अंक जोड़विधि(अंक क  ,अंक का ,अंक की) {
+       वापस  क + का +की ;
+    }
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] ड)
+    {   
+    अंक अ = जोड़विधि(80 , 20);//पहली जोडविधि
+    अंक आ =जोड़विधि(80,20.5);//दूसरी जोडविधि 
+    बड़ा अं =जोड़विधि(20.5,80);//तीसरी जोडविधि 
+    अंक अः=जोड़विधि(80,20,50);//चौथी जोडविधि 
+    तंत्र.बाहर.प्रिंट("पहली जोडविधि: "+अ);
+    तंत्र.बाहर.प्रिंट(" दूसरी जोडविधि: "+आ);
+    तंत्र.बाहर.प्रिंट(" तीसरी जोडविधि: "+अं);
+    तंत्र.बाहर.प्रिंट(" चौथी जोडविधि : "+अः);
+    }
+}//पहली जोडविधि : 100 दूसरी जोडविधि : 100 तीसरी जोडविधि : 100.5 चौथी जोडविधि : 150
+// का उत्पादन करेगा</div></div></div>
+        </p><br><hr><br>            
+    </chapter> 
+
+<script src="scripts/article.js"></script>
+<script src="scripts/ace.js"></script>
+<script src="scripts/cobalt.js"></script>
+<script src="scripts/mode-javaa.js"></script>
+<script>codeload();</script>
+</body>
+</html>

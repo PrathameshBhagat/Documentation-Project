@@ -16,7 +16,7 @@ Already got familiar with a traditional programming language, no worries ,specif
 
 Currently the online web-based compiler in [here](https://crptrest.000webhostapp.com/) supports our language and java so you can embed java anywhere and our language.{As now it has issues of wrong cursor position as it uses opensource web editor ace editor,you will face issues if you try to change cursor position , very soon the problem would be fixed.}
 
-E.g. `int a=0;अंक अ =0;` would work completely fine int belongs to java and अंक to our language.
+E.g. `int a=0;अंक अ =0;` would work completely fine `int` belongs to java and `अंक` to our language.
 
 Also the language uses a refrence compiler so the refrenced compiler's language features would be natively supported.
 

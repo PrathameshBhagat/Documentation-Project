@@ -1,0 +1,139 @@
+<html>
+<head>
+<script type="text/javascript" src="scripts/article.js"></script>
+<link rel="stylesheet" href="style/article.css" /> 
+</head>
+<body onload="load()"  prev="scope.html" next="syntax.html">
+    <h1>Recursion| पुनरावृत्ति
+        <select name="H/E" onchange="set(this.value)">
+            <option value="english">English</option>
+            <option value="hindi">हिन्दी(Hindi)</option>
+        </select><br>
+        <input type="button" value="pervious" onclick="pchapter()">
+<a class="btn" onclick="nchapter()" href="#"><span>&nbsp;&rarr;</span>NEXT</a>
+    </h1> 
+    <chapter> 
+        <h2>&nbsp Recursion| पुनरावृत्ति:</h2>
+        <p>
+            <e>
+                पुनरावृत्ति (Recursion) is the technique of making a विधि (function) call itself. This technique provides a way(means) to break complicated problems down into simple problems which are now easier to solve.<br>पुनरावृत्ति (Recursion) may be quite a bit  difficult to understand. The best way to understand how it works is to experiment with it.
+            </e>
+            <h>
+               पुनरावृत्ति (Recursion), एक विधि  कॉल करने(इस्तेमाल करने) की तकनीक है। यह तकनीक जटिल समस्याओं को सरल समस्याओं में तोड़ने का एक तरीका(साधन) प्रदान करती है जो अब हल करना आसान है। पुनरावृत्ति (Recursion) को समझना थोड़ा कठिन हो सकता है। पुनरावृत्ति (Recursion) कैसे काम करता है यह समझने का सबसे अच्छा तरीका इसके साथ प्रयोग करना है।
+            </h>
+        </p><hr>
+        <h2>&nbsp Recursion Example | पुनरावृत्ति ऊधारण :</h2>
+        <p>
+            <e>Adding two numbers together is very easy to do, but adding a range of numbers is more complicated. In the given example, पुनरावृत्ति(recursion) is used to add a range of numbers together by breaking it down into the simple task of adding two numbers:                 
+            </e>
+            <h>
+            दो संख्याओं को एक साथ जोड़ना बहुत आसान है, लेकिन कई संख्याओं को जोड़ना अधिक जटिल है। दिए गए उदाहरण में, पुनरावृत्ति(recursion) का उपयोग दो संख्याओं को जोड़ने के सरल कार्य में विभाजित करके , संख्याओं की एक श्रृंखला को एक साथ जोड़ने के लिए किया जाता है:
+            </h>
+        </p>  
+        <p>
+            <div class="example">
+            <e>     
+            <h3 class="h-note">Example:</h3>   
+                पुनरावृत्ति(Recursion) to add all of the numbers up to 10.
+            </e>
+            <h> <h3 class="h-note">उदाहरण:</h3>   
+            10 तक की सभी संख्याओं को जोड़ने के लिए पुनर्संरचना(Recursion)।
+            </h>
+<div class="code-container"><div class="code TOE" id="editor">सार्वजनिक कक्षा  Main {
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] आ ){
+        अंक उत्तर =जोड़(10);
+        तंत्र.बाहर.प्रिंट(उत्तर);
+  }
+  सार्वजनिक स्थिर अंक जोड़(अंक  अ) {
+    अगर(अ >0 ){
+        वापस अ+जोड़(अ - 1);
+    } 
+    या {
+        वापस 0;
+    }
+  }
+}
+</div></div></div>
+        </p><hr>
+        <h2> &nbspExample Explained|उदाहरण समझे</h2>
+        <p>
+            <e>
+               When the <c>जोड़()</c> विधि(function) is called, it adds मानदंड(parameter) "अ" to the sum of all numbers smaller than "अ" and returns the result. When "अ" becomes 0, the विधि(function) just returns 0. When running, the program follows the following steps:
+            </e>
+            <h> 
+                जब <c>जोड़()</c> विधि(फ़ंक्शन) लिखा जाता है, तो यह मानदंड(पैरामीटर) "अ" को "अ" से छोटी सभी संख्याओं के योग में जोड़ता है और परिणाम देता है। जब "अ" ,0 हो जाता है, तो विधि(फ़ंक्शन) 0 ही लौटा देता है। कार्यरथ होते समय, प्रोग्राम निम्न चरणों का पालन करता है:
+            </h>
+        </p>
+
+        <p>10 + जोड़(9)<br>
+10 + ( 9 + जोड़(8) )<br>
+10 + ( 9 + ( 8 + जोड़(7) ) )<br>
+...<br>
+10 + 9 + 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1 + जोड़(0)<br>
+10 + 9 + 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1 + 0<br>
+        </p>
+        <p>
+            <e>
+               As the function does not call itself when "अ" is 0, the program stops there and returns(वापस करेगा) the result(उत्तर).
+            </e>
+            <h> 
+               क्योंकि जोड़ , "अ" शून्य (0) होने पर स्वयं को कॉल नहीं करता है, प्रोग्राम वहीं रुक जाता है और परिणाम देता है(उत्तर)। 
+            </h><br>
+        </p><br><hr><br>
+        <h2> &nbspHalting Condition|रुकने की स्थिति</h2>
+        <p>
+            <e>
+               Just as loops might possibly run into the problem of infinite looping, recursive functions can run into the problem of अनंत पुनरावर्तन(infinite recursion). अनंत पुनरावर्तन(Infinite recursion) is when the विधि(function) never stops calling itself. Every recursive function should have a (रुकने की स्थिति)halting condition or stopping condition , which is the condition where the विधि(function) stops calling itself. In the previous example, the रुकने की स्थिति(halting condition) is when the parameter "अ" becomes 0.<br>It is helpful to see a variety of different examples to better understand the concept. In this example, the function adds a range of numbers between a start and an end. The रुकने की स्थिति(halting condition) for this recursive function is when <b>"अंत"</b> is not greater than <b>"शुरू"</b>:
+            </e>
+            <h> 
+                जैसे लूप संभवतः अनंत लूपिंग की समस्या में चले जा सकते हैं, पुनरावर्ती कार्य , अनंत पुनरावर्तन की समस्या में चले जा सकते हैं। अनंत पुनरावर्तन तब होता है जब विधि कभी भी स्वयं को पुकारना बंद ही न करे । हर  पुनरावृत्त विधि (recursive function)में रूकने की स्थिति (halting condition) होनी चाहिए, जो कि ऐसी स्थिति होती है जहाँ विधि स्वयं को कॉल करना बंद कर देती है। पिछले उदाहरण में, यह स्थिति तब होती है जब पैरामीटर "अ" शून्य (0) हो जाता है। इस उदाहरण में, विधि दो संख्याओं के बीच की संख्याओं को जोड़ता है। इस पुनरावर्ती कार्य के लिए रोकने की स्थिति तब होती है जब <b>अंत</b> , <b>प्रारंभ</b> से अधिक नहीं होता है:
+            </h><br>
+        </p>      
+        <p>
+            <div class="example">
+            <e>     
+            <h3 class="h-note">Example:</h3>
+                पुनरावृत्ति(Recursion) to add all of the numbers between 5 to 10.
+            </e>
+            <h> <h3 class="h-note">उदाहरण:</h3> 
+                5 से 10 के बीच की सभी संख्याओं को जोड़ने के लिए पुनरावृत्ति ।
+            </h><br > 
+            <div class="code-container">
+                <div class="code TOE" id="editor">
+सार्वजनिक कक्षा Main {
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] आ ){
+        अंक उत्तर =जोड़(5,10);
+        तंत्र.बाहर.प्रिंट(उत्तर );
+    }
+    सार्वजनिक स्थिर अंक जोड़ (अंक शुरू, अंक अंत){
+        अगर(अंत >शुरू){
+            वापस अंत +जोड़(शुरू,अंत-1); 
+        }
+        या
+        {
+            वापस अंत ;
+        }
+    }
+}</div></div></div> 
+        </p>        
+        <p> 
+           <div class="note">
+                <e>
+                    <h3 class="h-note">Note :</h3>               
+                The developer should be very careful with पुनरावृत्ति(Recursion) as it can be very easy to slip into writing a function which never terminates, or one that uses excess amounts of memory or processor's  power. However, when written correctly पुनरावृत्ति(Recursion) can be a very efficient and mathematically-elegant approach to programming.
+                </e>
+                <h>
+                    <h3 class="h-note">ध्यान दे:</h3>
+                हमे पुनर्भरण(पुनरावृत्ति) के साथ बहुत सावधान रहना चाहिए क्योंकि किसी ऐसे विधि/फ़ंक्शन को लिखना बहुत आसान है जो कभी समाप्त नहीं होता है, या जो मेमोरी या प्रोसेसर की शक्ति को अधिक मात्रा मे उपयोग करे । हालाँकि, जब सही ढंग से लिखा जाता है तो पुनर्लेखन प्रोग्रामिंग के लिए एक बहुत ही कुशल और गणितीय-सुरुचिपूर्ण दृष्टिकोण हो सकता है।
+                </h>   
+            </div>
+        </p> 
+    </chapter> 
+
+<script src="scripts/article.js"></script>
+<script src="scripts/ace.js"></script>
+<script src="scripts/cobalt.js"></script>
+<script src="scripts/mode-javaa.js"></script>
+<script>codeload();</script>
+</body>
+</html>

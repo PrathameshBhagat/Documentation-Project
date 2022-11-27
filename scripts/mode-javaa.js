@@ -563,7 +563,7 @@ define("ace/mode/doc_comment_highlight_rules", ["require", "exports", "module", 
             {  
                 token: "keyword.other",
                 regex: "(?:तंत्र|बाहर|कक्षा|सार्वजनिक|सार्वजनीक|स्थिर|"+
-                "रिक्त|जरूरी|आम|समूह|वापस"+
+                "रिक्त|जरूरी|आम|समूह|वापस|"+
                 "प्रिंट)"
             },{
                 token: "constant.numeric",

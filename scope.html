@@ -1,0 +1,103 @@
+<html>
+<head>
+<script type="text/javascript" src="scripts/article.js"></script>
+<link rel="stylesheet" href="style/article.css" /> 
+</head>
+<body onload="load()"  prev="overloading.html" next="recursion.html">
+    <h1> Scope | दायरा | कार्यक्षेत्र
+        <select name="H/E" onchange="set(this.value)">
+            <option value="english">English</option>
+            <option value="hindi">हिन्दी(Hindi)</option>
+        </select><br>
+        <input type="button" value="pervious" onclick="pchapter()">
+<a class="btn" onclick="nchapter()" href="#"><span>&nbsp;&rarr;</span>NEXT</a>
+    </h1> 
+    <chapter> 
+        <h2>&nbsp Scope | दायरा | कार्यक्षेत्र:</h2>
+        <p>
+            <e>
+                Variables are only accessible inside the region they are in created. This is known as दायरा/कार्यक्षेत्र(scope).
+            </e>
+            <h>
+               वेरिएबल्स(variables ) केवल उस क्षेत्र के भीतर ही पहुंच योग्य हैं जहां वे बनाए गए हैं। इसे कार्यक्षेत्र या दायरा(scope) के रूप में जाना जाता है।(कहा जाता है):
+            </h>
+        </p> 
+        <h2> &nbspMethod Scope |विधियों का कार्यक्षेत्र /दायरा  </h2>
+        <p>
+            <e>
+               Variables which are declared directly inside a method are available anywhere in the method after(following) the line of code in which they were declared: 
+            </e>
+            <h>
+                एक विधि के अंदर सीधे घोषित किए गए वेरिएबल , उस पंक्ति(रेखा) जिसके  जिसमें वे घोषित किए गए उसी पंक्ति(रेखा) के बाद ,उस  विधि में कहीं भी उपलब्ध हैं |
+            </h><br>
+        </p>
+        <p>
+            <div class="example">
+            <e> <h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h>
+    <div class="code-container"><div class="code TOE" id="editor">सार्वजनिक कक्षा Main {
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] आ){
+        // अ  यहाँ काम नहीं करेगा , अ can not be used here     
+        अंक अ =100;
+        // अ  यहाँ काम करेगा ,अ can be used here 
+    तंत्र.बाहर.प्रिंट(अ);
+    }
+    }</div></div></div>
+    </p>
+        <h2> &nbspBlock Scope|खंड कार्यक्षेत्र /दायरा  </h2>
+            <p>
+                <e>
+                   A block of code refers to all of the code between curly braces <c>{}</c>.<br>Variables that are  declared inside blocks of code are only accessible by the code between the curly braces, which follows the line in which the variable was declared:
+                </e>
+                <h>
+                    कोड का एक खंड <c>{}</c>(कर्ली ब्रेसिज़)  के बीच के सभी रेखाओं को संदर्भित करता है।<br>कोड के खंड के अंदर घोषित वेरिएबल , केवल <c>{}</c>(कर्ली ब्रेसिज़) के बीच के कोड द्वारा इस्तेमाल किए जा सकते हैं, वो भी केवल उस रेखा के बाद जिसमे उस वेरीअबल को घोषित किया गया है:
+                </h><br>
+            </p>
+            <p>
+                <div class="example">
+                <e> <h3 class="h-note">Example:</h3></e>
+                <h> <h3 class="h-note">उदाहरण:</h3></h>
+        <div class="code-container"><div class="code TOE" id="editor">सार्वजनिक कक्षा Main {
+        सार्वजनिक स्थिर रिक्त जरूरी(डोर[] आ){
+            // अ  यहाँ काम नहीं करेगा , अ can not be used here     
+
+            {// यह एक खंड है 
+            
+              // यहाँ आप "अ" का इस्तेमाल नहीं कर सकते 
+              // क्योंकि यहाँ अभी तक उसे घोषित नहीं किया गया है
+
+              अंक अ =100;
+
+              // "अ"  यहाँ काम करेगा क्योंकी 
+              // उसे घोशीत किया जा चुका  है 
+              // और वो इसी खंड मे है | 
+              तंत्र.बाहर.प्रिंट(अ);
+            }
+
+            //यहाँ आप "अ" का इस्तेमाल नहीं कर सकते 
+            //क्योंकि वो इस खंड मे नहीं है   
+
+            }
+        }</div></div></div>
+        </p>    
+        <p> 
+           <div class="note">
+                <e>
+                    <h3 class="h-note">Note :</h3>               
+                A खंड(block) of code may exist on its own or it can belong to an <c> अगर </c>(if),<c>जब</c>(while) or <c>केलिए</c>(for) statement. In the case of <c>केलिए</c>(for) statements, variables declared in the statement itself are also available inside the खंड कार्यक्षेत्र(block's scope).
+                </e>
+                <h>
+                    <h3 class="h-note">ध्यान दे:</h3>
+                    संहिता/कोड का एक खंड (block) अपने आप में मौजूद हो सकता है या यह किसी <c> अगर </c>(if),<c>जब</c>(जबकि) या <c>केलिए</c> से संबंधित हो सकता है । <c>केलिए</c>(for) कथनों के मामले में, कथन में घोषित चर(variable) भी खंड कार्यक्षेत्र (ब्लॉक के दायरे) के अंदर भी उपलब्ध हैं।
+                </h>   
+            </div>
+        </p> 
+    </chapter> 
+
+<script src="scripts/article.js"></script>
+<script src="scripts/ace.js"></script>
+<script src="scripts/cobalt.js"></script>
+<script src="scripts/mode-javaa.js"></script>
+<script>codeload();</script>
+</body>
+</html>

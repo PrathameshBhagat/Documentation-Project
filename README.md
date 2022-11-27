@@ -14,7 +14,7 @@ The  documentation of the language live is available at
 # Additional Features 
 Already got familiar with a traditional programming language, no worries ,specific files would be available at the official site for respective languages using which you would be able to embed the code directly and you would be able to shift between your traditional programming language and our language with ease. 
 
-Currently the online web-based compiler in [here](https://crptrest.000webhostapp.com/) supports our language and java so you can embed java anywhere and our language.
+Currently the online web-based compiler in [here](https://crptrest.000webhostapp.com/) supports our language and java so you can embed java anywhere and our language.{As now it has issues of wrong cursor position as it uses opensource web editor ace editor,you will face issues if you try to change cursor position , very soon the problem would be fixed.}
 
 E.g. `int a=0;अंक अ =0;` would work completely fine int belongs to java and अंक to our language.
 

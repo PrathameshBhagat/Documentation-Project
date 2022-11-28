@@ -543,13 +543,11 @@ define("ace/mode/doc_comment_highlight_rules", ["require", "exports", "module", 
             }, {
                 token: "constant.language.boolean",
                 regex: "(?:true|false)\\b"
-            },/*{   
+            },{   
                 token: "constant.language.boolean",
-                regex: "(?:सच|)"
-            }
-            ,
-            */
-             {  
+                regex: "(?:सच|झूठ)"
+            },
+            {  
                 token: "storage.type",
                 regex: "(?:अगर|या|"+
                 "केलिए|जब-तक|जबतक|जब|करो|बदले|बदलो|यदि|"+

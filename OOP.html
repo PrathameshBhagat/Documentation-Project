@@ -1,0 +1,72 @@
+<html>
+<head>
+<script type="text/javascript" src="scripts/article.js"></script>
+<link rel="stylesheet" href="style/article.css" /> 
+</head>
+<body onload="load()"  prev="recursion.html" next="syntax.html">
+    <h1>Please Review This Page Completely it has many discrepancies</h1>
+    <h1>Object Oriented Programming| वस्तु उन्मुख प्रोग्रामिंग |वस्तु आधारित प्रोग्रामिंग 
+        <select name="H/E" onchange="set(this.value)">
+            <option value="english">English</option>
+            <option value="hindi">हिन्दी(Hindi)</option>
+        </select><br>
+        <input type="button" value="pervious" onclick="pchapter()">
+<a class="btn" onclick="nchapter()" href="#"><span>&nbsp;&rarr;</span>NEXT</a>
+    </h1> 
+    <chapter> 
+        <h2>&nbsp OOP | टिप्पणियाँ:</h2>
+        <e>
+            OOP stands for Object-Oriented Programming.<br>Procedural programming is all about writing procedures or methods that perform operations on the data, where as object-oriented programming is about creating objects that contain both the data and the methods.<br>Object-oriented programming has several advantages over procedural programming:<ul><li>It(OOP) is faster and easier to execute</li><li>It(OOP) provides a clear structure for the programs</li><li>It helps to keep the code DRY "Don't Repeat Yourself", and makes the code easier to maintain, modify and debug</li><li>OOP makes it possible to create fully reusable applications with less code and shorter development time</li></ul><b>Tip:</b> The "Don't Repeat Yourself" (DRY) principle is about reducing the repetition of code. We should extract out the codes that are common for the application, and place them at a single place and reuse them instead of repeating it.
+        </e>
+        <h>
+            OOP का अर्थ वस्तु आधारित प्रोग्रामिंग(Object-Oriented Programming) है। <br>प्रक्रियात्मक प्रोग्रामिंग उन सभी प्रक्रियाओं या विधियों के बारे में है जो डेटा पर संचालन करते हैं, जहाँ ऑब्जेक्ट-ओरिएंटेड प्रोग्रामिंग उन वस्तुओं को बनाने के बारे में है जिनमें डेटा और विधियाँ दोनों शामिल हैं।<br>ऑब्जेक्ट प्रक्रियात्मक प्रोग्रामिंग की तुलना में उन्मुख प्रोग्रामिंग के कई फायदे हैं:<ul><li>यह (OOP) निष्पादित करने में तेज़ और आसान है</li><li>यह (OOP) कार्यक्रमों के लिए एक स्पष्ट संरचना प्रदान करता है</li><li > यह कोड DRY "डोंट रिपीट योरसेल्फ" को बनाए रखने में मदद करता है, और कोड को बनाए रखने, संशोधित करने और डिबग करने में आसान बनाता है</li><li>OOP कम कोड और कम विकास समय के साथ पूरी तरह से पुन: प्रयोज्य अनुप्रयोगों को बनाना संभव बनाता है </li></ul><b>टिप:</b> "डोंट रिपीट योरसेल्फ" (DRY) सिद्धांत कोड की पुनरावृत्ति को कम करने के बारे में है। हमें उन कोड को निकालना चाहिए जो एप्लिकेशन के लिए सामान्य हैं, और उन्हें एक ही स्थान पर रखें और उन्हें दोहराने के बजाय उनका पुन: उपयोग करें।
+        </h><br><br><hr>
+        <h2> &nbspWhat are Classes and Objects?|कक्षाएं(समूह) और वस्तुएं क्या हैं ? </h2>
+        <p>
+            <e>
+               (कक्षा)Classes and (चीज़े)objects are the two main aspects of object-oriented programming.<br>Look at the given illustration to see the difference between class(कक्षा/समूह) and its objects(चीज़े):
+            </e>
+            <h> 
+                क्लासेस और ऑब्जेक्ट वस्तु आधारित प्रोग्रामिंग(Object-Oriented Programming) के दो मुख्य पहलू हैं।<br>class ,Object-Oriented Programming का बहुत जरूरी पहलू है| 
+                वर्ग और वस्तुओं के बीच अंतर देखने के लिए निम्नलिखित दृष्टांत देखें:
+            </h><br>
+        </p>
+        <p style="text-align: center;align-items:center;justify-content: center;justify-items: center;"><table>
+            <tr><td>
+                <div style="border-color:blue;border-width:3vw;border-style:solid ;display: inline-block;float: left;background-color:#f1f1f1;">
+                <h1>class(कक्षा/समूह)</h1><h2>Animal</h2></div></td>
+                <td>
+                <h1 style="font-size:500%;float: left;">&rArr;</h1></td>
+                <td><div style="border-color:blue;border-width:3vw;border-style:solid ;display: inline-block;background-color:#f1f1f1;">
+                <h1 >objects(चीज़े)</h1>
+                <h2>Cat(बिल्ली)<br>Dog(कुत्ता/श्वान)<br>Horse(घोडा)<br>Lion(शेर)</h2></div></td>
+            </tr> 
+        </table>
+        <div><br><hr><br>Another Example : <br><br><hr><br></div>
+        <table> 
+            <tr><td>
+            <div style="border-color:blue;border-width:3vw;border-style:solid ;display: inline-block;float: left;background-color:#f1f1f1;">
+                <h1>class(कक्षा/समूह)</h1><h2>Vehicle(गाड़ी)</h2></div></td>
+                <td><h1 style="font-size:500%;float: left">&rArr;</h1></td>
+                <td><div style="border-color:blue;border-width:3vw;border-style:solid ;display: inline-block;background-color:#f1f1f1;"><h1>objects(चीज़े)</h1><h2>Car(कार)<br>Bike(बाइक)<br>Train(रेल गाडी)<br>Bi-Cycle(साइकिल)</h2></div></td>
+            </tr>
+        </table>
+        </p>
+
+        <p><br>
+            <e>
+               So, a class(कक्षा/समूह) is a template for objects(वस्तु), and an object(वस्तु) is an instance of a class(कक्षा/समूह).<br>When individual objects are created, they inherit all the variables and methods from the class(कक्षा/समूह).<br>You will learn much more about classes and objects in the next chapter.
+            </e>
+            <h> 
+                तो, एक वर्ग (कक्षा/समूह) उसकी वस्तुओं के लिए एक सांचा(टेम्पलेट) है, और वर्ग की वस्तु  वर्ग(समूह) का एक "वस्तु" ही  है। और जब किसी वर्ग की एक वस्तु बनाई जाती हैं, वर्ग(समूह)  से सभी वेरीअबल और विधियों को प्राप्त करता है ।<br>अगले अध्याय में आपवर्गों और उनकी वस्तुओं के बारे में बहुत कुछ सीखेंगे।
+            </h><br><br>
+        </p> 
+    </chapter> 
+
+<script src="scripts/article.js"></script>
+<script src="scripts/ace.js"></script>
+<script src="scripts/cobalt.js"></script>
+<script src="scripts/mode-javaa.js"></script>
+<script>codeload();</script>
+</body>
+</html>

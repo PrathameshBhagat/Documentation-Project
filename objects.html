@@ -1,0 +1,158 @@
+<html>
+<head>
+<script type="text/javascript" src="scripts/article.js"></script>
+<link rel="stylesheet" href="style/article.css" /> 
+</head>
+<body onload="load()"  prev="oop.html" next="attributes.html">
+    <h1>Classes and Objects|कक्षाएं और उनकी वस्तुएं
+        <select name="H/E" onchange="set(this.value)">
+            <option value="english">English</option>
+            <option value="hindi">हिन्दी(Hindi)</option>
+        </select><br>
+        <input type="button" value="pervious" onclick="pchapter()">
+<a class="btn" onclick="nchapter()" href="#"><span>&nbsp;&rarr;</span>NEXT</a>
+    </h1> 
+    <chapter> 
+        <h2>&nbspClasses/Objects|कक्षाएं / वस्तुएं:</h2>
+        <p>
+            <e>
+                Hindi4all is an object-oriented(वस्तु-आधारित) programming language.<br>Everything in here is associated with कक्षा/वर्ग(classes) and objects(उनकी  वस्तुएं), along with its attributes and methods. For example: in real life, a car is an वस्तु(object). The car has attributes, such as weight and color, and methods(विधियाँ) or we can say functions, such as drive and brake.<br>A Class(कक्षा/वर्ग) is like an object constructor, or a "blueprint" for creating वस्तु(objects).
+            </e>
+            <h>
+               Hindi4all एक वस्तु-आधारित(object-oriented) प्रोग्रामिंग भाषा है। <br>यहाँ सब कुछ कक्षा/वर्ग(class) , उनकी वस्तुए(objects) और उसके साथ-साथ उन वस्तुओ की विशेषता और विधियों से जुड़ा है। उदाहरण के लिए: वास्तविक जीवन में, कार एक वस्तु (object) है। कार में <b>विशेषताएँ</b>(या कहे गुण) होते हैं, जैसे वजन, रंग, और विधियाँ(methords) जैसे चलाना(drive) और रोकना(ब्रेक) आदी । एक कक्षा/वर्ग(class) एक वस्तु निर्माणकर्ता की तरह है, या कहे कोई वस्तु(object) बनाने के लिए एक "रूपरेखा" प्रदान करता है।
+            </h>
+        </p> 
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3>   
+               Create a वर्ग/कक्षा(class) called "मुख्य" with variable: अ 
+            </e>
+            <h> <h3 class="h-note">उदाहरण:</h3>   
+                "मुख्य" नामक एक वर्ग/कक्षा(class) बनाएँ:अ  and आ
+            </h>
+<div class="code-container"><div class="code TOE" id="editor">
+कक्षा मुख्य {
+    अंक अ =10;
+}
+</div></div></div>
+        </p>
+        <p> 
+           <div class="note">
+                <e>
+                    <h3 class="h-note">Note :</h3>               
+                कक्षा is same as वर्ग we can any time write कक्षा in place of वर्ग and vice-verasa.
+                </e>
+                <h>
+                    <h3 class="h-note">ध्यान दे:</h3>
+                वर्ग , कक्षा के समान है हम किसी भी समय,कही भी वर्ग के स्थान पर कक्षा और कक्षा के स्थान पर वर्ग लिख सकते हैं ।
+                </h>   
+            </div>
+        </p> 
+        <br><hr> <br>
+        <h2> &nbspCreate an Object|एक वस्तु बनाएँ </h2>
+        <p>
+            <e>
+               In Hindi4all,a वस्तु(object) is created from a वर्ग(class). We have already created the वर्ग(class) named "मुख्य", so now we can use this to create वस्तु(object)'s.<br>To create an वस्तु(object) of "मुख्य", specify the वर्ग(class) name, followed by the वस्तु(object) name, and use the keyword <c>नई</c>:(after this you are also supposed to  add <c>();</c> to it which we would learn later)
+            </e>
+            <h> 
+                Hindi4all में एक वर्ग(class) से एक वस्तु(object) बनाई जाती है। हमने "मुख्य" नाम का वर्ग(class) पहले ही बना लिया है, इसलिए अब हम इसका उपयोग वस्तु(object) बनाने के लिए कर सकते हैं। <br>"मुख्य" का वस्तु(object) बनाने के लिए,वस्तु के वर्ग(class) का नाम निर्दिष्ट करें उसके बाद  , वस्तु(object) का नाम , और <c>नया</c> संकेत शब्द(keyword) का उपयोग करें:(इसके बाद आपको इसमें <c>();</c> भी जोड़ना है जो हम बाद में जानेंगे)
+            </h><br>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3>   
+               Create an object called "मेरीवस्तु"  and print the value of अ 
+            </e>
+            <h> <h3 class="h-note">उदाहरण:</h3>   
+               "मेरीवस्तु" नामक एक वस्तु बनाएँ और अ का मान प्रिंट करें
+            </h>
+<div class="code-container"><div class="code TOE" id="editor">
+कक्षा मुख्य {
+    अंक अ =10;
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क ){
+        मुख्य मेरीवस्तु =नई मुख्य();
+        तंत्र.बाहर.प्रिंट(मेरीवस्तु.अ);
+    }
+}// 10: प्रदर्शित करेगा
+</div></div></div>
+        </p><br><hr> <br>
+        <h2> &nbspMultiple Objects|एकाधिक वस्तुएँ </h2>
+        <p>
+            <e>
+               We can create multiple objects of one class:
+            </e>
+            <h> 
+                आप एक वर्ग/कक्षा के कई वस्तु(object) बना सकते हैं:
+            </h><br>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3>   
+               Create two वस्तु(object)'s of "मुख्य"
+            </e>
+            <h> <h3 class="h-note">उदाहरण:</h3>   
+               "मुख्य" की दो वस्तुएँ(objects) बनाएँ
+            </h>
+<div class="code-container"><div class="code TOE" id="editor">
+कक्षा मुख्य {
+    अंक अ =10;
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क ){
+        मुख्य मेरीवस्तु1  = नई मुख्य();
+        मुख्य मेरीवस्तु2  = नई मुख्य();
+        तंत्र.बाहर.प्रिंट(मेरीवस्तु1.अ);
+        तंत्र.बाहर.प्रिंट(मेरीवस्तु2.अ);
+    }
+}// 1010 :प्रदर्शित करेगा
+// दो दस के बीच जगह के लिए " " का प्रयोग करे 
+//तंत्र.बाहर.प्रिंट(" "+मेरीवस्तु2.अ);
+</div></div></div>
+        </p><br><hr> <br>
+        <h2> &nbspUsing Multiple Classes|एकाधिक वर्गों का उपयोग</h2>
+        <e>
+            We can also create an वस्तु(object)  of a वर्ग(class) and access it in another वर्ग(class). This is often used for better organization of classes (one वर्ग(class) has all the attributes(we name it helper/सहायक class) and methods, while the other holds the जरूरी() method/विधि ,i.e. code to be executed).
+        </e>
+            <h> 
+            हम वर्ग(class) का वस्तु (वस्तु) भी बना सकते हैं और इसे दूसरे वर्ग(class) में एक्सेस कर सकते हैं। यह अक्सर कक्षाओं के बेहतर संगठन के लिए उपयोग किया जाता है (एक वर्ग(class) में सभी विशेषताएँ/गुण या वेरीअबल हो सकते हैं (हम इसे "सहायक" वर्ग का नाम देंगे) , और  दूसरे मे  जरूरी() विधि/methord को  रख सकते है(हम इसे "मुख्य" वर्ग का नाम देंगे ))।
+            </h><br>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3>   
+               Create two वस्तु(object)'s of "मुख्य"
+            </e>
+            <h> <h3 class="h-note">उदाहरण:</h3>   
+               "मुख्य" की दो वस्तुएँ(objects) बनाएँ
+            </h>
+<div class="code-container"><div class="code TOE" id="editor">
+वर्ग सहायक{
+    अंक अ =10;
+}
+वर्ग मुख्य {
+    सार्वजनिक स्थिर रिक्त  जरूरी(डोर[] क ){
+         सहायक मेरीवस्तु = नई सहायक();
+        तंत्र.बाहर.प्रिंट(मेरीवस्तु.अ);
+    }
+}//10 : प्रदर्शित करेगा  
+</div></div></div>
+        </p>
+        <p> 
+           <div class="note">
+                <e>
+                    <h3 class="h-note">Note :</h3>               
+                कक्षा is same as वर्ग we can any time write कक्षा in place of वर्ग and vice-verasa.
+                </e>
+                <h>
+                    <h3 class="h-note">ध्यान दे:</h3>
+                वर्ग , कक्षा के समान है हम किसी भी समय,कही भी वर्ग के स्थान पर कक्षा और कक्षा के स्थान पर वर्ग लिख सकते हैं ।
+                </h>   
+            </div>
+        </p> 
+    </chapter> 
+
+<script src="scripts/article.js"></script>
+<script src="scripts/ace.js"></script>
+<script src="scripts/cobalt.js"></script>
+<script src="scripts/mode-javaa.js"></script>
+<script>codeload();</script>
+</body>
+</html>

@@ -534,13 +534,24 @@ define("ace/mode/doc_comment_highlight_rules", ["require", "exports", "module", 
             }, {
                 token: "string",
                 regex: "['](?:(?:\\\\.)|(?:[^'\\\\]))*?[']"
-            }, {
+            },
+            {
+                token : "constant.numeric",
+                regex :/[0-9](?:[xX][0-9a-fA-F][0-9a-fA-F_]*|[bB][01][01_]*)?[लबफ]/
+            },
+            {
+                token : "constant.numeric",
+                regex :/[+-]?\d[\d_]*(?:(?:\.[\d_]*)?(?:[eE][+-]?[\d_]+)?)?[लबफ]/
+            },
+            {
                 token: "constant.numeric",
                 regex: /0(?:[xX][0-9a-fA-F][0-9a-fA-F_]*|[bB][01][01_]*)[LlSsDdFfYy]?\b/
             }, {
                 token: "constant.numeric",
                 regex: /[+-]?\d[\d_]*(?:(?:\.[\d_]*)?(?:[eE][+-]?[\d_]+)?)?[LlSsDdFfYy]?\b/
-            }, {
+            },
+             
+             {
                 token: "constant.language.boolean",
                 regex: "(?:true|false)\\b"
             },{   
@@ -561,14 +572,10 @@ define("ace/mode/doc_comment_highlight_rules", ["require", "exports", "module", 
             {  
                 token: "keyword.other",
                 regex: "(?:तंत्र|बाहर|कक्षा|सार्वजनिक|सार्वजनीक|स्थिर|"+
-                "रिक्त|जरूरी|आम|समूह|वापस|"+
+                "रिक्त|जरूरी|आम|समूह|वापस|नई|वर्ग|अंतिम|"+
                 "प्रिंट)"
-            },{
-                token: "constant.numeric",
-                regex:"(?:ल|ब|फ)"
-                            },
-
-             {
+            },/*same are above numerics */
+            {
                 regex: "(open(?:\\s+))?module(?=\\s*\\w)",
                 token: "keyword",
                 next: [{

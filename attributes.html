@@ -1,0 +1,179 @@
+<html>
+<head>
+<script type="text/javascript" src="scripts/article.js"></script>
+<link rel="stylesheet" href="style/article.css" /> 
+</head>
+<body onload="load()"  prev="objects.html" next="syntax.html">
+    <h1>Attributes|विशेषताएँ
+        <select name="H/E" onchange="set(this.value)">
+            <option value="english">English</option>
+            <option value="hindi">हिन्दी(Hindi)</option>
+        </select><br>
+        <input type="button" value="pervious" onclick="pchapter()">
+<a class="btn" onclick="nchapter()" href="#"><span>&nbsp;&rarr;</span>NEXT</a>
+    </h1> 
+    <chapter> 
+        <h2>&nbspClass Attributes|कक्षाओं/वर्गों की वस्तुओं के विशेषताएँ:</h2>
+        <p>
+            <e>
+                In the previous topic, we used the term "variable" for x(अ) in the example. It is actually an गुण/विशेषता(attribute) of the वर्ग(class). Or we could say that वर्ग गुण/वर्ग विशेषता(class attribute) are variables within a वर्ग(class):
+            </e>
+            <h>
+                हमने पिछले उद्धरणों में x(अ) के लिए "वेरिएबल" शब्द का प्रयोग किया था । यह वास्तव में वर्ग(class) का एक गुण/विशेषता (attribute) है। या हम कह सकते हैं कि वर्ग गुण/वर्ग विशेषता (class attribute) एक वर्ग(class) के भीतर "वेरिएबल"/"चर" हैं:
+            </h>
+        </p>
+         <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3>   
+               Create a वर्ग/कक्षा(class) called "मुख्य" with two attributes(विशेषता): अ  and आ
+            </e>
+            <h> <h3 class="h-note">उदाहरण:</h3>   
+                दो विशेषताओं के साथ "मुख्य" नामक एक वर्ग बनाएँ:अ  and आ
+            </h>
+<div class="code-container"><div class="code TOE" id="editor">
+कक्षा मुख्य {
+    अंक अ =10;
+    अंक आ =20;
+}
+</div></div></div>
+        </p>
+        <p> 
+           <div class="note">
+                <e>
+                    <h3 class="h-note">Note :</h3>               
+                कक्षा is same as वर्ग we can any time write कक्षा in place of वर्ग and vice-verasa.
+                </e>
+                <h>
+                    <h3 class="h-note">ध्यान दे:</h3>
+                वर्ग , कक्षा के समान है हम किसी भी समय वर्ग के स्थान पर कक्षा और कक्षा के स्थान पर वर्ग लिख सकते हैं ।
+                </h>   
+            </div>
+        </p>
+         <br><hr> <br>
+        <h2> &nbspAccessing Attributes|विशेषता/गुण तक पहुँचना </h2>
+        <p>
+            <e>
+               We can access विशेषता/गुण(attributes) by creating an वस्तु(object) of the वर्ग(class), and by using the dot syntax <c>.</c>:<br>The below given example will create an वस्तु(object) of the "मुख्य" वर्ग(class), with the name "मेरीवस्तु". We use the "अ" विशेषता(attribute) on the वस्तु(object) to print its value:
+            </e>
+            <h> 
+                हम वर्ग(class) की  एक वस्तु(object) बनाकर और दशमलव या डॉट <c>.</c> का उपयोग करके विशेषता/गुण(attributes) तक पहुँच सकते हैं।:<br>नीचे दिए गया उदाहरण "मुख्य" वर्ग (वर्ग) की एक वस्तु(object) का निर्माण करेगा जिसका नाम  "मेरीवस्तु" होगा | हम "मेरीवस्तु" नामक वस्तु की "अ" विशेषता को उसी के मूल्य को प्रदर्शित करने के लिए इस्तेमाल करेंगे:
+            </h><br>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3>   
+            Create an object called "मेरीवस्तु" and print the value of "अ":
+            </e>
+            <h> <h3 class="h-note">उदाहरण:</h3>   
+            "मेरीवस्तु" नामक वस्तु बनाएँ और "अ" का मान प्रिंट करें:
+            </h>
+<div class="code-container"><div class="code TOE" id="editor">
+कक्षा मुख्य {
+      अंक अ =10;
+    सार्वजनिक स्थिर रिक्त  जरूरी(डोर[] क ){
+         मुख्य मेरीवस्तु = नई मुख्य();
+        तंत्र.बाहर.प्रिंट(मेरीवस्तु.अ);
+    }
+}// 10: प्रदर्शित करेगा
+</div></div></div>
+        </p> <br><hr> <br>
+        <h2> &nbspModify Attributes|विशेषता/गुण को संशोधित करें </h2>
+        <p>
+            <e>
+            We can also modify attribute(विशेषता) values:
+            </e>
+            <h> 
+            हम विशेषता  मानों (attribute values) को भी संशोधित कर सकते हैं:
+            </h><br>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3>   
+            Set the value of अ to 50:
+            </e>
+            <h> <h3 class="h-note">उदाहरण:</h3>   
+            "मेरीवस्तु" नामक वस्तु बनाएँ और "अ" का मान प्रिंट करें:
+            </h>
+<div class="code-container"><div class="code TOE" id="editor">
+कक्षा मुख्य {
+      अंक अ;
+    सार्वजनिक स्थिर रिक्त  जरूरी(डोर[] क ){
+         मुख्य मेरीवस्तु = नई मुख्य();
+        मेरीवस्तु.अ=50;
+        तंत्र.बाहर.प्रिंट(मेरीवस्तु.अ);
+    }
+}// 50 :प्रदर्शित करेगा 
+</div></div></div>
+        </p> 
+        <p>
+            <e>
+            Or override existing values:
+            </e>
+            <h> 
+            या मौजूदा मूल्यों को अवहेलना करें(बदल  दे):
+            </h><br>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3>   
+            Change the value of  "अ" to 50 :
+            </e>
+            <h> <h3 class="h-note">उदाहरण:</h3>   
+            "अ" के मान/मूल्य  को 50 में बदलें:
+            </h>
+<div class="code-container"><div class="code TOE" id="editor">
+कक्षा मुख्य {
+      अंक अ=10 ;
+    सार्वजनिक स्थिर रिक्त  जरूरी(डोर[] क ){
+         मुख्य मेरीवस्तु = नई मुख्य();
+        मेरीवस्तु.अ=50;
+        तंत्र.बाहर.प्रिंट(मेरीवस्तु.अ);
+    }
+}// 50 :प्रदर्शित करेगा 
+</div></div></div>
+        </p> 
+        <p>
+            <e>
+           If we don't want the ability to override existing values, declare the attribute as <c>अंतिम</c>:
+            </e>
+            <h> 
+           यदि हम मौजूदा मूल्यों को अवहेलना करने(बदलने) की क्षमता नहीं चाहते हैं, तो विशेषता को <c>अंतिम</c> घोषित करें:
+            </h><br>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h>
+<div class="code-container"><div class="code TOE" id="editor">
+कक्षा मुख्य {
+    अंतिम अंक अ=10 ;
+    सार्वजनिक स्थिर रिक्त  जरूरी(डोर[] क ){
+         मुख्य मेरीवस्तु = नई मुख्य();
+        मेरीवस्तु.अ=50;//ये  त्रुटि उत्पन्न करेगा:will generate an error
+        तंत्र.बाहर.प्रिंट(मेरीवस्तु.अ);
+    }
+}//cannot assign a value to a final/अंतिम variable:प्रदर्शित करेगा 
+</div></div></div>
+        </p> 
+        <p> 
+           <div class="note">
+                <e>
+                    <h3 class="h-note">Note :</h3>               
+                    The <c>अंतिम</c> keyword is useful when you want a variable to always store the same value, like PI (3.14159...).<br>The final keyword is called a "modifier". You will learn more about these in the Modifiers Chapter.
+                </e>
+                <h>
+                    <h3 class="h-note">ध्यान दे:</h3>
+                    <c>अंतिम</c> तब उपयोगी होता है जब आप चाहते हैं कि एक वेरीअबल/चर हमेशा समान मान(value) संग्रहीत करे, जैसे PI (3.14159...)।<br><c>अंतिम</c>को "संशोधक" कहा जाता है। आप इनके बारे में अधिक जानकारी संशोधक अध्याय में जानेंगे।
+                </h>   
+            </div>
+        </p>     
+        
+    </chapter> 
+
+<script src="scripts/article.js"></script>
+<script src="scripts/ace.js"></script>
+<script src="scripts/cobalt.js"></script>
+<script src="scripts/mode-javaa.js"></script>
+<script>codeload();</script>
+</body>
+</html>

@@ -1,4 +1,5 @@
-add  अंतिम नई वर्ग to snipphets ,mode ,decode.php
+add  प्रिन्टर ,अमूर्त/सार  ,अंतरपूष्ठ 
+change packages in modifiers
 
 change variable in vcariable .html and datatype.html
 add अंक फ्लोट बाइट छोटा लंबा बड़ा इ ल ब to decode.php

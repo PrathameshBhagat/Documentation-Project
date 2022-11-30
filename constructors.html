@@ -1,0 +1,182 @@
+<html>
+<head>
+<script type="text/javascript" src="scripts/article.js"></script>
+<link rel="stylesheet" href="style/article.css" /> 
+</head>
+<body onload="load()"  prev="cmethords.html" next="modifiers.html">
+    <h1>Constructors|निर्माता|निर्मातक विधियाँ 
+        <select name="H/E" onchange="set(this.value)">
+            <option value="english">English</option>
+            <option value="hindi">हिन्दी(Hindi)</option>
+        </select><br>
+        <input type="button" value="pervious" onclick="pchapter()">
+<a class="btn" onclick="nchapter()" href="#"><span>&nbsp;&rarr;</span>NEXT</a>
+    </h1> 
+    <chapter> 
+        <h2>&nbspConstructors|निर्माता|निर्मातक विधियाँ :</h2>
+        <p>
+            <e>
+                A constructor in programming is a special विधि(method) that is used to initialize वस्तु(objects). It is called when an वस्तु(object) of a वर्ग(class) is created. It can be used to set initial values for वस्तु(objects) attributes(गुण/विशेषता):
+            </e>
+            <h>
+               प्रोग्रामिंग में एक निर्मातक विधियाँ(constructor) एक विशेष विधि(method) है जिसका उपयोग वस्तु(object) की प्रारंभिक स्थापना(initialize) करने के लिए किया जाता है। यह तब काम करता है जब किसी वर्ग(class) का एक वस्तु(objects) बनाया जाता है। इसका उपयोग  वस्तु(objects) के गुण/विशेषता(attributes) के लिए प्रारंभिक मान(initial value) प्रदान करने के लिए किया जा सकता है:
+            </h>
+        </p> 
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3>Create a निर्मातक विधि or निर्माता (constructor):</e>
+            <h><h3 class="h-note">उदाहरण:</h3>एक निर्मातक विधि या निर्माता (रचनाकार) बनाएँ:</h>
+<div class="code-container"><div class="code TOE" id="editor">
+वर्ग मुख्य{
+    अंक अ;// वर्ग गुण /विशेषता बनाए
+    //वर्ग मुख्य केलिए निर्मातक विधि बनाए 
+    सार्वजनिक मुख्य(){
+    अ =10;//प्रारंभिक मान(initial value) प्रदान करे 
+    } 
+   सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क ){
+        मुख्य मेरीवस्तु  = नई मुख्य();//मुख्य वर्ग की एक वस्तु बनाए 
+        तंत्र.बाहर.प्रिंट(मेरीवस्तु.अ);//अ प्रिन्ट करे 
+  } 
+}</div></div></div>
+        </p>
+        <p> 
+           <div class="note">
+                <e>
+                    <h3 class="h-note">Note :</h3>               
+                Note that the निर्मातक विधि(constructor) name must match the वरग का नाम(class name), and <b>it cannot have a return type(वापसी प्रकार)</b> like <c>रिक्त</c>,<c>अंक</c> .<br>Also note that the constructor is called only when the वस्तु(object) is created.<br>All वरग(classes) have निर्मातक विधियाँ(constructors) by default: if you do not create a वरग(classes)  constructor yourself, Compiler(or interpreter) creates one for you. However, then you are not able to set initial values for वस्तु के गुण(object attributes).
+                </e>
+                <h>
+                    <h3 class="h-note">ध्यान दे:</h3>
+                ध्यान दें की निर्मातक विधि(constructor) का नाम वर्ग/कक्षा के नाम(class name) से मेल खाना चाहिए, और <b>इसमें <c>रिक्त</c>,<c>अंक</c> की तरह वापसी का प्रकार(return type) नहीं हो सकता</b>।<br> यह भी ध्यान दें कि निर्मातक विधि(constructor) को तभी काम करता है जब किसी वर्ग की एक वस्तु(object) बनायी  जाती है। <br>सभी वर्ग(class) में निर्मातक विधियाँ(constructor) पहले से ही होती हैं| यदि आप वर्ग(वर्ग) की निर्मातक विधि(constructor) स्वयं नहीं बनाते हैं, तो कंपाइलर(या कहे कंप्युटर) आपके लिए एक  निर्मातक विधियाँ(constructor)सवयम बना देता है। हालाँकि, तब आप वस्तु के गुण(object attributes) के लिए प्रारंभिक मान प्रदान करने में सक्षम नहीं होते हैं।
+                </h>   
+            </div>
+        </p> 
+        <br><hr> <br>
+        <h2> &nbspConstructor Parameters|निर्माता(निर्मातक विधियों) के मानदंड</h2>
+        <p>
+            <e>
+                निर्मातक विधि(Constructors) can also take मानदंड(parameters), which is used to initialize attributes(गुण/विशेषता).<br>The following example adds an <c>अंक</c><b>आ</b> मानदंड(parameter) to the निर्मातक विधि(constructor). Inside the निर्मातक विधि(constructor) we set अ to आ (अ = आ). When we call the निर्मातक विधि(constructor), we pass a मानदंड(parameter) to the निर्मातक विधि(constructor) (10), which will set the value of अ  to 10 :
+            </e>
+            <h> 
+                निर्मातक विधि(रचनाकार) मानदंड(पैरामीटर) भी ले सकते हैं, जिसका उपयोग गुण(गुण/विशेषता) को प्रारंभ करने के लिए किया जाता है।<br>निम्नलिखित उदाहरण निर्मातक विधि में <c>अंक आ</c>मानदंड(पैरामीटर) जोड़ता है। (निर्माता)। निर्मातक विधि के अंदर हम अ को आ (अ = आ) पर सेट करते हैं। जब हम निर्मातक विधि(निर्माता) कहते हैं, तो हम निर्मातक विधि(निर्माता) (10) के लिए मानदंड(पैरामीटर) पास करते हैं, जो अ का मान 10 पर सेट करेगा:
+            </h><br>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h>
+<div class="code-container"><div class="code TOE" id="editor">
+वर्ग मुख्य{
+    अंक अ; 
+    सार्वजनिक मुख्य(अंक आ){
+    अ = आ ; 
+    } 
+   सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क ){
+        मुख्य मेरीवस्तु  = नई मुख्य(10 );
+        तंत्र.बाहर.प्रिन्ट(मेरीवस्तु.अ);
+  } 
+}</div></div></div>
+        </p>
+        <p>
+            <e>
+                We can have as many parameters as we want:
+            </e>
+            <h> 
+                हम जितने चाहें उतने मानदंड/मापदंड रख सकते हैं:
+            </h>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h> 
+            <div class="code-container"><div class="code TOE" id="editor">
+वर्ग मुख्य{
+    अंक जन्मवर्ष ;
+    अंक लम्बाई ;
+    डोर नाम ; 
+    सार्वजनिक मुख्य(अंक वर्ष ,अंक पूरीलम्बाई ,डोर प्रथमनाम ){
+    जन्मवर्ष = वर्ष;
+    लम्बाई = पूरीलम्बाई;
+    नाम = प्रथमनाम;
+    } 
+   सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क ){
+        मुख्य उम्मीदवार = नई मुख्य(2012 , 5 , "रमेश" );
+        तंत्र.बाहर.प्रिन्ट(" नाम : "+उम्मीदवार.नाम);
+        तंत्र.बाहर.प्रिन्ट(" लंबाई: " +उम्मीदवार.लम्बाई);
+        तंत्र.बाहर.प्रिन्ट(" जन्म : "+उम्मीदवार.जन्मवर्ष);
+  } 
+}</div></div></div> 
+        </p>
+        <p> 
+           <div class="note">
+                <e>
+                    <h3 class="h-note">Note :</h3>               
+                Note that the निर्मातक विधि(constructor) is called  when the वस्तु(object) is created.<br>As we can create as many वस्तु(objects) we want we can, so each time we create a वस्तु(object) we automatically  call a constructor.{Note that it can be the defaut constructor too.}
+                </e>
+                <h>
+                    <h3 class="h-note">ध्यान दे:</h3>
+                ध्यान दें की निर्मातक विधि(constructor) तब  काम करती है जब किसी वर्ग की एक वस्तु(object) बनायी जाती है। <br>चूंकि हम जितने चाहें उतने वस्तु(object) बना सकते हैं, हम जीतनी बार नए वस्तु(object) बनाएंगे उतनी बार निर्मातक विधि चलेगी |{ध्यान रखे वो एक कम्पाइलर द्वारा बनाई भी हो सकती है|}
+                </h>   
+            </div>
+        </p> 
+        <p>
+            <div class="example">
+            <e> <h3 class="h-note">Example:</h3> </e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h><br > 
+            <div class="code-container"><div class="code TOE" id="editor">
+वर्ग मुख्य{
+    सार्वजनिक मुख्य(){
+    तंत्र.बाहर.प्रिन्ट(" निर्मातक विधि(constructor) का इस्तेमाल किया गया(कॉल किया गया)");
+    } 
+   सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क ){
+        मुख्य उम्मीदवार1  = नई मुख्य();
+        मुख्य उम्मीदवार2  = नई मुख्य();
+        मुख्य उम्मीदवार3  = नई मुख्य();
+        मुख्य उम्मीदवार4  = नई मुख्य();
+  } 
+}</div></div></div> 
+        </p><br><hr><br> 
+         <p>
+            <e>
+                We can also have as many निर्मातक विधियाँ(constructors) as we want:(as they are methords they all would get overloaded(अतिभार))
+            </e>
+            <h> 
+                हम जितने चाहें उतने निर्मातक विधियाँ(constructors) रख सकते हैं(क्योंकि वो विधि है, वे किसी विधि की ही तरह अतिभारे(overloaded) जाएंगे):
+            </h>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h> 
+            <div class="code-container"><div class="code TOE" id="editor">
+वर्ग मुख्य{
+    डोर जन्म;
+    सार्वजनिक मुख्य(अंक वर्ष){
+    जन्म ="वर्ष : " + वर्ष;
+    } 
+    सार्वजनिक मुख्य(अंक दिन,अंक महीना,अंक वर्ष){
+    जन्म ="दिनांक : " + दिन +"/" + महीना +"/" +वर्ष;
+    } 
+    सार्वजनिक मुख्य(अंक घंटे,अंक मिनिट){
+    जन्म ="समय : " + घंटे +" बजके "+ मिनिट+" मिनिट ";
+    } 
+
+   सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क ){
+        मुख्य उम्मीदवार1 = नई मुख्य(2001);
+        मुख्य उम्मीदवार2 = नई मुख्य(11,9,2001);
+        मुख्य उम्मीदवार3 = नई मुख्य(9,35);
+        तंत्र.बाहर.प्रिन्ट(उम्मीदवार1.जन्म);//वर्ष : 2001
+        तंत्र.बाहर.प्रिन्ट(उम्मीदवार2.जन्म);//दिनांक : 11/9/2001
+        तंत्र.बाहर.प्रिन्ट(उम्मीदवार3.जन्म);//समय : 9 बजके 35 मिनिट
+  } 
+}</div></div></div> 
+        </p>       
+    </chapter> 
+
+<script src="scripts/article.js"></script>
+<script src="scripts/ace.js"></script>
+<script src="scripts/cobalt.js"></script>
+<script src="scripts/mode-javaa.js"></script>
+<script>codeload();</script>
+</body>
+</html>

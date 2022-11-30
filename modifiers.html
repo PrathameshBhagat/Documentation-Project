@@ -1,0 +1,253 @@
+<!-- 
+
+
+
+
+Many unknown words used in here threAD transient synchronized volatile क्षणिक तुल्यकालिक वाष्पशील  change abstract in <c></c>
+
+
+
+
+
+
+-->
+<html>
+<head>
+<script type="text/javascript" src="scripts/article.js"></script>
+<link rel="stylesheet" href="style/article.css" /> 
+</head>
+<body onload="load()"  prev="constructors.html" next="inheritance.html">
+    <h1>Modifiers|संशोधक
+        <select name="H/E" onchange="set(this.value)">
+            <option value="english">English</option>
+            <option value="hindi">हिन्दी(Hindi)</option>
+        </select><br>
+        <input type="button" value="pervious" onclick="pchapter()">
+<a class="btn" onclick="nchapter()" href="#"><span>&nbsp;&rarr;</span>NEXT</a>
+    </h1>
+    <chapter> 
+        <h2>&nbspModifiers|संशोधक:</h2>
+        <p>
+            <e>
+                By now, you are quite familiar with the <c>सार्वजनिक</c> keyword that appears in almost all of our examples:
+            </e>
+            <h>
+               अब तक, आप <c>सार्वजनिक</c> से परिचित हो चुके हैं जो हमारे लगभग सभी उदाहरणों में दिखाई देता है:
+            </h>
+        </p>
+        <p>
+<div class="code-container" style="height:5%"><div class="code TOE" id="editor">
+सार्वजनिक स्थिर रिक्त जरूरी(डोर [] क ){}   
+</div></div>
+        </p>
+        <e>
+            The <c>सार्वजनिक</c> keyword is an पहुँच संशोधक(access modifier), meaning that it is used to set the access level for classes, attributes, methods and constructors.<br>We divide संशोधक(modifiers) into two groups:<ul><li><b>पहुँच संशोधक(Access Modifiers)</b> - controls the access level</li><li><b>गैर पहुँच संशोधक(Non-Access Modifiers)</b> - do not control access level, but provides other functionality</li></ul>
+        </e>
+        <h> 
+            <c>सार्वजनिक</c> एक पहुँच संशोधक है, जिसका अर्थ है कि इसका उपयोग कक्षाओं/वर्गों (classes), विशेषताओं(attributes), विधियों(methords) और निर्माणकर्ताओं(constructors) के लिए पहुँच स्तर स्पष्ट करने के लिए किया जाता है।<br>हम संशोधक को दो समूहों में विभाजित करते हैं:<ul><li><b>पहुँच संशोधक(Access Modifiers)</b>- पहुँच स्तर(access level) को नियंत्रित करता है</li><li><b>गैर पहुँच संशोधक(Non-Access Modifiers)</b> - पहुँच स्तर(access level) नियंत्रित नहीं करते हैं, लेकिन अन्य कार्यक्षमता प्रदान करते हैं</li></ul>
+            </h>
+        </p><hr>
+        <h2> &nbspAccess Modifiers|पहुँच संशोधक</h2>
+        <p>
+            <e>
+              For कक्षा/वर्ग(classes), you can use either <c>सार्वजनिक</c> or <c>आम</c>(default):
+            </e>
+            <h> 
+                कक्षा/वर्ग(classes) के लिए, आप <c>सार्वजनिक</c> या <c>आम</c>(default) का उपयोग कर सकते हैं:
+            </h>
+        </p>
+        <table  border="2%" align="center">
+            <tr>
+                <th><e>Modifier</e><h>संशोधक</h></th><th><e>Description</e><h>वर्णन</h></th>
+            </tr>
+            <tr>
+                <td><c>सार्वजनिक</c></td><td><e>The वर्ग(class) is accessible by any other class</e><h>वर्ग किसी अन्य वर्ग द्वारा पहुँचा जा सकता है</h></td>
+            </tr>
+            <tr>
+                <td><c>आम</c></td><td><e>The वर्ग(class) is only accessible by  वर्ग(class)'s in the same package.When you don't specify the modifier this is assumed to be linked automatically. We will learn more about packages later.</e><h>वर्ग(class) केवल उसी पैकेज में वर्गों(classes) द्वारा ही पहुँचा जा सकता है। जब आप संशोधक निर्दिष्ट नहीं करते हैं तो यह स्वचालित रूप से जुडा माना जाता है। हम बाद में पैकेजों के बारे में और जानेंगे।</h></td>
+            </tr>
+        </table><br><br><hr><br>
+        <h2> &nbspPublic Classes|सार्वजनिक वर्ग/कक्षा : </h2>
+        <p>
+            <e>
+               We have seen some classes with access modifier <c>सार्वजनिक</c> and other classes without it(<c>आम</c>वर्ग (default classes) . The difference between the two is that  <c>सार्वजनिक</c> वर्ग (public class)</b> is accessible to all other classes belonging or not belonging to the same package but a <c>आम</c>(default) class cannot be accesseed outside of the package it belongs to it can only be accessed in the same package (we will learn about package  later).<br><br>Also a <c>सार्वजनिक</c> वर्ग (public class) should always be placed in a file with same name as the class.That means a class(वर्ग) named कार should be in file named "कार.h4" . <br>Also a <b>single file cannot have more than one <c>सार्वजनिक</c> वर्ग (public class)</b> but it <b>can have more than one <c>आम</c>वर्ग</b> (default classes).
+            </e>
+            <h> 
+                हमने <c>सार्वजनिक</c> संशोधक के साथ कुछ कक्षाएं/वर्ग और इसके बिना अन्य कक्षाएं देखी हैं (<c>आम</c>वर्ग (default classes)। दोनों के बीच अंतर यह है कि <c>सार्वजनिक</c> वर्ग (public class) अन्य सभी वर्गों के लिए उपलब्ध है जो उसी पैकेज से संबंधित हो या ना हों लेकिन एक <c>आम</c> वर्ग (default class)को उस पैकेज के बाहर इस्तेमाल नहीं किया जा सकता है जो इससे संबंधित है इसे एक ही पैकेज में इस्तेमाल किया जा सकता है (पैकेज के बारे में हम बाद में सीखेंगे)। इसका मतलब है कि "कार" नामक एक वर्ग (class) "कार.h4" नाम की फ़ाइल में होना चाहिए। <br>साथ ही <b>एक फ़ाइल में एक से अधिक <c>सार्वजनिक</c> वर्ग  (public class) नहीं हो सकते </b>।</br> लेकिन <b> एक फ़ाइल में एक से अधिक <c>आम</c>वर्ग (default classes) हो सकते हैं</b> ।
+            </h><br>
+        </p>
+        <p style="background-color: rgb(100, 100, 100);">
+            <e>
+                <b>For now just understand :</b>
+                The following code Should always lie in a file named "मुख्य.h4" as it has a <c>सार्वजनिक</c> वर्ग (public class) named "मुख्य" .(If not it would generate an error). <br>It can have other non <c>सार्वजनिक</c> वर्ग (public class) in it i.e. it can have many other <c>आम</c> वर्ग (default class) like "कार"  but not even a single <c>सार्वजनिक</c> वर्ग (public class) except "मुख्य" in it.
+            </e>
+            <h><b>अभी के लिए बस समझें :</b>
+                निम्नलिखित कोड हमेशा "मुख्य.h4" नाम की फ़ाइल में होना चाहिए क्योंकि इसमें एक <c>सार्वजनिक</c> वर्ग(public class) है जिसका नाम "मुख्य" है। (ऐसा नहीं  किया तो यह एक त्रुटि उत्पन्न करेगा)। <br>इसमें अन्य गैर <c>सार्वजनिक</c> वर्ग(non - public class) हो सकते हैं यानी इसमें कई अन्य <c>आम</c> वर्ग (default class) हो सकते हैं जैसे "कार" लेकिन इसमें एक भी <c>सार्वजनिक</c> वर्ग(public class) नहीं हो सकती {"मुख्य" को छोड़कर}।
+            </h>
+        </p>
+        <p>
+            <div class="example">
+            <e> <h3 class="h-note">Examples:</h3>Code in file name "मुख्य.h4"</e>
+            <h> <h3 class="h-note">उदाहरण:</h3>"मुख्य.h4" फ़ाइल  में कोड </h>
+<div class="code-container"><div class="code TOE" id="editor">
+सार्वजनिक कक्षा मुख्य {
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क ){
+       तंत्र.बाहर.प्रिंट("नमस्ते , मै मुख्य हु !!");
+       कार मेरिकार  =नई कार();//कर वर्ग की वस्तु बनएगा 
+       मेरिकार.नमस्ते();//कार की नमस्ते विधि को चलाए  
+    }
+}
+कक्षा कार{//कर नामक वर्ग बनाए 
+    रिक्त नमस्ते(डोर[] क ){//कार वर्ग की विधि बनाए 
+       तंत्र.बाहर.प्रिंट("नमस्ते , मै कार  हु !!");
+    }
+}
+</div></div></div>
+        </p><br><hr><br>
+        <p>
+            <e>
+                For गुणों/विशेषता(attributes), विधियाँ(methods) and निर्मातक विधियाँ(constructors), you can use the one of the following:
+            </e>
+            <h> 
+                गुणों/विशेषता(attributes), विधियाँ(methods) और निर्मातक विधियाँ(constructors)  के लिए, आप निम्न में से किसी एक का उपयोग कर सकते हैं:
+            </h>
+        </p>
+        <table  border="2%" align="center">
+            <tr>
+                <th><e>Modifier</e><h>संशोधक</h></th><th><e>Description</e><h>वर्णन</h></th>
+            </tr>
+            <tr>
+                <td><c>सार्वजनिक</c></td><td><e>The code is accessible to all classes</e><h>संहिता(या कोड(code)) सभी वर्गों के लिए सुलभ है</h></td>
+            </tr>
+            <tr>
+                <td><c>निजी</c></td><td><e>The code is only accessible within the declared वर्ग(class)</e><h>संहिता(या कोड(code)) केवल घोषित वर्ग(class) के भीतर ही पहुँचा जा सकता है</h></td>
+            </tr>
+            <tr>
+                <td>आम</td><td><e> The code is only accessible in the same package. This is used when you don't specify a modifier and is assumed to be present if you  don't specify a modifier . We will learn more about packages later</e><h>संहिता(या कोड(code)) केवल उसी packages में उपलब्ध है। इसका उपयोग तब किया जाता है जब आप एक संशोधक निर्दिष्ट नहीं करते हैं और यदि आप एक संशोधक निर्दिष्ट नहीं करते हैं तो यह मौजूद माना जाता है| हम बाद में packages के बारे में और जानेंगे</h></td>
+            </tr>
+            <tr>
+                <td><c> संरक्षित </c></td><td><e>The code is accessible in the same package and उपवर्ग(subclasses). You will learn more about उपवर्ग(subclasses) and उच्चवर्ग(superclasses) later </e><h>कोड एक ही पैकेज और उपवर्ग (उपवर्ग) में पहुँचा जा सकता है। आप बाद में उपवर्ग(subclasses) और उच्चवर्ग(superclasses) के बारे में अधिक जानेंगे</h></td>
+            </tr>
+        </table><br><br><hr><br>
+<h2>Non-Access Modifiers|गैर पहुँच संशोधक</h2>
+        <p>
+            <e>
+              For कक्षा/वर्ग(classes), you can use either <c>अंतिम</c>(final) or <c>सार</c>(abstract):
+            </e>
+            <h> 
+                कक्षा/वर्ग(classes) के लिए, आप <c>अंतिम</c>(final) या  <c>सार</c>(abstract) का उपयोग कर सकते हैं:
+            </h>
+        </p>
+        <table  border="2%" align="center">
+            <tr>
+                <th><e>Modifier</e><h>संशोधक</h></th><th><e>Description</e><h>वर्णन</h></th>
+            </tr>
+            <tr>
+                <td><c>अंतिम</c></td><td><e>The वर्ग(class) cannot be inherited by other वर्ग(classes) .we will learn more about inheritance later.</e><h> वर्ग(class) को अन्य वर्ग(class) द्वारा विरासत में नहीं मिला जा सकता है। हम बाद में वंशानुक्रम/विरासत के बारे में अधिक जानेंगे।</h></td>
+            </tr>
+            <tr>
+                <td><c>सार</c></td><td><e>The वर्ग/कक्षा(class) cannot be used to create objects (To access an <c>सार</c>वर्ग (abstract class), it must be inherited from another वर्ग(class) . We will learn more about inheritance and <c>सार</c> later</e><h>वर्ग(class) का उपयोग वस्तुओं को बनाने के लिए नहीं किया जा सकता है (<c>सार</c>वर्ग (abstract class) तक पहुंचने के लिए, इसे किसी अन्य वर्ग(class) से विरासत में प्राप्त किया जाना चाहिए। हम वंशानुक्रम और <c>सार</c>के बारे मे बाद में अधिक जानेंगे|</h></td>
+            </tr>
+        </table>
+        <p>
+            <e>
+               For गुणों/विशेषता(attributes), विधियाँ(methods) and निर्मातक विधियाँ(constructors), you can use the one of the following:
+            </e>
+            <h> 
+                गुणों/विशेषता(attributes), विधियाँ(methods) और निर्मातक विधियाँ(constructors)  के लिए, आप निम्न में से किसी एक का उपयोग कर सकते हैं:
+            </h>
+        </p>
+            <table border="2%" align="center">
+            <tr>
+                <th><e>Modifier</e><h>संशोधक</h></th><th><e>Description</e><h>वर्णन</h></th>
+            </tr>
+            <tr>
+                <td><c>अंतिम</c></td><td><e>The code is accessible to all classes</e><h>संहिता(या कोड(code)) सभी वर्गों के लिए सुलभ है</h></td>
+            </tr>
+            <tr>
+                <td><c>स्थिर</c></td><td><e>The code is only accessible within the declared वर्ग(class)</e><h>संहिता(या कोड(code)) केवल घोषित वर्ग(class) के भीतर ही पहुँचा जा सकता है</h></td>
+            </tr>
+            <tr>
+                <td>सार</td><td><e> The code is only accessible in the same package. This is used when you don't specify a modifier and is assumed to be present if you  don't specify a modifier . We will learn more about packages later</e><h>संहिता(या कोड(code)) केवल उसी packages में उपलब्ध है। इसका उपयोग तब किया जाता है जब आप एक संशोधक निर्दिष्ट नहीं करते हैं और यदि आप एक संशोधक निर्दिष्ट नहीं करते हैं तो यह मौजूद माना जाता है| हम बाद में packages के बारे में और जानेंगे</h></td>
+            </tr>
+        </table>
+        <p> 
+           <div class="note">
+                <e>
+                    <h3 class="h-note">NOTE:</h3>
+                    There are three more non access modifiers क्षणिक(transient), तुल्यकालिक(synchronized), वाष्पशील(volatile) which we will learn later.  
+                </e>
+                <h>
+                    <h3 class="h-note">ध्यान दे : </h3>
+                तीन और गैर पहुंच संशोधक हैं क्षणिक(transient), तुल्यकालिक(synchronized), वाष्पशील(volatile) जो हम बाद में सीखेंगे।
+                </h>   
+            </div>
+        </p><br><hr><br>
+        <h2>Final|अंतिम</h2>
+        <p>
+            <e>
+            If you don't want the ability to override existing attribute values, declare attributes as <c>अंतिम</c>:
+            </e>
+            <h> 
+            यदि आप मौजूदा विशेषता मानों को बदलने की क्षमता नहीं चाहते हैं, तो विशेषताओं को <c>अंतिम</c> के रूप में घोषित करें:
+            </h>
+        </p>
+        <p>
+            <div class="example" style="background-color:#ff1a1a;">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3> </h> 
+            <div class="code-container"><div class="code TOE" id="editor">
+वर्ग मुख्य {
+    अंतिम अंक अ=100;
+    अंतिम बड़ा pi=3.14; 
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क ){
+        मुख्य मेरीवस्तु =नई मुख्य();
+        मेरीवस्तु.अ =10;//ये त्रुटि देगा अ अंतिम है आप उसे बदल नहीं सकते  
+        मेरीवस्तु.pi =3.15;//ये त्रुटि देगा pi अंतिम है आप उसे बदल नहीं सकते
+        तंत्र.बाहर.प्रिंट(मेरीवस्तु.अ);
+        तंत्र.बाहर.प्रिंट(मेरीवस्तु.pi);
+    }
+}</div></div></div> 
+        </p><br><hr><br>
+        <h2>Static|<c>स्थिर</c> </h2>
+        <p>
+            <e>
+               A <c>स्थिर</c>विधि (static method) means it can be accessed without creating an object(वस्तु) of the वर्ग(class), unlike <c>सार्वजनिक</c>(public), which can only be accessed by वस्तु(object) of the वर्ग(class).:
+            </e>
+            <h> 
+                A <c>स्थिर</c>विधि (स्थिर विधि) का अर्थ है कि इसे वर्ग(class) का कोई वस्तु (कविता) बनाए बिना पहुँचा जा सकता है,ना की <c>सार्वजनिक</c>(public) की तरह वर्ग(class) की वस्तु बनाकर|:
+            </h><br>
+        </p>
+        <p>
+            <div class="example">
+            <e>     
+            <h3 class="h-note">Example:</h3>   
+               An example to demonstrate the differences between <c>स्थिर</c>(static) and <c>सार्वजनिक</c>(public) methords :
+            </e>
+            <h> <h3 class="h-note">उदाहरण:</h3>   
+            <c>स्थिर</c>(स्थिर) और <c>सार्वजनिक</c>(सार्वजनिक) विधियों के बीच अंतर स्पष्ट करने के लिए एक उदाहरण:
+            </h>
+<div class="code-container"><div class="code TOE" id="editor">
+कक्षा मुख्य {
+    स्थिर रिक्त मेरीपहलीविधि(){
+        तंत्र.बाहर.प्रिंट("स्थिर विधियाँ बिना वर्ग की वस्तु बनाए इस्तेमाल की जा सकती है|");
+    }
+    सार्वजनिक रिक्त मेरीदुसरीविधि(){
+        तंत्र.बाहर.प्रिंट("सार्वजनिक विधियों को वर्ग की वस्तु बना कर ही इस्तेमाल किया जाना चाहिए|");
+    }
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क ){
+        मेरीपहलीविधि();  //यहाँ वस्तु की आवश्यकता नहीं है ये स्थिर विधि है  
+        मुख्य मेरीवस्तु =नई मुख्य();  //यहाँ वस्तु की आवश्यकता है ये सार्वजनिक विधि है
+        मेरीवस्तु.मेरीदुसरीविधि();
+    }
+}</div></div></div>
+        </p>
+    </chapter> 
+
+<script src="scripts/article.js"></script>
+<script src="scripts/ace.js"></script>
+<script src="scripts/cobalt.js"></script>
+<script src="scripts/mode-javaa.js"></script>
+<script>codeload();</script>
+</body>
+</html>

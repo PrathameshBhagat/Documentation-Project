@@ -1,0 +1,180 @@
+<html>
+<head>
+<script type="text/javascript" src="scripts/article.js"></script>
+<link rel="stylesheet" href="style/article.css" /> 
+</head>
+<body onload="load()"  prev="attributes.html" next="constructors.html">
+    <h1>Class Methods|कक्षा/वर्ग की विधियाँ
+        <select name="H/E" onchange="set(this.value)">
+            <option value="english">English</option>
+            <option value="hindi">हिन्दी(Hindi)</option>
+        </select><br>
+        <input type="button" value="pervious" onclick="pchapter()">
+<a class="btn" onclick="nchapter()" href="#"><span>&nbsp;&rarr;</span>NEXT</a>
+    </h1> 
+    <chapter> 
+        <h2>&nbspClass Methods|कक्षा/वर्ग की विधियाँ:</h2>
+        <p>
+            <e>
+                We learned from the  Methods topic that methods are declared within a class, and that they are used to perform certain actions:
+            </e>
+            <h>
+               हमने "विधियाँ" मे से सीखा है कि एक वर्ग(class) के भीतर विधियाँ घोषित किए जाते हैं, और उनका उपयोग कुछ क्रियाओं को करने के लिए किया जाता है:
+            </h>
+        </p>
+        <p>
+            <div class="example">
+            <e>     
+            <h3 class="h-note">Example:</h3>   
+            Create a विधि(method) named "मेरीविधि()" in "मुख्य" :
+            </e>
+            <h> <h3 class="h-note">उदाहरण:</h3>   
+            "मुख्य" में "मेरीविधि ()" नाम की एक विधि बनाएँ:
+            </h>
+<div class="code-container"><div class="code TOE" id="editor">
+कक्षा मुख्य {
+    स्थिर रिक्त मेरीविधि(){
+        तंत्र.बाहर.प्रिंट("नमस्ते !!");
+    }
+}
+</div></div></div>
+        </p>
+        <p>
+            <e>
+                <b>मेरीविधि()</b> prints a text (the action), when it is called. To call a विधि(method), write the method's name followed by two parentheses <c>()</c> and a semicolon <c>;</c>
+
+
+            </e>
+            <h>
+               हमने "विधियाँ" मे से सीखा है कि एक वर्ग(class) के भीतर विधियाँ घोषित किए जाते हैं, और उनका उपयोग कुछ क्रियाओं को करने के लिए किया जाता है:
+            </h>
+        </p>
+        <p>
+            <div class="example">
+            <e>     
+            <h3 class="h-note">Example:</h3>   
+            Inside  "मुख्य", call "मेरीविधि()":
+            </e>
+            <h> <h3 class="h-note">उदाहरण:</h3>   
+            "मुख्य" में "मेरीविधि()" विधि बुलाए/चलाए :
+            </h>
+<div class="code-container"><div class="code TOE" id="editor">
+कक्षा मुख्य {
+    स्थिर रिक्त मेरीविधि(){
+        तंत्र.बाहर.प्रिंट("नमस्ते !!");
+    }
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क ){
+        मेरीविधि();
+    }
+}//नमस्ते !! लिख देगा 
+</div></div></div>
+        </p>
+        <br><hr><br>
+        <h2> &nbspStatic vs. Public|स्थिर बनाम सार्वजनिक</h2>
+        <p>
+            <e>
+               You have seen some programs that have either <c>स्थिर</c>(static) or <c>सार्वजनिक</c>(public) attributes(विशेषता/गुण) and methods(विधियाँ).<br>In the below example, we created a <c>स्थिर</c>(static) method, which means that it can be accessed without creating an object(वस्तु) of the class(वर्ग), unlike <c>सार्वजनिक</c>(public), which can only be accessed by object(वस्तु):
+            </e>
+            <h> 
+                आपने कुछ ऐसे प्रोग्राम देखेंगे जिनमें या तो <c>स्थिर</c>(static) या <c>सार्वजनिक</c>(public) विशेषताएँ(attributes) और विधियाँ(methods) होती हैं।<br>नीचे दिए उदाहरण में, हमने एक <c>स्थिर</c>(static) विधि बनाई, जिसका अर्थ है कि <c>सार्वजनिक</c>(सार्वजनिक) के विपरीत वर्ग(class) का एक वस्तु(object) बनाए बिना इसेका इस्तेमाल (एक्सेस) किया जा सकता है , जबकि  <c>सार्वजनिक</c> केवल वस्तु(object) द्वारा ही इस्तेमाल(एक्सेस) किया जा सकता है:
+            </h><br>
+        </p>
+        <p>
+            <div class="example">
+            <e>     
+            <h3 class="h-note">Example:</h3>   
+               An example to demonstrate the differences between <c>स्थिर</c>(static) and <c>सार्वजनिक</c>(public) methords :
+            </e>
+            <h> <h3 class="h-note">उदाहरण:</h3>   
+            <c>स्थिर</c>(स्थिर) और <c>सार्वजनिक</c>(सार्वजनिक) विधियों के बीच अंतर स्पष्ट करने के लिए एक उदाहरण:
+            </h>
+<div class="code-container"><div class="code TOE" id="editor">
+कक्षा मुख्य {
+    स्थिर रिक्त मेरीपहलीविधि(){
+        तंत्र.बाहर.प्रिंट("स्थिर विधियाँ बिना वर्ग की वस्तु बनाए इस्तेमाल की जा सकती है|");
+    }
+    सार्वजनिक रिक्त मेरीदुसरीविधि(){
+        तंत्र.बाहर.प्रिंट("सार्वजनिक विधियों को वर्ग की वस्तु बना कर ही इस्तेमाल किया जाना चाहिए|");
+    }
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क ){
+        मेरीपहलीविधि();  //यहाँ वस्तु की आवश्यकता नहीं है  
+        मुख्य मेरीवस्तु =नई मुख्य();  //यहाँ वस्तु की आवश्यकता है 
+        मेरीवस्तु.मेरीदुसरीविधि();
+    }
+}</div></div></div>
+        </p>
+        <p>
+            <e>
+               We will learn more about these keywords (called modifiers) in the Modifiers.
+            </e>
+            <h> 
+                हम संशोधक में इन शब्दों (जिन्हें संशोधक कहा जाता है) के बारे में अधिक जानेंगे।
+            </h>
+        </p><br><hr><br>
+        <h2> &nbspAccess Methods With an Object| वस्तु से विधियों तक पहुँचे </h2>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3>   
+            Create a "कार" object named myCar. Call the fullThrottle() and speed() methods on the myCar object, and run the program:
+            </e>
+            <h> <h3 class="h-note">उदाहरण:</h3>   
+              
+            </h><br > 
+            <div class="code-container"><div class="code TOE" id="editor">
+वर्ग कार {
+  //तेज़चले() विधि बनाए 
+  सार्वजनिक रिक्त तेज़चले() {
+    तंत्र.बाहर.प्रिंट("कार जितनी तेज जा सकती है उतनी तेज चल रही है ! ");
+  }
+
+ //गति() विधि बनाए और उसमे अधिकतमगती मानदंड/parameter बनाए 
+  सार्वजनिक रिक्त गति(अंक अधिकतमगती){
+    तंत्र.बाहर.प्रिंट("अधिकतम गति है :" + अधिकतमगती);
+  }
+
+ //गति() विधि बनाए और उसमे अधिकतमगती मानदंड/parameter बनाए 
+   सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क ){
+        कार मेरिकार = नई कार();
+        मेरिकार.तेज़चले();
+        मेरिकार.गति(150); 
+  } 
+}</div></div></div> 
+        </p><hr>
+        <e>
+            <ul style="list-style-type: none;">
+            <b>Example explained</b><li>1) We created a custom "कार" class with the <c>वर्ग</c> keyword. <br>(you can also use <c>कक्षा</c> here as they both are the same ) </li><li>2) We created the "तेज़चले()" and "गति()" विधियाँ(methods) in the "कार" वर्ग(class).</li><li>3) The  "तेज़चले()" विधि(method) and the "गति()" विधि(method) will print out some text, when they are called.</li><li>4) The "गति()" विधि(method) accepts an <c>अंक</c> parameter called "अधिकतमगती" - we will use this in <b>8)</b>.</li><li>5) In order to use the "कार" class and its methods(विधियाँ), we need to create an object(वस्तु) of the "कार" class.</li><li>6) Then, go to the <c>जरूरी()</c> method, which you know by now is a built-in विधि(method) that runs your program (any code inside <c>जरूरी()</c> is executed).</li><li>7) By using the <c>नई</c> keyword we created a वस्तु(object) with the name "मेरिकार".</li><li>8) Then, we call the "तेज़चले()" and "गति()" methods(विधियाँ) on the "मेरिकार" object/वस्तु , and run the program using the name of the  वस्तु(object) i.e."मेरिकार" , followed by a dot (.), followed by the name of the method (तेज़चले(); and गति(150); ). Notice that we add an <c>अंक</c>parameter of 150 inside the  गति() method(विधि).</li></ul>
+        </e>
+            <h><ul style="list-style-type: none;">
+                <b>उदाहरण समझे</b><li>1) हमने <c>वर्ग</c> शब्द के साथ एक अलग नया "कार" वर्ग बनाया। (आप यहां <c>कक्षा</c> का भी प्रयोग कर सकते हैं क्योंकि जैसा हम जानते है दोनों एक ही हैं) </li><li>2) हमने "कार" वर्ग(class) में "तेज़चले()" और "गति()" विधियाँ(methods) बनाई हैं।</li><li>3) "तेज़चले ()" विधि(method) और "गति()" विधि (methord) कुछ प्रिंट करेंगे, जब उन्हें बुलाया(इस्तेमाल मे लाया) जाएगा।</li><li>4) "गति ()" विधि (विधि) एक <c>अंक</c> मानदंड/पैरामीटर को स्वीकार करती है जिसे "अधिकतमगती" कहा जाता है/गया है - हम इसका उपयोग <b>8)</b> में करेंगे।</li
+                ><li>5) "कार" वर्ग और उसकी विधियों (methords) का उपयोग करने के लिए, हमें "कार" वर्ग की एक वस्तु(object) बनाने की आवश्यकता है।</li><li>6) फिर , <c>जरूरी()</c>  विधि(methord) पर जाएं, जिसे अब तक आप जानते हैं कि यह एक built-in विधि(methord) है जो हमारे प्रोग्राम को चलता है |(<c>जरूरी()</c> के अंदर का कोड ही सबसे पहले निष्पादित/रन होता है)</li><li>7) <c>नई</c> शब्द का उपयोग करके हमने "मेरिकार" नाम से एक वस्तु(object) बनाया है।</li><li>8) फिर, हम "तेज़चले ()" और "गति ()" विधियों को "मेरिकार" वस्तु(object) पर बुलाते हैं या कहे इस्तेमाल करते है (या कॉल करते है)|और फिर प्रोग्राम को वस्तु के नाम("मेरिकार") , फिर एक बिंदु (.), उसके बाद विधि का नाम (ते ज़चले (); तथा गति(150); ) लिख कर चलाते है.ध्यान दें कि हम गति () विधि (methord) के अंदर <c>अंक</c> 150 का पैरामीटर जोड़ते हैं।</li>
+            </ul> 
+        </h>
+        <p> 
+           <div class="note">
+                <e>
+                    <h3 class="h-note">Remember that..</h3>               
+                The dot (<c>.</c>) is used to access the object's(वस्तु के) attributes(गुण/विशेषता) and methods(विधियाँ).<br>To run(call) a method(विधि) , write the method name(विधि का नाम) followed by a set of parentheses <c>()</c>, followed by a semicolon <c>;</c>.
+                </e>
+                <h>
+                    <h3 class="h-note">याद रखे.. </h3>
+                बिंदु (<c>.</c>) का प्रयोग वस्तु(object's) के गुण/विशेषता (attributes) और विधियों (methords) तक पहुँचने के लिए किया जाता है।<br>एक विधि(methord) चलाने (कॉल करने) के लिए, विधि का नाम(methord name) लिखें और उसके बाद कोष्ठकों का एक समूह <c>()</c>, उसके बाद अर्धविराम <c>;</c> लिखें।</c>।
+                </h>   
+            </div>
+        </p> <br><hr><br>
+        <h2> &nbspPublic Classes|सार्वजनिक वर्ग/कक्षा : </h2>
+        <p>
+            <e>
+               We have seen some classes with access modifier <c>सार्वजनिक</c> and other classes without it(<c>आम</c>वर्ग (default classes) . The difference between the two is explained in detail in modifiers topic,as  <c>सार्वजनिक</c> and <c>आम</c> are modifiers.They are amongst the most important topics . You can check them there.
+            </e>
+            <h> 
+               हमने संशोधक <c>सार्वजनिक</c> के साथ कुछ कक्षाएं और इसके बिना भी अन्य कक्षाएं देखी हैं (<c>आम</c>वर्ग (default classes)। यह एक अहम विषय है |दोनों को संशोधक(modifiers) में विस्तार से समझाया गया है, (क्योंकि <c>सार्वजनिक</c> और <c>आम</c> संशोधक हैं) आप उन्हें वहां पढ़ सकते हैं। 
+            </h><br>
+        </p>
+    </chapter> 
+<script src="scripts/article.js"></script>
+<script src="scripts/ace.js"></script>
+<script src="scripts/cobalt.js"></script>
+<script src="scripts/mode-javaa.js"></script>
+<script>codeload();</script>
+</body>
+</html>

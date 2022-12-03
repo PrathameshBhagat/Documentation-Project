@@ -1,0 +1,129 @@
+<html>
+<head>
+<script type="text/javascript" src="scripts/article.js"></script>
+<link rel="stylesheet" href="style/article.css" /> 
+</head>
+<body onload="load()"  prev="modifiers.html" next="inheritance.html">
+    <h1>Encapsulation | संपुटिकरण |सुरक्षण 
+        प्पणियाँ| कमेंट्स 
+        <select name="H/E" onchange="set(this.value)">
+            <option value="english">English</option>
+            <option value="hindi">हिन्दी(Hindi)</option>
+        </select><br>
+        <input type="button" value="pervious" onclick="pchapter()">
+<a class="btn" onclick="nchapter()" href="#"><span>&nbsp;&rarr;</span>NEXT</a>
+    </h1> 
+    <chapter> 
+        <h2>&nbspEncapsulation | संपुटिकरण |सुरक्षण </h2>
+        <e>
+                The meaning of <b>संपुटिकरण/सुरक्षण (Encapsulation)</b>(here in our programming language), is to make sure that "sensitive" data is hidden from users. To achieve this, you must:<ul><li>declare वर्ग वेरीअबल,गुण(विशेषता)(class variables/attributes) as <c>निजी</c></li><li>provide <c>सार्वजनिक</c> प्राप्तकरे और बदलदे(  <c>सार्वजनिक</c>(public) get and set) methods to access and update the value of a <c>निजी</c>(private) variable.</li></ul>
+        </e>
+        <h>
+            <b>संपुटिकरण/सुरक्षण (Encapsulation)</b> का अर्थ(यहाँ हमारी प्रोग्रामिंग भाषा मे) यह सुनिश्चित करना है कि "संवेदनशील" डेटा उपयोग-कर्ताओं से छिपा हुआ रहे । इसे प्राप्त करने के लिए, आपको:<ul><li>वर्ग वेरीअबल/गुण(विशेषता)(class variables/attributes) को <c>निजी</c>(private) घोषित करना होगा </li><li><b>प्राप्तकरे और बदलदे</b> विधियों को <c>सार्वजनिक</c> के रूप में घोषित कर उन्हें <c>निजी</c> चर(private variable) तक पहुँचने(निर्धारित करने और बदलने) के लिए प्रदान करना होगा (हम इन्हे प्राप्त और बदले नाम देंगे)</li></ul>
+        </h>
+        <br><hr> <br>
+        <h2> &nbspGet and Set|प्राप्त और बदले </h2>
+        <p>
+            <e>
+                We learned from the previous topic that <c>निजी</c>(private) variables can only be accessed within the same वर्ग(class) (i.e. an outside वर्ग(class) has no access to it). However, it is possible to access them if we provide <c>सार्वजनिक</c> प्राप्त और बदले विधियाँ (<c>सार्वजनिक</c>(public) get and set methods).<br><br>The प्राप्त(get) method returns the variable value, and the बदले(set) method sets and updates the value.<br>Syntax for both is that they start with either प्राप्त(get) or बदले(set), followed by the name of the variable:
+            </e>
+            <h> 
+                हमने पिछले विषय से सीखा है कि <c>निजी</c> चरों (private variables )को केवल उसी वर्ग(class) के भीतर ही पहुँचा जा सकता है (एक बाहरी वर्ग(class) की उस तक पहुँच नहीं है)। हालांकि, यदि हम <c>सार्वजनिक</c>प्राप्त और बदले विधियाँ (public get and set methods) का विकल्प प्रदान करते हैं, तो उन्हें इस्तेमाल(एक्सेस) करना संभव है।<br><br>प्राप्त(get) विधि चर मान(variable value) लौटाती है, और बदले(set) विधि मान को सेट और बदलती है।
+            </h><br>
+        </p>
+        <p>
+            <div class="example">
+            <e> <h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3> </h>
+<div class="code-container"><div class="code TOE" id="editor">
+वर्ग आदमी {
+     निजी डोर नाम ;
+    सार्वजनिक डोर नामप्राप्तकरे(){
+        वापस नाम ;
+    }
+    सार्वजनिक रिक्त नामबदलदे(डोर वर्तमाननाम){//या रख दे 
+    इस.नाम = वर्तमाननाम ;
+    }
+}</div></div></div>
+        </p>
+        <p><br>
+            <e>
+               The <b>प्राप्तकरे(get)</b> method returns the value of the variable name.<br><br>The <b>बदलदे(set)</b> method takes a मानदंड(parameter) "वर्तमाननाम" and assigns it to the "नाम" variable. The इस(this) keyword is used to refer to the current वस्तु(object).<br><br>However, as the "नाम" variable is declared as <c>निजी</c>(private), we cannot access it from outside इस वर्ग (this class) or we can say the object made from the present or current class:
+            </e>
+            <h> 
+               <b>प्राप्तकरे(get)</b> विधि चर(variable) "नाम" का मान(value) लौटाती है।<br><br><b>बदलदे(set)</b> विधि एक मानदंड(parameter) "वर्तमाननाम" लेती है और इसे "नाम" वेरिएबल को प्रदान करती है|
+               <br><br> <c>इस</c>(this) शब्द(कीवर्ड) का उपयोग वस्तु(object) को संदर्भित(इशारा) करने के लिए किया जाता है।<br>इस वर्ग (this class) या हम कह सकते हैं कि इस वर्ग से बनाई वस्तु से ताल्लुक़(connection) है:
+            </h><br>
+        </p>
+        <p>
+            <div class="example" style="background-color:#ff1a1a;">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h><br > 
+            <div class="code-container"><div class="code TOE" id="editor">
+वर्ग मुख्य {
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क ){
+        आदमी  अ = नई आदमी();
+        अ.नाम="रोहन";
+        //यह त्रुटि देगा क्योंकि नाम निजी है आदमी वर्ग मे 
+        तंत्र.बाहर.प्रिंट(अ.नाम);
+    }
+}
+वर्ग आदमी {
+    निजी डोर नाम =" ";
+    सार्वजनिक डोर नामप्राप्तकरे(){
+        वापस नाम ;
+    }
+    सार्वजनिक रिक्त नामबदलदे(डोर वर्तमाननाम){//या "रख" दे 
+    इस.नाम = वर्तमाननाम ;
+    }
+}</div></div></div> 
+        </p><hr>
+         <p>
+            <e>
+               If the variable was declared as <c>सार्वजनिक</c>(public), we would expect the output to be "रोहन" . <br><br>However, as we try to access a <c>निजी</c>private variable, we get an error.Instead, we use the "प्राप्तकरेनाम()"{getName()} and "बदलदेनाम()"{setName()}  विधियाँ(methods) to access and update the variable: 
+            </e>
+            <h> 
+               यदि चर(variable) को <c>सार्वजनिक</c>(public) के रूप में घोषित किया गया होता, तो हम उम्मीद करेंगे कि आउटपुट "रोहन" होगा |<br><br>हालांकि, जैसे हमने एक <c>निजी</c> चर (private variable)  तक पहुँचने का प्रयास किया हैं, हमें एक त्रुटि मिली । इसके बजाय, हम चर(variable) तक पहुँचने और इस्तेमाल करने के लिए "प्राप्तकरेनाम()"{getName()} और "बदलेनाम()"{setName()} विधियों(methords) का उपयोग करते हैं तो हमे कोई तकलीफ नहीं होगी :
+            </h><br>
+        </p>
+        <p>
+            <div class="example">
+            <e> <h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h> 
+            <div class="code-container">
+                <div class="code TOE" id="editor">
+वर्ग मुख्य {
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क ){
+        आदमी  अ = नई आदमी();
+        अ.नामबदलदे("रोहन");
+        तंत्र.बाहर.प्रिंट(अ.नामप्राप्तकरे());
+        //यह "रोहन" लिख देगा 
+    }
+}
+वर्ग आदमी {
+    निजी डोर नाम =" ";
+    सार्वजनिक डोर नामप्राप्तकरे(){
+        वापस नाम ;
+    }
+    सार्वजनिक रिक्त नामबदलदे(डोर वर्तमाननाम){//या "रख" दे 
+    इस.नाम = वर्तमाननाम ;
+    }
+}</div></div></div> 
+        </p> 
+        <br><br><hr><br>
+        <h2> &nbspWhy Encapsulation?|सुरक्षण क्यों करे?  </h2>
+       <e>
+            <ul><li><b>Control</b> : To have better control of वर्ग गुण/विशेषताए,विधियाँ (class attributes and methods)</li><li><b>Limited Access</b>: वर्ग गुण/विशेषताए(Class attributes/variables) can be made read-only (if you only use the प्राप्तकरे विधि (get method)), or write-only (if you only use the बदलदे विधि(set method))</li><li><b>Flexible</b>: the programmer can change one part of the code without affecting other parts</li><li><b>Security</b>: Increased security of data and variables</li></ul>
+        </e>
+        <h> 
+            <ul><li><b>नियंत्रण</b> :वर्ग गुण/विशेषताए,विधियाँ(class attributes and methods) पर बेहतर नियंत्रण के लिए</li><li><b>सीमित पहुच</b> : वर्ग गुण/विशेषताए(class attributes) को केवल पढ़ने के लिए बनाया जा सकता है (यदि आप केवलप्राप्तकरे विधि(get method)का उपयोग करें), या केवल-लिखें (यदि आप केवल बदलदे विधि(set method) का उपयोग करते हैं)</li><li><b>लचीला</b>: प्रोग्रामर अन्य भागों को प्रभावित किए बिना संहिता(code) के एक भाग को बदल सकता है</li><li><b>सुरक्षा</b>: डेटा और वेरिएबल्स की बढ़ी हुई सुरक्षा</li></ul>
+        </h>
+    </chapter> 
+
+<script src="scripts/article.js"></script>
+<script src="scripts/ace.js"></script>
+<script src="scripts/cobalt.js"></script>
+<script src="scripts/mode-javaa.js"></script>
+<script>codeload();</script>
+</body>
+</html>

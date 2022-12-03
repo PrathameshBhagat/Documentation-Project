@@ -1,0 +1,132 @@
+<html>
+<head>
+<script type="text/javascript" src="scripts/article.js"></script>
+<link rel="stylesheet" href="style/article.css" /> 
+</head>
+<body onload="load()" prev="inheritance.html" next="abstraction.html">
+    <h1>Polymorphism | बहुरूपता
+        <select name="H/E" onchange="set(this.value)">
+            <option value="english">English</option>
+            <option value="hindi">हिन्दी(Hindi)</option>
+        </select><br>
+        <input type="button" value="pervious" onclick="pchapter()">
+<a class="btn" onclick="nchapter()" href="#"><span>&nbsp;&rarr;</span>NEXT</a>
+    </h1> 
+    <chapter> 
+        <h2>&nbspPolymorphism | बहुरूपता:</h2>
+        <p>
+            <e>
+               बहुरूपता(Polymorphism) means "many forms", and it occurs when we have many वर्ग(classes) that are related to each other by विरासत(inheritance).<br><br>Like we specified in the previous chapter; विरासत(Inheritance) lets us inherit गुण(attributes) and विधियाँ(methods) from another वर्ग(class). बहुरूपता(Polymorphism) uses those विधियाँ(methods) to perform different tasks. This allows us to perform a single action in different ways.<br><br><b>For example</b> , think of a उच्चवर्ग(superclass) called "जानवर" (i.e. Animal) that has a विधियाँ(methods) called जांवरकीआवाज़(). उपवर्ग(Subclasses) of "जानवर" (i.e. Animal) could be कुत्ता , बिल्ली ,चिड़िया ,सूअर (Pigs, Cats, Dogs, Birds)- And they also have their own implementation of an animal sound (the pig oinks, and the cat meows, etc.):
+            </e>
+            <h>
+               बहुरूपता(Polymorphism) का अर्थ है "कई रूप", और यह तब होता है जब हमारे पास कई वर्ग(classes) होते हैं जो विरासत(inheritance) द्वारा एक दूसरे से संबंधित या जुड़े होते हैं।<br><br>जैसा कि हमने पिछले अध्याय में स्पष्ट किया था; विरासत(Inheritance) हमें दूसरे वर्ग(class) से गुण(attributes) और विधियाँ(methords) प्राप्त करने देती है। बहुरूपता(Polymorphism) विभिन्न कार्यों को करने के लिए उन विधियाँ(methords) का उपयोग करती है। यह हमें अलग-अलग तरीकों से एक ही क्रिया करने की अनुमति देती है।<br><br><b>उदाहरण के लिए</b>, एक उच्चवर्ग (superclass) के बारे में सोचें जिसका नाम "जानवर" (i.e. Animal) है, उसमें जांवरकीआवाज() नामक विधियाँ(विधियाँ) हैं। "जानवर"(i.e. Animal) का उपवर्ग(subclass) कुत्ता , बिल्ली, चिड़िया, सूअर (Dogs, Cats, Birds, Pigs) - हो सकता है । और उनके पास एक पशु ध्वनि का अपना कार्यान्वयन(implementation) भी है (कुत्ता भौंकता है, और बिल्ली म्याऊ, आदि):
+            </h>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h><h3 class="h-note">उदाहरण:</h3></h>
+<div class="code-container"><div class="code TOE" id="editor">
+वर्ग जानवर{
+    सार्वजनिक रिक्त आवाज़करेगा(){
+        तंत्र.बाहर.प्रिंट("जानवर आवाज करता है");
+    }
+}
+वर्ग कुत्ता विरासेगा जानवर {
+    सार्वजनिक रिक्त आवाज़करेगा(){
+        तंत्र.बाहर.प्रिंट("कुत्ता  भौंकेगा ");
+    } 
+}
+वर्ग बिल्ली विरासेगा जानवर {
+    सार्वजनिक रिक्त आवाज़करेगा(){
+        तंत्र.बाहर.प्रिंट("बिल्ली म्याऊँ -म्याऊँ करेगी ");
+    } 
+}</div></div></div>
+        </p>
+
+        <p><br>
+            <e>
+               Now we can create "कुत्ता"(Dog) and बिल्ली (Cat) objects and call the आवाज़करेगा() method on both of them:
+            </e>
+            <h> 
+                अब हम "कुत्ता"(Dog) और बिल्ली (Cat) वस्तु बना सकते हैं और उन दोनों पर आवाज़करेगा() विधि का इस्तेमाल (कॉल) कर सकते हैं:
+            </h><br><br>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h><h3 class="h-note">उदाहरण:</h3></h> 
+            <div class="code-container"><div class="code TOE" id="editor">
+वर्ग जानवर{
+    सार्वजनिक रिक्त आवाज़करेगा(){
+        तंत्र.बाहर.प्रिंट(" जानवर आवाज करता है |"); 
+    }
+}
+वर्ग कुत्ता विरासेगा जानवर {
+    सार्वजनिक रिक्त आवाज़करेगा(){
+        तंत्र.बाहर.प्रिंट(" कुत्ता भौंकेगा |");
+    } 
+}
+वर्ग बिल्ली विरासेगा जानवर {
+    सार्वजनिक रिक्त आवाज़करेगा(){
+        तंत्र.बाहर.प्रिंट(" बिल्ली म्याऊँ - म्याऊँ करेगी |");
+    } 
+}
+वर्ग मुख्य {
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क ){
+        जानवर मेराजानवर = नई जानवर();
+        कुत्ता मेराकुत्ता = नई कुत्ता();
+        बिल्ली मेरीबिल्ली = नई बिल्ली();
+        मेराजानवर.आवाज़करेगा();
+        मेराकुत्ता.आवाज़करेगा();
+        मेरीबिल्ली.आवाज़करेगा();
+    }
+}</div></div></div> 
+        </p>
+        <p>
+        <e>
+           In the above example a विधि(methord) with same name has different tasks  to perform i.e. code implementation. This in herre is called methord overriding . Remember earlier in the "overloading/अतिभारे" topic we विधि अतिभारा था (overloaded methords) i.e. we had methords with same name but different मानदंड(parameters) or different number of मानदंड(parameters).
+        </e>
+        <h> 
+            उपरोक्त उदाहरण में एक ही नाम की विधियों(methord) में करने के लिए अलग-अलग कार्य हैं (कोड कार्यान्वयन/code implementation)| इसे यहां विधि ओवरराइडिंग(methord overriding) कहा जाता है। याद करे  "overloading/अतिभारे" में हमने विधियों को अतिभारा था (overloaded methords), यानी हमारे पास एक ही नाम के विधियों(methords) थे लेकिन अलग-अलग मापदंड (parameter) थे (या अलग-अलग संख्या संख्या मे थे)।
+        </h>
+        </p>
+        <e>
+           <br>Here(in overriding) we have methords( आवाज़करेगा() ) 
+           with exact<ul><li> <b>same name</b> </li><li><b>same मानदंड/parameters</b> (same type and number)</li></ul> but different implementation of code in them , which code to run this is decided by which वस्तु(object) call's the methord .
+        </e>
+        <h>
+            <br>यहाँ(विधि ओवरराइडिंग(methord overriding) में) हमारे पास <ul><li><b>समान नाम</b></li><li><b>समान मानदंडों/parameter</b>(समान प्रकार और संख्या)</li></ul> के साथ विधियाँ (methords) हैं, लेकिन उनमें विभिन्न संहिता/कोड कार्यान्वयन(code implementation) हैं, कौन सा संहिता/कोड चलेगा ये इससे तेय होगा कि किस वस्तु की विधि का इस्तेमाल किया गया है(methord is called by which object) ।
+        </h>   
+        <p>
+        <e>
+           <br><br>In simple words object would decide which code implementation is to be called if कुत्ता.आवाज़() the code provided by the "कुत्ता" वर्ग ("कुत्ता" class) would run if "बिल्ली" then implementation provided by "बिल्ली" and so on .<br>
+           (The concept is very(exactly) similar to overriding in java for any confusion(or depth knowledge) you can refer to java overriding concept available on internet)
+        </e>
+        <h><br><br>सरल शब्दों में वस्तु(object) तय करेगा कि कौन से संहिता/कोड को चलाया जाना है : यदि कुत्ता.आवाज़() तो  "कुत्ता" वर्ग ("कुत्ता" class) द्वारा प्रदान किया गया संहिता/कोड चलाया जाएगा ,"बिल्ली" तो "बिल्ली" द्वारा प्रदान किया गया संहिता/कोड चलाया जाएगा और इसी तरह आगे।(यह बहुत ही (बिल्कुल) जावा(java programming language)के समान है , किसी भी भ्रम (या गहरा अध्ययन) के लिए , आप इंटरनेट पर उपलब्ध जावा ओवरराइडिंग (java overriding) अवधारणा को पढ़ सकते हैं|)
+        </h>
+    </p>
+        <br><br><br>
+        <p> 
+           <div class="note">
+                <e>
+                    <h3 class="h-note">Note :</h3>               
+                <b>Why And When To Use "विरासत"("Inheritance") and "बहुरूपता"("Polymorphism")?</b></i>
+                  - It is useful for code reusability: reuse attributes and methods of an existing class when you create a new class. Also to have shorter code .
+                </e>
+                <h>
+                    <h3 class="h-note">ध्यान दे:</h3>
+                    <b>क्यों और कब "विरासत"("Inheritance") और "बहुरूपता"("Polymorphism") का उपयोग करना है?</b></i>
+                  - यह कोड का पुन उपयोग करने के लिए जरूरी है: जब आप एक नई कक्षा बनाते हैं तो मौजूदा वर्ग की विशेषताओं और विधियों का पुन: उपयोग कर सकते है । साथ ही कोड छोटा भी होगा ।
+                </h>   
+            </div>
+        </p> 
+    </chapter> 
+
+<script src="scripts/article.js"></script>
+<script src="scripts/ace.js"></script>
+<script src="scripts/cobalt.js"></script>
+<script src="scripts/mode-javaa.js"></script>
+<script>codeload();</script>
+</body>
+</html>

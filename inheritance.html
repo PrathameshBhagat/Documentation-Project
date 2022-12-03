@@ -1,0 +1,98 @@
+<html>
+<head>
+<script type="text/javascript" src="scripts/article.js"></script>
+<link rel="stylesheet" href="style/article.css" /> 
+</head>
+<body onload="load()" prev="encapsulation.html" next="polymorphism.html">
+    <h1>Inheritance| विरासत | उत्तराधिकार
+        <select name="H/E" onchange="set(this.value)">
+            <option value="english">English</option>
+            <option value="hindi">हिन्दी(Hindi)</option>
+        </select><br>
+        <input type="button" value="pervious" onclick="pchapter()">
+<a class="btn" onclick="nchapter()" href="#"><span>&nbsp;&rarr;</span>NEXT</a>
+    </h1> 
+    <chapter> 
+        <h2>&nbspInheritance (Subclass and Superclass)|विरासत (उपवर्ग और उच्चवर्ग): </h2>
+        <e>
+            In programming , it is possible to inherit गुण(attributes) and विधि(methods) from one वर्ग)class) to another. We group the "विरासत विषय"("inheritance concept") into two categories or parts :<ul><li><b>उपवर्ग (subclass/child)</b> - the class that inherits from another class</li><li><b>उच्चवर्ग(superclass/parent) </b>- the class being inherited from</li></ul>To inherit from a class, use the <c>विरासेगा</c>(extends) keyword.<br>In the example below, the "कार" वर्ग i.e. "कार" class (उपवर्ग/subclass) inherits the गुण(attributes) and विधियाँ(methods) from the "वाहन" वर्ग i.e. "वाहन" class (उच्चवर्ग/superclass):
+        </e>
+        <h>
+            प्रोग्रामिंग में, गुणों और विधियों को एक वर्ग से दूसरे वर्ग में प्राप्त करना संभव है। हम "विरासत विषय"("inheritance concept") को दो श्रेणियों में समूहित करते हैं:<ul><li><b>उपवर्ग/छोटा वर्ग</b>(subclass/child) - वह वर्ग जो किसी अन्य वर्ग से विरासत में मिली है</li><li> <b>उच्चवर्ग/बड़ा वर्ग </b>(superclass/parent) - वर्ग जिस से विरासत मिली है</li></ul>किसी वर्ग को विरासत मे पाने के लिए,<c>विरासेगा</c>(extends) शब्द का उपयोग करें।<br>नीचे दिए गए उदाहरण में, "कार" वर्ग (उपवर्ग), वाहन वर्ग (उच्चवर्ग) से गुण(attributes) और विधियाँ(methods) प्राप्त करता है: |("कार" class(subclass) inherits methods and attributes from "वाहन" class) 
+        </h>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h>
+<div class="code-container"><div class="code TOE" id="editor">
+वर्ग वाहन {
+    सुरक्षित डोर  कंपनी = "Ford";   //वाहन गुण/attribute
+    सार्वजनिक रिक्त हॉर्नबजाओ() {  //वाहन विधि/method
+    तंत्र.बाहर.प्रिंट("ब्रूम ब्रूम...." );
+  }
+}
+
+वर्ग कार विरासेगा वाहन {
+    निजी डोर मॉडलनाम = "Mustang";    // Car attribute
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क ){
+        //कार वर्ग की वस्तु बनाए 
+        कार मेरिकार =नई कार();
+        // मेरिकार वस्तु पर हॉर्नबजाओ विधि का इस्तेमाल करे (call kare) 
+        मेरिकार.हॉर्नबजाओ();
+        //कार की कंपनी का नाम और उसके मोडेल का नाम लिख दे 
+        तंत्र.बाहर.प्रिंट(मेरिकार.कंपनी +" "+मेरिकार.मॉडलनाम);
+    }
+}</div></div></div>
+        </p>
+        <p>
+            <e>
+            In the above example "कार विरासेगा वाहन"("कार inherits वाहन") means the "कार" वर्ग("कार" class) will inherit the methods and attributes of the "वाहन" वर्ग("वाहन" class).
+            </e>
+            <h> 
+            उपरोक्त उधारण मे "कार विरासेगा वाहन" का मतलब है कार वर्ग को वाहन वर्ग की विधियाँ(methords) और गुण(attributes) विरासत मे मिलेंगे| 
+            </h><br><br>
+        </p>    
+        <p> 
+           <div class="note">
+                <e>
+                    <h3 class="h-note">Note :</h3>               
+                Did you notice the <c>सुरक्षित</c>(protected) modifier in वाहन ?<br><br>We set the "कंपनी" गुण ("कंपनी" attribute) in वाहन to a <c>सुरक्षित</c>(protected) access modifier. If it was set to <c>निजी</c>(private), the "कार" वर्ग ("कार" class) would not be able to access it.<br><h2>Why And When To Use "विरासत/Inheritance"?</h2>- It is useful for code reusability: reuse गुण(attributes) and विधियाँ(methods) of an existing वर्ग(class) when you create a new वर्ग(class).<br>Tip: Also take a look at the next topic, which uses inherited methods to perform different tasks.
+                </e>
+                <h>
+                    <h3 class="h-note">ध्यान दे:</h3>
+                क्या आपने "वाहन" में <c>सुरक्षित</c> संशोधक देखा ?<br><br>हमने "वाहन" में "कंपनी" विशेषता को <c>सुरक्षित</c>(protected) पहुच संशोधक पर सेट किया है। यदि इसे <c>निजी</c>(private) पर सेट किया गया होता, तो "कार" वर्ग इसका इस्तेमाल नहीं कर पाएगा।<br><h2>"विरासत/inheritance" का उपयोग क्यों और कब करें?</h2 >- यह संहिता/कोड को  पुन इस्तेमाल करने के लिए उपयोगी है: जब आप एक नया वर्ग(class) बनाते हैं तो किसी मौजूदा वर्ग(class) की विशेषताओं(attributes) और विधियों(methords) का पुन: उपयोग कर सकते हैं।
+                </h>   
+            </div>
+        </p><br><hr><br> 
+        <h2> &nbspThe final Keyword| <c>अंतिम</c> शब्द </h2>
+        <p>
+            <e>
+              If we don't want other वर्ग(classes) to inherit from a वर्ग(class), use the <c>अंतिम</c>(final) keyword.
+            </e>
+            <h> 
+              यदि हम नहीं चाहते कि कोई अन्य वर्ग(class) किसी वर्ग(classes) को न विरासे , तो <c>अंतिम</c>(final) शब्द(कीवर्ड) का उपयोग करें।
+            </h><br>
+        </p>
+        <p>
+            <div class="example"style="background-color:#ff1a1a;">
+            <e><h3 class="h-note">Example:</h3>If you try to inherit a final class you will get an error </e>
+            <h> <h3 class="h-note">उदाहरण:</h3>यदि आप <c>अंतिम</c>वर्ग (final class) को विरसित करने का प्रयास करते हैं तो आपको एक त्रुटि मिलेगी</h> 
+            <div class="code-container"><div class="code TOE" id="editor">
+अंतिम वर्ग वाहन {
+    ..... 
+}
+
+वर्ग कार विरसेगा वाहन {//यह एक त्रुटि देगा 
+    .....  
+} 
+</div></div></div> 
+        </p>    
+    </chapter> 
+
+<script src="scripts/article.js"></script>
+<script src="scripts/ace.js"></script>
+<script src="scripts/cobalt.js"></script>
+<script src="scripts/mode-javaa.js"></script>
+<script>codeload();</script>
+</body>
+</html>

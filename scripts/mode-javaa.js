@@ -564,7 +564,7 @@ define("ace/mode/doc_comment_highlight_rules", ["require", "exports", "module", 
                 "केलिए|जब-तक|जबतक|जब|करो|बदले|बदलो|यदि|"+
                 "जारी|भंग|आम|करो)"
             },
-            {  
+            {  /*(?:\\s+|^|\.)*/
                 token: "variable.language",
                 regex: "(?:अंक|बाइट|"+
                 "छोटा|लंबा|फ्लोट|बड़ा|वर्ण|डोर|बूलियन)"

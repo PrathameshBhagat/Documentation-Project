@@ -3,8 +3,8 @@
 <script type="text/javascript" src="scripts/article.js"></script>
 <link rel="stylesheet" href="style/article.css" /> 
 </head>
-<body onload="load()"  prev="operators.html" next="string.html">
-    <h1>Boolean | बूलियन  <br >PLEASE UPDATE ME
+<body onload="load();alert('This is an under development topic \n and is suppposd to change soon.  ') "  prev="operators.html" next="string.html">
+    <h1>Boolean | <c>दोहरा</c> डेटा प्रकार   
         <select name="H/E" onchange="set(this.value)">
             <option value="english">English</option>
             <option value="hindi">हिन्दी(Hindi)</option>
@@ -14,99 +14,160 @@
     </h1> 
     <chapter> 
         <h2></h2>
+        <e>
+               Very often, in programming, we will need a data type that can only have one of two values, like:<ul><li>YES / NO</li><li>ON / OFF</li><li>TRUE / FALSE</li></ul>For this, we have a <c>दोहरा</c>(boolean) data type, which can store <c>सच</c>true or <c>झूठ</c>false values.
+        </e>
+        <h>
+               कई बार, प्रोग्रामिंग में, हमें एक डेटा प्रकार की आवश्यकता होगी जिसमें केवल दो में से एक मान हो, जैसे:<ul><li>हा / ना</li><li>शुरू / बंद</li><li>सच / झूठ</li></ul>इसके लिए हमारे पास एक <c>दोहरा</c> डेटा प्रकार है, जो <c>सच</c>/सही या <c>झूठ</c>/गलत मान संग्रहीत कर सकता है।
+        </h><br>
+        <br><hr>
+        <h2> &nbspBoolean Values|<c>दोहरा</c> के मान</h2>
         <p>
             <e>
-                Comments are the ones that can be used to explain code, and also to make it more readable. It can also be used to prevent execution of the code when testing alternative code.
-            </e>
-            <h>
-               संहिता(कोड/code) को समझाने और इसे और अधिक पढ़ने लायक बनाने केलिए टिप्पणियों(कमेंट्स) का उपयोग किया जा सकता है। इसका उपयोग वैकल्पिक(ऑल्टर्नेट) संहिता(कोड/code) का परीक्षण करते समय निष्पादन को रोकने केलिए भी किया जा सकता है।
-            </h>
-        </p> |एक पंक्ति टिप्पणियाँ|एक रेखा(लाइन) मे टिप्पणियाँ </h2>
-        <p>
-        <h2> &nbspSingle-line Comments
-            <e>
-               Single-line comments start's with special characters i.e two forward slashes <c>//</c>.<br>
-               Any text lying between <c>//</c> and the end of line is ignored by compiler(and will not be executed).
+               A <c>दोहरा</c>(boolean) type is declared with the <c>दोहरा</c>(boolean) keyword and can only take the values <c>सच</c>(true) or <c>झूठ</c>(false):
             </e>
             <h> 
-                एक पंक्ति टिप्पणियाँ(एक रेखा/लाइन टिप्पणियाँ) दो फ़ॉरवर्ड स्लैश <c>//</c> से शुरू होती हैं।<br>
-                <c>//</c> और पंक्ति(लाइन) के अंत के बीच के किसी भी हिस्से को कंपाइलर(या कहे कंप्युटर) द्वारा अनदेखा किया जाता है।(निष्पादित किया जाएगा/पढ़ा नहीं जाएगा)
+              एक <c>दोहरा</c>(boolean) प्रकार <c>दोहरा</c>(boolean) शब्द(कीवर्ड) के साथ घोषित किया जाता है और केवल <c>सच</c>(true) या <c>झूठा</c>(false) मान ले सकता है :
             </h><br>
         </p>
         <p>
             <div class="example">
-            <e>     
-            <h3 class="h-note">Example:</h3>   
-                Given example uses a single-line comment before a line of code:
-            </e>
-            <h> <h3 class="h-note">उदाहरण:</h3>   
-            यह उदाहरण संहिता/कोड की एक पंक्ति से पहले एक पंक्ति(रेखा) की टिप्पणी का उपयोग करता है।
-            </h>
-<div class="code-container"><div class="code TOE" id="editor">//ये एक टिप्पणी है  This is a comment
-तंत्र.बाहर.प्रिंट("Hello");
-</div></div></div>
+            <e><h3 class="h-note">Example:</h3>  </e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h>
+<div class="code-container"><div class="code TOE" id="editor">
+दोहरा प्रोग्रामिंग_आसान_है = सच ;
+दोहरा बिल्ली_भोंक_सकती_है = झूठ;
+तंत्र.बाहर.प्रिंट(प्रोग्रामिंग_आसान_है);//sach 
+तंत्र.बाहर.प्रिंट(बिल्ली_भोंक_सकती_है);//झूठ </div></div></div>
         </p>
-
         <p><br>
             <e>
-               This example uses a single-line comment after the end of a line of code:
+               But, it is more common to return <c>दोहरा</c> boolean values from boolean expressions, for conditional testing (see below).
             </e>
             <h> 
-                यह उदाहरण संहिता/कोड की एक पंक्ति के अंत में एक पंक्ति(रेखा) की टिप्पणी का उपयोग करता है। 
-            </h><br><br>
-        </p>
-        <p>
-            <div class="example">
-            <e>     
-            <h3 class="h-note">Example:</h3>   
-            
-            </e>
-            <h> <h3 class="h-note">उदाहरण:</h3>   
-              
-            </h><br > 
-            <div class="code-container"><div class="code TOE" id="editor">
-तंत्र.बाहर.प्रिंट("Hello"); //ये एक टिप्पणी है , This is a comment
-</div></div></div> 
-          
-        </p>
-        <h2> &nbspMulti-line Comments|बहु पंक्ति टिप्पणियाँ </h2>
+               लेकिन, अधिक सामान्य है दोहरी अभिव्यक्तियो(boolean expressions ) से <c>दोहरा</c>(boolean) मान लौटाना ।(नीचे देखे )
+            </h>
+        </p><br><hr>
+        <h2>&nbspBoolean Expression| दोहरी अभिव्यक्ति | बूलियन अभिव्यक्तियाँ</h2>
         <p>
             <e>
-               Multi-line comments start with a backslash and a * i.e.<c>/*</c> and ends with <c>*/</c>.<br>Any text appearing between <c>/*</c> and <c>*/</c> will be ignored by compiler and is not read/compiled.
+               A दोहरी अभिव्यक्ति(Boolean expression) returns a <c>दोहरा</c>(boolean) value: <c>सच</c>(true) or <c>झूठ</c>(false) .<br><br>This is useful to build logic, and find answers.<br><br>For example, you can use a comparison operator, such as the greater than <c>&gt;</c> (>)operator, to find out if an expression (or a variable) is <c>सच</c>(true) or <c>झूठ</c>(false):
             </e>
             <h> 
-                बहु-पंक्ति/रेखा टिप्पणियाँ <c>/*</c> से शुरू होती हैं और <c>*/</c> पर समाप्त होती हैं।<br>/* और */ के बीच किसी भी पाठ को संकलक(कम्पाइलर या कहे कंप्युटर) द्वारा अनदेखा कर दिया जाएगा।
+               एक दोहरी अभिव्यक्ति(Boolean expression) एक <c>दोहरा</c>(boolean) मान देता है: <c>सच</c>(true) या <c>झूठ</c>(false) ।<br><br>यह तर्क बनाने और उत्तर खोजने के लिए उपयोगी है।<br><br>उदाहरण के लिए, आप एक तुलना संचालक(operator) का उपयोग कर सकते हैं, जैसे <c>&gt;</c> (>)संचालक(operator) से अधिक, खोजने के लिए यदि कोई व्यंजक (या एक चर(variable)) <c>सच</c>(true) या <c>झूठ</c>/गलत(false) है:
             </h><br>
         </p>
         <p>
             <div class="example">
-            <e>     
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h>
+            <div class="code-container"><div class="code TOE" id="editor">
+अंक अ = 100;
+अंक ब = 90;
+तंत्र.बाहर.प्रिंट( अ > ब );//सच है क्योंकि 100 , 90 से ज्यादा है 
+</div></div></div> 
+        </p><br><br>
+        <p>
+            <div class="example" >
+            <e>
             <h3 class="h-note">Example:</h3>
-                Following example uses a multi-line comment i.e. a comment block (to explain the code)
+               Or even easier:
             </e>
             <h> <h3 class="h-note">उदाहरण:</h3> 
-                यह उदाहरण संहिता/कोड की व्याख्या करने केलिए एक बहु-पंक्ति टिप्पणी (एक टिप्पणी ब्लॉक) का उपयोग करता है : 
+                या इससे भी आसान:
             </h><br > 
-            <div class="code-container">
+            <div class="code-container"  style="height:5%">
                 <div class="code TOE" id="editor">
-/* The code below will
-print the word Hello 
-this is a comment block
-*/          
-तंत्र.बाहर.प्रिंट("Hello"); 
+तंत्र.बाहर.प्रिंट( 100 > 90 );//सच है क्योंकि 100 , 90 से ज्यादा है  
 </div></div></div> 
-        </p>        
+        </p>
+        <p>
+            <e>
+              In the below example, we use the equal to <c>==</c> संचालक(operator) to evaluate an expression:
+            </e>
+            <h> 
+               नीचे दिए गए उदाहरण में, हम एक व्यंजक(expression) का मूल्यांकन(evaluation) करने के लिए के बराबर संचालक(operator)<c>==</c>का उपयोग करते हैं:
+            </h><br>
+        </p>
+        <p>
+            <div class="example" >
+            <e>
+            <h3 class="h-note">Example:</h3>
+               Or even easier:
+            </e>
+            <h> <h3 class="h-note">उदाहरण:</h3> 
+                या इससे भी आसान:
+            </h><br > 
+            <div class="code-container" style="height:15%">
+                <div class="code TOE" id="editor">
+अंक अ= 100 ;
+तंत्र.बाहर.प्रिंट( अ == 100 );//सच है क्योंकि अ का मूल्य 100
+</div></div></div> 
+        </p> 
+        <p>
+            <div class="example" >
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h>
+            <div class="code-container"  style="height:5%">
+                <div class="code TOE" id="editor">
+तंत्र.बाहर.प्रिंट( 100 == 90 );//झूठ है क्योंकि 100 , 90 के बराबर नहीं है  
+</div></div></div> 
+        </p>
+        <br><hr><br>
+        <h2>&nbspReal Life Example|वास्तविक जीवन उदाहरण</h2>
+        <p>
+            <e>
+               Let's think of a "real life example" where we need to find if a person is old enough to vote.<br><br>In the example given below, we use the <c>>=</c>तुलना संचालक ( comparison operator) to find out if the "उम्र"(25) is ज्यादा या अरबर है (greater than OR equal) to the voting age limit, which is set to 18:
+            </e>
+            <h> 
+               आइए एक "वास्तविक जीवन उदाहरण" के बारे में सोचें जहां हमें यह पता लगाने की आवश्यकता है की क्या कोई व्यक्ति मतदान करने के लिए पर्याप्त आयु का है या नहीं । <br><br>नीचे दिए गए उदाहरण में, हम <c>>=</c> तुलना संचालक (comparison operator) का उपयोग करते हैं पता करने के लिए की क्या "उम्र"(25) अधिक या बराबर है(greater than OR equal) मतदान की आयु सीमा के लिए, जो कि 18 पर स्थापित है, या नहीं |
+            </h><br>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h>
+            <div class="code-container"><div class="code TOE" id="editor">
+अंक मेरीउम्र = 25 ;
+अंक मतदानआयु  = 18 ;
+तंत्र.बाहर.प्रिंट( मेरीउम्र >= मतदानआयु ); 
+</div></div></div> 
+        </p>
+        <p>
+            <e>
+               An even better approach (as we are on a roll now), would be to wrap the code above in an <c>अगर....या</c>(if...else) statement, so we can perform different actions depending on the result:
+            </e>
+            <h> 
+               एक और भी बेहतर तरीका उपरोक्त संहिता/कोड को <c>अगर....या</c>(if...else) कथन में लिखना होगा, ताकि हम अलग-अलग परिणाम के आधार पर कार्रवाई/प्रदर्शन कर सकें :
+            </h><br>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3>
+            Output "आप मतदान कर सकते है!" if "मेरीउम्र" is greater than or equal to 18. Otherwise output "आप मतदान नहीं कर सकते है":
+            </e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h>
+            <div class="code-container"><div class="code TOE" id="editor">
+अंक मेरीउम्र = 25 ;
+अंक मतदानआयु = 18 ;
+अगर (मेरीउम्र >= मतदानआयु){
+    तंत्र.बाहर.प्रिंट("आप मतदान कर सकते है!");
+    तंत्र.बाहर.प्रिंट(" आपकी उम्र पर्याप्त है !");   
+}
+या {
+    तंत्र.बाहर.प्रिंट(" आप मतदान नहीं कर सकते है,");
+    तंत्र.बाहर.प्रिंट(" आपकी उम्र पर्याप्त नहीं है !");   
+}</div></div></div> 
+        </p>
         <p> 
            <div class="note">
                 <e>
                     <h3 class="h-note">Note :</h3>               
-                <i><b>Single or multi-line comments?</b></i><br>
-                    It is up to you which you want to use.Genrally , we use <c>//</c> for short/smaller comments, and <c>/* */</c> for longer/larger.
+                These are the basis for all comparisons and conditions (in programming, in here).<br><br>We will learn more about conditions in the next topic .
                 </e>
-                <h>स 
+                <h>
                     <h3 class="h-note">ध्यान दे:</h3>
-                    <i><b>एक या बहु-पंक्ति टिप्पणियाँ?</b></i><br>
-                    यह आप पर निर्भर है कि आप किसका उपयोग करना चाहते हैं। आम तौर पर, हम छोटी टिप्पणियों केलिए // का उपयोग करते हैं, और /* */ लंबे समय केलिए।
+                ये सभी तुलनाओं और स्थितियों के आधार हैं।(प्रोग्रामिंग मे, यहाँ)<br><br>हम अगले विषय में शर्तों के बारे में अधिक जानेंगे।
                 </h>   
             </div>
         </p> 

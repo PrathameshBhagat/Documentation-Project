@@ -1,0 +1,156 @@
+<html>
+<head>
+<script type="text/javascript" src="scripts/article.js"></script>
+<link rel="stylesheet" href="style/article.css" /> 
+</head>
+<body onload="load()" prev="polymorphism.html" next="abstraction.html">
+    <h1>Inner Classes| भीतरी वर्ग | अंतरिम वर्ग |अंदर के वर्ग   
+        <select name="H/E" onchange="set(this.value)">
+            <option value="english">English</option>
+            <option value="hindi">हिन्दी(Hindi)</option>
+        </select><br>
+        <input type="button" value="pervious" onclick="pchapter()">
+<a class="btn" onclick="nchapter()" href="#"><span>&nbsp;&rarr;</span>NEXT</a>
+    </h1> 
+    <chapter> 
+        <h2>&nbsp;Inner Classes| भीतरी वर्ग |अंतरिम वर्ग | अंदर के वर्ग:</h2>
+        <p>
+            <e>
+              It is also possible to nest वर्ग(classes) (a वर्ग(class) within a वर्ग(class)). The purpose of nested वर्ग(classes) is to group वर्ग(classes) that belong together, which makes your code more readable and maintainable.To access the भीतरी वर्ग(inner class), create an वस्तु(object) of the outer वर्ग(class), and then create an वस्तु(object) of the भीतरी वर्ग(inner class):
+            </e>
+            <h>
+               किसी एक वर्ग(class) को दुसरे वर्ग(class) के भीतर बनाना भी संभव है)। इसका (भीतरी वर्ग(inner class))का उद्देश्य वर्ग(class) को एक साथ एकत्रित करना है, जो आपके संहिता/कोड को अधिक पठनीय और अच्छा बनाए रखने मे मदद करता है। इसका इस्तेमाल करने के लिए बाहरी वर्ग(outer class) की एक वस्तु(object) बनाएँ और फिर भीतरी वर्ग(inner class) की एक वस्तु(object) बनाएँ:
+            </h>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h>
+<div class="code-container"><div class="code TOE" id="editor">
+वर्ग बाहार {//बाहरी  वर्ग outer class 
+    अंक  अ = 100 ;
+    वर्ग अंदर {//भितरी वर्ग inner class 
+        अंक ब =200 ;        
+    }
+}
+वर्ग मुख्य{
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क ){
+        बाहार मेराबाहार =नई बाहार();//मेरा बाहरी वर्ग 
+        बाहार.अंदर मेराअंदर =मेराबाहार.नई अंदर();
+        तंत्र.बाहर.प्रिंट(मेराबाहार.अ + मेराअंदर.ब );
+    }
+}//100 +200=300 लिख देगा 
+</div></div></div>
+        </p>
+         <br><hr> <br>
+        <h2> &nbsp;Private Inner Class|<c>निजी</c>भितरी वर्ग |<c>निजी</c>अंदर के वर्ग </h2>
+        <p>
+            <e>
+              Unlike a "regular" वर्ग(class), an भितरी वर्ग(inner class) can be <c>निजी</c>(private) or <c>सुरक्षित</c>(protected). If you don't want outside वस्तु(objects) to access the भितरी वर्ग(inner class), declare the class as <c>निजी</c>(private):
+            </e>
+            <h> 
+             "सामान्य" वर्ग के विपरीत, एक भितरी वर्ग<c>निजी</c>(private) या <c>सुरक्षित</c>(protected) हो सकता है। यदि आप नहीं चाहते कि बाहरी वस्तुएँ भीतरी कक्षा/वर्ग  तक पहुँचें, तो कक्षा/वर्ग  को <c>निजी</c> के रूप में घोषित करें:
+            </h><br>
+        </p>
+        <p>
+            <div class="example" style="background-color:#ff1a1a;">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h>
+<div class="code-container" style="height:5%;"><div class="code TOE" id="editor">
+वर्ग बाहार {//बाहरी  वर्ग outer class 
+    अंक  अ = 100 ;
+    निजी वर्ग अंदर {//भितरी वर्ग inner class 
+        अंक ब =200 ;        
+    }
+}
+वर्ग मुख्य{
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क ){
+        बाहार मेराबाहार =नई बाहार();//मेरा बाहरी वर्ग 
+        बाहार.अंदर मेराअंदर =मेराबाहार.नई अंदर();
+        //उपरोक्त कथन एक त्रुटि देगा क्योंकि अंदर निजी है 
+        तंत्र.बाहर.प्रिंट(मेराबाहार.अ + मेराअंदर.ब );
+    }
+}//एक त्रुटि देगा क्योंकि अंदर निजी है  
+</div></div></div>
+        </p>
+        <h2> &nbsp;Static Inner Class|<c>स्थिर</c>भितरी वर्ग</h2>
+        <p>
+            <e>
+              An भितरी वर्ग(inner class) can also be <c>स्थिर</c>(static), which means that you can access it without creating an वस्तु(object) of the बाहरी वर्ग (outer class):
+            </e>
+            <h> 
+                एक भितरी वर्ग(inner class) <c>स्थिर</c>(static) भी हो सकता है, जिसका अर्थ है कि आप  <c>स्थिर</c>(static) का वस्तु (object) बनाए बिना उस तक पहुंच सकते हैं:
+            </h>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h><br > 
+            <div class="code-container"><div class="code TOE" id="editor">
+वर्ग बाहार {//बाहरी  वर्ग outer class 
+    अंक  अ = 100 ;
+    स्थिर वर्ग अंदर {//भितरी वर्ग inner class 
+        अंक ब =200 ;        
+    }
+}
+वर्ग मुख्य{
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क ){
+        बाहार.अंदर मेराअंदर =नई  बाहार.अंदर();
+        तंत्र.बाहर.प्रिंट(मेराअंदर.ब );
+    }
+}//200 लिख देगा 
+</div></div></div> 
+        <p>
+           <div class="note">
+                <e>
+                    <h3 class="h-note">Note :</h3>
+                    <b>Just like</b> <c>स्थिर</c>(static) attributes and methods, a <c>स्थिर</c> भितरी वर्ग(static inner class) <b>does not have access</b> to members of the बाहरी वर्ग (outer class).
+                </e>
+                <h>
+                    <h3 class="h-note">ध्यान दे:</h3>
+                    <c>स्थिर</c>(static) विशेषताओं और विधियों <b>की तरह</b>, <c>स्थिर</c> भितरी वर्ग static inner class) के पास बाहरी वर्ग (outer class)के सदस्यों तक <b>पहुंच नहीं है</b>।
+                </h>   
+            </div>
+        </p>
+        <h2> &nbsp;Access Outer Class From Inner Class|भितरी वर्ग से बाहरी वर्ग तक पहुचे </h2>
+        <p>
+            <e>
+             One advantage of भितरी वर्ग(inner classes), is that they can access गुण(attributes) and विधियाँ(methods) of the बाहरी वर्ग(outer class):
+            </e>
+            <h> 
+               भितरी वर्ग(inner classes) का एक फायदा यह है कि वे बाहरी वर्ग(outer class) के गुण(attributes) और विधियाँ(methods) तक पहुँच सकते हैं:
+            </h><br>
+        </p>           
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h> 
+            <div class="code-container">
+                <div class="code TOE" id="editor">
+वर्ग बाहार {//बाहरी  वर्ग outer class 
+    अंक  अ = 100 ;
+    वर्ग अंदर {//भितरी वर्ग inner class 
+        सार्वजनिक अंक मेरीविधि()
+        {    
+            वापस अ  ;        
+        }
+    }
+}
+वर्ग मुख्य{
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क ){
+        बाहार मेराबाहार =  नई बाहार();
+        बाहार.अंदर मेराअंदर = मेराबाहार.नई अंदर();
+        तंत्र.बाहर.प्रिंट(मेराअंदर.मेरीविधि());
+    }
+}//100 लिख देगा 
+</div></div></div> 
+        </p>        
+    </chapter> 
+
+<script src="scripts/article.js"></script>
+<script src="scripts/ace.js"></script>
+<script src="scripts/cobalt.js"></script>
+<script src="scripts/mode-javaa.js"></script>
+<script>codeload();</script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<html>
+<head>
+<script type="text/javascript" src="scripts/article.js"></script>
+<link rel="stylesheet" href="style/article.css" /> 
+</head>
+<body onload="load()" prev="interfaces.html" next="threads.html">
+    <h1>&nbsp; Exceptions| <c>त्रुटि</c>याँ/गलतीयाँ/चूक  
+        <select name="H/E" onchange="set(this.value)">
+            <option value="english">English</option>
+            <option value="hindi">हिन्दी(Hindi)</option>
+        </select><br>
+        <input type="button" value="pervious" onclick="pchapter()">
+<a class="btn" onclick="nchapter()" href="#"><span>&nbsp;&rarr;</span>NEXT</a>
+    </h1> 
+    <chapter> 
+        <h2>&nbsp; Exceptions| <c>त्रुटि</c>याँ/गलतीयाँ/चूक  </h2>
+        <p>
+            <e>
+             While executing the code, different errors may occur: coding errors made by the programmer, errors due to wrong input, or other unforeseeable, unpredictable things.<br><br>When an error occurs, Compiler/Interpreter will normally stop and generate an error message. The technical term for this is: Java will throw an exception (throw an error).
+            </e>
+            <h>
+               संहिता/कोड निष्पादित(execute) करते समय, विभिन्न त्रुटियां/गलतियां/चूक हो सकती हैं: प्रोग्रामर द्वारा की गई संहिता रचना मे त्रुटियां(coding mistakes/errors) , गलत इनपुट के कारण त्रुटियां, या अन्य अप्रत्याशित, अनजान चीजों के कारण त्रुटियां/गलतीयाँ हो सकती है ।<br><br>जब कोई त्रुटि होती य पाई जाती है , तो कंपाइलर/इंटरप्रेटर सामान्य रूप से रुक जाएगा और त्रुटि संदेश(error message) देता है । इसके लिए तकनीकी शब्द है: एक अपवाद (एक त्रुटि फेंक) फेंक देगा।
+            </h>
+        </p> <br><hr> <br>
+        <h2> &nbsp;Try......catch|<c>कोशिश</c> करो और <c>पकड़े</c> </h2>
+        <p>
+            <e>
+              The <c>कोशिश</c>(try) statement allows you to define a block of code to be tested for errors while it is being executed.<br>The <c>पकड़े</c>(catch) statement allows you to define a block of code to be executed, if an error occurs in the try block.<br>Both of them should come in pairs( else an error occurs) :
+            </e>
+            <h> 
+               <c>कोशिश</c>(try) कथन आपको संहिता/कोड के एक खंड को परिभाषित करने की अनुमति देता है, जसे त्रुटियों के लिए परीक्षण किया जाना है।<br><br><c>पकड़े</c>(catch) कथन मे वो संहिता/कोड होता है जिसे तब चलाया जाना है जब प्रयास ब्लॉक में कोई त्रुटि पाई गई हो । <br>दोनों को जोड़े में आना चाहिए (अन्यथा एक त्रुटि उतपन्न होती है):| हम <c>कोशिश</c> करते है की कोई <c>त्रुटि</c>/गलती/चूक ना हो यदि पाई जाती है तो हम उसे पकड़(<c>पकड़े</c>) लेते है | <br><br>(खंड => block i.e. code between <c>{  }</c>)
+            </h>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Syntax:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h>
+<div class="code-container"><div class="code TOE" id="editor">
+कोशिश {
+    //संहिता/कोड जिसे चलाने की कोशिश की जानी है 
+    //block of try 
+}
+पकड़े {
+    //संहिता/कोड  जिसे त्रुटि पाए जाने पर चलना है 
+    //block of try 
+}
+</div></div></div>
+        </p>
+        <p>
+            <e>
+              Consider the following example:
+            </e>
+            <h> 
+                निम्नलिखित उदाहरण देखे :
+            </h>
+        </p>
+        <p>
+            <div class="example" style="background-color:#ff1a1a;">
+            <e>     
+            <h3 class="h-note">Example:</h3>This will generate an error, because मेरीसंख्याएँ[10] does not exist.(it has only 4 numbers )</e>
+            <h> <h3 class="h-note">उदाहरण:</h3>यह एक त्रुटि उत्पन्न करेगा, क्योंकि मेरीसंख्याएँ [10] मौजूद नहीं है। (इसमें केवल 4  हैं)</h>
+            <div class="code-container"><div class="code TOE" id="editor">
+वर्ग मुख्य {
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] args){
+    अंक [] मेरीसंख्याएँ = {1,2,3,4 };//ये एक त्रम है ,त्रम विषय मे पढे |  
+    तंत्र.बाहर.प्रिंट("अंक है : "+मेरीसंख्याएँ[10]);// त्रुटि/गलती/चूक !!
+    }
+}
+</div></div></div> 
+        </p>
+        <p>
+            <e>
+              If an error occurs, we can use <c>कोशिश</c>....<c>पकड़े</c>(try...catch)to catch the error and execute some code to handle it:
+            </e>
+            <h> 
+                यदि कोई त्रुटि होती है या पाई जाती है , तो हम त्रुटि को पकड़ने के लिए <c>कोशिश</c>....<c>पकड़े</c>(try...catch) का उपयोग कर सकते हैं और इसे संभालने के लिए कुछ कोड निष्पादित(execute) कर सकते हैं:
+            </h><br>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h> 
+            <div class="code-container"><div class="code TOE" id="editor">
+वर्ग मुख्य {
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क ){
+    कोशिश {
+    अंक [] मेरीसंख्याएँ = {1,2,3,4 };//ये एक त्रम है ,त्रम विषय मे पढे |  
+    तंत्र.बाहर.प्रिंट("अंक है : "+मेरीसंख्याएँ[10]);// त्रुटि/गलती/चूक !!
+    }
+    पकड़े (त्रुटि त ){
+    तंत्र.बाहर.प्रिंट("कुछ त्रुटि/गलती पाई गई है ");
+    }
+
+    }
+} //कुछ त्रुटि/गलती पाई गई है : लिख देगा 
+</div></div></div> 
+        </p><br><hr><br>
+        <h2> &nbsp;Finally|अंतमे</h2>
+        <p>
+            <e>
+                The <c>अंतमे</c>(finally) statement lets you execute code, after <c>कोशिश</c>....<c>पकड़े</c> (try...catch), regardless of the result:
+            </e>
+            <h> 
+               <c>अंतिम</c>(finally) कथन आपको <c>कोशिश</c>....<c>पकड़े</c>(try...catch) के बाद कोड निष्पादित(execute) करने देता है, भले ही त्रुटि पाई जाए या ना पाई जाए :
+            </h>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h> 
+            <div class="code-container"><div class="code TOE" id="editor">
+वर्ग मुख्य {
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क ){
+    कोशिश {
+    अंक [] मेरीसंख्याएँ = {1,2,3,4 };//ये एक त्रम है ,त्रम विषय मे पढे |  
+    तंत्र.बाहर.प्रिंट("अंक है : "+मेरीसंख्याएँ[10]);// त्रुटि/गलती/चूक !!
+    }
+    पकड़े (त्रुटि त ){
+    तंत्र.बाहर.प्रिंट("कुछ त्रुटि/गलती पाई गई है ");
+    }
+    अंतमे{
+        तंत्र.बाहर.प्रिंट(" कोशिश और पकड़े समाप्त हो गए है ");
+    }
+    }
+} //कुछ त्रुटि/गलती पाई गई है 
+//कोशिश और पकड़े समाप्त हो गए है : लिख देगा 
+</div></div></div> 
+        </p><br><hr><br>
+        <h2> &nbsp;throw keyword|<c>फेके</c></h2>
+        <p>
+            <e>
+                The <c>फेके</c>(throw) statement allows you to create a custom error.<br><br>The <c>फेके</c>(throw) statement is used together with an <c>त्रुटि</c>exception type. <br><br>There are many <c>त्रुटि</c>(exception) types available : अंकगणितत्रुटि  (ArithmeticException), फाइलप्राप्तीमेत्रुटि (FileNotFoundException), त्रमअनुक्रमांकसीमाकेबाहरत्रुटि (ArrayIndexOutOfBoundsException),सुरक्षात्रुटि (SecurityException), etc:<br><br>
+                (in the foreseen example in line  "पकड़े (त्रुटि त )" the word  " <c>त्रुटि</c> " catches all त्रुटियां (exceptions) in one statment so you <b>need not</b> catch the exceptions one by one)
+            </e>
+            <h> 
+               <c>फेके</c>(throw) कथन आपको एक नया त्रुटि संदेश बनाने मे मदत करता है।<br><r><c>फेके</c>(थ्रो) स्टेटमेंट का उपयोग <c>त्रुटि</c> के साथ किया जाता है अपवाद प्रकार। <br><br>कई <c>त्रुटि</c>(Exception) प्रकार उपलब्ध हैं: अंकगणितत्रुटि(ArithmeticException), फ़ाइलप्राप्तीमेत्रुति(FileNotFoundException), ट्रामअनुक्रमांकसीमाकेबाहारत्रुति (ArrayIndexOutOfBoundsException), सुरक्षात्रुटि (SecurityException), आदि:
+               (पहले देखे उदाहरण मे इनलाइन  "पकड़े (त्रुटि त)"  में " <c>त्रुटि</c> " सभी त्रुटियों/अपवादों को एक विवरण में पकड़ता है, इसलिए आपको अपवादों को एक-एक करके पकड़ने की <b>जरूरत नहीं</b> है ना सभी त्रुटियों कॉ याद रखने की जरूरत है ) 
+            </h>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h> 
+            <div class="code-container"><div class="code TOE" id="editor">
+वर्ग मुख्य {
+    स्थिर रिक्त उम्रजांच(अंक उम्र){
+        कोशिश {    
+            अगर (उम्र < 18 )
+            {
+                फेके नई अंकगणितत्रुटि("प्रवेश निषिद्ध - उम्र कम से कम 18 होनी चाहिये | ");
+            }
+            या {
+                तंत्र.बाहर.प्रिंट("प्रवेश मान्य - उम्र पर्याप्त है | ");
+            }
+         }
+        पकड़े (त्रुटि त ){
+            तंत्र.बाहर.प्रिंट(त);
+        }    
+    }
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क ){
+    उम्रजांच(15);//यह एक त्रुटि देगा जिसमे संदेश होगा प्रवेश निषिद्ध.. .. .. होनी चाहिये |
+    }
+} //अगर उम्र 22 होती तो "प्रवेश मान्य - उम्र पर्याप्त है |" : लिख देता 
+</div></div></div> 
+        </p>
+        <p> 
+           <div class="note">
+                <e>
+                    <h3 class="h-note">Note :</h3>
+                    अंकगणितत्रुटि(ArithmeticException), फ़ाइलप्राप्तीमेत्रुति(FileNotFoundException), all these are just simple classes(वर्ग) and all of them have only one main उच्चवर्ग(superclass) - त्रुटि वर्ग(Exception class) i.e. all these (Arithm..) वर्ग(classes) are a उपवर्ग(subclass) of त्रुटि वर्ग(Exception class)
+                    <br><br><b>You can create your own त्रुटि(Exception) : </b> simply create a वर्ग(class) and its superclass is to be त्रुटि वर्ग(Exception class) and अधिरोहे(override) its(त्रुटि वर्ग(Exception class))'s constructor in the constructor of your वर्ग(class).<br><br> In other words, to create a new त्रुटि(Exception), you have to create a वर्ग(class), then extend (त्रुटि वर्ग(Exception class)) in your वर्ग(class), then make a निर्मातक विधि(constructor) of your वर्ग(class) and in it call the निर्मातक विधि(constructor) of उच्चवर्ग(superclass) i.e. (त्रुटि वर्ग(Exception class)) with error message as मानदंड(parameter). (See the Example below :)  
+                </e>
+                <h>
+                    <h3 class="h-note">ध्यान दे:</h3>
+                    अंकगणितत्रुटि(ArithmeticException), फ़ाइलप्राप्तीमेत्रुति(FileNotFoundException), ये सभी असल मे एक वर्ग(class) ही है और इन सब का एक ही मुख्य उच्चवर्ग(superclass) है - त्रुटि वर्ग(Exception class) और ये सभी(अंकगणि..) त्रुटि वर्ग के ही उपवर्ग(subclass) है | 
+                    <br><br><b>आप आपनी खुद की त्रुटि बना सकते है :</b> बस एक वर्ग बनाए और उसमे त्रुटि वर्ग को उच्चवर्ग बनाए फिर उस वर्ग की निर्मातक विधि बनाए और उसमे उच्चवर्ग की निर्मातक विधि को अधिरोहे (override) | <br><br><br>दूसरे शब्दों मे नई त्रुटि बनाने के लिए आपको एक वर्ग बनाना होगा , फिर उस वर्ग को आपने मे विरसना होगा त्रुटि वर्ग , फिर उसे एक निर्मातक विधि (constructor) बनाके उसमे उच्चवर्ग त्रुटि के निर्मातक विधि (constructor) को अपना त्रुटि संदेश देना होगा |(नीचे का उद्धरण देखे )
+                </h>   
+            </div>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h> 
+            <div class="code-container"><div class="code TOE" id="editor">
+वर्ग  मेरीगलती विरासेगा त्रुटि {
+    सार्वजनिक मेरीगलती(डोर संदेश )
+    {
+        उच्च(संदेश);
+    }
+}
+वर्ग मुख्य {
+    स्थिर रिक्त उम्रजांच(अंक उम्र){
+        कोशिश { 
+            अगर (उम्र < 18 )
+            {
+                फेके नई मेरीगलती("प्रवेश निषिद्ध - उम्र कम से काम 18 होनी चाहिये | ");
+            }
+            या {
+                तंत्र.बाहर.प्रिंट("प्रवेश मान्य - उम्र पर्याप्त है | ");
+            }
+        }
+        // ये सभी त्रुटियाँ पकडलेगा 
+        पकड़े ( त्रुटि  त ){ 
+            // ये सभी त्रुटियों के त्रुटि संदेश (error message)  प्रिन्ट कर देगा 
+            तंत्र.बाहर.प्रिंट(त);
+            // मेरीगलती को भी 
+        } 
+    }
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क ){
+    उम्रजांच(15);//यह एक त्रुटि देगा जिसमे संदेश होगा प्रवेश निषिद्ध.. .. .. होनी चाहिये |
+    }
+} 
+ //"मेरीगलती: प्रवेश निषिद्ध - उम्र कम से काम 18 होनी चाहिये |" : लिख देगा  
+</div></div></div> 
+        </p> 
+    </chapter> 
+
+<script src="scripts/article.js"></script>
+<script src="scripts/ace.js"></script>
+<script src="scripts/cobalt.js"></script>
+<script src="scripts/mode-javaa.js"></script>
+<script>codeload();</script>
+</body>
+</html>

@@ -1,39 +1,50 @@
-Add to decode.php and other प्रिन्टर ,अमूर्त/सार  ,अंतरापृष्ठ , निजी ,सुरक्षित ,सार इस this ,विरासेगा ,दोहरा inplace of boolean  
+Add to decode.php and other प्रिन्टर c,अमूर्त/सार  ,अंतरापृष्ठ , निजी ,सुरक्षित , इस this c ,विरासेगा ,दोहरा inplace of boolean  कोशिश पकड़े अंतमे||अंततः , त्रुटि ,फेके , उच्च super , धागे ,चलनेयोग्य runnable , लागू  ,!!!!!!शुरू()start () ,चले() ,दोहरा -> बूलेयन 
+
+
+ handleअंकगणितत्रुटि  ,फ़ाइलप्राप्तीमेत्रुति ,ट्रामअनुक्रमांकसीमाकेबाहारत्रुति, ट्रामअनुक्रमांकसीमाकेबाहारत्रुति, सुरक्षात्रुटि
 add regular expression add exception reading and one command 
 
-Completely change overiding,implements,अंतरपूष्ठ , in abstraction, polymorphism,interface 
-
-
 change packages in modifiers,packages
-change encaapsulation  in encapsulation
 add  इ ल ब to decode.php
-change char,character,object,Arrays,interfaces  to hindi replace all in datat..html 
 
 add  math,string  methords  in decode.php
 
 
-add datatype file type casting operators booleans
+update booleans in datatype
 previous check ing for only files not chapters 
 
 
-change the variable word in hindi every where 
-change int float double boolean,--आंशिक-- सच ,सही,झूठ ,गलत  etc to hindi  
-change println in ch2 display variables and in coding area
+change the "variable" word  every where 
+change ,--आंशिक-- सच ,सही,झूठ ,गलत  etc to hindi  
  
-change println  and print to in print.html accordingly,"carefully" and 
+change println ,output  and print to in print.html accordingly,"carefully" a
 
-update get started.html in all files for print program as in w3
-change output and print in hindi in all files in a lternative word.
+update get started.html 
+
 handle next and previous select in all html to single in doc and inall html end.
 
 add to  article.js.load to add cdn ,mode-javaa internally via js
 
 
 difficult words 
+interfaces
 संपुटित in encapsulation 
 arrays in arrays 
 many in moifires 
-
-change :
-subclass supercalss 
 attributes
+
+
+
+
+
+
+
+
+
+
+Readme :
+compiler not finished , 
+credits remove that 2 contributors file 
+
+
+

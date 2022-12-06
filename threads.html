@@ -1,0 +1,186 @@
+<html>
+<head>
+<script type="text/javascript" src="scripts/article.js"></script>
+<link rel="stylesheet" href="style/article.css" /> 
+</head>
+<body onload="load();alert('This page has a lot of discriptancies \n and the features may be completely non functional \n please wait until it is updated ' ); " prev="exceptions.html" next="syntax.html">
+    <h1>Threads | धागे | छोटी प्रक्रिया
+        <select name="H/E" onchange="set(this.value)">
+            <option value="english">English</option>
+            <option value="hindi">हिन्दी(Hindi)</option>
+        </select><br>
+        <input type="button" value="pervious" onclick="pchapter()">
+<a class="btn" onclick="nchapter()" href="#"><span>&nbsp;&rarr;</span>NEXT</a>
+    </h1> 
+    <chapter> 
+        <h2>&nbsp;Threads | धागे | छोटी प्रक्रिया</h2>
+        <p>
+            <e>
+              धागे(Threads) allows a program to operate more efficiently by doing multiple things at the same time.<br><br>Typically, we can define धागे(threads) as a  छोटी प्रक्रिया(subprocess) with lightweight with the smallest unit of प्रक्रिया(processes) and also has separate paths of execution.(processes is bit bigger and complex topic and would be added later you can use the information on the internet for more reference)<br><br>Threads can be used to perform complicated tasks in the background without interrupting the main program like downloading a big file without interrupting the user who is busy watching a video etc.
+            </e>
+            <h>
+                धागे(Threads) एक प्रोग्राम को एक ही समय में कई काम करके अधिक कुशलता से संचालित करने की अनुमति देता है।<br>आमतौर पर, हम धागे(Threads) को छोटी प्रक्रिया(subprocess) के रूप में हल्के वजन के साथ प्रक्रिया(processes) की सबसे छोटी इकाई के साथ परिभाषित कर सकते हैं। और हर धागे(Threads) के निष्पादन(execution) के अलग-अलग रास्ते भी हैं। (प्रक्रियाएं(process) थोड़ी बड़ी और जटिल विषय हैं और बाद में जोड़ी जाएंगी आप अधिक जानकारी के लिए इंटरनेट उपयोग कर सकते हैं)<br><br>पृष्ठभूमि/पार्श्वभूमि(background) में जटिल कार्यों को करने के लिए धागे(Threads) का उपयोग किया जा सकता है मुख्य कार्य को बाधित किए बिना जैसे विडिओ(video) देखेने में व्यस्त उपयोगकर्ता को बाधित किए बिना किसी बड़ी फाइल को (background मे ) डाउनलोड करना, आदि।
+            </h>
+        </p> <br><hr> <br>
+        <h2> &nbsp;Creating a Thread| धागे बनाना </h2>
+        <p>
+            <e>
+               There are two ways to create a धागा(thread).<br><br>It can be created by extending the धागा(Thread) class and अधिरोहे (overriding) its चले() विधि i.e run() method:
+            </e>
+            <h>
+               धागा(thread) बनाने के दो तरीके हैं।<br><br>यह धागा(thread) वर्ग का विस्तार करके और इसकी चाल () विधि यानी चले() विधि को अधिरोहण(overriding) करके बनाया जा सकता है:
+            </h><br>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h>
+<div class="code-container"><div class="code TOE" id="editor">
+वर्ग मुख्य  विरासेगा धागा {
+    सार्वजनिक रिक्त चले(){
+        तंत्र.बाहर.प्रिंट("यह एक धागे(Thread) मे चल रहा है |");
+    }
+    
+}
+</div></div></div>
+        </p>
+        <p>
+            <e>
+               Another way to create a thread is to implement the चलनेयोग्य (Runnable) interface in current वर्ग(class):
+            </e>
+            <h> 
+            धागा(Thread) बनाने का दूसरा तरीका चलनेयोग्य (Runnable) इंटरफ़ेस को लागू करना है:
+            </h>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h> 
+            <div class="code-container"><div class="code TOE" id="editor">
+वर्ग मुख्य लागू चलनेयोग्य{
+    सार्वजनिक रिक्त चले(){
+        तंत्र.बाहर.प्रिंट("यह एक धागे(Thread) मे चल रहा है |");
+    }
+    
+}
+</div></div></div> 
+        </p><br><hr> <br>
+        <h2> &nbsp;Running Threads| धागा चलाए/इस्तेमाल करे   </h2>
+        <p>
+            <e>
+               If the वर्ग विरसता है धागा वर्ग(class extends the  धागा वर्ग(Thread class)),and अधिरोहता है(overrides),  चले() methord, the धागा(thread) can be run by creating an वस्तु/instance of the class and call its शुरू() विधि (start method):
+            </e>
+            <h> 
+               यदि आपका वर्ग(class) , धागा वर्ग(Thread class) को विरसता(extends) है , और चले() विधि को अधिरोहता है(overrides), तो धागा वर्ग (Thread class)  की एक वस्तु बनाकर चलाया जा सकता है और इसकी शुरू() विधि को बुलाए/इस्तेमाल करे :
+            </h><br>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3> </e>
+            <h><h3 class="h-note">उदाहरण:</h3></h>
+            <div class="code-container">
+                <div class="code TOE" id="editor">
+वर्ग मुख्य विरासेगा धागा {
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क ){
+        मुख्य मेरामुख्य = नई मुख्य();
+        मेरामुख्य.शुरू();
+        तंत्र.बाहर.प्रिंट("यह एक धागे(Thread) के बाहार चल रहा है |");
+    }
+    सार्वजनिक रिक्त चले(){
+        तंत्र.बाहर.प्रिंट("यह एक धागे(Thread) मे चल रहा है |");
+    }
+}
+</div></div></div> 
+        </p><br>  
+        <p>
+            <e>
+              If the वर्ग लागू करता है (class implements) the चलनेयोग्य अंतरापृष्ठ(Runnable interface), the धागा (thread) can be run by passing an वस्तु (instance/object) of the वर्ग (class) to a धागा (Thread) object's निर्मातक विधि (constructor) and then calling the धागा (thread)'s शुरू() विधि ("शुरू()"/start() method):
+            </e>
+            <h> 
+             यदि वर्ग चलनेयोग्य अंतरापृष्ठ(Runnable interface) को लागू करती है, तो धागा (thread) को वर्ग (class) के एक वस्तु (उदाहरण/ऑब्जेक्ट) को धागा वर्ग के वस्तु के निर्मातक विधि(thread class's object's constructor) में प्रदान करके और फिर इस्तेमाल कर चलाया जा सकता है। धागा वर्ग (Thread class's ) का शुरू() विधि (Thread start ) methord:
+            </h>
+        </p><br>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3> </e>
+            <h><h3 class="h-note">उदाहरण:</h3></h>
+            <div class="code-container">
+                <div class="code TOE" id="editor">
+ वर्ग मुख्य लागू चलनेयोग्य  {
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क ){
+        मुख्य मेरामुख्य = नई मुख्य();
+        धागा योग्य =नई धागा(मेरामुख्य);
+        योग्य.शुरू();
+        तंत्र.बाहर.प्रिंट("यह एक धागे(Thread) के बाहार चल रहा है |");
+    }
+    सार्वजनिक रिक्त चले (){
+        तंत्र.बाहर.प्रिंट("यह एक धागे(Thread) मे चल रहा है |");
+    }
+}
+</div></div></div> 
+        </p>        
+        <p> 
+           <div class="note">
+                <e>
+                    <h3 class="h-note">Note :</h3><b>Differences between विरासना ("extending/inheriting") and लागू "implementing"  a धागा(Thread)</b><br>The major difference is that when a वर्ग(class) वीरासेगा(extends/inherits) the धागा वर्ग (Thread class), you cannot विरासे(extend/inherits) any other वर्ग(class). <br><br>But by लागू(implementing) the चलनेयोग्य अंतरापृष्ठ (Runnable interface), it is possible to विरासे(extend/inherit) from another वर्ग(class) as well, and  also you can have other interfaces.<br><br>Example : वर्ग कुत्ता विरासेगा जीवितवस्तु लागू चलनेयोग्य , चारपैरवालाजानवर,दोअंखोवालाजानवर  ( class कुत्ता extends जीवितवस्तु implements चलानेयोग्य, चारपैरवालाजानवर,दोअंखोवालाजानवर ).
+                </e>
+                <h>
+                    <h3 class="h-note">ध्यान दे:</h3>
+                    <b>एक धागा(Thread) विरासना ("extending/inheriting") और लागू ("implementing") के बीच अंतर</b><br><br>प्रमुख अंतर यह है कि जब एक वर्ग(class) वीरासेगा(extends/inherits) धागा वर्ग (Thread class), आप किसी अन्य वर्ग(class) को विरासित (extend/inherit) नहीं कर सकते हैं |<br><br> लेकिन चलनेयोग्य अंतरापृष्ठ (Runnable interface) को लागू(implement) करके, दूसरे वर्ग(class) से भी विरासे(inherit) करना संभव है, और साथ ही आपके पास अन्य अंतरापृष्ठ(interfaces) हो सकते हैं |<br><br> जैसे:<c> वर्ग कुत्ता वीरसेगा जीवित कविता लागू चलनेयोग्य , चारपैरवालाजानवर,दोअंखोवालाजानवर</c> |
+                </h>   
+            </div>
+        </p><br><hr> <br>
+        <h2> &nbsp;Concurrency Problems| सहसंगता समस्याएं | संगमन समस्याएं </h2>
+        <p>
+            <e>
+               Because धागे(threads) run at the same time as other parts of the program, there is no way to know in which order the code will run. When the धागे(threads) and main program are reading and writing the same variables, the values are unpredictable. The problems that result from this are called संगमन समस्याएं(concurrency problems).<br>Soon we would learn to handle this problem.
+            </e>
+            <h> 
+              क्‍योंकि धागे(threads) कार्यक्रम/program के अन्‍य भागों के साथ ही चलते हैं, यह जानने का कोई तरीका नहीं है कि संहिता/कोड किस क्रम में चलेगा। जब पढ़ने और लिखने वाले समान चर(variables) हैं, तो मान(value) अप्रत्याशित होते है या कहे हम उनका मान पता नही कर सकते । इससे होने वाली समस्याओं को संगमन समस्याएं(concurrency problems) कहा जाता है। <br>हम जल्द इस समस्या से निपटना सीखेंगे।
+            </h><br>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3>
+            If you run this a couple of times(not on an online compiler) you will(may) find different outputs for the same code .
+             </e>
+            <h><h3 class="h-note">उदाहरण:</h3>
+            यदि आप इसे की बार चलाते हैं (ऑनलाइन कंपाइलर पर नहीं) तो आपको एक ही कोड के लिए अलग-अलग आउटपुट मिलेंगे(मिल सकते है ) </h>
+            <div class="code-container">
+                <div class="code TOE" id="editor">
+वर्ग मुख्य विरासेगा  धागा {
+    सार्वजनिक स्थिर अंक कीमत =0;
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क ){
+        मुख्य मेरामुख्य = नई मुख्य();
+        मेरामुख्य.शुरू();
+        तंत्र.बाहर.प्रिंट(कीमत);
+        कीमत = कीमत+1;
+        तंत्र.बाहर.प्रिंट(कीमत);
+    }
+    सार्वजनिक रिक्त चले(){
+        कीमत = कीमत+1;
+    }
+}
+</div></div></div> 
+        </p>  
+        <p> 
+           <div class="note">
+                <e>
+                    <h3 class="h-note">Note :</h3>
+                        Threads and processes generally creates problems in online compilers. So we better try them on an actual machine/compiler.<br><br>(Actually online compilers are not that reliable as they(nearly all of them) lie or use servers owned by third parties and with very limited resources .Those are only for smaller and simpler programs and are available to test samll parts of code remotely.Also many of the online compilers donot provide facility of networking due to various complexities ).
+                </e>
+                <h>
+                    <h3 class="h-note">ध्यान दे:</h3>
+                   धागे और प्रक्रियाएं(Threads and processes) आम तौर पर ऑनलाइन संकलक(online compilers) में समस्याएं पैदा करती हैं। इसलिए हम उन्हें वास्तविक मशीन/कंपाइलर पर बेहतर तरीके से आजमा सकते हैं ।<br><br>(वास्तव में ऑनलाइन संकलक(online compilers) इतने विश्वसनीय नहीं हैं क्योंकि वे (लगभग सभी) किसी और के स्वामित्व वाले और बहुत सीमित संसाधनों वाले सर्वर(server) पर स्थित उनका इस्तेमाल करते है । वे केवल छोटे और सरल कार्यक्रमों(programs) के लिए हैं और संहिता/कोड के छोटे भागों को दूरस्थ(remote) रूप से परीक्षण करने के लिए उपलब्ध हैं। इसके अलावा कई ऑनलाइन संकलक(online compilers) इतने विश्वसनीय नहीं हैं क्योंकि वे (लगभग स विभिन्न जटिलताओं के कारण नेटवर्किंग की सुविधा प्रदान नहीं करते हैं)।
+                </h>   
+            </div>
+        </p>
+    </chapter> 
+
+<script src="scripts/article.js"></script>
+<script src="scripts/ace.js"></script>
+<script src="scripts/cobalt.js"></script>
+<script src="scripts/mode-javaa.js"></script>
+<script>codeload();</script>
+</body>
+</html>

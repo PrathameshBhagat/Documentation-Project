@@ -13,7 +13,7 @@
 <a class="btn" onclick="nchapter()" href="#"><span>&nbsp;&rarr;</span>NEXT</a>
     </h1> 
     <chapter> 
-        <h2>&nbspInterface | अंतरापृष्ठ : </h2>
+        <h2>&nbsp;Interface | अंतरापृष्ठ : </h2>
         <p>
             <e>
                Another way to achieve abstraction is with <c>अंतरापृष्ठ</c>(interfaces).<br><br> An <c>अंतरापृष्ठ</c>(interfaces) is a completely "सार वर्ग" ("abstract class") that is used to group related विधियाँ(methods) with empty bodies:
@@ -39,38 +39,22 @@
                To access the <c>अंतरापृष्ठ</c>विधियाँ (interface methods), the  <c>अंतरापृष्ठ</c>(interface) must be "implemented" (kinda like विरासेगा/inherited) by another वर्ग(class) with the <c>बसाये</c> keyword (instead of <c>विरासेगा</c>(extends)). The body of the interface method is provided by the "implement" class:
             </e>साधे 
             <h> 
-                <c>अंतरापृष्ठ</c>विधियाँ(interface methods) तक पहुँचने के लिए, <c>अंतरापृष्ठ</c>(interface) को एक अन्य वर्ग(class) द्वारा "कार्यान्वित" (विरासीत की तरह) होना चाहिए। c>बसये</c> कीवर्ड (<c>विरासेगा</c>(बढ़ता है) के बजाय)। इंटरफ़ेस विधि का मुख्य भाग "कार्यान्वयन" वर्ग द्वारा प्रदान किया जाता है:
+                <c>अंतरापृष्ठ</c>विधियाँ(interface methods) तक पहुँचने के लिए, <c>अंतरापृष्ठ</c>(interface) को एक अन्य वर्ग(class) द्वारा "कार्यान्वित" (विरासीत की तरह) होना चाहिए। <c>बसये</c> कीवर्ड (<c>विरासेगा</c>(बढ़ता है) के बजाय)। इंटरफ़ेस विधि का मुख्य भाग "कार्यान्वयन" वर्ग द्वारा प्रदान किया जाता है:
             </h>
-        </p>
-        <h2> &nbspSingle-line Comments|एक पंक्ति टिप्पणियाँ|एक रेखा(लाइन) मे टिप्पणियाँ </h2>
-        <p>
-            <e>
-               Single-line comments start's with special characters i.e two forward slashes <c>//</c>.<br>
-               Any text lying between <c>//</c> and the end of line is ignored by compiler(and will not be executed).
-            </e>
-            <h> 
-                एक पंक्ति टिप्पणियाँ(एक रेखा/लाइन टिप्पणियाँ) दो फ़ॉरवर्ड स्लैश <c>//</c> से शुरू होती हैं।<br>
-                <c>//</c> और पंक्ति(लाइन) के अंत के बीच के किसी भी हिस्से को कंपाइलर(या कहे कंप्युटर) द्वारा अनदेखा किया जाता है।(निष्पादित किया जाएगा/पढ़ा नहीं जाएगा)
-            </h><br>
         </p>
         <p>
             <div class="example">
-            <e>     
-            <h3 class="h-note">Example:</h3>   
-            
-            </e>
-            <h> <h3 class="h-note">उदाहरण:</h3>   
-              
-            </h><br > 
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h><br > 
             <div class="code-container"><div class="code TOE" id="editor">
 //अंतरापृष्ठ Interface
 अंतरापृष्ठ जानवर {
     सार्वजनिक रिक्त जानवरकीआवाज़();//अंतरापृष्ठ कीविधियो मे शरीर नहीं होता है   
     सार्वजनिक रिक्त सोजाओ();//क्योंकी अंतरापृष्ठ की सभी विधियाँ सार विधि होती है
 }
-// Dog "implements" the Animal interface
+// Dog लागू("implements)" the Animal interface
 //कुत्ता वर्ग मे जानवर अंतरापृष्ठ का इस्तेमाल 
-वर्ग कुत्ता implements जानवर {
+वर्ग कुत्ता लागू जानवर {
     सार्वजनिक रिक्त जानवरकीआवाज़(){
         //जानवरकीआवाज़ का शरीर/कोड यहाँ दीया गया है 
         तंत्र.बाहर.प्रिंट("कुत्ता भोंकेगा | भों भों .. | ");
@@ -92,19 +76,19 @@
         <div class="note">
             <e>
                 <h3 class="h-note">Note :</h3>
-                    <ul><li>Like <c>सार</c> वर्ग (abstract classes),अंतरापृष्ठ (interfaces) <b>cannot</b> be used to create वस्तु (objects) (in the above example, it is not possible to create an "जानवर" वस्तु(object) in मुख्य)</li><li>अंतरापृष्ठ विधियाँ(Interface methods) do not have a body - the body is provided by the "implement" वर्ग(class) through ओवरराइडिंग(overriding) it . </li><li>On implementation of an अंतरापृष्ठ (interface), you <b>must override all of its विधियाँ(methods)</b> if not an error/exception will be thrown .</li><li>अंतरापृष्ठ की विधियाँ(Interface methods) are by default <c>सार</c>(abstract) and <c>सार्वजनिक</c>(public)</li><li>अंतरापृष्ठ के गुण/विशेषताएं(Interface attributes/variables) are by default <c>सार्वजनिक</c>(public),<c>स्थिर</c>(static) and <c>अंतिम</c>(final) </li><li>An अंतरापृष्ठ(interface) <b>cannot contain a निर्मातक विधियाँ (constructor)</b> (as it cannot be used to create वस्तु(objects))</li></ul>
+                    <ul><li>Like <c>सार</c> वर्ग (abstract classes),अंतरापृष्ठ (interfaces) <b>cannot</b> be used to create वस्तु (objects) (in the above example, it is not possible to create an "जानवर" वस्तु(object) in मुख्य)</li><li>अंतरापृष्ठ विधियाँ(Interface methods) do not have a body - the body is provided by the "implement" वर्ग(class) through अधिरोहना (overriding) it . </li><li>On implementation of an अंतरापृष्ठ (interface), you <b>must अधिरोहे (override) all of its विधियाँ(methods)</b> if not an error/exception will be thrown .</li><li>अंतरापृष्ठ की विधियाँ(Interface methods) are by default <c>सार</c>(abstract) and <c>सार्वजनिक</c>(public)</li><li>अंतरापृष्ठ के गुण/विशेषताएं(Interface attributes/variables) are by default <c>सार्वजनिक</c>(public),<c>स्थिर</c>(static) and <c>अंतिम</c>(final) </li><li>An अंतरापृष्ठ(interface) <b>cannot contain a निर्मातक विधियाँ (constructor)</b> (as it cannot be used to create वस्तु(objects))</li></ul>
                 <h3 class="h-note">Why And When To Use अंतरापृष्ठ(Interfaces)? :</h3>
                     <ol><li>1)Hide certain not very important details and only show the important details of an वस्तु(object)(i.e. interface).</li><li>2) Our programming language does not support "multiple inheritance" (a वर्ग(class) can only inherit from one उच्चवर्ग(superclass)). However, it can be achieved with अंतरापृष्ठ(interfaces), because the वर्ग(class) can implement multiple अंतरापृष्ठ(interfaces). <b>Note</b>: To implement multiple अंतरापृष्ठ(interfaces), separate them with a comma <c>,</c> (see example below).</li></ol>
                 </e>
                 <h>
                     <h3 class="h-note">ध्यान दे:</h3>
-                    <ul><li>जैसे <c>सार</c> वर्ग(abstract classes) , अंतरापृष्ठ (interfaces) का भी उपयोग वस्तु (object)बनाने के लिए <b>नहीं</b> किया जा सकता है (उपरोक्त उदाहरण में, मुख्य  मे "जानवर" की वस्तु (object) बनाना संभव नहीं है)</li><li>अंतरापृष्ठ विधियाँ(Interface methods) में शरीर/कोड   नहीं होता है - उसे शरीर/कोड "implement" करने वाला वर्ग(class) प्रदान करता  है। </li><li>अंतरापृष्ठ (interface) का इस्तेमाल करने पर, आपको  <b>इसकी सभी विधियाँ (methords) को ओवरराइड(override) करना होगा</b>(याद करे हमने बहुरूपता मे ओवरराइड(override) देखा था |)</li><li> अंतरापृष्ठ की विधियाँ(Interface methods) मूल रूप से ही(पहले से ही) <c>सार</c>(abstract) और <c>सार्वजनिक</c>(public) होती है |</li><li>अंतरापृष्ठ के गुण/विशेषताएं(Interface attributes/variables) मूल रूप से ही (पहले से ही)<c>सार्वजनिक</c>(public),<c>स्थिर</c>(static) और <c>अंतिम</c>(final) होती है |</li><li>किसी अंतरापृष्ठ(interface) मे <b>निर्मातक/रचनाकार विधियाँ (constructor) शामिल नहीं हो सकतीं</b> (क्योंकि इसका उपयोग वस्तु (objects) बनाने के लिए नहीं किया जा सकता)</li></ul>
+                    <ul><li>जैसे <c>सार</c> वर्ग(abstract classes) , अंतरापृष्ठ (interfaces) का भी उपयोग वस्तु (object)बनाने के लिए <b>नहीं</b> किया जा सकता है (उपरोक्त उदाहरण में, मुख्य  मे "जानवर" की वस्तु (object) बनाना संभव नहीं है)</li><li>अंतरापृष्ठ विधियाँ(Interface methods) में शरीर/कोड नहीं होता है - उसे शरीर/कोड, लागू ("implement") करने वाला वर्ग(class) प्रदान करता  है। </li><li>अंतरापृष्ठ (interface) का इस्तेमाल करने पर, आपको  <b>इसकी सभी विधियाँ (methords) को अधिरोहीत(override) करना होगा</b>(याद करे हमने बहुरूपता मे अधिरोहण (override) देखा था |)</li><li> अंतरापृष्ठ की विधियाँ(Interface methods) मूल रूप से ही(पहले से ही) <c>सार</c>(abstract) और <c>सार्वजनिक</c>(public) होती है |</li><li>अंतरापृष्ठ के गुण/विशेषताएं(Interface attributes/variables) मूल रूप से ही (पहले से ही)<c>सार्वजनिक</c>(public),<c>स्थिर</c>(static) और <c>अंतिम</c>(final) होती है |</li><li>किसी अंतरापृष्ठ(interface) मे <b>निर्मातक/रचनाकार विधियाँ (constructor) शामिल नहीं हो सकतीं</b> (क्योंकि इसका उपयोग वस्तु (objects) बनाने के लिए नहीं किया जा सकता)</li></ul>
                     <h3 class="h-note">अंतरपृष्ठ (interface) का उपयोग क्यों और कब करें? :</h3>
                     <ol><li> कुछ गैर-महत्वपूर्ण विवरण छिपाने और केवल एक वस्तु(object) (i.e. interface) के महत्वपूर्ण विवरण दिखाएं।</li><li> हमारी प्रोग्रामिंग भाषा "मल्टीपल इनहेरिटेंस" का समर्थन नहीं करती है। (एक वर्ग (class) केवल एक उच्चवर्ग (superclass) से प्राप्त हो सकता है)। हालाँकि, यह अंतरापृष्ठ (Interface) के साथ प्राप्त किया जा सकता है, क्योंकि वर्ग (class) कई अंतरापृष्ठ (Interface) लागू कर सकता है। <b>टिप्पणी</b>: एकाधिक अंतरापृष्ठ (Interface) लागू करने के लिए, उन्हें अल्पविराम <c>,</c> से अलग करें (नीचे उदाहरण देखें)।</li></ol>
                 </h>   
             </div>
         </p> <br><hr><br>
-        <h2> &nbspMultiple Interfaces|एकाधिक अंतरापृष्ठ </h2>
+        <h2> &nbsp;Multiple Interfaces|एकाधिक अंतरापृष्ठ </h2>
         <p>
             <e>
                To use multiple अंतरापृष्ठ(interfaces), separate them with a comma <c>,</c> :
@@ -126,7 +110,7 @@
     सार्वजनिक रिक्त  बहुततेज़दीवारचढ़ेगी();
 }
 
-वर्ग पालतूजानवर  implements कुत्ता ,बिल्ली {
+वर्ग पालतूजानवर लागू कुत्ता ,बिल्ली {
     सार्वजनिक रिक्त बहुततेज़दौड़ेगा(){
      तंत्र.बाहर.प्रिंट("कुत्ता तेज़ दौड़ते हुए चला गाया | ");
     }  

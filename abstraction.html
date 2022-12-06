@@ -3,7 +3,7 @@
 <script type="text/javascript" src="scripts/article.js"></script>
 <link rel="stylesheet" href="style/article.css" /> 
 </head>
-<body onload="load()"  prev="polymorphism.html" next="interfaces.html">
+<body onload="load()"  prev="innerclass.html" next="interfaces.html">
     <h1> Abstraction| सार निकालना |संक्षेप मे लाना  
         <select name="H/E" onchange="set(this.value)">
             <option value="english">English</option>
@@ -13,7 +13,7 @@
 <a class="btn" onclick="nchapter()" href="#"><span>&nbsp;&rarr;</span>NEXT</a>
     </h1> 
     <chapter> 
-        <h2>&nbspAbstract Classes and Methods| सार वर्ग और विधियाँ :</h2>
+        <h2>&nbsp;Abstract Classes and Methods| सार वर्ग और विधियाँ :</h2>
         <e>
             डेटा का सार निकालना(Data abstraction) is the process of hiding certain details and showing only essential information to the user. सारांश निकालना (Abstraction) can be achieved with either सार वर्ग or interfaces (abstract classes or interfaces) (which we will learn more about in the next chapter).<br><br>The <c>सार</c>(abstract) keyword is a गैर पहुच संशोधक (non-access modifier), used for वर्ग(classes) and विधियाँ(methods).<ul><li><b><c>सार</c>वर्ग (Abstract class)</b>: is a restricted वर्ग(class) that cannot be used to create वस्तु(objects) (to access it, it must be inherited from another वर्ग(class)).</li><li><b><c>सार</c>विधि (Abstract method)</b>: can only be used in an <c>सार</c>वर्ग (Abstract class), and it does not have a body. The body is provided by the उपवर्ग (subclass inherited from).</li></ul>An <c>सार</c>वर्ग (Abstract class) can have both <c>सार</c>विधि (Abstract methord) and regular methods(विधियाँ):
         </e>
@@ -45,18 +45,18 @@
 जानवर मेराजानवर = नई जानवर();
 </div></div></div> 
           
-        </p><hr>
+        </p><br>
         <p>
             <e>
-            To access the <c>सार</c>वर्ग(Abstract class), it must be inherited from another वर्ग(class). Let's convert the "जानवर" वर्ग(class) we used in the last chapter to an <c>सार</c>वर्ग(Abstract class):(Remember from the previous chapter that we use the extends keyword to inherit from a class.)
+            To access the <c>सार</c>वर्ग(Abstract class), it must be inherited from another वर्ग(class). Let's convert the "जानवर" वर्ग(class) we used in the last chapter to an <c>सार</c>वर्ग(Abstract class).<br><br>(Remember from the previous chapter that we use the extends keyword to inherit from a class.)
             </e>
             <h> 
-            <c>सार</c>वर्ग (Abstract class) तक पहुँचने के लिए, इसे दूसरे वर्ग (class) से विरासीत किया जाना चाहिए। आइए "जानवर" वर्ग (class) को एक <c>सार</c>वर्ग (Abstract class) में परिवर्तित करें, जिसका हमने पिछले अध्याय में उपयोग किया था:(याद करे , पिछले अध्याय मे हम कक्षा/वर्ग(class) से विरासत (inherit) करने के लिए विरसेगा शब्द (कीवर्ड) का उपयोग करते हैं।)
+            <c>सार</c>वर्ग (Abstract class) तक पहुँचने के लिए, इसे दूसरे वर्ग (class) से विरासीत किया जाना चाहिए। आइए "जानवर" वर्ग (class) को एक <c>सार</c>वर्ग (Abstract class) में परिवर्तित करें, जिसका हमने पिछले अध्याय में उपयोग किया था | <br><br>(याद करे , पिछले अध्याय मे हम कक्षा/वर्ग(class) से विरासत (inherit) करने के लिए विरसेगा शब्द (कीवर्ड) का उपयोग करते हैं।)
         </p>
         <p>
             <div class="example">
             <e><h3 class="h-note">Example:</h3></e>
-            <h><h3 class="h-note">उदाहरण:</h3></h><br > 
+            <h><h3 class="h-note">उदाहरण:</h3></h> 
             <div class="code-container">
                 <div class="code TOE" id="editor">
 //सार वर्ग बनाए create an abstract class 
@@ -89,19 +89,12 @@
         </p>    
         <p>
             <e>
-           In the above example if we do not provide a body(i.e. code) of "आवाज़करेगा()" विधि (methord) then we would be thrown an error as the compiler does not know what to do in that methord we must provide implementation of <c>सार</c> विधियाँ (abstract methords) .This process is also a case of methord overriding .(The concept is very(exactly) similar to overriding in java for any confusion(or depth knowledge) you can refer to java overriding concept available on internet)
+           In the above example if we do not provide a body(i.e. code) of "आवाज़करेगा()" विधि (methord) then we would be thrown an error as the compiler does not know what to do in that methord we must provide implementation of <c>सार</c> विधियाँ (abstract methords) .<br><br>This process is also a case of विधि अधिरोहण (methord overriding) .(The concept is very(exactly) similar to overriding in java for any confusion(or depth knowledge) you can refer to java overriding concept available on internet)
            </e>
             <h> 
-            उपरोक्त उदाहरण में यदि हम "आवाज़करेगा ()" विधि (methord) का एक शरीर(अर्थात कोड) प्रदान नहीं करते हैं, तो हमें एक त्रुटि मिलेगी क्योंकि कम्पाइलर(या कहे कंप्युटर) को यह नहीं पता है कि उस विधि में क्या करना है, हमें उसका कार्यान्वयन(शरीर) प्रदान करना होगा <c>सार</c> विधियाँ (abstract methords)। यह प्रक्रिया भी methord overriding का मामला है।(methord overriding बहुत ही (बिल्कुल) जावा ओवरराइडिंग के समान है , किसी भी भ्रम (या गहराई तक जाने) के लिए आप इंटरनेट पर उपलब्ध जावा विधि ओवरराइडिंग (java methord overriding) पढ़ सकते है 
+            उपरोक्त उदाहरण में यदि हम "आवाज़करेगा ()" विधि (methord) का एक शरीर(अर्थात कोड) प्रदान नहीं करते हैं, तो हमें एक त्रुटि मिलेगी क्योंकि कम्पाइलर(या कहे कंप्युटर) को यह नहीं पता है कि उस विधि में क्या करना है, हमें उसका कार्यान्वयन(शरीर) प्रदान करना होगा <c>सार</c> विधियाँ (abstract methords)।<br><br> यह प्रक्रिया भी विधि अधिरोहण (methord overriding) का मामला है।(methord overriding बहुत ही (बिल्कुल) जावा ओवरराइडिंग के समान है , किसी भी भ्रम (या गहराई तक जाने) के लिए आप इंटरनेट पर उपलब्ध जावा विधि ओवरराइडिंग (java methord overriding) पढ़ सकते है 
         </h>
         </p>
-        <p>
-            <e>
-           
-           </e>
-            <h> 
-           
-        </p>    
         <p> 
            <div class="note">
                 <e>

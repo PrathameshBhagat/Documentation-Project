@@ -1,0 +1,180 @@
+<html>
+<head>
+<script type="text/javascript" src="scripts/article.js"></script>
+<link rel="stylesheet" href="style/article.css" /> 
+</head>
+<body onload="load()" prev="interfaces.html" next="userinput.html">
+    <h1>Enums or Enumerations| <c>इअंक</c> | परिगणना
+        <select name="H/E" onchange="set(this.value)">
+            <option value="english">English</option>
+            <option value="hindi">हिन्दी(Hindi)</option>
+        </select><br>
+        <input type="button" value="pervious" onclick="pchapter()">
+<a class="btn" onclick="nchapter()" href="#"><span>&nbsp;&rarr;</span>NEXT</a>
+    </h1> 
+    <chapter> 
+        <h2>&nbsp;Enums| <c>इअंक</c> | परिगणना</h2>
+        <p>
+            <e>
+            An <c>इअंक</c> (enum/enumeration) is a special "वर्ग" ("class") that represents a group of constants (unchangeable variables, like <c>अंतिम</c> (final) variables.<br><br>To create an इअंक, use the <c>इअंक</c>(enum) keyword (instead of <b>वर्ग</b> (class) or <b>अंतरापृष्ठ</b>(interface)), and separate the constants with a comma.
+            </e>
+            <h>
+            एक <b>इअंक</b>(enum/enumeration) एक विशेष "वर्ग" ("class") है जो स्थिरांक (न बदलने वाले अंकों) के एक समूह का प्रतिनिधित्व करता है (अपरिवर्तनीय चर(unchangable variables), जैसे <c>अंतिम</c> चर (final variables)) ।<br><br>एक इअंक (enum) बनाने के लिए , <c>इअंक</c>(enum) शब्द/कीवर्ड का उपयोग करें , और अपरिवर्तनीय चरों (unchangable variables) को अल्पविराम <c>,</c> से अलग करें। 
+            </h>
+        </p> 
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3> </e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h>
+<div class="code-container"><div class="code TOE" id="editor">
+    इअंक स्तर {
+        आसान,
+        सामान्य,
+        कठिन
+    }
+</div></div><br>
+<e>we can access <c>इअंक</c>(enum/enumeration) constants with the dot (<c>.</c>):</e>
+<h>हम <c>इअंक</c>(enum/enumeration) को बिंदु/डॉट (<c>.</c>) से प्राप्त कर सकते हैं।</h><br><br>
+<div class="code-container" style="height:15%"><div class="code TOE" id="editor">
+    स्तर  मेरा_प्रश्न_पत्र_स्तर =स्तर.कठिन;
+    //यहाँ आप मेरा_प्रश्न_पत्र_स्तर की जगह 
+    //कुछ और भी ले सकते है जैसे प्रश्न_पत्र, प्रश्नपत्र ,मेरास्तर ....  
+ </div></div>
+</div>
+        </p>
+        <p> 
+           <div class="note">
+            <e>
+                Generally In programming <b>Enum</b> is short for "enumerations", which means "specifically listed".In here the same concept of "enumerations" is taken as <c>इअंक</c>
+            </e>
+            <h>
+                आम तौर पर प्रोग्रामिंग में <b>Enum</b> मतलब  "enumerations" या "गणना" है, जिसका अर्थ है "विशेष रूप से सूचीबद्ध"। यहाँ समान अवधारणा को <c>इअंक</c> के रूप में लिया गया है।
+            </h>   
+            </div>
+        </p><br><hr> <br>
+        <h2> &nbsp;Enum inside a Class | एक वर्ग के आंदर <c>इअंक</c></h2>
+        <p>
+            <e>
+               we can also have an <c>इअंक</c>(enum) inside a वर्ग(class):
+            </e>
+            <h> 
+                वर्ग(class) के अंदर हम <c>इअंक</c>(enum) भी रख सकते हैं:
+            </h>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3> </e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h>
+            <div class="code-container"><div class="code TOE" id="editor">
+वर्ग मुख्य {
+    इअंक  स्तर {
+        आसान,
+        सामान्य,
+        कठिन
+    }
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क ){
+        स्तर  मेरा_प्रश्न_पत्र_स्तर =स्तर.कठिन;
+        तंत्र.बाहर.प्रिंट(मेरा_प्रश्न_पत्र_स्तर);
+    }
+}  // "कठिन" : लिख देगा 
+</div></div></div> 
+        </p>
+        <p> 
+           <div class="note"><h3></h3>
+            <e>
+              We can use <b>इअंक</b>(enum) any where in a file , in or out of a वर्ग (class), but not in a विधि (methord) . <b>इअंक</b>(enum) should always be out of a विधि (methord) .
+            </e>
+            <h>
+              हम <b>इअंक</b>(enum) का उपयोग किसी फ़ाइल में कहीं भी, वर्ग (class) के अंदर या बाहर कर सकते हैं, लेकिन किसी विधि (methord) में नहीं | <b>इअंक</b>(enum) हमेशा  विधि (methord) के बाहर होना चाहिए |
+            </h>   <h3></h3>
+            </div>
+        </p><br><hr><br>
+        <h2> &nbsp;Enum in a Switch Statement| <c>बदले</c> कथन मे <c>इअंक</c></h2>
+        <p>
+            <e>
+               <c>इअंक</c>(Enums) are often used in <c>बदले</c>(switch) statements to check for corresponding values:
+            </e>
+            <h> 
+               <c>इअंक</c>(Enums) अक्सर <c>बदले</c>(switch) कथन में संबंधित मानों की जांच के लिए उपयोग किया जाता है:
+            </h>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h>
+<div class="code-container"><div class="code TOE" id="editor">
+इअंक स्तर {
+    आसान,
+    सामान्य,
+    कठिन
+}
+वर्ग मुख्य {
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क ){
+        स्तर  मेरा_प्रश्न_पत्र_स्तर =स्तर.कठिन;
+        
+        बदले (मेरा_प्रश्न_पत्र_स्तर){
+            यदि आसान:
+                तंत्र.बाहर.प्रिंट(" आसान स्तर ");
+                भंग;
+            यदि सामान्य :
+                तंत्र.बाहर.प्रिंट(" सामान्य स्तर ");
+                भंग;
+            यदि कठिन  :
+                तंत्र.बाहर.प्रिंट(" कठिन स्तर ");
+                भंग;
+        }
+    }
+}</div></div></div> 
+        </p><br><hr><br>
+        <h2> &nbsp;Loop Through an Enum| <c>इअंक</c> मे घूमे/लूप करें</h2>
+        <p>
+            <e>
+               The <c>इअंक</c>(enum) type has a <c>मान()</c>("values()") method, which returns an "त्रम" ("array") of all <c>इअंक</c>(enum) constants. This विधि (method) is useful when you want to loop through the constants of an इअंक(enum):
+            </e>
+            <h> 
+               <c>इअंक</c>(enum) प्रकार में <c>मान()</c>("values()") विधि है, जो सभी <c>इअंक</c>(enum) का एक "त्रम" ("array") लौटाती है । यह विधि तब उपयोगी होती है जब आप इअंक(enum) के मानो के माध्यम से लूप करना चाहते हैं:
+            </h>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h>
+<div class="code-container"><div class="code TOE" id="editor">
+इअंक स्तर {
+    आसान,
+    सामान्य,
+    कठिन
+}
+वर्ग मुख्य {
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क ){
+        केलिए (स्तर  मेरा_प्रश्न_पत्र_स्तर: स्तर.मान() )
+            {
+                तंत्र.बाहर.प्रिंट( मेरा_प्रश्न_पत्र_स्तर+ " " );
+            }
+     }
+}  </div></div></div> 
+        </p> 
+        <p> 
+           <div class="note"><br>
+            <e>
+                <h3 class="h-note">Difference between <c>इअंक</c>(Enum) and <c>वर्ग</c>(Class) : </h3>
+                An <c>इअंक</c>(enum) can, just like a <c>वर्ग</c>(class), have गुण (attributes) and विधियाँ (methods). The only difference is that <c>इअंक</c>(enum) constants are <c>सार्वजनिक</c> (public) , <c>स्थिर</c> (static) and <c>अंतिम</c> (final) (unchangeable - cannot be overridden).<br><br>An <b>इअंक</b>(enum) cannot be used to create वस्तुए (objects), and it cannot विरसेगा (extend) other वर्ग (classes) (but it can लागू अंतरापृष्ठ (implement interfaces)).
+                <h3 class="h-note">Why And When To Use <c>इअंक</c>(Enum)? : </h3>
+                Use <b>इअंक</b>(Enum) when you have values that you know aren't going to change, like month days, days, colors, deck of cards, etc.
+            </e>
+                <h>
+                <h3 class="h-note">एक  <c>इअंक</c>(Enum) और <c>वर्ग</c> (class) के बीच अंतर : </h3>
+                एक <b>इअंक</b>(enum) में, <c>वर्ग</c>(class) की तरह, गुण/विशेषताएँ(attributes) और विधियाँ (methords) हो सकते हैं। फर्क सिर्फ इतना है कि <b>इअंक</b>(enum), न बदलने वाले <c>सार्वजनिक</c> (public), <c>स्थिर</c> (static) और <c>अंतिम</c> (final) (या कहे अपरिवर्तनीय - जिन्हे ओवरराइड नहीं किया जा सकता) होते हैं।<br><br>एक <b>इअंक</b>(enum) का उपयोग वस्तुए (objects) बनाने के लिए नहीं किया जा सकता है, और यह अन्य वर्गों (classes) कों  विरास (extend) नहीं सकता है (लेकिन यह अंतरपृष्ठ लागू कर सकता है (can implement interfaces))।
+                <h3 class="h-note"><c>इअंक</c>(Enum) क्यों और कब इस्तेमाल करें ? : </h3>
+                <b>इअंक</b>(Enum) का उपयोग तब करें जब आपके पास ऐसे मान(values) हैं जो आप जानते हैं कि वे बदल ने वाले नहीं हैं, जैसे महीने के दिन, दिन, रंग, ताश के पत्तों की गड्डी आदि। </h>   
+            </div>
+        </p> 
+    </chapter> 
+
+<script src="scripts/article.js"></script>
+<script src="scripts/ace.js"></script>
+<script src="scripts/cobalt.js"></script>
+<script src="scripts/mode-javaa.js"></script>
+<script>codeload();</script>
+</body>
+</html>

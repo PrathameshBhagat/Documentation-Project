@@ -1,0 +1,148 @@
+<html>
+<head>
+<script type="text/javascript" src="scripts/article.js"></script>
+<link rel="stylesheet" href="style/article.css" /> 
+</head>
+<body onload="load();alert('This Page has no disriptancies \nBut as given way this is age old ,resource wasteful way of taking Input\nHence, This page and the way of input is supposed to change entirely, very soon.');" prev="enum.html" next="datetime.html">
+    <h1>User Input|उपयोगकर्ता से सामग्री/डाटा/आँकड़े ले<br>| उपयोगकर्ता से निवेश/सहयोग ले 
+        <select name="H/E" onchange="set(this.value)">
+            <option value="english">English</option>
+            <option value="hindi">हिन्दी(Hindi)</option>
+        </select><br>
+        <input type="button" value="pervious" onclick="pchapter()">
+<a class="btn" onclick="nchapter()" href="#"><span>&nbsp;&rarr;</span>NEXT</a>
+    </h1> 
+    <chapter> 
+        <h2>&nbsp; User Input | उपयोगकर्ता से सामग्री/डाटा/आँकड़े ले |<br> उपयोगकर्ता से निवेश/सहयोग ले :</h2>
+        <p>
+            <e>
+                The <c>स्कैनर</c> वर्ग (Scanner class) is used to get user input.<br><br>To use the <c>स्कैनर</c> वर्ग (Scanner class), create an object of the class and use any of the available methods found in the <c>स्कैनर</c> वर्ग (Scanner class). In our example, we will use the <c>अगलीरेखा()</c> विधि (nextLine() method), which is used to read <c>डोर</c> (Strings):
+            </e>
+            <h>
+               <c>स्कैनर</c> वर्ग (Scanner class) का उपयोग उपयोगकर्ता इनपुट प्राप्त करने के लिए किया जाता है।<br><br><c>स्कैनर</c> वर्ग (Scanner class) का उपयोग करने के लिए, वर्ग का एक ऑब्जेक्ट बनाएँ और <c>स्कैनर</c> वर्ग (Scanner class) में उपलब्ध किसी भी उपलब्ध विधि का उपयोग करें। हमारे उदाहरण में, हम <c>अगलीरेखा()</c> विधि (nextLine() विधि) का उपयोग करेंगे, जिसका उपयोग <c>डोर</c> (Strings) को लेने/पढ़ने के लिए किया जाता है:
+            </h>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3> </e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h>
+<div class="code-container"><div class="code TOE" id="editor">
+वर्ग मुख्य {
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क){
+        स्कैनर मेरिवस्तू = नई स्कैनर (तंत्र.मे);
+        डोर उपयोगकर्तानाम ;
+        तंत्र.बाहर.प्रिंट("उपयोगकर्ता का नाम बताए ");
+        उपयोगकर्तानाम = मेरिवस्तू.अगलीरेखा();
+        तंत्र.बाहर.प्रिंट("उपयोगकर्ता का नाम : " + उपयोगकर्तानाम);
+    }
+}</div></div></div>
+        </p> <br><hr> <br>
+        <h2> &nbsp;Input Types |इनपुट प्रकार :</h2>
+         <p>
+            <e>
+            In the example above, we used the <c>अगलीरेखा()</c> method, which is used to read <c>डोर</c> (Strings). To read other types, look at the table below:
+            </e>
+            <h> 
+               उपरोक्त उदाहरण में, हमने <c>अगलीरेखा()</c> विधि का उपयोग किया, जिसका उपयोग <c>डोर</c> (Strings) को प्राप्त करने(पढ़ने) के लिए किया जाता है। अन्य प्रकारों को प्राप्त करने(पढ़ने) के लिए, नीचे दी गई तालिका देखें:
+            </h>
+        </p>
+        <table border="2%" align="center">
+            <tr> 
+            <th><e>Methord</e><h>विधि</h></th><th><e>Description</e><h>वर्णन/जानकारी</h></th>
+            </tr>
+            <tr> 
+            <td><c>अगलादोहरा()</c></td>
+            <td><e>Reads a <c>दोहरा</c> value from the user</e>
+                <h>उपयोगकर्ता से <c>दोहरा</c> मान(वैल्यू) लेता/पढ़ता है</h>
+            </td>
+            </tr>
+            <tr> 
+            <td><c>अगलाबाइट()</c></td>
+            <td><e>Reads a <c>बाइट</c> value from the user</e>
+                <h>उपयोगकर्ता से <c>बाइट</c> मान(वैल्यू) लेता/पढ़ता है</h>
+            </td>
+            </tr>
+            <tr> 
+            <td><c>अगलाबड़ा()</c></td>
+            <td><e>Reads a <c>बड़ा</c> value from the user</e>
+                <h>उपयोगकर्ता से <c>बड़ा</c> मान(वैल्यू) लेता/पढ़ता है</h>
+            </td>
+            </tr>
+            <tr> 
+            <td><c>अगलाफ्लोट()</c></td>
+            <td><e>Reads a <c>फ्लोट</c> value from the user</e>
+                <h>उपयोगकर्ता से <c>फ्लोट</c> मान(वैल्यू) लेता/पढ़ता है</h>
+            </td>
+            </tr>
+            <tr> 
+            <td><c>अगलाअंक()</c></td>
+            <td><e>Reads a <c>अंक</c> value from the user</e>
+                <h>उपयोगकर्ता से <c>अंक</c> मान(वैल्यू) लेता/पढ़ता है</h>
+            </td>
+            </tr>
+            <tr> 
+            <td><c>अगलालंबा()</c></td>
+            <td><e>Reads a <c>लंबा</c> value from the user</e>
+                <h>उपयोगकर्ता से <c>लंबा</c> मान(वैल्यू) लेता/पढ़ता है</h>
+            </td>
+            </tr>
+            <tr> 
+            <td><c>अगलाछोटा()</c></td>
+            <td><e>Reads a <c>छोटा</c> value from the user</e>
+                <h>उपयोगकर्ता से <c>छोटा</c> मान(वैल्यू) लेता/पढ़ता है</h>
+            </td>
+            </tr>
+        </table>
+        <p>
+            <e>
+               In the example below, we use different विधियाँ(methods) to read data of various types:
+            </e>
+            <h> 
+                नीचे दिए गए उदाहरण में, हम विभिन्न प्रकार के मान या डेटा को पढ़ने के लिए विभिन्न विधियों(methods) का उपयोग करते हैं:
+            </h>
+        </p><br>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3> </e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h>
+<div class="code-container"><div class="code TOE" id="editor">
+वर्ग मुख्य {
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क){
+        स्कैनर मेरिवस्तू = नई स्कैनर (तंत्र.मे);
+        डोर उपयोगकर्तानाम ;
+        फ्लोट पगार ;
+        अंक उम्र ;
+        तंत्र.बाहर.प्रिंट("उपयोगकर्ता का नाम बताए ");
+        उपयोगकर्तानाम = मेरिवस्तू.अगलीरेखा();
+        तंत्र.बाहर.प्रिंट("उपयोगकर्ता की उम्र ,पगार  बताए ");
+        पगार = मेरिवस्तू.अगलाफ्लोट();
+        उम्र = मेरिवस्तू.अगलाअंक();
+    तंत्र.बाहर.प्रिंट("उपयोगकर्ता का नाम : " + उपयोगकर्तानाम +" उम्र "+उम्र+ " पगार "+पगार);
+    }
+}</div></div></div>
+        </p> <br><hr> <br>      
+        <p> 
+           <div class="note">
+                <e>
+                    <h3 class="h-note">Difference between <b><c>अगलीरेखा</c></b> and <b><c>अगलाअंक</c> , <c>अगलाफ्लोट<c> .... </b></h3>All other विधियाँ(methords) have respective डाटा प्रकार (data type) in विधि का नाम (methord name) अंक => अगलाअंक() ,फ्लोट => अगलाअंक() .. . in them but <c>अगलीरेखा</c> does not have it. Also it has a change in its letter from others ,it has <b>ी</b>(अगल ी रेखा) in place of <b>ा</b>(अगल ा अंक).<br> 
+                    <h3 class="h-note">Note : </h3>
+                    If you enter wrong input (e.g. text in a numerical input), you will get an त्रुटि संदेश (exception/error message)  (
+                    We will learn about them in next topic itself)<br><br><br>Also Note that the online compiler can have issues in taking uesr input , it is also possible that programs asking user input may not work at all.
+                </e>
+                <h>
+                    <h3 class="h-note"><b><c>अगलीरेखा</c></b> और <b><c>अगलाअंक</c> , <c>अगलाफ्लोट<c> ... . </b> के बीच अंतर, </h3>अन्य सभी विधियाँ (विधि) में संबंधित डेटा प्रकार (data type) में विधि का नाम (methord name) अंक => अगलाअंक() ,फ्लोट => अगलाफ्लोट() .. आदि  उनमें लेकिन <c>अगलीरेखा</c> मे नहीं है। साथ ही इसकी मात्रा में अन्य से परिवर्तन हुआ है, इसमें <b>ा</b>(अगल ा आंक) के स्थान पर <b>ी</b>(अगल ी लाइन) है।<br>
+                    <h3 class="h-note">ध्यान दे : </h3>
+                    यदि आप गलत सामग्री/इनपुट प्रदान करते हैं (जैसे संख्यात्मक सामग्री/इनपुट में लेखन(text)), तो आपको एक त्रुटि संदेश (अपवाद/त्रुटि संदेश) मिलेगा (इनके बारे में हम अगले विषय में ही जानेंगे)।<br><br><br>
+                    यह भी ध्यान दे online compilers को  उपयोगकर्ता से निवेश/सहयोग (user input) मे दिक्कत हो सकती है यह भी हो सकता है की वो काम ही ना करे |
+                </h>   
+            </div>
+        </p> 
+    </chapter> 
+
+<script src="scripts/article.js"></script>
+<script src="scripts/ace.js"></script>
+<script src="scripts/cobalt.js"></script>
+<script src="scripts/mode-javaa.js"></script>
+<script>codeload();</script>
+</body>
+</html>

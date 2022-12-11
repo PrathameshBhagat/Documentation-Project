@@ -4,7 +4,7 @@ html{
   padding: 1%;
 }
 body{margin: 0;}
-table{text-align: center;}
+table{text-align: center;width: 100%}
 p{margin: 2%;}
 .img-container{
   margin:2% auto;

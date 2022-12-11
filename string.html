@@ -19,7 +19,7 @@
                 These are used for storing text in them .<br>A <c>डोर</c> contains a collection of characters surrounded by double quotes <c>" "</c> :
             </e>
             <h>
-                इनका उपयोग पाठ/लेखन(text) को संग्रहीत करने केलिए किया जाता है। <br>एक <c>डोर</c> में दोहरे उद्धरणों<c> " "</c> से घिरे वर्णों का एक संग्रह होता है :
+                इनका उपयोग पाठ/लेखन(text) को संग्रहीत करने केलिए किया जाता है। <br>एक <c>डोर</c> में दोहरे उद्धरणों <c>" "</c> से घिरे वर्णों का एक संग्रह होता है :
             </h>
         </p>
         <p>
@@ -31,99 +31,248 @@
             <h> <h3 class="h-note">उदाहरण:</h3>   
             दिया गया उदाहरण <c>डोर</c> प्रकार का एक variable बनाता है और इसे एक value प्रदान करता है:
             </h>
-<div class="code-container"><div class="code TOE" id="editor">
+<div class="code-container"  style="height:5%"><div class="code TOE" id="editor">
 डोर text ="Hello";
 </div></div></div>
-        </p> 
+        </p><br><hr><br>
         <h2> &nbsp;String Length|एक पंक्ति टिप्पणियाँ|एक रेखा(लाइन) मे टिप्पणियाँ </h2>
         <p>
             <e>
-               Single-line comments start's with special characters i.e two forward slashes <c>//</c>.<br>
-               Any text lying between <c>//</c> and the end of line is ignored by compiler(and will not be executed).
+              A <c>डोर</c> (String) , here is actually an वस्तु (object), which contain विधियाँ (methods) that can perform certain operations on <c>डोर</c> (strings). For example, the length of a string can be found with the <c>लंबाई()</c>विधि ("लंबाई()" method) :
             </e>
             <h> 
-                एक पंक्ति टिप्पणियाँ(एक रेखा/लाइन टिप्पणियाँ) दो फ़ॉरवर्ड स्लैश <c>//</c> से शुरू होती हैं।<br>
-                <c>//</c> और पंक्ति(लाइन) के अंत के बीच के किसी भी हिस्से को कंपाइलर(या कहे कंप्युटर) द्वारा अनदेखा किया जाता है।(निष्पादित किया जाएगा/पढ़ा नहीं जाएगा)
+               एक <c>डोर</c> (String) (यहाँ) वास्तव में एक वस्तु (object) है, जिसमें विधियाँ (methods) होती हैं जो <c>डोर</c> (String) पर कुछ संचालन कर सकती हैं। उदाहरण के लिए, <c>लंबाई()</c>विधि ("लंबाई()" method) से एक <c>डोर</c> (String) की लंबाई पाई जा सकती है:
             </h><br>
         </p>
         <p>
             <div class="example">
-            <e>     
-            <h3 class="h-note">Example:</h3>   
-                Given example uses a single-line comment before a line of code:
-            </e>
-            <h> <h3 class="h-note">उदाहरण:</h3>   
-            यह उदाहरण संहिता/कोड की एक पंक्ति से पहले एक पंक्ति(रेखा) की टिप्पणी का उपयोग करता है।
-            </h>
-<div class="code-container"><div class="code TOE" id="editor">//ये एक टिप्पणी है  This is a comment
-तंत्र.बाहर.प्रिंट("Hello");
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h>
+<div class="code-container"  style="height:10%"><div class="code" id="editor">
+डोर लेखन = "ABCDEFGHIJKLMNOPQRSTUVWXYZअआइईउऊऋलृएऐओऔअंअः";
+तंत्र.बाहर.प्रिंट("डोर की लंबाई है : " + लेखन.लंबाई() );
 </div></div></div>
-        </p>
-
-        <p><br>
-            <e>
-               This example uses a single-line comment after the end of a line of code:
-            </e>
-            <h> 
-                यह उदाहरण संहिता/कोड की एक पंक्ति के अंत में एक पंक्ति(रेखा) की टिप्पणी का उपयोग करता है। 
-            </h><br><br>
-        </p>
-        <p>
-            <div class="example">
-            <e>     
-            <h3 class="h-note">Example:</h3>   
-            
-            </e>
-            <h> <h3 class="h-note">उदाहरण:</h3>   
-              
-            </h><br > 
-            <div class="code-container"><div class="code TOE" id="editor">
-तंत्र.बाहर.प्रिंट("Hello"); //ये एक टिप्पणी है , This is a comment
-</div></div></div> 
-          
-        </p>
-        <h2> &nbsp;Multi-line Comments|बहु पंक्ति टिप्पणियाँ </h2>
+        </p><br><hr><br>
+        <h2> &nbsp;Finding a Character in a String| एक डोर में वर्णों को ढूँढना </h2>
         <p>
             <e>
-               Multi-line comments start with a backslash and a * i.e.<c>/*</c> and ends with <c>*/</c>.<br>Any text appearing between <c>/*</c> and <c>*/</c> will be ignored by compiler and is not read/compiled.
+             The <c>अनुक्रमांक</c> विधि (indexOf()) method returns the अनुक्रमांक or index (the position) of the first occurrence of a specified text in a <c>डोर</c> (string) (including whitespace <c> </c> ):
             </e>
             <h> 
-                बहु-पंक्ति/रेखा टिप्पणियाँ <c>/*</c> से शुरू होती हैं और <c>*/</c> पर समाप्त होती हैं।<br>/* और */ के बीच किसी भी पाठ को संकलक(कम्पाइलर या कहे कंप्युटर) द्वारा अनदेखा कर दिया जाएगा।
+             <c>अनुक्रमांक</c> विधि , एक <c>डोर</c> (string) में निर्दिष्ट पाठ/लेखन की पहली प्राप्ती/घटना का सूचकांक/अनुक्रमांक लौटाती है (खाली स्थानो को गिनके ) :
             </h><br>
         </p>
         <p>
             <div class="example">
-            <e>     
-            <h3 class="h-note">Example:</h3>
-                Following example uses a multi-line comment i.e. a comment block (to explain the code)
-            </e>
-            <h> <h3 class="h-note">उदाहरण:</h3> 
-                यह उदाहरण संहिता/कोड की व्याख्या करने केलिए एक बहु-पंक्ति टिप्पणी (एक टिप्पणी ब्लॉक) का उपयोग करता है : 
-            </h><br > 
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h> 
             <div class="code-container">
                 <div class="code TOE" id="editor">
-/* The code below will
-print the word Hello 
-this is a comment block
-*/          
-तंत्र.बाहर.प्रिंट("Hello"); 
+डोर लेख = "कृपया 'मुझे' ढूँढे ";
+तंत्र.बाहर.प्रिंट( लेखन.अनुक्रमांक("मुझे"));    
 </div></div></div> 
-        </p>        
+        </p>
         <p> 
            <div class="note">
                 <e>
                     <h3 class="h-note">Note :</h3>               
-                <i><b>Single or multi-line comments?</b></i><br>
-                    It is up to you which you want to use.Genrally , we use <c>//</c> for short/smaller comments, and <c>/* */</c> for longer/larger.
+                Here the counting positions starts from zero.<br><br> 0 is the first position in a string, 1 is the second, 2 is the third ... . .<br><br>And if it's a hindi text then all "matra"'s are also counted , like "ा ी ि े ै " and even a "halant" i.e. "्"  or a half character in hindi also gets an index to itself . <br><br>As in above example a half ऋ i.e " ृ" in कृ gets an index along with ा in या , ू in मू , े in झे and  ( ' )  all combine to give output 7 .(including other characters) . You can also search for "ृ" or े to find their positions/indexes , just keep in mind that indexes starts from 0 .
                 </e>
-                <h>स 
+                <h> 
                     <h3 class="h-note">ध्यान दे:</h3>
-                    <i><b>एक या बहु-पंक्ति टिप्पणियाँ?</b></i><br>
-                    यह आप पर निर्भर है कि आप किसका उपयोग करना चाहते हैं। आम तौर पर, हम छोटी टिप्पणियों केलिए // का उपयोग करते हैं, और /* */ लंबे समय केलिए।
+                यहाँ शून्य से पदों की गणना की जाती है।<br> 0 एक डोर में पहलाम क्रमांक है, 1 दूसरा  है, 2 तीसरा है ...<br><br>और यदि यह एक हिंदी लेख है तो सभी "मात्रा"ओं की भी गिनती की जाती है जैसे "ा ी ि ू ु े ै" और यहां तक की एक "हलंत" यानी "्" या हिंदी में आधा वर्ण भी खुद को एक सूचकांक प्राप्त कराता है  । <br><br>उपर्युक्त उदाहरण की तरह एक आधा ऋ अर्थात कृ में "ृ" को एक अनुक्रमांक मिलता है , "या" मे ा , मुझे का ू और े ,साथ ही   '  सभी मिलकर नतीजा 7 देते हैं। (अन्य वर्णों सहित). आप स्थिति का पता लगाने के लिए "ृ", "ी" या "ँ" आदि को भी खोज सकते हैं बस ध्यान रखें की अनुक्रमांक 0 से ही शुरू होगा ।
                 </h>   
             </div>
         </p> 
-    </chapter> 
+    </chapter>
+    <chapter>
+        <h2> &nbsp;String Concatenation | दो डोर को जोड़े | डोर संघनन</h2>
+        <p>
+            <e>
+            The <c>+</c> operator can be used between <c>डोर</c> (strings) to combine them. This is called संघनन (concatenation):
+            </e>
+            <h> 
+            <c>+</c> चिन्ह का उपयोग <c>डोर</c> (strings) के बीच उन्हें संयोजित करने के लिए किया जा सकता है। इसे <c>डोर</c> संघनन कहते हैं :
+            </h><br>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h> 
+            <div class="code-container"><div class="code TOE" id="editor">
+डोर नाम = "रमेश";
+डोर उपनाम = "बाबू";
+तंत्र.बाहर.प्रिंट(नाम + " " + उपनाम );
+</div></div></div> 
+        </p><br><hr><br>
+    <p> 
+       <div class="note">
+            <e>
+                <h3 class="h-note">WARNING! :</h3>               
+            Here we use the <c>+</c> operator for both addition and संघनन (concatenation).<br><br>Numbers are added <c>डोर</c> (Strings) are संघनन (concatenated).
+            </e>
+            <h> 
+                <h3 class="h-note">चेतावनी! :</h3>
+            यहाँ हम जोडने और संयोजन दोनों के लिए <c>+</c> संचालिका का प्रयोग करते हैं।<br><br>संख्या/नंबर जोड़े जाते हैं , <c>डोर</c> (Strings) का संघनन/श्रृंखलाबद्धनन  होता  हैं।
+            </h>   
+        </div>
+        </p><br><hr>
+        <p>
+            <e>
+            If we add two numbers( <c>अंक</c> .. ) , the result will be a number ( <c>अंक</c> .. ) :
+            </e>
+            <h> 
+            यदि हम दो संख्याओं (<c>अंक</c> ..) को जोड़ते हैं, तो परिणाम एक संख्या ( <c>अंक</c> ..) होगा :
+            </h><br>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h> 
+            <div class="code-container"><div class="code TOE" id="editor">
+अंक  अ = 100 ;
+अंक  आ = 200 ;
+अंक  ब = अ + आ ;//ब 300 होगा जो एक अंक है (ना की 100200) 
+</div></div></div> 
+        </p><br><hr><br>
+        <p>
+            <e>
+            If we add two <c>डोर</c> (strings), the result will be a <c>डोर</c> (strings concatenation ) :
+            </e>
+            <h> 
+            यदि हम दो <c>डोर</c> (strings) जोड़ते हैं, तो परिणाम एक <c>डोर</c> संयोजन (strings concatination) होगा :
+            </h><br>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h> 
+            <div class="code-container"><div class="code TOE" id="editor">
+डोर  अ = "100" ;
+डोर  आ = "200" ;
+डोर  ब = अ + आ ;// ब 100200 होगा जो एक डोर है (ना की 300) 
+</div></div></div> 
+        </p><br><hr><br>
+        <p>
+            <e>
+            If we add a number( <c>अंक</c>..) and a <c>डोर</c> (string), the result will be a <c>डोर</c> (strings concatenation ) :
+            </e>
+            <h> 
+            यदि हम एक संख्या और एक <c>डोर</c> (string) जोड़ते हैं, तो परिणाम एक <c>डोर</c> संयोजन (strings concatination) ही होगा :
+            </h><br>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h> 
+            <div class="code-container"><div class="code TOE" id="editor">
+डोर  अ = "100" ;
+अंक आ = "200" ;
+डोर  ब = अ + आ ;// ब 100200 होगा जो एक डोर है (ना की 300) 
+</div></div></div> 
+        </p><br><br><br>
+    </chapter>
+    <chapter>
+        <h2> &nbsp;Strings - Special Characters | स्ट्रिंग्स मे विशेष वर्ण</h2>
+        <p>
+            <e>
+            As a <c>डोर</c> (string) must be written within quotes<c>" "</c>, compiler will misunderstand this <c>डोर</c> (string), and generate a <b>त्रुटि</b>  error :
+            </e>
+            <h> 
+            <c>डोर</c> (string) को उद्धरण-चिह्न्हो ( <c>" "</c> ) के भीतर लिखा जाना चाहिए, कंप्युटर/कंपाइलर इस <c>डोर</c> (string) को गलत समझेगा, और एक <b>त्रुटि</b> (error)देगा :
+            </h><br>
+        </p>
+        <p>
+            <div class="example" style="background-color:#ff1a1a;">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h> 
+            <div class="code-container" style="height:5%"><div class="code TOE" id="editor">
+डोर लेख  = "हम "भारत" देश के नागरिक है ";//त्रुटि / गलती देगा 
+</div></div></div> 
+        </p>
+        <p>
+            <e>
+            The solution to avoid this problem, is to use the backslash escape character.<br><br>The backslash (<c>\</c>) escape character turns special characters into <c>डोर</c> (string) characters :
+            </e>
+            <h> 
+            इस समस्या से बचने का उपाय पलायनवादी वर्ण का इस्तेमाल है : <c>\</c> वर्ण (backslash escape character) का उपयोग करना है।<br><br>बैकस्लैश (<c>\</c>) वर्ण विशेष वर्णों को <c>डोर</c> (स्ट्रिंग) में बदल देता है :
+            </h>
+        </p>
+        <table border="2%" align="center">
+            <tr>
+                <th><e>Escape character</e><h>पलायनवादी वर्ण</h></th>
+                <th><e>Result</e><h>नतीजा</h></th>
+                <th><e>Description</e><h>वर्णन</h></th>
+            </tr>
+            <tr>
+                <td><c>\"</c></td><td>"</td>
+                <td><e>Would insert a " </e><h>एक " डाल देगा </h></td>
+            </tr>
+            <tr>
+                <td><c>\'</c></td><td>'</td>
+                <td><e>Would insert a ' </e><h>एक ' डाल देगा </h></td>
+            </tr>
+            <tr>
+                <td><c>\\</c></td><td>\</td>
+                <td><e>Would insert a \ </e><h>एक \ डाल देगा </h></td>
+            </tr>
+            <tr>
+                <td><c>\n</c></td><td><e>New Line</e><h>एक नई रेखा</h></td>
+                <td><e>Would insert a New Line </e><h>एक नई रेखा डाल देगा</h></td>
+            </tr>
+            <tr>
+                <td><c>\r</c></td><td><e>Carriage Return</e><h>वाहक पुर्नागमन</h></td>
+                <td><e>Would insert a Carriage Return</e><h>एक वाहक पुर्नागमन डाल देगा</h></td>
+            </tr>
+            <tr>
+                <td><c>\t</c></td><td><e>Tab</e><h>8 बाइट</h></td>
+                <td><e>Would insert a Tab</e><h>एक टैब डाल देगा</h></td>
+            </tr>
+            <tr>
+                <td><c>\b</c></td><td><e>Backspace</e><h>पश्चीयन</h></td>
+                <td><e>Would insert a Backspace</e><h>एक वर्ण काम कर देगा</h></td>
+            </tr>
+            <tr>
+                <td><c>\f</c></td><td><e>Form Feed</e><h>पृष्ट भरण</h></td>
+                <td><e>Would insert a Form Feed</e><h>एक पृष्ट भरण डाल देगा</h></td>
+            </tr>
+        </table>
+         <p>
+            <e>The sequence <c>\"</c>  inserts a double quote ( " ) in a <c>डोर</c> (string):</e>
+            <h> 
+             <c>\"</c> ये वर्ण मिलके एक <c>डोर</c> (string) में दोहरा उद्धरण ( " ) सम्मिलित करता है:
+            </h>
+        </p>
+        <p>
+            <div class="example" >
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h> 
+            <div class="code-container" style="height:15%"><div class="code TOE" id="editor">
+डोर लेख  = "हम \"भारत\" देश के नागरिक है ";
+// हम "भारत" देश के नागरिक है : लिख देगा 
+</div></div></div> 
+        </p><br><hr><br>
+        <p>
+            <e>The sequence <c>\'</c>  inserts a single quote ( ' ) in a <c>डोर</c> (string):</e>
+            <h> 
+             <c>\'</c> ये वर्ण मिलके एक <c>डोर</c> (string) में एक उद्धरण ( ' ) सम्मिलित करता है:
+            </h>
+        </p>
+        <p>
+            <div class="example" >
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h> 
+            <div class="code-container" style="height:15%"><div class="code TOE" id="editor">
+डोर लेख  = "हम \'भारत\' देश के नागरिक है ";
+// हम 'भारत' देश के नागरिक है : लिख देगा 
+</div></div></div> 
+        </p>
+        <p><b>
+            <e>Similarly other characters would give respective outputs. </e>
+            <h> और आगे ऐसे ही बाकी वर्णों से संबंधित नतीजे प्राप्त होंगे |</h>
+        </b>
+        </p><br><br><br>
+    </chapter>
 
 <script src="scripts/article.js"></script>
 <script src="scripts/ace.js"></script>

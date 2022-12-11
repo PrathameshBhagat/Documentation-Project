@@ -1,0 +1,184 @@
+<html>
+<head>
+<script type="text/javascript" src="scripts/article.js"></script>
+<link rel="stylesheet" href="style/article.css" /> 
+</head>
+<body onload="load()" prev="userinput.html" next="exceptions.html">
+    <h1>Date and Time | दिनांक और समय
+        <select name="H/E" onchange="set(this.value)">
+            <option value="english">English</option>
+            <option value="hindi">हिन्दी(Hindi)</option>
+        </select><br>
+        <input type="button" value="pervious" onclick="pchapter()">
+<a class="btn" onclick="nchapter()" href="#"><span>&nbsp;&rarr;</span>NEXT</a>
+    </h1> 
+    <chapter> 
+        <h2>&nbsp;Date and Time | दिनांक और समय</h2>
+        <p>
+            <e>
+               We have built-in Date,Time वर्ग (classes), to work with the date and time which includes  date and time classes. For example:
+            </e>
+            <h>
+              दिनांक और समय के साथ काम करने के लिए हमारे पास दिनांक, समय वर्ग(classes) हैं । उदाहरण के लिए :
+            </h>
+        </p>
+        <table border="2%" align="center">
+            <tr>
+                <th><e>Class</e><h>वर्ग</h></th>
+                <th><e>Description</e><h>वर्णन</h></th>
+            </tr>
+            <tr>
+                <td><c>दिनांक</c></td>
+                <td><e>Represents a date (year, montd, day (yyyy-MM-dd))</e>
+                    <h>एक दिनांक का प्रतिनिधित्व करता है(साल ,महिना ,दिन (yyyy-MM-dd)) </h>
+                </td>
+            </tr>
+            <tr>
+                <td><c>समय</c></td>
+                <td><e>Represents a time  (hour, minute, second and nanoseconds (HH-mm-ss-ns))</e>
+                    <h>एक समय का प्रतिनिधित्व करता है(घंटा ,मिनिट ,सेकंड (HH-mm-ss-ns)) </h>
+                </td>
+            </tr>
+            <tr>
+                <td><c>दिनांकऔरसमय</c></td>
+                <td><e>Represents botd a date and a time (yyyy-MM-dd-HH-mm-ss-ns)</e>
+                    <h>दिनांक और समय का प्रतिनिधित्व करता है(yyyy-MM-dd-HH-mm-ss-ns) </h>
+                </td>
+            </tr>
+            <tr>
+                <td><c>दिनांकऔरसमयस्वरूपण</c></td>
+                <td><e>Formatter for displaying and parsing date-time objects</e>
+                    <h>दिनांक-समय वस्तु को प्रदर्शित करने के लिए प्रारूप प्रदान करता है</h>
+                </td>
+            </tr>
+        </table><br><hr> <br>
+        <h2> &nbsp;Display Current Date|वर्तमान दिनांक प्रदर्शित करे </h2>
+        <p>
+            <e>
+               To display the current date,use <c>दिनांक</c>वर्ग(class), and use its <c>अभी()</c> विधि (now() method) :
+            </e>
+            <h> 
+                वर्तमान दिनांक प्रदर्शित करने के लिए, <c>दिनांक</c>वर्ग(class) का उपयोग करें, और इसके <c>अभी()</c> विधि (now() method) का उपयोग करें:
+            </h>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h>
+<div class="code-container"><div class="code TOE" id="editor">
+वर्ग मुख्य {
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क){
+        दिनांक मेरिवस्तु = नई दिनांक.अभी();// दिनांक वर्ग की वस्तु बनाए 
+        तंत्र.बाहर.प्रिंट(मेरिवस्तु);//दिनांक प्रदर्शित करे 
+    }
+}//2023-01-15 लिख देगा (जो भी दिनांक होगी वो |)
+</div></div></div>
+        </p><br><hr> <br>
+        <h2> &nbsp;Display Current Time|वर्तमान समय प्रदर्शित करे </h2>
+        <p>
+            <e>
+               To display the current time ,we can use an वस्तु (object) of <c>समय</c> वर्ग (class), and use its <c>अभी()</c> विधि (now() method) :
+            </e>
+            <h> 
+                वर्तमान समय प्रदर्शित करने के लिए, हम <c>समय</c> वर्ग (class) का एक वस्तु (object) का उपयोग कर सकते हैं, और इसकी <c>अभी()</c> विधि (now() method) का उपयोग कर सकते हैं:
+            </h>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h>
+<div class="code-container"><div class="code TOE" id="editor">
+वर्ग मुख्य {
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क){
+        समय मेरिवस्तु = नई समय.अभी();// दिनांक वर्ग की वस्तु बनाए 
+        तंत्र.बाहर.प्रिंट(मेरिवस्तु);//दिनांक प्रदर्शित करे 
+    }
+}//16:32:42.955429 लिख देगा (जो भी समय होगी वो |)
+</div></div></div>
+        </p><br><hr> <br>
+        <h2> &nbsp;Display Current Date and Time|अभी का समय और दिनांक प्रदर्शित करे </h2>
+        <p>
+            <e>
+               To display the current date and time ,we can use an वस्तु (object) of <c>दिनांकऔरसमय</c> वर्ग(class), and use its <c>अभी()</c> विधि (now() method) :
+            </e>
+            <h> 
+               वर्तमान दिनांक और समय प्रदर्शित करने के लिए, हम <c>दिनांकऔरसमय</c> वर्ग(class) के एक वस्तु  का उपयोग कर सकते हैं, और इसकी <c>अभी()</c> विधि (now() method) का उपयोग कर सकते हैं। :
+            </h>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h>
+<div class="code-container"><div class="code TOE" id="editor">
+वर्ग मुख्य {
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क){
+        दिनांकऔरसमय मेरिवस्तु = नई दिनांकऔरसमय.अभी();// दिनांक वर्ग की वस्तु बनाए 
+        तंत्र.बाहर.प्रिंट(मेरिवस्तु);//दिनांक प्रदर्शित करे 
+    }
+}//2022-12-09T16:32:42.955722 लिख देगा (जो भी दिनांक होगी वो फिर समय लिखेगा |)
+</div></div></div>
+        </p><br><hr> <br>
+        <h2> &nbsp;Formatting Date and Time | समय और दिनांक का स्वरूपण करे(प्रारूप प्रदान करे)</h2>
+        <p>
+            <e>
+                The "T" in the example above is used to separate the date from the time. We can use the <c>दिनांकऔरसमयस्वरूपण</c> (DateTimeFormatter) class with the <c>रूप()</c> विधि ("ofPattern()" method) and  <c>स्वरूप()</c> विधि to format or parse <b>दिनांकऔरसमय</b> वस्तु (date-time objects). The following example will remove both the "T" and nanoseconds from the date-time:
+            </e>
+            <h> 
+                उपरोक्त उदाहरण में "T" का उपयोग दिनांक को समय से अलग करने के लिए किया जाता है। हम दिनांक-समय (<b>दिनांकऔरसमय</b>) की वस्तुओं को प्रारूपित/स्वरूपित या पार्स करने के लिए <c>रूप()</c> विधि ("ofPattern()" method) और <c>स्वरूप()</c> विधि  के साथ <c>दिनांकऔरसमयस्वरूपण</c> वर्ग (DateTimeFormatter class) का उपयोग कर सकते हैं। निम्न उदाहरण (<b>दिनांकऔरसमय</b>) से "T" और नैनोसेकंड दोनों को हटा देगा:
+            </h>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h>
+<div class="code-container"><div class="code TOE" id="editor">
+वर्ग मुख्य {
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क){
+        दिनांकऔरसमय मेरिवस्तु = नई दिनांकऔरसमय.अभी();
+        तंत्र.बाहर.प्रिंट(" पहले : " + मेरिवस्तु);
+        दिनांकऔरसमयस्वरूपण मेरिदूसरीवस्तु =दिनांकऔरसमयस्वरूपण.रूप("dd-MM-yyyy HH:mm:ss");
+
+        डोर मेरितीसरीवस्तु = मेरिदूसरीवस्तु.स्वरूप(myFormatObj);
+        तंत्र.बाहर.प्रिंट(" अब  : " + मेरितीसरीवस्तु );
+    }
+}//पहले : 2022-12-09T16:32:42.955627
+//अब  : 09-12-2022 16:32:42
+// लिख देगा (जो भी आभी की दिनांक , समय हो वो लिखेगा |)
+</div></div></div>
+        </p>
+        <p>
+            <e>
+                The <c>रूप()</c> विधि ("रूप()" method) method accepts all sorts of values, if you want to display the date and time in a different format. For example:
+            </e>
+            <h> 
+                यदि आप दिनांक और समय को भिन्न स्वरूप में प्रदर्शित करना चाहते हैं, तो <c>रूप()</c> विधि ("रूप()" method) सभी प्रकार के मानों को स्वीकार करती है। उदाहरण के लिए : 
+            </h>
+        </p>
+        <table border="2%" >
+            <tr>
+            <th><e>Value</e><h>मूल्य/मान</h></th>
+            <th><e>Example</e><h>उद्धारण</h></th>
+            </tr>
+            <tr>
+            <td>yyyy-MM-dd</td><td>"1988-09-29"</td>
+            </tr>
+            <tr>
+            <td>dd/MM/yyyy</td><td>"29/09/1988"</td>
+            </tr>
+            <tr>
+            <td>dd-MMM-yyyy</td><td>"29-Sep-1988"</td>
+            </tr>
+            <tr>
+            <td>E, MMM dd yyyy</td><td>"Tdu, Sep 29 1988"</td>
+            </tr>
+        </table><br><br><br>
+        
+    </chapter> 
+
+<script src="scripts/article.js"></script>
+<script src="scripts/ace.js"></script>
+<script src="scripts/cobalt.js"></script>
+<script src="scripts/mode-javaa.js"></script>
+<script>codeload();</script>
+</body>
+</html>

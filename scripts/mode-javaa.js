@@ -368,11 +368,11 @@ define("ace/mode/doc_comment_highlight_rules", ["require", "exports", "module", 
                 }]
             }, {
                 token: "string.attribute-value.xml",
-                regex: 'p',
+                regex: '"',
                 stateName: "jsx_attr_qq",
                 push: [{
                     token: "string.attribute-value.xml",
-                    regex: 'p',
+                    regex: '"',
                     next: "pop"
                 }, {
                     include: "reference"
@@ -551,12 +551,12 @@ define("ace/mode/doc_comment_highlight_rules", ["require", "exports", "module", 
                 regex: /[+-]?\d[\d_]*(?:(?:\.[\d_]*)?(?:[eE][+-]?[\d_]+)?)?[LlSsDdFfYy]?\b/
             },
             {
-                token: "constant.language.",
+                token: "constant.language.boolean",
                 regex: "(?:true|false)\\b"
             }, 
             {   
                 token: "constant.language.boolean",
-                regex: "\\b(?:सच|झूठ)"
+                regex: "(?:सच|झूठ)"
             },
             {  
                 token: "storage.type",

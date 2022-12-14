@@ -1,0 +1,101 @@
+<html>
+<head>
+<script type="text/javascript" src="scripts/article.js"></script>
+<link rel="stylesheet" href="style/article.css" /> 
+</head>
+<body onload="load()" prev="files.html" next="filesread.html">
+    <h1>Create and Write To Files| फ़ाइलें बनाएं और लिखें
+        <select name="H/E" onchange="set(this.value)">
+            <option value="english">English</option>
+            <option value="hindi">हिन्दी(Hindi)</option>
+        </select><br>
+        <input type="button" value="pervious" onclick="pchapter()">
+<a class="btn" onclick="nchapter()" href="#"><span>&nbsp;&rarr;</span>NEXT</a>
+    </h1> 
+    <chapter> 
+        <h2>&nbsp;Create a File| फाइल/संचिका/दस्तावेज़ बनाए :</h2>
+        <p>
+            <e>
+               To create a file, you can use the <c>फाइलबनाए</c> विधि ("createNewFile" method). This method returns a दोहरा (Boolean) value: सच (true) if the file was successfully created, and झूठ (false) if the file already exists. Note that the विधि (method) is enclosed in a <c>कोशिश</c> .... <c>पकड़े</c> (try...catch) block. This is necessary because it throws an error , if the file cannot be created for some reason :
+            </e>
+            <h>
+             फ़ाइल बनाने के लिए, आप <c>फाइलबनाए</c> विधि ("createNewFile" methord) का प्रयोग कर सकते हैं। यह विधि एक दोहरा (boolean) मान लौटाती है: सच (true) यदि फ़ाइल सफलतापूर्वक बनाई गई थी, और झूठ (false) यदि फ़ाइल पहले से मौजूद है। ध्यान दें कि विधि <c>कोशिश</c> .... <c>पकड़े</c> (try...catch) में संलग्न होनी चाहीए है। यह आवश्यक है क्योंकि यह एक <b>त्रुटि</b> फेंकता है, अगर फ़ाइल किसी कारण से नहीं बनाई जा सकती तो  :
+            </h>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h>
+<div class="code-container" ><div class="code TOE" id="editor">
+वर्ग मुख्य {
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क ){
+        कोशिश {
+            फाइल  मेरीवस्तु = नई फाइल ("फाइलकानाम.txt");  
+            अगर ( मेरीवस्तु.फाइलबनाए() ){
+                तंत्र.बाहर.प्रिंट("फाइल बनाई गई : " + );
+            }
+            या  {
+                तंत्र.बाहर.प्रिंट("फाइल पहले से मौजूद है | ");
+            }
+        
+        }  पकड़े (त्रुटि त ){
+            तंत्र.बाहर.प्रिंट("कुछ गलती या त्रुटि पाई गई है | ");
+        }
+    }
+}
+</div></div></div>
+        </p>  <br>
+        <p>
+            <e>
+               To create a file in a (at a) specific directory (requires permission), specify the path of the file and use double backslashes to escape the "<b>\</b>" character (for Windows). On Mac and Linux you can just write the path, like: /Users/name/फाइलकानाम.txt
+            </e>
+            <h> 
+              एक विशिष्ट निर्देशिका (directory) (जिसके लिए अनुमति की आवश्यकता होती है) में एक फ़ाइल बनाने के लिए, फ़ाइल का पथ निर्दिष्ट करें और "<b>\</b>" वर्ण  से बचने के लिए डबल बैकस्लैश का उपयोग करें (Windows के लिए)। मैक (Mac) और लिनक्स (Linux) पर आप सिर्फ पाथ लिख सकते हैं, जैसे: /Users/name/फाइलकानाम.txt 
+            </h>
+        </p><br>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h>
+<div class="code-container" style="height:5%"><div class="code TOE" id="editor">
+फाइल मेरीवस्तु = नई फाइल("C:\\Users\\MyName\\फाइलकानाम.txt");
+</div></div></div>
+        </p><br><hr><br>
+        <h2>&nbsp;Write To a File| फाइल/संचिका/दस्तावेज़ मे लिखे :</h2>
+        <p>
+            <e>
+            In the following example, we use the <c>फाइललेखक</c> वर्ग (FileWriter class) together with its <c>लिखे()</c> विधि (write method) to write some text to the file we created in the example above. Note that when you are done writing to the file, you should close it with the <c>बंद()</c> विधि (close method):
+            </e>
+            <h>
+            निम्नलिखित उदाहरण में, हम <c>फाइललेखक</c> वर्ग (FileWriter class) का उपयोग इसके <c>लिखे()</c> विथ (write method) के साथ करते हैं ताकि हमारे द्वारा बनाई गई फ़ाइल में कुछ पाठ लिखा जा सके। ऊपर का उदाहरण। ध्यान दें कि जब आप फ़ाइल में लिखना समाप्त कर लें, तो आपको इसे <c>बंद()</c> विधि (close method) से बंद करना चाहिए :
+            </h>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h>
+<div class="code-container" ><div class="code TOE" id="editor">
+वर्ग मुख्य {
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क ){
+        कोशिश {
+            फाइललेखक मेरालेखक  = नई फाइललेखक ("फाइलकानाम.txt");  
+            मेरालेखक.लिखे("फ़ाइलें मुश्किल हो सकती हैं, लेकिन यह काफी मज़ेदार है!"); 
+            मेरालेखक.बंद();
+            तंत्र.बाहर.प्रिंट("फ़ाइल में सफलतापूर्वक लिखा गया | ");    
+        }  पकड़े (त्रुटि त ){
+            तंत्र.बाहर.प्रिंट("कुछ गलती या त्रुटि पाई गई है | " );
+            तंत्र.बाहर.प्रिंट( त );
+        }
+    }
+}
+</div></div></div>
+        </p>
+    </chapter> 
+
+<script src="scripts/article.js"></script>
+<script src="scripts/ace.js"></script>
+<script src="scripts/cobalt.js"></script>
+<script src="scripts/mode-javaa.js"></script>
+<script>codeload();</script>
+</body>
+</html>

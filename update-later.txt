@@ -1,9 +1,11 @@
-Add to decode.php and other प्रिन्टर c,अमूर्त/सार  ,अंतरापृष्ठ , निजी ,सुरक्षित , इस this c ,विरासेगा ,दोहरा inplace of boolean  कोशिश पकड़े अंतमे||अंततः , त्रुटि ,फेके , उच्च super , धागे ,चलनेयोग्य runnable , लागू  ,!!!!!!शुरू()start () ,चले() ,दोहरा -> बूलेयन ||| user  input,इअंक enum and scanner Class full java.util. and system.in मान , enum.values  || all  date time methords now अभी  , रूप ,स्वरूप 
+Add to decode.php and other प्रिन्टर c,अमूर्त/सार  ,अंतरापृष्ठ , निजी ,सुरक्षित , इस this c ,विरासेगा ,दोहरा inplace of boolean  कोशिश पकड़े अंतमे||अंततः , त्रुटि ,फेके , उच्च super , धागे ,चलनेयोग्य runnable , लागू  ,!!!!!!शुरू()start () ,चले() ,दोहरा -> बूलेयन ||| user  input,इअंक enum and scanner Class full java.util. and system.in मान , enum.values  
+add file methords to the files 
+|| all  date time methords now अभी  , रूप ,स्वरूप 
  in snippets 
 
 update finding character in a string in string 
 
-add methords of
+handle and update wrapper classes
 
 
 update mode java as decode । php  

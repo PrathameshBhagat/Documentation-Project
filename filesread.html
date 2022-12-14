@@ -1,0 +1,94 @@
+<html>
+<head>
+<script type="text/javascript" src="scripts/article.js"></script>
+<link rel="stylesheet" href="style/article.css" /> 
+</head>
+<body onload="load()" prev="fileswrite.html" next="filesdelete.html">
+    <h1>Read Files| फ़ाइलें पढ़ें 
+        <select name="H/E" onchange="set(this.value)">
+            <option value="english">English</option>
+            <option value="hindi">हिन्दी(Hindi)</option>
+        </select><br>
+        <input type="button" value="pervious" onclick="pchapter()">
+<a class="btn" onclick="nchapter()" href="#"><span>&nbsp;&rarr;</span>NEXT</a>
+    </h1> 
+    <chapter> 
+        <h2>&nbsp;Read Files| फ़ाइलें पढ़ें :</h2>
+        <p>
+            <e>
+               In the previous chapter, we learned how to create and write to a file.<br><br>In the following example, we use the <c>स्कैनर</c> वर्ग (Scanner class) and <c>हैअगलीरेखा</c> विधि (hasNextLine() methord) to read the contents of the text file we created in the previous topic :
+            </e>
+            <h>
+            पिछले अध्याय में, हमने सीखा कि फाइल कैसे बनाई जाती है और उसमें कैसे लिखा जाता है। निम्नलिखित उदाहरण में, हम <c>स्कैनर</c> वर्ग (Scanner class) और <c>हैअगलीरेखा</c> विधि (hasNextLine() methord) का उपयोग उस फ़ाइल की सामग्री को पढ़ने के लिए करते हैं जिसे हमने पिछले विषय/अध्याय में बनाया था:
+            </h>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h>
+<div class="code-container" ><div class="code TOE" id="editor">
+वर्ग मुख्य {
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क ){
+        कोशिश {
+            फाइल  मेरीवस्तु = नई फाइल ("फाइलकानाम.txt");  
+            स्कैनर मेरापाठक = नई स्कैनर(मेरीवस्तु) ;
+            जब( मेरापाठक.हैअगलीरेखा()){
+                डोर  लेख = मेरापाठक.अगलीरेखा();
+                तंत्र.बाहर.प्रिंट( लेख + "\n"); // \n नई रेखा के लिए 
+            }
+            मेरापाठक.बंद();
+        }  पकड़े (त्रुटि त ){
+            तंत्र.बाहर.प्रिंट("कुछ गलती या त्रुटि पाई गई है | ");
+            तंत्र.बाहर.प्रिंट( त );
+        }
+    }
+} </div></div></div>
+        </p>
+        <p>
+            <e>
+               Soon more methords would be added to get more information about a file . 
+            </e>
+            <h>
+                 जल्द ही और विधीय जोड़ी जाएंगी जिस से आप फ़ाइल के बारे में अधिक जानकारी प्राप्त कर सकेंगे | 
+            </h>
+        </p><!--
+        <h2>&nbsp;Get File Information| फ़ाइल जानकारी प्राप्त करें :</h2>
+        <p>
+            <e>
+               To get more information about a file, use any of the <c>फाइल</c> (File) methods :
+            </e>
+            <h>
+                फ़ाइल के बारे में अधिक जानकारी प्राप्त करने के लिए, <c>फ़ाइल</c> (File)विधियों में से किसी का भी उपयोग करें :
+            </h>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h>
+<div class="code-container" ><div class="code TOE" id="editor">
+वर्ग मुख्य {
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क ){
+        फाइल  मेरीवस्तु = नई फाइल ("फाइलकानाम.txt");  
+        अगर (मेरीवस्तु) 
+            {
+                तंत्र.बाहर.प्रिंट(" फाइल का नाम : " + मेरीवस्तु. + " |\n"); 
+                तंत्र.बाहर.प्रिंट(" फाइल का  : " + मेरीवस्तु. + " |\n"); 
+                तंत्र.बाहर.प्रिंट(" लिखे ने योग्य : " + मेरीवस्तु. + " |\n"); 
+                तंत्र.बाहर.प्रिंट(" पढ़ ने योग्य  : " + मेरीवस्तु. + " |\n"); 
+                तंत्र.बाहर.प्रिंट(" फ़ाइल आकार बाइट्स में  : " + मेरीवस्तु. + " |\n"); 
+            }
+        } या {
+            तंत्र.बाहर.प्रिंट(" ये फ़ाइल मौजूद नहीं है। ");
+        }
+    }
+} </div></div></div>
+        </p>  -->
+    </chapter> 
+
+<script src="scripts/article.js"></script>
+<script src="scripts/ace.js"></script>
+<script src="scripts/cobalt.js"></script>
+<script src="scripts/mode-javaa.js"></script>
+<script>codeload();</script>
+</body>
+</html>

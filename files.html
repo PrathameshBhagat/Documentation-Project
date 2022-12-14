@@ -1,0 +1,136 @@
+<html>
+<head>
+<script type="text/javascript" src="scripts/article.js"></script>
+<link rel="stylesheet" href="style/article.css" /> 
+</head>
+<body onload="load()" prev="output.html" next="fileswrite.html">
+    <h1>File| फाइल |संचिका | दस्तावेज़ 
+        <select name="H/E" onchange="set(this.value)">
+            <option value="english">English</option>
+            <option value="hindi">हिन्दी(Hindi)</option>
+        </select><br>
+        <input type="button" value="pervious" onclick="pchapter()">
+<a class="btn" onclick="nchapter()" href="#"><span>&nbsp;&rarr;</span>NEXT</a>
+    </h1> 
+    <chapter> 
+        <h2>&nbsp;File| फाइल | संचिका | दस्तावेज़ :</h2>
+        <p>
+            <e>
+                File handling is an important part of any application or software .<br><br>We have several methods for creating, reading, updating, and deleting files.
+            </e>
+            <h>
+             फ़ाइले संभालना किसी भी एप्लिकेशन ,सॉफ़्टवेयर या कार्यक्रम का एक महत्वपूर्ण हिस्सा होता है।<br><br>फ़ाइलें बनाने, पढ़ने, सुधारने और मिटाना के लिए हमारे पास कई विधियां हैं।
+            </h>
+        </p> <br><hr> <br>
+        <h2> &nbsp; File Handling| फ़ाइले संभालना </h2>
+        <p>
+            <e>
+               The <c>फ़ाइल</c> वर्ग (File class) , allows us to work with files.<br><br>To use the it , create a वस्तु (object) of the वर्ग (class), and specify the filename or directory name :
+            </e>
+            <h> 
+               <c>फ़ाइल</c> वर्ग (File class) ,  हमें फ़ाइलों के साथ काम करने योग्य बनाता है।<br><br>इसका उपयोग करने के लिए,  <c>फ़ाइल</c> वर्ग (File class) की एक वस्तु (object) बनाएँ, और फ़ाइल का नाम या निर्देशिका नाम (directory name) स्पष्ट करें :
+            </h>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h>
+<div class="code-container" style="height:5%"><div class="code TOE" id="editor">
+फाइल मेरीवस्तु = नई फाइल("फाइलकानाम.txt");//फाइलकानाम दे 
+</div></div></div>
+        </p>
+         <p>
+            <e>
+               The <c>फ़ाइल</c> वर्ग (File class) has many useful methods for creating , getting and updating information about files. Two of them are :
+            </e>
+            <h> 
+               फाइलों के बारे में जानकारी बनाने, प्राप्त करने और बदलने के लिए <c>फ़ाइल</c> वर्ग (File class) में कई उपयोगी विधियाँ हैं। उन मे से दो है : 
+            </h>
+        </p>
+        <table border="2%" align="center">
+            <tr>
+                <th><e>Method</e><h>विधि</h></th>
+                <th><e>Type</e><h>प्रकार</h></th>
+                <th><e>Description</e><h>वर्णन</h></th>
+            </tr>
+            <tr>
+                <td><c>फाइलबनाए()</c></td>
+                <td>दोहरा/बूलेयन</td>
+                <td><e> Creates an empty file</e><h>एक खाली फाइल बना देता है</h></td>
+            </tr>
+            <tr>
+                <td>नष्ट()</td>
+                <td>दोहरा/बूलेयन</td>
+                <td><e>Deletes a file/folder</e><h>एक फ़ाइल (या folder) का नाश कर (हटा) देता है </h></td>
+            </tr>
+        </table>    
+
+
+
+        <!--उदाहरण के लिए :For example : w3 methords
+        <table border="2%" align="center">
+            <tr>
+                <th><e>Method</e><h>विधि</h></th>
+                <th><e>Type</e><h>प्रकार</h></th>
+                <th><e>Description</e><h>वर्णन</h></th>
+            </tr>
+            <tr>
+                <td><c>पढसकतेहै</c></td>
+                <td>दोहरा/बूलेयन</td>
+                <td><e>Tests whether the file is readable or not</e><h>परीक्षण करता है कि फ़ाइल पठनीय है या नहीं</h></td>
+            </tr>
+             <tr>
+                <td><c>लिखसकतेहै</c></td>
+                <td>दोहरा/बूलेयन</td>
+                <td><e>Tests whether the file is writable or not</e><h>परीक्षण करता है कि फ़ाइल लिखने योग्य है या नहीं</h></td>
+            </tr> 
+             <tr>
+                <td><c>फाइलबनाए</c></td>
+                <td>दोहरा/बूलेयन</td>
+                <td><e> Creates an empty file</e><h>एक खाली फाइल बना देता है</h></td>
+            </tr>      
+            <tr>
+                <td><e>Method</e><h>विधि</h></td>
+                <td>दोहरा/बूलेयन</td>
+                <td><e>Deletes a file</e><h>एक फ़ाइल का नाश कर (हटा) देता है </h></td>
+            </tr> 
+             <tr>
+                <td><e>Method</e><h>विधि</h></td>
+                <td>दोहरा/बूलेयन</td>
+                <td><e> Tests whether the file exists</e><h>परीक्षण करता है कि फ़ाइल मौजूद है या नहीं</h></td>
+            </tr> 
+             <tr>
+                <td><e>Method</e><h>विधि</h></td>
+                <td>डोर</td>
+                <td><e>Returns the name of the file</e><h>फ़ाइल का नाम लौटा देता है</h></td>
+            </tr> 
+            <tr>
+                <td><e>Method</e><h>विधि</h></td>
+                <td>डोर</td>
+                <td><e> Returns the absolute pathname of the file</e><h>फ़ाइल का पूर्ण पथनाम (pathname) लौटाता है</h></td>
+            </tr>
+            <tr>
+                <td><e>Method</e><h>विधि</h></td>
+                <td>लंबा</td>
+                <td><e>Returns the size of the file in bytes</e><h>फ़ाइल का आकार बाइट्स में लौटाता है</h></td>
+            </tr>
+            <tr>
+                <td><e>Method</e><h>विधि</h></td>
+                <td>डोर [] </td>
+                <td><e> Returns an array of the files in the directory</e><h>निर्देशिका (directory) में फ़ाइलों की एक त्रम/सरणी (array) देता है</h></td>
+            </tr> 
+            <tr>
+                <td><e>Method</e><h>विधि</h></td>
+                <td>दोहरा/बूलेयन</td>
+                <td><e>Creates a directory/folder </e><h>निर्देशिका (directory) बनाता है </h></td>
+            </tr>
+        </table>-->
+    </chapter> 
+
+<script src="scripts/article.js"></script>
+<script src="scripts/ace.js"></script>
+<script src="scripts/cobalt.js"></script>
+<script src="scripts/mode-javaa.js"></script>
+<script>codeload();</script>
+</body>
+</html>

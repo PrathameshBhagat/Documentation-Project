@@ -1,0 +1,79 @@
+<html>
+<head>
+<script type="text/javascript" src="scripts/article.js"></script>
+<link rel="stylesheet" href="style/article.css" /> 
+</head>
+<body onload="load()" prev="filesread.html" next="syntax.html">
+    <h1>Delete Files| फाइलों को नष्ट करे 
+        <select name="H/E" onchange="set(this.value)">
+            <option value="english">English</option>
+            <option value="hindi">हिन्दी(Hindi)</option>
+        </select><br>
+        <input type="button" value="pervious" onclick="pchapter()">
+<a class="btn" onclick="nchapter()" href="#"><span>&nbsp;&rarr;</span>NEXT</a>
+    </h1> 
+    <chapter> 
+        <h2>&nbsp;Delete Files| फाइले नष्ट करे :</h2>
+        <p>
+            <e>
+               To delete a file , use the <c>नष्ट()</c> विधि (delete() method) :
+            </e>
+            <h>
+                किसी फ़ाइल को हटाने के लिए, <c>नष्ट()</c> विधि (delete() विधि) का उपयोग करें:
+            </h>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h>
+<div class="code-container" ><div class="code TOE" id="editor">
+वर्ग मुख्य {
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क ){
+        कोशिश {
+            फाइल  मेरीवस्तु = नई फाइल ("फाइलकानाम.txt");//या पूर्ण रास्ता C:\\Users.. 
+            अगर ( मेरीवस्तु.नष्ट() ){
+                तंत्र.बाहर.प्रिंट(" फाइल नष्ट कर दी गई | ");
+            } या {
+                तंत्र.बाहर.प्रिंट(" फ़ाइल को नष्ट करने में विफल हुए । "
+            }
+        }  पकड़े (त्रुटि त ){
+            तंत्र.बाहर.प्रिंट("कुछ गलती या त्रुटि पाई गई है | ");
+            तंत्र.बाहर.प्रिंट( त );
+        }
+    }
+} </div></div></div>
+        </p><br><hr><br>
+        <h2>&nbsp;Delete a Folder | एक फ़ोल्डर नष्ट करें :</h2>
+        <p>
+            <e>
+               We can also delete a folder. However, it must be empty :
+            </e>
+            <h>
+                हम किसी संचिका संयोजक/फोल्डर को नष्ट/डिलीट भी कर सकते हैं। हालाँकि, यह खाली होना चाहिए :
+            </h>
+        </p>
+        <p>
+            <div class="example">
+            <e><h3 class="h-note">Example:</h3></e>
+            <h> <h3 class="h-note">उदाहरण:</h3></h>
+<div class="code-container" ><div class="code TOE" id="editor">
+वर्ग मुख्य {
+    सार्वजनिक स्थिर रिक्त जरूरी(डोर[] क ){
+        फाइल  मेरीवस्तु = नई फाइल ("C:\\Users\\username\\Test"); 
+        अगर ( मेरीवस्तु.नष्ट() ){
+           तंत्र.बाहर.प्रिंट(" संचिका संयोजक/फोल्डर नष्ट कर दी गई | ");
+        } या {
+            तंत्र.बाहर.प्रिंट(" संचिका संयोजक/फोल्डर को नष्ट करने में विफल हुए । "
+        }
+    }
+} </div></div></div>
+        </p>  
+    </chapter> 
+
+<script src="scripts/article.js"></script>
+<script src="scripts/ace.js"></script>
+<script src="scripts/cobalt.js"></script>
+<script src="scripts/mode-javaa.js"></script>
+<script>codeload();</script>
+</body>
+</html>

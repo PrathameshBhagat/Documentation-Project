@@ -24,8 +24,22 @@ Also the language uses a refrence compiler so the refrenced compiler's language 
 Soon .jar file would be provided through which you would be able to add code of our language in your java projects easily and support of other languages like Python ,C ,C# would be provided later.   
 
 
+# Outputs/Results
+
+### 1. First topic
+![Screenshot (52)](https://github.com/PrathameshBhagat/Documentation-Project/assets/90595097/51cabd5f-1a8d-4d8c-905f-8340f568d4bd)  
+### 2. Nav-Bar with all topics
+![Screenshot (53)](https://github.com/PrathameshBhagat/Documentation-Project/assets/90595097/beefd877-98ea-4171-ae5a-60db183096fa)  
+### 3. Important topic
+![Screenshot (55)](https://github.com/PrathameshBhagat/Documentation-Project/assets/90595097/f40b42f4-756d-430c-86f9-e9a5b0424d3a)  
+### 4. Sample code given as input
+![Screenshot (54)](https://github.com/PrathameshBhagat/Documentation-Project/assets/90595097/9bde9de0-19cf-4331-a0e4-1dac9360617d)
+### 5. Sample output obtained
+![Screenshot (56)](https://github.com/PrathameshBhagat/Documentation-Project/assets/90595097/c529c72b-02d3-4d53-899c-a8eacf2837b4)
+
 # Open Source
 This is completely open source project and even small updates are appreciated so feel free to enhance this repository .
+
 # Credits
 The Documentation including the online compiler uses open source , javascript based web editor named ace editor, [official site](https://ace.c9.io).
 

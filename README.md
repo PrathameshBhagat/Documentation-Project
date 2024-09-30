@@ -7,7 +7,7 @@ We have our language in simple hindi so new developers need not get into remembe
 # Demo 
 [![https://youtu.be/OoUNVvhEFZg](https://img.youtube.com/vi/OoUNVvhEFZg/0.jpg)](https://www.youtube.com/watch?v=OoUNVvhEFZg)  
   
-> #### Demo of the project in video format can be viewed by clicking at the above image or at: https://youtu.be/OoUNVvhEFZg
+> #### Demo of the project in video format can be viewed at ▶️ https://youtu.be/OoUNVvhEFZg or by clicking at the above image
 
 > #### Please watch this if found bugs: https://youtu.be/mR87wGIJlZE  
 # Features

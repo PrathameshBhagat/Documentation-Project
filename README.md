@@ -10,6 +10,8 @@ We have our language in simple hindi so new developers need not get into remembe
 > #### Demo of the project in video format can be viewed at ▶️ https://youtu.be/OoUNVvhEFZg or by clicking at the above image
 
 > #### Please watch this if found bugs: https://youtu.be/mR87wGIJlZE  
+# Note:
+The site and CLI is currently unavailable accounting to end of hosting plan. The project will be available via a link as well as a Docker image.
 # Features
 The language has all features of a traditional programming language starting form looping, standard String and Math methord’s to OOP concepts like classes, inheritance and concepts like threads and processes, file handling, networking, user defined data structures including traditional data-structures like trees, graphs and much more.{The language is very similar to java so if you know java shifting would be very easy,Also the currently supported topics are available at its documentation others are yet to be added as of now .}
 

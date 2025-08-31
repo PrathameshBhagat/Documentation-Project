@@ -52,3 +52,14 @@ This is completely open source project and even small updates are appreciated so
 The Documentation including the online compiler uses open source , javascript based web editor named ace editor, [official site](https://ace.c9.io).
 
 {in this repository the contributers are 2 as the documetation uses ace editor for showcasing the demo code}
+
+
+## Contact 
+For further details contact the developer:-  
+   
+**Name:**&emsp; &emsp; Prathamesh Bhagat  
+**Phone:**&emsp; &emsp; +91 705-803-1648  
+**Email:**&emsp; &emsp; &emsp; [prathameshbhagat0608@gmail.com](mailto:prathameshbhagat0608@gmail.com)  
+**Website:**&emsp; &emsp; [https://prathameshbhagat.github.io](https://prathameshbhagat.github.io)  
+**Linkedin:**&emsp; &emsp; [https://linkedin.com/in/prathameshvivekbhagat/](https://linkedin.com/in/prathameshvivekbhagat/)    
+**What's App:**&emsp; [https://wa.me/917058031648](https://wa.me/917058031648)
